@@ -83,4 +83,22 @@ entity variable {
 	properties: text
 }
 
+entity row {
+	properties: text
+}
 
+entity cell {
+	properties: text
+}
+
+entity column {
+	properties: text
+}
+
+entity cell {
+	properties: text
+}
+
+entity option {
+	properties: text
+}
