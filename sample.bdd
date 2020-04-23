@@ -192,3 +192,50 @@ when I print on the console the value of the variable "<variable>"
 then I print on the console the value of the variable "<variable>"
 
 when I print on the console the value of the variable "<variable>"
+
+Scenario: ex27
+given I set the value "<value>" in the dialog box
+when I set the value "<value>" in the dialog box
+then I set the value "<value>" in the dialog box
+
+then will be displayed "<message>" in the dialog box
+
+Scenario: ex28
+
+when I move the mouse over "<fieldname>"
+
+Scenario: ex29
+when I click on the row "<row>" of the table "<table>" referring to "<fieldname>"
+then I click on the row "<row>" of the table "<table>" referring to "<fieldname>"
+
+when I store the cell "<cell>" of the table "<table>" in "<place>"
+then I store the cell "<cell>" of the table "<table>" in "<place>"
+
+when I store the column "<column>" of the table "<table>" in "<place>"
+then I store the column "<column>" of the table "<table>" in "<place>"
+
+when I compare the text of the table cell "<table text>" with "<text>"
+then I compare the text of the table cell "<table text>" with "<text>"
+
+when I compare the text of the table column "<table text>" with "<text>"
+then I compare the text of the table column "<table text>" with "<text>"
+
+when I click on the cell "<cell>" of the table "<table>"
+then I click on the cell "<cell>" of the table "<table>"
+
+when I click on the column "<column>" of the table "<table>"
+then I click on the column "<column>" of the table "<table>"
+
+when I choose the option "<option>" in the cell of the table "<table>"
+then I choose the option "<option>" in the cell of the table "<table>"
+
+when I choose the option "<option>" in the column of the table "<table>"
+then I choose the option "<option>" in the column of the table "<table>"
+
+when I type the text "<text>" in the cell of the table "<table>"
+then I type the text "<text>" in the cell of the table "<table>"
+
+when I type the text "<text>" in the column of the table "<table>"
+then I type the text "<text>" in the column of the table "<table>"
+
+
