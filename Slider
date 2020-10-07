@@ -1,0 +1,176 @@
+model Slider using widgets
+/*
+Scenario: value-set to
+Given the value "<value name>" is not set
+When I set to the value "<value name>"
+Then the value "<value name>" is set
+*/
+
+Scenario: N1 value-set 
+Given the value "Slider" is not set
+When I set to the value "Slider"
+Then the value "Slider" is set
+
+Scenario: N2 set 
+Given #"Slider" is not set
+When I set to #"Slider"
+Then #"Slider" is set
+
+/*
+Scenario: value-DoNotset to
+Given the value "<value name>" is not set
+When I do not set to the value "<value name>"
+Then the value "<value name>" is not set
+*/
+
+Scenario: N3 value-DoNotset 
+Given the value "Slider" is not set
+When I do not set to the value "Slider"
+Then the value "Slider" is not set
+
+Scenario: N4 DoNotset 
+Given #"Slider" is not set
+When I do not set to #"Slider"
+Then #"Slider" is not set
+
+/*
+Scenario: Slider-set to
+Given the Slider "<value name>" is not set
+When I set to the Slider "<value name>"
+Then the Slider "<value name>" is set
+*/
+
+Scenario: N5 Slider-set 
+Given the Slider "Slider" is not set
+When I set to the Slider "Slider"
+Then the Slider "Slider" is set
+
+Scenario: N6 set 
+Given #"Slider" is not set
+When I set to #"Slider"
+Then #"Slider" is set
+
+/*
+Scenario: Slider-DoNotset to
+Given the Slider "<value name>" is not set
+When I do not set to the Slider "<value name>"
+Then the Slider "<value name>" is not set
+*/
+
+Scenario: N7 Slider-set 
+Given the Slider "Slider" is not set
+When I do not set to the Slider "Slider"
+Then the Slider "Slider" is not set
+
+Scenario: N8 set 
+Given #"Slider" is not set
+When I do not set to #"Slider"
+Then #"Slider" is not set
+
+/*
+Scenario: Field-value-adjust 
+Given the value "<value>" for the field "<fieldname>" is not adjusted
+When I adjust  the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is adjusted
+*/
+
+Scenario: N9 Field-value-adjust 
+Given the value "Morning" for the field "Availability" is not adjusted
+When I adjust  the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is adjusted
+
+Scenario: N10 value-adjust 
+Given the value "Morning" for #"Availability" is not adjusted
+When I adjust  the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is adjusted
+
+Scenario: N11 Field-adjust 
+Given #"Morning" for the field "Availability" is not adjusted
+When I adjust  #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is adjusted
+
+Scenario: N12 adjust 
+Given #"Morning" for #"Availability" is not adjusted
+When I adjust  #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is adjusted
+
+/*
+Scenario: Field-value-DoNotadjust 
+Given the value "<value>" for the field "<fieldname>" is not adjusted
+When I do not adjust  the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is not adjusted
+*/
+
+Scenario: N13 Field-value-DoNotadjust 
+Given the value "Morning" for the field "Availability" is not adjusted
+When I do not adjust  the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is not adjusted
+
+Scenario: N14 value-DoNotadjust 
+Given the value "Morning" for #"Availability" is not adjusted
+When I do not adjust  the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not adjusted
+
+Scenario: N15 Field-DoNotadjust 
+Given #"Morning" for the field "Availability" is not adjusted
+When I do not adjust  #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not adjusted
+
+Scenario: N16 DoNotadjust 
+Given #"Morning" for #"Availability" is not adjusted
+When I do not adjust  #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not adjusted
+
+/*
+Scenario: Slider-value-adjust
+Given the value "<value>" for the Slider "<fieldname>" is not adjusted
+When I adjust the value "<value>" for the Slider "<fieldname>"
+Then the value "<value>" for the Slider "<fieldname>" is adjusted
+*/
+
+Scenario: N17 Slider-value-adjust
+Given the value "Morning" for the Slider "Availability" is not adjusted
+When I adjust the value "Morning" for the Slider "Availability"
+Then the value "Morning" for the Slider "Availability" is adjusted
+
+Scenario: N18 value-adjust
+Given the value "Morning" for #"Availability" is not adjusted
+When I adjust the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is adjusted
+
+Scenario: N19 Slider-adjust
+Given #"Morning" for the Slider "Availability" is not adjusted
+When I adjust #"Morning" for the Slider "Availability"
+Then #"Morning" for the Slider "Availability" is adjusted
+
+Scenario: N20 adjust
+Given #"Morning" for #"Availability" is not adjusted
+When I adjust #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is adjusted
+
+/*
+Scenario: Slider-value-DoNotadjust
+Given the value "<value>" for the Slider "<fieldname>" is not adjusted
+When I do not adjust the value "<value>" for the Slider "<fieldname>"
+Then the value "<value>" for the Slider "<fieldname>" is not adjusted
+*/
+
+Scenario: N21 Slider-value-DoNotadjust
+Given the value "Morning" for the Slider "Availability" is not adjusted
+When I do not adjust the value "Morning" for the Slider "Availability"
+Then the value "Morning" for the Slider "Availability" is not adjusted
+
+Scenario: N22 value-DoNotadjust
+Given the value "Morning" for #"Availability" is not adjusted
+When I do not adjust the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not adjusted
+
+Scenario: N23 Slider-DoNotadjust
+Given #"Morning" for the Slider "Availability" is not adjusted
+When I do not adjust #"Morning" for the Slider "Availability"
+Then #"Morning" for the Slider "Availability" is not adjusted
+
+Scenario: N24 DoNotadjust
+Given #"Morning" for #"Availability" is not adjusted
+When I do not adjust #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not adjusted

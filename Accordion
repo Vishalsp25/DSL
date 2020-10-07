@@ -1,0 +1,533 @@
+model Accordion using widgets
+
+/*
+Scenario: item-show
+Given the item "<item name>" is not shown
+When I show the item "<item name>"
+Then the item "<item name>" is shown
+*/
+
+Scenario: N1 item-show
+Given the item "Accordion" is not shown
+When I show the item "Accordion"
+Then the item "Accordion" is shown
+
+Scenario: N2 show
+Given #"Accordion" is not shown
+When I show #"Accordion"
+Then #"Accordion" is shown
+
+/*
+Scenario: item-DoNotshow
+Given the item "<item name>" is not shown
+When I do not show the item "<item name>"
+Then the item "<item name>" is not shown
+*/
+
+Scenario: N3 item-DoNotshow
+Given the item "Accordion" is not shown
+When I do not show the item "Accordion"
+Then the item "Accordion" is not shown
+
+Scenario: N4 DoNotshow
+Given #"Accordion" is not shown
+When I do not show #"Accordion"
+Then #"Accordion" is not shown
+
+/*
+Scenario: Accordion-show
+Given the Accordion "<item name>" is not shown
+When I show the Accordion "<item name>"
+Then the Accordion "<item name>" is shown
+*/
+
+Scenario: N5 Accordion-show
+Given the Accordion "Accordion" is not shown
+When I show the Accordion "Accordion"
+Then the Accordion "Accordion" is shown
+
+Scenario: N6 show
+Given #"Accordion" is not shown
+When I show #"Accordion"
+Then #"Accordion" is shown
+
+/*
+Scenario: Accordion-DoNotshow
+Given the Accordion "<item name>" is not shown
+When I do not show the Accordion "<item name>"
+Then the Accordion "<item name>" is not shown
+*/
+
+Scenario: N7 Accordion-show
+Given the Accordion "Accordion" is not shown
+When I do not show the Accordion "Accordion"
+Then the Accordion "Accordion" is not shown
+
+Scenario: N8 show
+Given #"Accordion" is not shown
+When I do not show #"Accordion"
+Then #"Accordion" is not shown
+
+/*
+Scenario: item-hide
+Given the item "<item name>" is not hidden
+When I hide the item "<item name>"
+Then the item "<item name>" is hidden
+*/
+
+Scenario: N9 item-hide
+Given the item "Accordion" is not hidden
+When I hide the item "Accordion"
+Then the item "Accordion" is hidden
+
+Scenario: N10 hide
+Given #"Accordion" is not hidden
+When I hide #"Accordion"
+Then #"Accordion" is hidden
+
+/*
+Scenario: item-DoNothide
+Given the item "<item name>" is not hidden
+When I do not hide the item "<item name>"
+Then the item "<item name>" is not hidden
+*/
+
+Scenario: N11 item-DoNothide
+Given the item "Accordion" is not hidden
+When I do not hide the item "Accordion"
+Then the item "Accordion" is not hidden
+
+Scenario: N12 DoNothide
+Given #"Accordion" is not hidden
+When I do not hide #"Accordion"
+Then #"Accordion" is not hidden
+
+/*
+Scenario: Accordion-hide
+Given the Accordion "<item name>" is not hidden
+When I hide the Accordion "<item name>"
+Then the Accordion "<item name>" is hidden
+*/
+
+Scenario: N13 Accordion-hide
+Given the Accordion "Accordion" is not hidden
+When I hide the Accordion "Accordion"
+Then the Accordion "Accordion" is hidden
+
+Scenario: N14 hide
+Given #"Accordion" is not hidden
+When I hide #"Accordion"
+Then #"Accordion" is hidden
+
+/*
+Scenario: Accordion-DoNothide
+Given the Accordion "<item name>" is not hidden
+When I do not hide the Accordion "<item name>"
+Then the Accordion "<item name>" is not hidden
+*/
+
+Scenario: N15 Accordion-hide
+Given the Accordion "Accordion" is not hidden
+When I do not hide the Accordion "Accordion"
+Then the Accordion "Accordion" is not hidden
+
+Scenario: N16 hide
+Given #"Accordion" is not hidden
+When I do not hide #"Accordion"
+Then #"Accordion" is not hidden
+
+
+/*
+Scenario: item-click
+Given the item "<item name>" is not clicked
+When I click the item "<item name>"
+Then the item "<item name>" is clicked
+*/
+
+Scenario: N17 item-click
+Given the item "Accordion" is not clicked
+When I click the item "Accordion"
+Then the item "Accordion" is clicked
+
+Scenario: N18 click
+Given #"Accordion" is not clicked
+When I click #"Accordion"
+Then #"Accordion" is clicked
+
+/*
+Scenario: item-DoNotclick
+Given the item "<item name>" is not clicked
+When I do not clicked the item "<item name>"
+Then the item "<item name>" is not clicked
+*/
+
+Scenario: N19 item-DoNotclick
+Given the item "Accordion" is not clicked
+When I do not click the item "Accordion"
+Then the item "Accordion" is not clicked
+
+Scenario: N20 DoNotclick
+Given #"Accordion" is not clicked
+When I do not click #"Accordion"
+Then #"Accordion" is not clicked
+
+/*
+Scenario: Accordion-click
+Given the Accordion "<item name>" is not clicked
+When I click the Accordion "<item name>"
+Then the Accordion "<item name>" is clicked
+*/
+
+Scenario: N21 Accordion-click
+Given the Accordion "Accordion" is not clicked
+When I click the Accordion "Accordion"
+Then the Accordion "Accordion" is clicked
+
+Scenario: N22 click
+Given #"Accordion" is not clicked
+When I click #"Accordion"
+Then #"Accordion" is clicked
+
+/*
+Scenario: Accordion-DoNotclick
+Given the Accordion "<item name>" is not clicked
+When I do not clicked the Accordion "<item name>"
+Then the Accordion "<item name>" is not clicked
+*/
+
+Scenario: N23 Accordion-click
+Given the Accordion "Accordion" is not clicked
+When I do not click the Accordion "Accordion"
+Then the Accordion "Accordion" is not clicked
+
+Scenario: N24 click
+Given #"Accordion" is not clicked
+When I do not click #"Accordion"
+Then #"Accordion" is not clicked
+
+
+/*
+Scenario: Field-item-show
+Given the item "<item>" for the field "<fieldname>" is not shown
+When I show the item "<item>" for the field "<fieldname>"
+Then the item "<item>" for the field "<fieldname>" is shown
+*/
+
+Scenario: N25 Field-item-show
+Given the item "Morning" for the field "Availability" is not shown
+When I show the item "Morning" for the field "Availability"
+Then the item "Morning" for the field "Availability" is shown
+
+Scenario: N26 item-show
+Given the item "Morning" for #"Availability" is not shown
+When I show the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is shown
+
+Scenario: N27 Field-show
+Given #"Morning" for the field "Availability" is not shown
+When I show #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is shown
+
+Scenario: N28 show
+Given #"Morning" for #"Availability" is not shown
+When I show #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is shown
+
+/*
+Scenario: Field-item-DoNotshow
+Given the item "<item>" for the field "<fieldname>" is not shown
+When I do not show the item "<item>" for the field "<fieldname>"
+Then the item "<item>" for the field "<fieldname>" is not shown
+*/
+
+Scenario: N29 Field-item-DoNotshow
+Given the item "Morning" for the field "Availability" is not shown
+When I do not show the item "Morning" for the field "Availability"
+Then the item "Morning" for the field "Availability" is not shown
+
+Scenario: N30 item-DoNotshow
+Given the item "Morning" for #"Availability" is not shown
+When I do not show the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is not shown
+
+Scenario: N31 Field-DoNotshow
+Given #"Morning" for the field "Availability" is not shown
+When I do not show #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not shown
+
+Scenario: N32 DoNotshow
+Given #"Morning" for #"Availability" is not shown
+When I do not show #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not shown
+
+/*
+Scenario: Field-item-hide
+Given the item "<item>" for the field "<fieldname>" is not hidden
+When I hide the item "<item>" for the field "<fieldname>"
+Then the item "<item>" for the field "<fieldname>" is hidden
+*/
+
+Scenario: N33 Field-item-hide
+Given the item "Morning" for the field "Availability" is not hidden
+When I hide the item "Morning" for the field "Availability"
+Then the item "Morning" for the field "Availability" is hidden
+
+Scenario: N34 item-hide
+Given the item "Morning" for #"Availability" is not hidden
+When I hide the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is hidden
+
+Scenario: N35 Field-hide
+Given #"Morning" for the field "Availability" is not hidden
+When I hide #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is hidden
+
+Scenario: N36 hide
+Given #"Morning" for #"Availability" is not hidden
+When I hide #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is hidden
+
+/*
+Scenario: Field-item-DoNothide
+Given the item "<item>" for the field "<fieldname>" is not hidden
+When I do not hide the item "<item>" for the field "<fieldname>"
+Then the item "<item>" for the field "<fieldname>" is not hidden
+*/
+
+Scenario: N37 Field-item-DoNothide
+Given the item "Morning" for the field "Availability" is not hidden
+When I do not hide the item "Morning" for the field "Availability"
+Then the item "Morning" for the field "Availability" is not hidden
+
+Scenario: N38 item-DoNothide
+Given the item "Morning" for #"Availability" is not hidden
+When I do not hide the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is not hidden
+
+Scenario: N39 Field-DoNothide
+Given #"Morning" for the field "Availability" is not hidden
+When I do not hide #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not hidden
+
+Scenario: N40 DoNothide
+Given #"Morning" for #"Availability" is not hidden
+When I do not hide #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not hidden
+
+
+/*
+Scenario: Field-item-click
+Given the item "<item>" for the field "<fieldname>" is not clicked
+When I click the item "<item>" for the field "<fieldname>"
+Then the item "<item>" for the field "<fieldname>" is clicked
+*/
+
+Scenario: N41 Field-item-click
+Given the item "Morning" for the field "Availability" is not clicked
+When I click the item "Morning" for the field "Availability"
+Then the item "Morning" for the field "Availability" is clicked
+
+Scenario: N42 item-click
+Given the item "Morning" for #"Availability" is not clicked
+When I click the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is clicked
+
+Scenario: N43 Field-click
+Given #"Morning" for the field "Availability" is not clicked
+When I click #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is clicked
+
+Scenario: N44 click
+Given #"Morning" for #"Availability" is not clicked
+When I click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is clicked
+
+/*
+Scenario: Field-item-DoNotclick
+Given the item "<item>" for the field "<fieldname>" is not clicked
+When I do not click the item "<item>" for the field "<fieldname>"
+Then the item "<item>" for the field "<fieldname>" is not clicked
+*/
+
+Scenario: N45 Field-item-DoNotclick
+Given the item "Morning" for the field "Availability" is not clicked
+When I do not click the item "Morning" for the field "Availability"
+Then the item "Morning" for the field "Availability" is not clicked
+
+Scenario: N46 item-DoNotclick
+Given the item "Morning" for #"Availability" is not clicked
+When I do not click the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is not clicked
+
+Scenario: N47 Field-DoNotclick
+Given #"Morning" for the field "Availability" is not clicked
+When I do not click #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not clicked
+
+Scenario: N48 DoNotclick
+Given #"Morning" for #"Availability" is not clicked
+When I do not click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not clicked
+
+
+/*
+Scenario: Accordion-item-show
+Given the item "<item>" for the Accordion "<fieldname>" is not shown
+When I show the item "<item>" for the Accordion "<fieldname>"
+Then the item "<item>" for the Accordion "<fieldname>" is shown
+*/
+
+Scenario: N49 Accordion-item-show
+Given the item "Morning" for the Accordion "Availability" is not shown
+When I show the item "Morning" for the Accordion "Availability"
+Then the item "Morning" for the Accordion "Availability" is shown
+
+Scenario: N50 item-show
+Given the item "Morning" for #"Availability" is not shown
+When I show the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is shown
+
+Scenario: N51 Accordion-show
+Given #"Morning" for the Accordion "Availability" is not shown
+When I show #"Morning" for the Accordion "Availability"
+Then #"Morning" for the Accordion "Availability" is shown
+
+Scenario: N52 show
+Given #"Morning" for #"Availability" is not shown
+When I show #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is shown
+
+/*
+Scenario: Accordion-item-DoNotshow
+Given the item "<item>" for the Accordion "<fieldname>" is not shown
+When I do not show the item "<item>" for the Accordion "<fieldname>"
+Then the item "<item>" for the Accordion "<fieldname>" is not shown
+*/
+
+Scenario: N53 Accordion-item-DoNotshow
+Given the item "Morning" for the Accordion "Availability" is not shown
+When I do not show the item "Morning" for the Accordion "Availability"
+Then the item "Morning" for the Accordion "Availability" is not shown
+
+Scenario: N54 item-DoNotshow
+Given the item "Morning" for #"Availability" is not shown
+When I do not show the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is not shown
+
+Scenario: N55 Accordion-DoNotshow
+Given #"Morning" for the Accordion "Availability" is not shown
+When I do not show #"Morning" for the Accordion "Availability"
+Then #"Morning" for the Accordion "Availability" is not shown
+
+Scenario: N56 DoNotshow
+Given #"Morning" for #"Availability" is not shown
+When I do not show #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not shown
+
+/*
+Scenario: Accordion-item-hide
+Given the item "<item>" for the Accordion "<fieldname>" is not hidden
+When I hide the item "<item>" for the Accordion "<fieldname>"
+Then the item "<item>" for the Accordion "<fieldname>" is hidden
+*/
+
+Scenario: N57 Accordion-item-hide
+Given the item "Morning" for the Accordion "Availability" is not hidden
+When I hide the item "Morning" for the Accordion "Availability"
+Then the item "Morning" for the Accordion "Availability" is hidden
+
+Scenario: N58 item-hide
+Given the item "Morning" for #"Availability" is not hidden
+When I hide the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is hidden
+
+Scenario: N59 Accordion-hide
+Given #"Morning" for the Accordion "Availability" is not hidden
+When I hide #"Morning" for the Accordion "Availability"
+Then #"Morning" for the Accordion "Availability" is hidden
+
+Scenario: N60 hide
+Given #"Morning" for #"Availability" is not hidden
+When I hide #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is hidden
+
+/*
+Scenario: Accordion-item-DoNothide
+Given the item "<item>" for the Accordion "<fieldname>" is not hidden
+When I do not hide the item "<item>" for the Accordion "<fieldname>"
+Then the item "<item>" for the Accordion "<fieldname>" is not hidden
+*/
+
+Scenario: N61 Accordion-item-DoNothide
+Given the item "Morning" for the Accordion "Availability" is not hidden
+When I do not hide the item "Morning" for the Accordion "Availability"
+Then the item "Morning" for the Accordion "Availability" is not hidden
+
+Scenario: N62 item-DoNothide
+Given the item "Morning" for #"Availability" is not hidden
+When I do not hide the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is not hidden
+
+Scenario: N63 Accordion-DoNothide
+Given #"Morning" for the Accordion "Availability" is not hidden
+When I do not hide #"Morning" for the Accordion "Availability"
+Then #"Morning" for the Accordion "Availability" is not hidden
+
+Scenario: N64 DoNothide
+Given #"Morning" for #"Availability" is not hidden
+When I do not hide #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not hidden
+
+/*
+Scenario: Accordion-item-click
+Given the item "<item>" for the Accordion "<fieldname>" is not clicked
+When I click the item "<item>" for the Accordion "<fieldname>"
+Then the item "<item>" for the Accordion "<fieldname>" is clicked
+*/
+
+Scenario: N65 Accordion-item-click
+Given the item "Morning" for the Accordion "Availability" is not clicked
+When I click the item "Morning" for the Accordion "Availability"
+Then the item "Morning" for the Accordion "Availability" is clicked
+
+Scenario: N66 item-click
+Given the item "Morning" for #"Availability" is not clicked
+When I click the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is clicked
+
+Scenario: N67 Accordion-click
+Given #"Morning" for the Accordion "Availability" is not clicked
+When I click #"Morning" for the Accordion "Availability"
+Then #"Morning" for the Accordion "Availability" is clicked
+
+Scenario: N68 click
+Given #"Morning" for #"Availability" is not clicked
+When I click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is clicked
+
+/*
+Scenario: Accordion-item-DoNotclick
+Given the item "<item>" for the Accordion "<fieldname>" is not clicked
+When I do not click the item "<item>" for the Accordion "<fieldname>"
+Then the item "<item>" for the Accordion "<fieldname>" is not clicked
+*/
+
+Scenario: N69 Accordion-item-DoNotclick
+Given the item "Morning" for the Accordion "Availability" is not clicked
+When I do not click the item "Morning" for the Accordion "Availability"
+Then the item "Morning" for the Accordion "Availability" is not clicked
+
+Scenario: N70 item-DoNotclick
+Given the item "Morning" for #"Availability" is not clicked
+When I do not click the item "Morning" for #"Availability"
+Then the item "Morning" for #"Availability" is not clicked
+
+Scenario: N71 Accordion-DoNotclick
+Given #"Morning" for the Accordion "Availability" is not clicked
+When I do not click #"Morning" for the Accordion "Availability"
+Then #"Morning" for the Accordion "Availability" is not clicked
+
+Scenario: N72 DoNotclick
+Given #"Morning" for #"Availability" is not clicked
+When I do not click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not clicked

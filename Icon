@@ -1,0 +1,69 @@
+model Icon using widgets
+
+/*
+Scenario: click
+Given "Icon" is clicked
+When I click "Icon"
+Then "Icon" is clicked
+*/
+
+Scenario: N1 click
+Given "Icon" is clicked
+When I click "Icon"
+Then #"Icon" is clicked
+
+Scenario: N2 click
+Given #"Icon" is clicked
+When I click #"Icon"
+Then #"Icon" is clicked
+
+/*
+Scenario: DoNotclick
+Given "Icon" is not clicked
+When I do not click "Icon"
+Then "Icon" is not clicked
+*/
+
+Scenario: N3 DoNotclick
+Given "Icon" is not clicked
+When I do not click "Icon"
+Then #"Icon" is not clicked
+
+Scenario: N4 DoNotclick
+Given #"Icon" is not clicked
+When I do not click #"Icon"
+Then #"Icon" is not clicked
+
+/*
+Scenario: Icon-click
+Given the Icon "<tab name>" is clicked
+When I click the Icon "<tab name>"
+Then the Icon "<tab name>" is clicked
+*/
+
+Scenario: N5 Icon-click
+Given the Icon "Icon" is clicked
+When I click the Icon "Icon"
+Then the Icon "Icon" is clicked
+
+Scenario: N6 click
+Given #"Icon" is clicked
+When I click #"Icon"
+Then #"Icon" is clicked
+
+/*
+Scenario: Icon-DoNotclick
+Given the Icon "<tab name>" is not clicked
+When I do not click the Icon "<tab name>"
+Then the Icon "<tab name>" is clicked
+*/
+
+Scenario: N7 Icon-click
+Given the Icon "Icon" is not clicked
+When I do not click the Icon "Icon"
+Then the Icon "Icon" is not clicked
+
+Scenario: N8 click
+Given #"Icon" is not clicked
+When I do not click #"Icon"
+Then #"Icon" is not clicked

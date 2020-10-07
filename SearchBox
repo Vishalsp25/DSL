@@ -1,0 +1,530 @@
+model SearchBox using widgets
+/*
+Scenario: value-type
+Given the value "<any value>" is not typed
+When I type the value "<any value>"
+Then the value "<any value>" is typed
+*/
+
+Scenario: N1 value-type
+Given the value "SearchBox" is not typed
+When I type the value "SearchBox"
+Then the value "SearchBox" is typed
+
+Scenario: N2 type
+Given #"SearchBox" is not typed
+When I type #"SearchBox"
+Then #"SearchBox" is typed
+
+/*
+Scenario: value-DoNottype
+Given the value "<any value>" is not typed
+When I do not type the value "<any value>"
+Then the value "<any value>" is not typed
+*/
+
+Scenario: N3 value-DoNottype
+Given the value "SearchBox" is not typed
+When I do not type the value "SearchBox"
+Then the value "SearchBox" is not typed
+
+Scenario: N4 DoNottype
+Given #"SearchBox" is not typed
+When I do not type #"SearchBox"
+Then #"SearchBox" is not typed
+
+/*
+Scenario: SearchBox-type
+Given the SearchBox "<any value>" is not typed
+When I type the SearchBox "<any value>"
+Then the SearchBox "<any value>" is typed
+*/
+
+Scenario: N5 SearchBox-type
+Given the SearchBox "SearchBox" is not typed
+When I type the SearchBox "SearchBox"
+Then the SearchBox "SearchBox" is typed
+
+Scenario: N6 type
+Given #"SearchBox" is not typed
+When I type #"SearchBox"
+Then #"SearchBox" is typed
+
+/*
+Scenario: SearchBox-DoNottype
+Given the SearchBox "<any value>" is not typed
+When I do not type the SearchBox "<any value>"
+Then the SearchBox "<any value>" is not typed
+*/
+
+Scenario: N7 SearchBox-type
+Given the SearchBox "SearchBox" is not typed
+When I do not type the SearchBox "SearchBox"
+Then the SearchBox "SearchBox" is not typed
+
+Scenario: N8 type
+Given #"SearchBox" is not typed
+When I do not type #"SearchBox"
+Then #"SearchBox" is not typed
+
+/*
+Scenario: value-set
+Given the value "<any value>" is not set
+When I set the value "<any value>"
+Then the value "<any value>" is set
+*/
+
+Scenario: N9 value-set
+Given the value "SearchBox" is not set
+When I set the value "SearchBox"
+Then the value "SearchBox" is set
+
+Scenario: N10 set
+Given #"SearchBox" is not set
+When I set #"SearchBox"
+Then #"SearchBox" is set
+
+/*
+Scenario: value-DoNotset
+Given the value "<any value>" is not set
+When I do not set the value "<any value>"
+Then the value "<any value>" is not set
+*/
+
+Scenario: N11 value-DoNotset
+Given the value "SearchBox" is not set
+When I do not set the value "SearchBox"
+Then the value "SearchBox" is not set
+
+Scenario: N12 DoNotset
+Given #"SearchBox" is not set
+When I do not set #"SearchBox"
+Then #"SearchBox" is not set
+
+/*
+Scenario: SearchBox-set
+Given the SearchBox "<any value>" is not set
+When I set the SearchBox "<any value>"
+Then the SearchBox "<any value>" is set
+*/
+
+Scenario: N13 SearchBox-set
+Given the SearchBox "SearchBox" is not set
+When I set the SearchBox "SearchBox"
+Then the SearchBox "SearchBox" is set
+
+Scenario: N14 set
+Given #"SearchBox" is not set
+When I set #"SearchBox"
+Then #"SearchBox" is set
+
+/*
+Scenario: SearchBox-DoNotset
+Given the SearchBox "<any value>" is not set
+When I do not set the SearchBox "<any value>"
+Then the SearchBox "<any value>" is not set
+*/
+
+Scenario: N15 SearchBox-set
+Given the SearchBox "SearchBox" is not set
+When I do not set the SearchBox "SearchBox"
+Then the SearchBox "SearchBox" is not set
+
+Scenario: N16 set
+Given #"SearchBox" is not set
+When I do not set #"SearchBox"
+Then #"SearchBox" is not set
+
+/*
+Scenario: value-fill in with
+Given the value "<any value>" is not filled in
+When I fill in with the value "<any value>"
+Then the value "<any value>" is filled in
+*/
+
+Scenario: N17 value-fill in with
+Given the value "SearchBox" is not filled in
+When I fill in with the value "SearchBox"
+Then the value "SearchBox" is filled in
+
+Scenario: N18 fill in with
+Given #"SearchBox" is not filled in
+When I fill in with #"SearchBox"
+Then #"SearchBox" is filled in
+
+/*
+Scenario: value-DoNotfill in with
+Given the value "<any value>" is not filled in
+When I do not fill in the value "<any value>"
+Then the value "<any value>" is not filled in
+*/
+
+Scenario: N19 value-DoNotfill in with
+Given the value "SearchBox" is not filled in
+When I do not fill in the value "SearchBox"
+Then the value "SearchBox" is not filled in
+
+Scenario: N20 DoNotfill in with
+Given #"SearchBox" is not filled in
+When I do not fill in #"SearchBox"
+Then #"SearchBox" is not filled in
+
+/*
+Scenario: SearchBox-fill in with
+Given the SearchBox "<any value>" is not filled in
+When I fill in with the SearchBox "<any value>"
+Then the SearchBox "<any value>" is filled in
+*/
+
+Scenario: N21 SearchBox-fill in with
+Given the SearchBox "SearchBox" is not filled in
+When I fill in with the SearchBox "SearchBox"
+Then the SearchBox "SearchBox" is filled in
+
+Scenario: N22 fill in with
+Given #"SearchBox" is not filled in
+When I fill in with #"SearchBox"
+Then #"SearchBox" is filled in
+
+/*
+Scenario: SearchBox-DoNotfill in with
+Given the SearchBox "<any value>" is not filled in
+When I do not fill in the SearchBox "<any value>"
+Then the SearchBox "<any value>" is not filled in
+*/
+
+Scenario: N23 SearchBox-fill in with
+Given the SearchBox "SearchBox" is not filled in
+When I do not fill in the SearchBox "SearchBox"
+Then the SearchBox "SearchBox" is not filled in
+
+Scenario: N24 fill in with
+Given #"SearchBox" is not filled in
+When I do not fill in #"SearchBox"
+Then #"SearchBox" is not filled in
+
+
+/*
+Scenario: Field-value-type
+Given the value "<value>" for the field "<fieldname>" is not typed
+When I type the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is typed
+*/
+
+Scenario: N25 Field-value-type
+Given the value "Morning" for the field "Availability" is not typed
+When I type the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is typed
+
+Scenario: N26 value-type
+Given the value "Morning" for #"Availability" is not typed
+When I type the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is typed
+
+Scenario: N27 Field-type
+Given #"Morning" for the field "Availability" is not typed
+When I type #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is typed
+
+Scenario: N28 type
+Given #"Morning" for #"Availability" is not typed
+When I type #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is typed
+
+/*
+Scenario: Field-value-DoNottype
+Given the value "<value>" for the field "<fieldname>" is not typed
+When I do not type the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is not typed
+*/
+
+Scenario: N29 Field-value-DoNottype
+Given the value "Morning" for the field "Availability" is not typed
+When I do not type the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is not typed
+
+Scenario: N30 value-DoNottype
+Given the value "Morning" for #"Availability" is not typed
+When I do not type the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not typed
+
+Scenario: N31 Field-DoNottype
+Given #"Morning" for the field "Availability" is not typed
+When I do not type #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not typed
+
+Scenario: N32 DoNottype
+Given #"Morning" for #"Availability" is not typed
+When I do not type #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not typed
+
+/*
+Scenario: Field-value-set
+Given the value "<value>" for the field "<fieldname>" is not set
+When I set the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is set
+*/
+
+Scenario: N33 Field-value-set
+Given the value "Morning" for the field "Availability" is not set
+When I set the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is set
+
+Scenario: N34 value-set
+Given the value "Morning" for #"Availability" is not set
+When I set the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is set
+
+Scenario: N35 Field-set
+Given #"Morning" for the field "Availability" is not set
+When I set #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is set
+
+Scenario: N36 set
+Given #"Morning" for #"Availability" is not set
+When I set #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is set
+
+/*
+Scenario: Field-value-DoNotset
+Given the value "<value>" for the field "<fieldname>" is not set
+When I do not set the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is not set
+*/
+
+Scenario: N37 Field-value-DoNotset
+Given the value "Morning" for the field "Availability" is not set
+When I do not set the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is not set
+
+Scenario: N38 value-DoNotset
+Given the value "Morning" for #"Availability" is not set
+When I do not set the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not set
+
+Scenario: N39 Field-DoNotset
+Given #"Morning" for the field "Availability" is not set
+When I do not set #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not set
+
+Scenario: N40 DoNotset
+Given #"Morning" for #"Availability" is not set
+When I do not set #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not set
+
+/*
+Scenario: Field-value-fill in with
+Given the value "<value>" for the field "<fieldname>" is not filled in
+When I fill in with the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is filled in
+*/
+
+Scenario: N41 Field-value-fill in with
+Given the value "Morning" for the field "Availability" is not filled in
+When I fill in with the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is filled in
+
+Scenario: N41 value-fill in with
+Given the value "Morning" for #"Availability" is not filled in
+When I fill in with the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is filled in
+
+Scenario: N42 Field-fill in with
+Given #"Morning" for the field "Availability" is not filled in
+When I fill in with #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is filled in
+
+Scenario: N43 fill in with
+Given #"Morning" for #"Availability" is not filled in
+When I fill in with #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is filled in
+
+/*
+Scenario: Field-value-DoNotfill in with
+Given the value "<value>" for the field "<fieldname>" is not filled in
+When I do not fill in with the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is not filled in
+*/
+
+Scenario: N44 Field-value-DoNotfill in with
+Given the value "Morning" for the field "Availability" is not filled in
+When I do not fill in with the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is not filled in
+
+Scenario: N45 value-DoNotfill in with
+Given the value "Morning" for #"Availability" is not filled in
+When I do not fill in with the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not filled in
+
+Scenario: N46 Field-DoNotfill in with
+Given #"Morning" for the field "Availability" is not filled in
+When I do not fill in with #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not filled in
+
+Scenario: N47 DoNotfill in with
+Given #"Morning" for #"Availability" is not filled in
+When I do not fill in with #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not filled in
+
+
+/*
+Scenario: SearchBox-value-type
+Given the value "<value>" for the SearchBox "<fieldname>" is not typed
+When I type the value "<value>" for the SearchBox "<fieldname>"
+Then the value "<value>" for the SearchBox "<fieldname>" is typed
+*/
+
+Scenario: N48 SearchBox-value-type
+Given the value "Morning" for the SearchBox "Availability" is not typed
+When I type the value "Morning" for the SearchBox "Availability"
+Then the value "Morning" for the SearchBox "Availability" is typed
+
+Scenario: N49 value-type
+Given the value "Morning" for #"Availability" is not typed
+When I type the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is typed
+
+Scenario: N50 SearchBox-type
+Given #"Morning" for the SearchBox "Availability" is not typed
+When I type #"Morning" for the SearchBox "Availability"
+Then #"Morning" for the SearchBox "Availability" is typed
+
+Scenario: N51 type
+Given #"Morning" for #"Availability" is not typed
+When I type #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is typed
+
+/*
+Scenario: SearchBox-value-DoNottype
+Given the value "<value>" for the SearchBox "<fieldname>" is not typed
+When I do not type the value "<value>" for the SearchBox "<fieldname>"
+Then the value "<value>" for the SearchBox "<fieldname>" is not typed
+*/
+
+Scenario: N52 SearchBox-value-DoNottype
+Given the value "Morning" for the SearchBox "Availability" is not typed
+When I do not type the value "Morning" for the SearchBox "Availability"
+Then the value "Morning" for the SearchBox "Availability" is not typed
+
+Scenario: N53 value-DoNottype
+Given the value "Morning" for #"Availability" is not typed
+When I do not type the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not typed
+
+Scenario: N54 SearchBox-DoNottype
+Given #"Morning" for the SearchBox "Availability" is not typed
+When I do not type #"Morning" for the SearchBox "Availability"
+Then #"Morning" for the SearchBox "Availability" is not typed
+
+Scenario: N55 DoNottype
+Given #"Morning" for #"Availability" is not typed
+When I do not type #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not typed
+
+/*
+Scenario: SearchBox-value-set
+Given the value "<value>" for the SearchBox "<fieldname>" is not set
+When I set the value "<value>" for the SearchBox "<fieldname>"
+Then the value "<value>" for the SearchBox "<fieldname>" is set
+*/
+
+Scenario: N56 SearchBox-value-set
+Given the value "Morning" for the SearchBox "Availability" is not set
+When I set the value "Morning" for the SearchBox "Availability"
+Then the value "Morning" for the SearchBox "Availability" is set
+
+Scenario: N57 value-set
+Given the value "Morning" for #"Availability" is not set
+When I set the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is set
+
+Scenario: N58 SearchBox-set
+Given #"Morning" for the SearchBox "Availability" is not set
+When I set #"Morning" for the SearchBox "Availability"
+Then #"Morning" for the SearchBox "Availability" is set
+
+Scenario: N59 set
+Given #"Morning" for #"Availability" is not set
+When I set #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is set
+
+/*
+Scenario: SearchBox-value-DoNotset
+Given the value "<value>" for the SearchBox "<fieldname>" is not set
+When I do not set the value "<value>" for the SearchBox "<fieldname>"
+Then the value "<value>" for the SearchBox "<fieldname>" is not set
+*/
+
+Scenario: N60 SearchBox-value-DoNotset
+Given the value "Morning" for the SearchBox "Availability" is not set
+When I do not set the value "Morning" for the SearchBox "Availability"
+Then the value "Morning" for the SearchBox "Availability" is not set
+
+Scenario: N61 value-DoNotset
+Given the value "Morning" for #"Availability" is not set
+When I do not set the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not set
+
+Scenario: N62 SearchBox-DoNotset
+Given #"Morning" for the SearchBox "Availability" is not set
+When I do not set #"Morning" for the SearchBox "Availability"
+Then #"Morning" for the SearchBox "Availability" is not set
+
+Scenario: N63 DoNotset
+Given #"Morning" for #"Availability" is not set
+When I do not set #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not set
+
+/*
+Scenario: SearchBox-value-fill in with
+Given the value "<value>" for the SearchBox "<fieldname>" is not filled in
+When I fill in with the value "<value>" for the SearchBox "<fieldname>"
+Then the value "<value>" for the SearchBox "<fieldname>" is filled in
+*/
+
+Scenario: N64 SearchBox-value-fill in with
+Given the value "Morning" for the SearchBox "Availability" is not filled in
+When I fill in with the value "Morning" for the SearchBox "Availability"
+Then the value "Morning" for the SearchBox "Availability" is filled in
+
+Scenario: N65 value-fill in with
+Given the value "Morning" for #"Availability" is not filled in
+When I fill in with the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is filled in
+
+Scenario: N66 SearchBox-fill in with
+Given #"Morning" for the SearchBox "Availability" is not filled in
+When I fill in with #"Morning" for the SearchBox "Availability"
+Then #"Morning" for the SearchBox "Availability" is filled in
+
+Scenario: N67 fill in with
+Given #"Morning" for #"Availability" is not filled in
+When I fill in with #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is filled in
+
+/*
+Scenario: SearchBox-value-DoNotfill in with
+Given the value "<value>" for the SearchBox "<fieldname>" is not filled in
+When I do not fill in with the value "<value>" for the SearchBox "<fieldname>"
+Then the value "<value>" for the SearchBox "<fieldname>" is not filled in
+*/
+
+Scenario: N68 SearchBox-value-DoNotfill in with
+Given the value "Morning" for the SearchBox "Availability" is not filled in
+When I do not fill in with the value "Morning" for the SearchBox "Availability"
+Then the value "Morning" for the SearchBox "Availability" is not filled in
+
+Scenario: N69 value-DoNotfill in with
+Given the value "Morning" for #"Availability" is not filled in
+When I do not fill in with the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not filled in
+
+Scenario: N70 SearchBox-DoNotfill in with
+Given #"Morning" for the SearchBox "Availability" is not filled in
+When I do not fill in with #"Morning" for the SearchBox "Availability"
+Then #"Morning" for the SearchBox "Availability" is not filled in
+
+Scenario: N71 DoNotfill in with
+Given #"Morning" for #"Availability" is not filled in
+When I do not fill in with #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not filled in

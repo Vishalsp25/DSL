@@ -1,0 +1,358 @@
+model TabBar using widgets
+
+/*
+Scenario: tab-select
+Given the tab "<tab name>" is unselected
+When I select the tab "<tab name>"
+Then the tab "<tab name>" is selected
+*/
+
+Scenario: N1 tab-select
+Given the tab "TabBar" is unselected
+When I select the tab "TabBar"
+Then the tab "TabBar" is selected
+
+Scenario: N2 select
+Given #"TabBar" is unselected
+When I select #"TabBar"
+Then #"TabBar" is selected
+
+/*
+Scenario: tab-DoNotselect
+Given the tab "<tab name>" is not selected
+When I do not select the tab "<tab name>"
+Then the tab "<tab name>" is unselected
+*/
+
+Scenario: N3 tab-DoNotselect
+Given the tab "TabBar" is not selected
+When I do not select the tab "TabBar"
+Then the tab "TabBar" is unselected
+
+Scenario: N4 DoNotselect
+Given #"TabBar" is not selected
+When I do not select #"TabBar"
+Then #"TabBar" is unselected
+
+/*
+Scenario: TabBar-select
+Given the TabBar "<tab name>" is unselected
+When I select the TabBar "<tab name>"
+Then the TabBar "<tab name>" is selected
+*/
+
+Scenario: N5 TabBar-select
+Given the TabBar "TabBar" is unselected
+When I select the TabBar "TabBar"
+Then the TabBar "TabBar" is selected
+
+Scenario: N6 select
+Given #"TabBar" is unselected
+When I select #"TabBar"
+Then #"TabBar" is selected
+
+/*
+Scenario: TabBar-DoNotselect
+Given the TabBar "<tab name>" is not selected
+When I do not select the TabBar "<tab name>"
+Then the TabBar "<tab name>" is unselected
+*/
+
+Scenario: N7 TabBar-select
+Given the TabBar "TabBar" is not selected
+When I do not select the TabBar "TabBar"
+Then the TabBar "TabBar" is unselected
+
+Scenario: N8 select
+Given #"TabBar" is not selected
+When I do not select #"TabBar"
+Then #"TabBar" is unselected
+
+
+/*
+Scenario: tab-click
+Given the tab "<tab name>" is not clicked
+When I click the tab "<tab name>"
+Then the tab "<tab name>" is clicked
+*/
+
+Scenario: N9 tab-click
+Given the tab "TabBar" is not clicked
+When I click the tab "TabBar"
+Then the tab "TabBar" is clicked
+
+Scenario: N10 click
+Given #"TabBar" is not clicked
+When I click #"TabBar"
+Then #"TabBar" is clicked
+
+/*
+Scenario: tab-DoNotclick
+Given the tab "<tab name>" is not clicked
+When I do not clicked the tab "<tab name>"
+Then the tab "<tab name>" is not clicked
+*/
+
+Scenario: N11 tab-DoNotclick
+Given the tab "TabBar" is not clicked
+When I do not click the tab "TabBar"
+Then the tab "TabBar" is not clicked
+
+Scenario: N12 DoNotclick
+Given #"TabBar" is not clicked
+When I do not click #"TabBar"
+Then #"TabBar" is not clicked
+
+/*
+Scenario: TabBar-click
+Given the TabBar "<tab name>" is not clicked
+When I click the TabBar "<tab name>"
+Then the TabBar "<tab name>" is clicked
+*/
+
+Scenario: N13 TabBar-click
+Given the TabBar "TabBar" is not clicked
+When I click the TabBar "TabBar"
+Then the TabBar "TabBar" is clicked
+
+Scenario: N14 click
+Given #"TabBar" is not clicked
+When I click #"TabBar"
+Then #"TabBar" is clicked
+
+/*
+Scenario: TabBar-DoNotclick
+Given the TabBar "<tab name>" is not clicked
+When I do not clicked the TabBar "<tab name>"
+Then the TabBar "<tab name>" is not clicked
+*/
+
+Scenario: N15 TabBar-click
+Given the TabBar "TabBar" is not clicked
+When I do not click the TabBar "TabBar"
+Then the TabBar "TabBar" is not clicked
+
+Scenario: N16 click
+Given #"TabBar" is not clicked
+When I do not click #"TabBar"
+Then #"TabBar" is not clicked
+
+
+/*
+Scenario: Field-tab-select
+Given the tab "<tab>" for the field "<fieldname>" is not selected
+When I select the tab "<tab>" for the field "<fieldname>"
+Then the tab "<tab>" for the field "<fieldname>" is selected
+*/
+
+Scenario: N17 Field-tab-select
+Given the tab "Morning" for the field "Availability" is not selected
+When I select the tab "Morning" for the field "Availability"
+Then the tab "Morning" for the field "Availability" is selected
+
+Scenario: N18 tab-select
+Given the tab "Morning" for #"Availability" is not selected
+When I select the tab "Morning" for #"Availability"
+Then the tab "Morning" for #"Availability" is selected
+
+Scenario: N19 Field-select
+Given #"Morning" for the field "Availability" is not selected
+When I select #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is selected
+
+Scenario: N20 select
+Given #"Morning" for #"Availability" is not selected
+When I select #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is selected
+
+/*
+Scenario: Field-tab-DoNotselect
+Given the tab "<tab>" for the field "<fieldname>" is not selected
+When I do not select the tab "<tab>" for the field "<fieldname>"
+Then the tab "<tab>" for the field "<fieldname>" is not selected
+*/
+
+Scenario: N21 Field-tab-DoNotselect
+Given the tab "Morning" for the field "Availability" is not selected
+When I do not select the tab "Morning" for the field "Availability"
+Then the tab "Morning" for the field "Availability" is not selected
+
+Scenario: N22 tab-DoNotselect
+Given the tab "Morning" for #"Availability" is not selected
+When I do not select the tab "Morning" for #"Availability"
+Then the tab "Morning" for #"Availability" is not selected
+
+Scenario: N23 Field-DoNotselect
+Given #"Morning" for the field "Availability" is not selected
+When I do not select #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not selected
+
+Scenario: N24 DoNotselect
+Given #"Morning" for #"Availability" is not selected
+When I do not select #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not selected
+
+
+/*
+Scenario: Field-tab-click
+Given the tab "<tab>" for the field "<fieldname>" is not clicked
+When I click the tab "<tab>" for the field "<fieldname>"
+Then the tab "<tab>" for the field "<fieldname>" is clicked
+*/
+
+Scenario: N25 Field-tab-click
+Given the tab "Morning" for the field "Availability" is not clicked
+When I click the tab "Morning" for the field "Availability"
+Then the tab "Morning" for the field "Availability" is clicked
+
+Scenario: N26 tab-click
+Given the tab "Morning" for #"Availability" is not clicked
+When I click the tab "Morning" for #"Availability"
+Then the tab "Morning" for #"Availability" is clicked
+
+Scenario: N27 Field-click
+Given #"Morning" for the field "Availability" is not clicked
+When I click #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is clicked
+
+Scenario: N28 click
+Given #"Morning" for #"Availability" is not clicked
+When I click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is clicked
+
+/*
+Scenario: Field-tab-DoNotclick
+Given the tab "<tab>" for the field "<fieldname>" is not clicked
+When I do not click the tab "<tab>" for the field "<fieldname>"
+Then the tab "<tab>" for the field "<fieldname>" is not clicked
+*/
+
+Scenario: N29 Field-tab-DoNotclick
+Given the tab "Morning" for the field "Availability" is not clicked
+When I do not click the tab "Morning" for the field "Availability"
+Then the tab "Morning" for the field "Availability" is not clicked
+
+Scenario: N30 tab-DoNotclick
+Given the tab "Morning" for #"Availability" is not clicked
+When I do not click the tab "Morning" for #"Availability"
+Then the tab "Morning" for #"Availability" is not clicked
+
+Scenario: N31 Field-DoNotclick
+Given #"Morning" for the field "Availability" is not clicked
+When I do not click #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not clicked
+
+Scenario: N32 DoNotclick
+Given #"Morning" for #"Availability" is not clicked
+When I do not click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not clicked
+
+
+/*
+Scenario: TabBar-tab-select
+Given the tab "<tab>" for the TabBar "<fieldname>" is not selected
+When I select the tab "<tab>" for the TabBar "<fieldname>"
+Then the tab "<tab>" for the TabBar "<fieldname>" is selected
+*/
+
+Scenario: N33 TabBar-tab-select
+Given the tab "Morning" for the TabBar "Availability" is not selected
+When I select the tab "Morning" for the TabBar "Availability"
+Then the tab "Morning" for the TabBar "Availability" is selected
+
+Scenario: N34 tab-select
+Given the tab "Morning" for #"Availability" is not selected
+When I select the tab "Morning" for #"Availability"
+Then the tab "Morning" for #"Availability" is selected
+
+Scenario: N35 TabBar-select
+Given #"Morning" for the TabBar "Availability" is not selected
+When I select #"Morning" for the TabBar "Availability"
+Then #"Morning" for the TabBar "Availability" is selected
+
+Scenario: N36 select
+Given #"Morning" for #"Availability" is not selected
+When I select #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is selected
+
+/*
+Scenario: TabBar-tab-DoNotselect
+Given the tab "<tab>" for the TabBar "<fieldname>" is not selected
+When I do not select the tab "<tab>" for the TabBar "<fieldname>"
+Then the tab "<tab>" for the TabBar "<fieldname>" is not selected
+*/
+
+Scenario: N37 TabBar-tab-DoNotselect
+Given the tab "Morning" for the TabBar "Availability" is not selected
+When I do not select the tab "Morning" for the TabBar "Availability"
+Then the tab "Morning" for the TabBar "Availability" is not selected
+
+Scenario: N38 tab-DoNotselect
+Given the tab "Morning" for #"Availability" is not selected
+When I do not select the tab "Morning" for #"Availability"
+Then the tab "Morning" for #"Availability" is not selected
+
+Scenario: N39 TabBar-DoNotselect
+Given #"Morning" for the TabBar "Availability" is not selected
+When I do not select #"Morning" for the TabBar "Availability"
+Then #"Morning" for the TabBar "Availability" is not selected
+
+Scenario: N40 DoNotselect
+Given #"Morning" for #"Availability" is not selected
+When I do not select #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not selected
+
+
+/*
+Scenario: TabBar-tab-click
+Given the tab "<tab>" for the TabBar "<fieldname>" is not clicked
+When I click the tab "<tab>" for the TabBar "<fieldname>"
+Then the tab "<tab>" for the TabBar "<fieldname>" is clicked
+*/
+
+Scenario: N41 TabBar-tab-click
+Given the tab "Morning" for the TabBar "Availability" is not clicked
+When I click the tab "Morning" for the TabBar "Availability"
+Then the tab "Morning" for the TabBar "Availability" is clicked
+
+Scenario: N42 tab-click
+Given the tab "Morning" for #"Availability" is not clicked
+When I click the tab "Morning" for #"Availability"
+Then the tab "Morning" for #"Availability" is clicked
+
+Scenario: N43 TabBar-click
+Given #"Morning" for the TabBar "Availability" is not clicked
+When I click #"Morning" for the TabBar "Availability"
+Then #"Morning" for the TabBar "Availability" is clicked
+
+Scenario: N44 click
+Given #"Morning" for #"Availability" is not clicked
+When I click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is clicked
+
+/*
+Scenario: TabBar-tab-DoNotclick
+Given the tab "<tab>" for the TabBar "<fieldname>" is not clicked
+When I do not click the tab "<tab>" for the TabBar "<fieldname>"
+Then the tab "<tab>" for the TabBar "<fieldname>" is not clicked
+*/
+
+Scenario: N45 TabBar-tab-DoNotclick
+Given the tab "Morning" for the TabBar "Availability" is not clicked
+When I do not click the tab "Morning" for the TabBar "Availability"
+Then the tab "Morning" for the TabBar "Availability" is not clicked
+
+Scenario: N46 tab-DoNotclick
+Given the tab "Morning" for #"Availability" is not clicked
+When I do not click the tab "Morning" for #"Availability"
+Then the tab "Morning" for #"Availability" is not clicked
+
+Scenario: N47 TabBar-DoNotclick
+Given #"Morning" for the TabBar "Availability" is not clicked
+When I do not click #"Morning" for the TabBar "Availability"
+Then #"Morning" for the TabBar "Availability" is not clicked
+
+Scenario: N48 DoNotclick
+Given #"Morning" for #"Availability" is not clicked
+When I do not click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not clicked

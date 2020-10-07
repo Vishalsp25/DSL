@@ -1,0 +1,531 @@
+
+model TextField using widgets
+/*
+Scenario: value-type
+Given the value "<value name>" is not typed
+When I type the value "<value name>"
+Then the value "<value name>" is typed
+*/
+
+Scenario: N1 value-type
+Given the value "TextField" is not typed
+When I type the value "TextField"
+Then the value "TextField" is typed
+
+Scenario: N2 type
+Given #"TextField" is not typed
+When I type #"TextField"
+Then #"TextField" is typed
+
+/*
+Scenario: value-DoNottype
+Given the value "<value name>" is not typed
+When I do not type the value "<value name>"
+Then the value "<value name>" is not typed
+*/
+
+Scenario: N3 value-DoNottype
+Given the value "TextField" is not typed
+When I do not type the value "TextField"
+Then the value "TextField" is not typed
+
+Scenario: N4 DoNottype
+Given #"TextField" is not typed
+When I do not type #"TextField"
+Then #"TextField" is not typed
+
+/*
+Scenario: TextField-type
+Given the TextField "<value name>" is not typed
+When I type the TextField "<value name>"
+Then the TextField "<value name>" is typed
+*/
+
+Scenario: N5 TextField-type
+Given the TextField "TextField" is not typed
+When I type the TextField "TextField"
+Then the TextField "TextField" is typed
+
+Scenario: N6 type
+Given #"TextField" is not typed
+When I type #"TextField"
+Then #"TextField" is typed
+
+/*
+Scenario: TextField-DoNottype
+Given the TextField "<value name>" is not typed
+When I do not type the TextField "<value name>"
+Then the TextField "<value name>" is not typed
+*/
+
+Scenario: N7 TextField-type
+Given the TextField "TextField" is not typed
+When I do not type the TextField "TextField"
+Then the TextField "TextField" is not typed
+
+Scenario: N8 type
+Given #"TextField" is not typed
+When I do not type #"TextField"
+Then #"TextField" is not typed
+
+/*
+Scenario: value-set
+Given the value "<value name>" is not set
+When I set the value "<value name>"
+Then the value "<value name>" is set
+*/
+
+Scenario: N9 value-set
+Given the value "TextField" is not set
+When I set the value "TextField"
+Then the value "TextField" is set
+
+Scenario: N10 set
+Given #"TextField" is not set
+When I set #"TextField"
+Then #"TextField" is set
+
+/*
+Scenario: value-DoNotset
+Given the value "<value name>" is not set
+When I do not set the value "<value name>"
+Then the value "<value name>" is not set
+*/
+
+Scenario: N11 value-DoNotset
+Given the value "TextField" is not set
+When I do not set the value "TextField"
+Then the value "TextField" is not set
+
+Scenario: N12 DoNotset
+Given #"TextField" is not set
+When I do not set #"TextField"
+Then #"TextField" is not set
+
+/*
+Scenario: TextField-set
+Given the TextField "<value name>" is not set
+When I set the TextField "<value name>"
+Then the TextField "<value name>" is set
+*/
+
+Scenario: N13 TextField-set
+Given the TextField "TextField" is not set
+When I set the TextField "TextField"
+Then the TextField "TextField" is set
+
+Scenario: N14 set
+Given #"TextField" is not set
+When I set #"TextField"
+Then #"TextField" is set
+
+/*
+Scenario: TextField-DoNotset
+Given the TextField "<value name>" is not set
+When I do not set the TextField "<value name>"
+Then the TextField "<value name>" is not set
+*/
+
+Scenario: N15 TextField-set
+Given the TextField "TextField" is not set
+When I do not set the TextField "TextField"
+Then the TextField "TextField" is not set
+
+Scenario: N16 set
+Given #"TextField" is not set
+When I do not set #"TextField"
+Then #"TextField" is not set
+
+/*
+Scenario: value-fill in with
+Given the value "<value name>" is not filled in
+When I fill in with the value "<value name>"
+Then the value "<value name>" is filled in
+*/
+
+Scenario: N17 value-fill in with
+Given the value "TextField" is not filled in
+When I fill in with the value "TextField"
+Then the value "TextField" is filled in
+
+Scenario: N18 fill in with
+Given #"TextField" is not filled in
+When I fill in with #"TextField"
+Then #"TextField" is filled in
+
+/*
+Scenario: value-DoNotfill in with
+Given the value "<value name>" is not filled in
+When I do not fill in the value "<value name>"
+Then the value "<value name>" is not filled in
+*/
+
+Scenario: N19 value-DoNotfill in with
+Given the value "TextField" is not filled in
+When I do not fill in the value "TextField"
+Then the value "TextField" is not filled in
+
+Scenario: N20 DoNotfill in with
+Given #"TextField" is not filled in
+When I do not fill in #"TextField"
+Then #"TextField" is not filled in
+
+/*
+Scenario: TextField-fill in with
+Given the TextField "<value name>" is not filled in
+When I fill in with the TextField "<value name>"
+Then the TextField "<value name>" is filled in
+*/
+
+Scenario: N21 TextField-fill in with
+Given the TextField "TextField" is not filled in
+When I fill in with the TextField "TextField"
+Then the TextField "TextField" is filled in
+
+Scenario: N22 fill in with
+Given #"TextField" is not filled in
+When I fill in with #"TextField"
+Then #"TextField" is filled in
+
+/*
+Scenario: TextField-DoNotfill in with
+Given the TextField "<value name>" is not filled in
+When I do not fill in the TextField "<value name>"
+Then the TextField "<value name>" is not filled in
+*/
+
+Scenario: N23 TextField-fill in with
+Given the TextField "TextField" is not filled in
+When I do not fill in the TextField "TextField"
+Then the TextField "TextField" is not filled in
+
+Scenario: N24 fill in with
+Given #"TextField" is not filled in
+When I do not fill in #"TextField"
+Then #"TextField" is not filled in
+
+
+/*
+Scenario: Field-value-type
+Given the value "<value>" for the field "<fieldname>" is not typed
+When I type the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is typed
+*/
+
+Scenario: N25 Field-value-type
+Given the value "Morning" for the field "Availability" is not typed
+When I type the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is typed
+
+Scenario: N26 value-type
+Given the value "Morning" for #"Availability" is not typed
+When I type the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is typed
+
+Scenario: N27 Field-type
+Given #"Morning" for the field "Availability" is not typed
+When I type #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is typed
+
+Scenario: N28 type
+Given #"Morning" for #"Availability" is not typed
+When I type #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is typed
+
+/*
+Scenario: Field-value-DoNottype
+Given the value "<value>" for the field "<fieldname>" is not typed
+When I do not type the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is not typed
+*/
+
+Scenario: N29 Field-value-DoNottype
+Given the value "Morning" for the field "Availability" is not typed
+When I do not type the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is not typed
+
+Scenario: N30 value-DoNottype
+Given the value "Morning" for #"Availability" is not typed
+When I do not type the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not typed
+
+Scenario: N31 Field-DoNottype
+Given #"Morning" for the field "Availability" is not typed
+When I do not type #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not typed
+
+Scenario: N32 DoNottype
+Given #"Morning" for #"Availability" is not typed
+When I do not type #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not typed
+
+/*
+Scenario: Field-value-set
+Given the value "<value>" for the field "<fieldname>" is not set
+When I set the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is set
+*/
+
+Scenario: N33 Field-value-set
+Given the value "Morning" for the field "Availability" is not set
+When I set the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is set
+
+Scenario: N34 value-set
+Given the value "Morning" for #"Availability" is not set
+When I set the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is set
+
+Scenario: N35 Field-set
+Given #"Morning" for the field "Availability" is not set
+When I set #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is set
+
+Scenario: N36 set
+Given #"Morning" for #"Availability" is not set
+When I set #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is set
+
+/*
+Scenario: Field-value-DoNotset
+Given the value "<value>" for the field "<fieldname>" is not set
+When I do not set the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is not set
+*/
+
+Scenario: N37 Field-value-DoNotset
+Given the value "Morning" for the field "Availability" is not set
+When I do not set the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is not set
+
+Scenario: N38 value-DoNotset
+Given the value "Morning" for #"Availability" is not set
+When I do not set the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not set
+
+Scenario: N39 Field-DoNotset
+Given #"Morning" for the field "Availability" is not set
+When I do not set #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not set
+
+Scenario: N40 DoNotset
+Given #"Morning" for #"Availability" is not set
+When I do not set #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not set
+
+/*
+Scenario: Field-value-fill in with
+Given the value "<value>" for the field "<fieldname>" is not filled in
+When I fill in with the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is filled in
+*/
+
+Scenario: N41 Field-value-fill in with
+Given the value "Morning" for the field "Availability" is not filled in
+When I fill in with the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is filled in
+
+Scenario: N42 value-fill in with
+Given the value "Morning" for #"Availability" is not filled in
+When I fill in with the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is filled in
+
+Scenario: N43 Field-fill in with
+Given #"Morning" for the field "Availability" is not filled in
+When I fill in with #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is filled in
+
+Scenario: N44 fill in with
+Given #"Morning" for #"Availability" is not filled in
+When I fill in with #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is filled in
+
+/*
+Scenario: Field-value-DoNotfill in with
+Given the value "<value>" for the field "<fieldname>" is not filled in
+When I do not fill in with the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is not filled in
+*/
+
+Scenario: N45 Field-value-DoNotfill in with
+Given the value "Morning" for the field "Availability" is not filled in
+When I do not fill in with the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is not filled in
+
+Scenario: N46 value-DoNotfill in with
+Given the value "Morning" for #"Availability" is not filled in
+When I do not fill in with the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not filled in
+
+Scenario: N47 Field-DoNotfill in with
+Given #"Morning" for the field "Availability" is not filled in
+When I do not fill in with #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not filled in
+
+Scenario: N48 DoNotfill in with
+Given #"Morning" for #"Availability" is not filled in
+When I do not fill in with #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not filled in
+
+
+/*
+Scenario: TextField-value-type
+Given the value "<value>" for the TextField "<fieldname>" is not typed
+When I type the value "<value>" for the TextField "<fieldname>"
+Then the value "<value>" for the TextField "<fieldname>" is typed
+*/
+
+Scenario: N49 TextField-value-type
+Given the value "Morning" for the TextField "Availability" is not typed
+When I type the value "Morning" for the TextField "Availability"
+Then the value "Morning" for the TextField "Availability" is typed
+
+Scenario: N50 value-type
+Given the value "Morning" for #"Availability" is not typed
+When I type the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is typed
+
+Scenario: N51 TextField-type
+Given #"Morning" for the TextField "Availability" is not typed
+When I type #"Morning" for the TextField "Availability"
+Then #"Morning" for the TextField "Availability" is typed
+
+Scenario: N52 type
+Given #"Morning" for #"Availability" is not typed
+When I type #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is typed
+
+/*
+Scenario: TextField-value-DoNottype
+Given the value "<value>" for the TextField "<fieldname>" is not typed
+When I do not type the value "<value>" for the TextField "<fieldname>"
+Then the value "<value>" for the TextField "<fieldname>" is not typed
+*/
+
+Scenario: N53 TextField-value-DoNottype
+Given the value "Morning" for the TextField "Availability" is not typed
+When I do not type the value "Morning" for the TextField "Availability"
+Then the value "Morning" for the TextField "Availability" is not typed
+
+Scenario: N54 value-DoNottype
+Given the value "Morning" for #"Availability" is not typed
+When I do not type the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not typed
+
+Scenario: N55 TextField-DoNottype
+Given #"Morning" for the TextField "Availability" is not typed
+When I do not type #"Morning" for the TextField "Availability"
+Then #"Morning" for the TextField "Availability" is not typed
+
+Scenario: N56 DoNottype
+Given #"Morning" for #"Availability" is not typed
+When I do not type #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not typed
+
+/*
+Scenario: TextField-value-set
+Given the value "<value>" for the TextField "<fieldname>" is not set
+When I set the value "<value>" for the TextField "<fieldname>"
+Then the value "<value>" for the TextField "<fieldname>" is set
+*/
+
+Scenario: N67 TextField-value-set
+Given the value "Morning" for the TextField "Availability" is not set
+When I set the value "Morning" for the TextField "Availability"
+Then the value "Morning" for the TextField "Availability" is set
+
+Scenario: N68 value-set
+Given the value "Morning" for #"Availability" is not set
+When I set the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is set
+
+Scenario: N69 TextField-set
+Given #"Morning" for the TextField "Availability" is not set
+When I set #"Morning" for the TextField "Availability"
+Then #"Morning" for the TextField "Availability" is set
+
+Scenario: N70 set
+Given #"Morning" for #"Availability" is not set
+When I set #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is set
+
+/*
+Scenario: TextField-value-DoNotset
+Given the value "<value>" for the TextField "<fieldname>" is not set
+When I do not set the value "<value>" for the TextField "<fieldname>"
+Then the value "<value>" for the TextField "<fieldname>" is not set
+*/
+
+Scenario: N71 TextField-value-DoNotset
+Given the value "Morning" for the TextField "Availability" is not set
+When I do not set the value "Morning" for the TextField "Availability"
+Then the value "Morning" for the TextField "Availability" is not set
+
+Scenario: N72 value-DoNotset
+Given the value "Morning" for #"Availability" is not set
+When I do not set the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not set
+
+Scenario: N73 TextField-DoNotset
+Given #"Morning" for the TextField "Availability" is not set
+When I do not set #"Morning" for the TextField "Availability"
+Then #"Morning" for the TextField "Availability" is not set
+
+Scenario: N74 DoNotset
+Given #"Morning" for #"Availability" is not set
+When I do not set #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not set
+
+/*
+Scenario: TextField-value-fill in with
+Given the value "<value>" for the TextField "<fieldname>" is not filled in
+When I fill in with the value "<value>" for the TextField "<fieldname>"
+Then the value "<value>" for the TextField "<fieldname>" is filled in
+*/
+
+Scenario: N75 TextField-value-fill in with
+Given the value "Morning" for the TextField "Availability" is not filled in
+When I fill in with the value "Morning" for the TextField "Availability"
+Then the value "Morning" for the TextField "Availability" is filled in
+
+Scenario: N76 value-fill in with
+Given the value "Morning" for #"Availability" is not filled in
+When I fill in with the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is filled in
+
+Scenario: N77 TextField-fill in with
+Given #"Morning" for the TextField "Availability" is not filled in
+When I fill in with #"Morning" for the TextField "Availability"
+Then #"Morning" for the TextField "Availability" is filled in
+
+Scenario: N78 fill in with
+Given #"Morning" for #"Availability" is not filled in
+When I fill in with #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is filled in
+
+/*
+Scenario: TextField-value-DoNotfill in with
+Given the value "<value>" for the TextField "<fieldname>" is not filled in
+When I do not fill in with the value "<value>" for the TextField "<fieldname>"
+Then the value "<value>" for the TextField "<fieldname>" is not filled in
+*/
+
+Scenario: N79 TextField-value-DoNotfill in with
+Given the value "Morning" for the TextField "Availability" is not filled in
+When I do not fill in with the value "Morning" for the TextField "Availability"
+Then the value "Morning" for the TextField "Availability" is not filled in
+
+Scenario: N80 value-DoNotfill in with
+Given the value "Morning" for #"Availability" is not filled in
+When I do not fill in with the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not filled in
+
+Scenario: N81 TextField-DoNotfill in with
+Given #"Morning" for the TextField "Availability" is not filled in
+When I do not fill in with #"Morning" for the TextField "Availability"
+Then #"Morning" for the TextField "Availability" is not filled in
+
+Scenario: N82 DoNotfill in with
+Given #"Morning" for #"Availability" is not filled in
+When I do not fill in with #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not filled in
