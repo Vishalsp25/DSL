@@ -212,24 +212,24 @@ Then the value "<value>" for the value "<valuename>" is typed
 */
 
 Scenario: N25 value-value-type
-Given the value "Morning" for the value "Availability" is not typed
-When I type the value "Morning" for the value "Availability"
-Then the value "Morning" for the value "Availability" is typed
+Given the value "Number" for the value "Number Range" is not typed
+When I type the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is typed
 
 Scenario: N26 value-type
-Given the value "Morning" for #"Availability" is not typed
-When I type the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is typed
+Given the value "Number" for #"Number Range" is not typed
+When I type the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is typed
 
 Scenario: N27 value-type
-Given #"Morning" for the value "Availability" is not typed
-When I type #"Morning" for the value "Availability"
-Then #"Morning" for the value "Availability" is typed
+Given #"Number" for the value "Number Range" is not typed
+When I type #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is typed
 
 Scenario: N28 type
-Given #"Morning" for #"Availability" is not typed
-When I type #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is typed
+Given #"Number" for #"Number Range" is not typed
+When I type #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is typed
 
 /*
 Scenario: value-value-DoNottype
@@ -239,24 +239,24 @@ Then the value "<value>" for the value "<valuename>" is not typed
 */
 
 Scenario: N29 value-value-DoNottype
-Given the value "Morning" for the value "Availability" is not typed
-When I do not type the value "Morning" for the value "Availability"
-Then the value "Morning" for the value "Availability" is not typed
+Given the value "Number" for the value "Number Range" is not typed
+When I do not type the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is not typed
 
 Scenario: N30 value-DoNottype
-Given the value "Morning" for #"Availability" is not typed
-When I do not type the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is not typed
+Given the value "Number" for #"Number Range" is not typed
+When I do not type the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is not typed
 
 Scenario: N31 value-DoNottype
-Given #"Morning" for the value "Availability" is not typed
-When I do not type #"Morning" for the value "Availability"
-Then #"Morning" for the value "Availability" is not typed
+Given #"Number" for the value "Number Range" is not typed
+When I do not type #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is not typed
 
 Scenario: N32 DoNottype
-Given #"Morning" for #"Availability" is not typed
-When I do not type #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not typed
+Given #"Number" for #"Number Range" is not typed
+When I do not type #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is not typed
 
 /*
 Scenario: value-value-set
@@ -266,24 +266,24 @@ Then the value "<value>" for the value "<valuename>" is set
 */
 
 Scenario: N33 value-value-set
-Given the value "Morning" for the value "Availability" is not set
-When I set the value "Morning" for the value "Availability"
-Then the value "Morning" for the value "Availability" is set
+Given the value "Number" for the value "Number Range" is not set
+When I set the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is set
 
 Scenario: N34 value-set
-Given the value "Morning" for #"Availability" is not set
-When I set the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is set
+Given the value "Number" for #"Number Range" is not set
+When I set the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is set
 
 Scenario: N35 value-set
-Given #"Morning" for the value "Availability" is not set
-When I set #"Morning" for the value "Availability"
-Then #"Morning" for the value "Availability" is set
+Given #"Number" for the value "Number Range" is not set
+When I set #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is set
 
 Scenario: N36 set
-Given #"Morning" for #"Availability" is not set
-When I set #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is set
+Given #"Number" for #"Number Range" is not set
+When I set #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is set
 
 /*
 Scenario: value-value-DoNotset
@@ -293,24 +293,24 @@ Then the value "<value>" for the value "<valuename>" is not set
 */
 
 Scenario: N37 value-value-DoNotset
-Given the value "Morning" for the value "Availability" is not set
-When I do not set the value "Morning" for the value "Availability"
-Then the value "Morning" for the value "Availability" is not set
+Given the value "Number" for the value "Number Range" is not set
+When I do not set the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is not set
 
 Scenario: N38 value-DoNotset
-Given the value "Morning" for #"Availability" is not set
-When I do not set the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is not set
+Given the value "Number" for #"Number Range" is not set
+When I do not set the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is not set
 
 Scenario: N37 value-DoNotset
-Given #"Morning" for the value "Availability" is not set
-When I do not set #"Morning" for the value "Availability"
-Then #"Morning" for the value "Availability" is not set
+Given #"Number" for the value "Number Range" is not set
+When I do not set #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is not set
 
 Scenario: N38 DoNotset
-Given #"Morning" for #"Availability" is not set
-When I do not set #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not set
+Given #"Number" for #"Number Range" is not set
+When I do not set #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is not set
 
 /*
 Scenario: value-value-fill in with
@@ -320,24 +320,24 @@ Then the value "<value>" for the value "<valuename>" is filled in
 */
 
 Scenario: N39 value-value-fill in with
-Given the value "Morning" for the value "Availability" is not filled in
-When I fill in with the value "Morning" for the value "Availability"
-Then the value "Morning" for the value "Availability" is filled in
+Given the value "Number" for the value "Number Range" is not filled in
+When I fill in with the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is filled in
 
 Scenario: N40 value-fill in with
-Given the value "Morning" for #"Availability" is not filled in
-When I fill in with the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is filled in
+Given the value "Number" for #"Number Range" is not filled in
+When I fill in with the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is filled in
 
 Scenario: N41 value-fill in with
-Given #"Morning" for the value "Availability" is not filled in
-When I fill in with #"Morning" for the value "Availability"
-Then #"Morning" for the value "Availability" is filled in
+Given #"Number" for the value "Number Range" is not filled in
+When I fill in with #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is filled in
 
 Scenario: N42 fill in with
-Given #"Morning" for #"Availability" is not filled in
-When I fill in with #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is filled in
+Given #"Number" for #"Number Range" is not filled in
+When I fill in with #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is filled in
 
 /*
 Scenario: value-value-DoNotfill in with
@@ -347,24 +347,24 @@ Then the value "<value>" for the value "<valuename>" is not filled in
 */
 
 Scenario: N43 value-value-DoNotfill in with
-Given the value "Morning" for the value "Availability" is not filled in
-When I do not fill in with the value "Morning" for the value "Availability"
-Then the value "Morning" for the value "Availability" is not filled in
+Given the value "Number" for the value "Number Range" is not filled in
+When I do not fill in with the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is not filled in
 
 Scenario: N44 value-DoNotfill in with
-Given the value "Morning" for #"Availability" is not filled in
-When I do not fill in with the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is not filled in
+Given the value "Number" for #"Number Range" is not filled in
+When I do not fill in with the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is not filled in
 
 Scenario: N45 value-DoNotfill in with
-Given #"Morning" for the value "Availability" is not filled in
-When I do not fill in with #"Morning" for the value "Availability"
-Then #"Morning" for the value "Availability" is not filled in
+Given #"Number" for the value "Number Range" is not filled in
+When I do not fill in with #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is not filled in
 
 Scenario: N46 DoNotfill in with
-Given #"Morning" for #"Availability" is not filled in
-When I do not fill in with #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not filled in
+Given #"Number" for #"Number Range" is not filled in
+When I do not fill in with #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is not filled in
 
 
 /*
@@ -375,24 +375,24 @@ Then the value "<value>" for the NumericStepper "<valuename>" is typed
 */
 
 Scenario: N47 NumericStepper-value-type
-Given the value "Morning" for the NumericStepper "Availability" is not typed
-When I type the value "Morning" for the NumericStepper "Availability"
-Then the value "Morning" for the NumericStepper "Availability" is typed
+Given the value "Number" for the NumericStepper "Number Range" is not typed
+When I type the value "Number" for the NumericStepper "Number Range"
+Then the value "Number" for the NumericStepper "Number Range" is typed
 
 Scenario: N48 value-type
-Given the value "Morning" for #"Availability" is not typed
-When I type the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is typed
+Given the value "Number" for #"Number Range" is not typed
+When I type the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is typed
 
 Scenario: N49 NumericStepper-type
-Given #"Morning" for the NumericStepper "Availability" is not typed
-When I type #"Morning" for the NumericStepper "Availability"
-Then #"Morning" for the NumericStepper "Availability" is typed
+Given #"Number" for the NumericStepper "Number Range" is not typed
+When I type #"Number" for the NumericStepper "Number Range"
+Then #"Number" for the NumericStepper "Number Range" is typed
 
 Scenario: N50 type
-Given #"Morning" for #"Availability" is not typed
-When I type #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is typed
+Given #"Number" for #"Number Range" is not typed
+When I type #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is typed
 
 /*
 Scenario: NumericStepper-value-DoNottype
@@ -402,24 +402,24 @@ Then the value "<value>" for the NumericStepper "<valuename>" is not typed
 */
 
 Scenario: N51 NumericStepper-value-DoNottype
-Given the value "Morning" for the NumericStepper "Availability" is not typed
-When I do not type the value "Morning" for the NumericStepper "Availability"
-Then the value "Morning" for the NumericStepper "Availability" is not typed
+Given the value "Number" for the NumericStepper "Number Range" is not typed
+When I do not type the value "Number" for the NumericStepper "Number Range"
+Then the value "Number" for the NumericStepper "Number Range" is not typed
 
 Scenario: N52 value-DoNottype
-Given the value "Morning" for #"Availability" is not typed
-When I do not type the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is not typed
+Given the value "Number" for #"Number Range" is not typed
+When I do not type the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is not typed
 
 Scenario: N53 NumericStepper-DoNottype
-Given #"Morning" for the NumericStepper "Availability" is not typed
-When I do not type #"Morning" for the NumericStepper "Availability"
-Then #"Morning" for the NumericStepper "Availability" is not typed
+Given #"Number" for the NumericStepper "Number Range" is not typed
+When I do not type #"Number" for the NumericStepper "Number Range"
+Then #"Number" for the NumericStepper "Number Range" is not typed
 
 Scenario: N54 DoNottype
-Given #"Morning" for #"Availability" is not typed
-When I do not type #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not typed
+Given #"Number" for #"Number Range" is not typed
+When I do not type #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is not typed
 
 /*
 Scenario: NumericStepper-value-set
@@ -429,24 +429,24 @@ Then the value "<value>" for the NumericStepper "<valuename>" is set
 */
 
 Scenario: N55 NumericStepper-value-set
-Given the value "Morning" for the NumericStepper "Availability" is not set
-When I set the value "Morning" for the NumericStepper "Availability"
-Then the value "Morning" for the NumericStepper "Availability" is set
+Given the value "Number" for the NumericStepper "Number Range" is not set
+When I set the value "Number" for the NumericStepper "Number Range"
+Then the value "Number" for the NumericStepper "Number Range" is set
 
 Scenario: N56 value-set
-Given the value "Morning" for #"Availability" is not set
-When I set the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is set
+Given the value "Number" for #"Number Range" is not set
+When I set the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is set
 
 Scenario: N57 NumericStepper-set
-Given #"Morning" for the NumericStepper "Availability" is not set
-When I set #"Morning" for the NumericStepper "Availability"
-Then #"Morning" for the NumericStepper "Availability" is set
+Given #"Number" for the NumericStepper "Number Range" is not set
+When I set #"Number" for the NumericStepper "Number Range"
+Then #"Number" for the NumericStepper "Number Range" is set
 
 Scenario: N58 set
-Given #"Morning" for #"Availability" is not set
-When I set #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is set
+Given #"Number" for #"Number Range" is not set
+When I set #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is set
 
 /*
 Scenario: NumericStepper-value-DoNotset
@@ -456,24 +456,24 @@ Then the value "<value>" for the NumericStepper "<valuename>" is not set
 */
 
 Scenario: N59 NumericStepper-value-DoNotset
-Given the value "Morning" for the NumericStepper "Availability" is not set
-When I do not set the value "Morning" for the NumericStepper "Availability"
-Then the value "Morning" for the NumericStepper "Availability" is not set
+Given the value "Number" for the NumericStepper "Number Range" is not set
+When I do not set the value "Number" for the NumericStepper "Number Range"
+Then the value "Number" for the NumericStepper "Number Range" is not set
 
 Scenario: N60 value-DoNotset
-Given the value "Morning" for #"Availability" is not set
-When I do not set the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is not set
+Given the value "Number" for #"Number Range" is not set
+When I do not set the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is not set
 
 Scenario: N61 NumericStepper-DoNotset
-Given #"Morning" for the NumericStepper "Availability" is not set
-When I do not set #"Morning" for the NumericStepper "Availability"
-Then #"Morning" for the NumericStepper "Availability" is not set
+Given #"Number" for the NumericStepper "Number Range" is not set
+When I do not set #"Number" for the NumericStepper "Number Range"
+Then #"Number" for the NumericStepper "Number Range" is not set
 
 Scenario: N62 DoNotset
-Given #"Morning" for #"Availability" is not set
-When I do not set #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not set
+Given #"Number" for #"Number Range" is not set
+When I do not set #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is not set
 
 /*
 Scenario: NumericStepper-value-fill in with
@@ -483,24 +483,24 @@ Then the value "<value>" for the NumericStepper "<valuename>" is filled in
 */
 
 Scenario: N63 NumericStepper-value-fill in with
-Given the value "Morning" for the NumericStepper "Availability" is not filled in
-When I fill in with the value "Morning" for the NumericStepper "Availability"
-Then the value "Morning" for the NumericStepper "Availability" is filled in
+Given the value "Number" for the NumericStepper "Number Range" is not filled in
+When I fill in with the value "Number" for the NumericStepper "Number Range"
+Then the value "Number" for the NumericStepper "Number Range" is filled in
 
 Scenario: N64 value-fill in with
-Given the value "Morning" for #"Availability" is not filled in
-When I fill in with the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is filled in
+Given the value "Number" for #"Number Range" is not filled in
+When I fill in with the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is filled in
 
 Scenario: N65 NumericStepper-fill in with
-Given #"Morning" for the NumericStepper "Availability" is not filled in
-When I fill in with #"Morning" for the NumericStepper "Availability"
-Then #"Morning" for the NumericStepper "Availability" is filled in
+Given #"Number" for the NumericStepper "Number Range" is not filled in
+When I fill in with #"Number" for the NumericStepper "Number Range"
+Then #"Number" for the NumericStepper "Number Range" is filled in
 
 Scenario: N66 fill in with
-Given #"Morning" for #"Availability" is not filled in
-When I fill in with #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is filled in
+Given #"Number" for #"Number Range" is not filled in
+When I fill in with #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is filled in
 
 /*
 Scenario: NumericStepper-value-DoNotfill in with
@@ -510,24 +510,24 @@ Then the value "<value>" for the NumericStepper "<valuename>" is not filled in
 */
 
 Scenario: N67 NumericStepper-value-DoNotfill in with
-Given the value "Morning" for the NumericStepper "Availability" is not filled in
-When I do not fill in with the value "Morning" for the NumericStepper "Availability"
-Then the value "Morning" for the NumericStepper "Availability" is not filled in
+Given the value "Number" for the NumericStepper "Number Range" is not filled in
+When I do not fill in with the value "Number" for the NumericStepper "Number Range"
+Then the value "Number" for the NumericStepper "Number Range" is not filled in
 
 Scenario: N68 value-DoNotfill in with
-Given the value "Morning" for #"Availability" is not filled in
-When I do not fill in with the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is not filled in
+Given the value "Number" for #"Number Range" is not filled in
+When I do not fill in with the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is not filled in
 
 Scenario: N69 NumericStepper-DoNotfill in with
-Given #"Morning" for the NumericStepper "Availability" is not filled in
-When I do not fill in with #"Morning" for the NumericStepper "Availability"
-Then #"Morning" for the NumericStepper "Availability" is not filled in
+Given #"Number" for the NumericStepper "Number Range" is not filled in
+When I do not fill in with #"Number" for the NumericStepper "Number Range"
+Then #"Number" for the NumericStepper "Number Range" is not filled in
 
 Scenario: N70 DoNotfill in with
-Given #"Morning" for #"Availability" is not filled in
-When I do not fill in with #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not filled in
+Given #"Number" for #"Number Range" is not filled in
+When I do not fill in with #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is not filled in
 
 /*
 Scenario: value-value-increase
@@ -537,24 +537,24 @@ Then the value "<value>" for the value "<valuename>" is increased
 */
 
 Scenario: N71 value-value-increase
-Given the value "Morning" for the value "Availability" is not increased
-When I increase the value "Morning" for the value "Availability"
-Then the value "Morning" for the value "Availability" is increased
+Given the value "Number" for the value "Number Range" is not increased
+When I increase the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is increased
 
 Scenario: N72 value-increase
-Given the value "Morning" for #"Availability" is not increased
-When I increase the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is increased
+Given the value "Number" for #"Number Range" is not increased
+When I increase the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is increased
 
 Scenario: N73 value-increase
-Given #"Morning" for the value "Availability" is not increased
-When I increase #"Morning" for the value "Availability"
-Then #"Morning" for the value "Availability" is increased
+Given #"Number" for the value "Number Range" is not increased
+When I increase #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is increased
 
 Scenario: N74 increase
-Given #"Morning" for #"Availability" is not increased
-When I increase #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is increased
+Given #"Number" for #"Number Range" is not increased
+When I increase #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is increased
 
 /*
 Scenario: value-value-DoNotincrease
@@ -564,24 +564,24 @@ Then the value "<value>" for the value "<valuename>" is not increased
 */
 
 Scenario: N75 value-value-DoNotincrease
-Given the value "Morning" for the value "Availability" is not increased
-When I do not increase the value "Morning" for the value "Availability"
-Then the value "Morning" for the value "Availability" is not increased
+Given the value "Number" for the value "Number Range" is not increased
+When I do not increase the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is not increased
 
 Scenario: N76 value-DoNotincrease
-Given the value "Morning" for #"Availability" is not increased
-When I do not increase the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is not increased
+Given the value "Number" for #"Number Range" is not increased
+When I do not increase the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is not increased
 
 Scenario: N77 value-DoNotincrease
-Given #"Morning" for the value "Availability" is not increased
-When I do not increase #"Morning" for the value "Availability"
-Then #"Morning" for the value "Availability" is not increased
+Given #"Number" for the value "Number Range" is not increased
+When I do not increase #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is not increased
 
 Scenario: N78 DoNotincrease
-Given #"Morning" for #"Availability" is not increased
-When I do not increase #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not increased
+Given #"Number" for #"Number Range" is not increased
+When I do not increase #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is not increased
 
 /*
 Scenario: value-value-decrease
@@ -591,24 +591,24 @@ Then the value "<value>" for the value "<valuename>" is decreased
 */
 
 Scenario: N79 value-value-decrease
-Given the value "Morning" for the value "Availability" is not decreased
-When I decrease the value "Morning" for the value "Availability"
-Then the value "Morning" for the value "Availability" is decreased
+Given the value "Number" for the value "Number Range" is not decreased
+When I decrease the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is decreased
 
 Scenario: N80 value-decrease
-Given the value "Morning" for #"Availability" is not decreased
-When I decrease the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is decreased
+Given the value "Number" for #"Number Range" is not decreased
+When I decrease the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is decreased
 
 Scenario: N81 value-decrease
-Given #"Morning" for the value "Availability" is not decreased
-When I decrease #"Morning" for the value "Availability"
-Then #"Morning" for the value "Availability" is decreased
+Given #"Number" for the value "Number Range" is not decreased
+When I decrease #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is decreased
 
 Scenario: N82 decrease
-Given #"Morning" for #"Availability" is not decreased
-When I decrease #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is decreased
+Given #"Number" for #"Number Range" is not decreased
+When I decrease #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is decreased
 
 /*
 Scenario: value-value-DoNotdecrease
@@ -618,21 +618,21 @@ Then the value "<value>" for the value "<valuename>" is not decreased
 */
 
 Scenario: N83 value-value-DoNotdecrease
-Given the value "Morning" for the value "Availability" is not decreased
-When I do not decrease the value "Morning" for the value "Availability"
-Then the value "Morning" for the value "Availability" is not decreased
+Given the value "Number" for the value "Number Range" is not decreased
+When I do not decrease the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is not decreased
 
 Scenario: N84 value-DoNotdecrease
-Given the value "Morning" for #"Availability" is not decreased
-When I do not decrease the value "Morning" for #"Availability"
-Then the value "Morning" for #"Availability" is not decreased
+Given the value "Number" for #"Number Range" is not decreased
+When I do not decrease the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is not decreased
 
 Scenario: N85 value-DoNotdecrease
-Given #"Morning" for the value "Availability" is not decreased
-When I do not decrease #"Morning" for the value "Availability"
-Then #"Morning" for the value "Availability" is not decreased
+Given #"Number" for the value "Number Range" is not decreased
+When I do not decrease #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is not decreased
 
 Scenario: N86 DoNotdecrease
-Given #"Morning" for #"Availability" is not decreased
-When I do not decrease #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not decreased
+Given #"Number" for #"Number Range" is not decreased
+When I do not decrease #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is not decreased
