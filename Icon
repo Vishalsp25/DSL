@@ -2,37 +2,37 @@ model Icon using widgets
 
 /*
 Scenario: click
-Given "Icon" is clicked
-When I click "Icon"
-Then "Icon" is clicked
+Given "My Profile" is clicked
+When I click "My Profile"
+Then "My Profile" is clicked
 */
 
 Scenario: N1 click
-Given "Icon" is clicked
-When I click "Icon"
-Then #"Icon" is clicked
+Given "My Profile" is clicked
+When I click "My Profile"
+Then #"My Profile" is clicked
 
 Scenario: N2 click
-Given #"Icon" is clicked
-When I click #"Icon"
-Then #"Icon" is clicked
+Given #"My Profile" is clicked
+When I click #"My Profile"
+Then #"My Profile" is clicked
 
 /*
 Scenario: DoNotclick
-Given "Icon" is not clicked
-When I do not click "Icon"
-Then "Icon" is not clicked
+Given "My Profile" is not clicked
+When I do not click "My Profile"
+Then "My Profile" is not clicked
 */
 
 Scenario: N3 DoNotclick
-Given "Icon" is not clicked
-When I do not click "Icon"
-Then #"Icon" is not clicked
+Given "My Profile" is not clicked
+When I do not click "My Profile"
+Then #"My Profile" is not clicked
 
 Scenario: N4 DoNotclick
-Given #"Icon" is not clicked
-When I do not click #"Icon"
-Then #"Icon" is not clicked
+Given #"My Profile" is not clicked
+When I do not click #"My Profile"
+Then #"My Profile" is not clicked
 
 /*
 Scenario: Icon-click
@@ -42,14 +42,14 @@ Then the Icon "<tab name>" is clicked
 */
 
 Scenario: N5 Icon-click
-Given the Icon "Icon" is clicked
-When I click the Icon "Icon"
-Then the Icon "Icon" is clicked
+Given the Icon "My Profile" is clicked
+When I click the Icon "My Profile"
+Then the Icon "My Profile" is clicked
 
 Scenario: N6 click
-Given #"Icon" is clicked
-When I click #"Icon"
-Then #"Icon" is clicked
+Given #"My Profile" is clicked
+When I click #"My Profile"
+Then #"My Profile" is clicked
 
 /*
 Scenario: Icon-DoNotclick
@@ -59,11 +59,11 @@ Then the Icon "<tab name>" is clicked
 */
 
 Scenario: N7 Icon-click
-Given the Icon "Icon" is not clicked
-When I do not click the Icon "Icon"
-Then the Icon "Icon" is not clicked
+Given the Icon "My Profile" is not clicked
+When I do not click the Icon "My Profile"
+Then the Icon "My Profile" is not clicked
 
 Scenario: N8 click
-Given #"Icon" is not clicked
-When I do not click #"Icon"
-Then #"Icon" is not clicked
+Given #"My Profile" is not clicked
+When I do not click #"My Profile"
+Then #"My Profile" is not clicked
