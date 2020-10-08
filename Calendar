@@ -280,24 +280,24 @@ Then the date "<date>" for the field "<fieldname>" is selected
 */
 
 Scenario: N33 Field-date-select
-Given the date "Morning" for the field "Availability" is not selected
-When I select the date "Morning" for the field "Availability"
-Then the date "Morning" for the field "Availability" is selected
+Given the date "date" for the field "Julian calendar" is not selected
+When I select the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is selected
 
 Scenario: N34 date-select
-Given the date "Morning" for #"Availability" is not selected
-When I select the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is selected
+Given the date "date" for #"Julian calendar" is not selected
+When I select the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is selected
 
 Scenario: N35 Field-select
-Given #"Morning" for the field "Availability" is not selected
-When I select #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is selected
+Given #"date" for the field "Julian calendar" is not selected
+When I select #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is selected
 
 Scenario: N36 select
-Given #"Morning" for #"Availability" is not selected
-When I select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is selected
+Given #"date" for #"Julian calendar" is not selected
+When I select #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is selected
 
 /*
 Scenario: Field-date-DoNotselect
@@ -307,24 +307,24 @@ Then the date "<date>" for the field "<fieldname>" is not selected
 */
 
 Scenario: N37 Field-date-DoNotselect
-Given the date "Morning" for the field "Availability" is not selected
-When I do not select the date "Morning" for the field "Availability"
-Then the date "Morning" for the field "Availability" is not selected
+Given the date "date" for the field "Julian calendar" is not selected
+When I do not select the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is not selected
 
 Scenario: N38 date-DoNotselect
-Given the date "Morning" for #"Availability" is not selected
-When I do not select the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is not selected
+Given the date "date" for #"Julian calendar" is not selected
+When I do not select the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not selected
 
 Scenario: N39 Field-DoNotselect
-Given #"Morning" for the field "Availability" is not selected
-When I do not select #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is not selected
+Given #"date" for the field "Julian calendar" is not selected
+When I do not select #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is not selected
 
 Scenario: N40 DoNotselect
-Given #"Morning" for #"Availability" is not selected
-When I do not select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not selected
+Given #"date" for #"Julian calendar" is not selected
+When I do not select #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not selected
 
 /*
 Scenario: Field-date-choose
@@ -334,24 +334,24 @@ Then the date "<date>" for the field "<fieldname>" is chosen
 */
 
 Scenario: N41 Field-date-choose
-Given the date "Morning" for the field "Availability" is not chosen
-When I choose the date "Morning" for the field "Availability"
-Then the date "Morning" for the field "Availability" is chosen
+Given the date "date" for the field "Julian calendar" is not chosen
+When I choose the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is chosen
 
 Scenario: N42 date-choose
-Given the date "Morning" for #"Availability" is not chosen
-When I choose the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is chosen
+Given the date "date" for #"Julian calendar" is not chosen
+When I choose the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is chosen
 
 Scenario: N43 Field-choose
-Given #"Morning" for the field "Availability" is not chosen
-When I choose #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is chosen
+Given #"date" for the field "Julian calendar" is not chosen
+When I choose #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is chosen
 
 Scenario: N44 choose
-Given #"Morning" for #"Availability" is not chosen
-When I choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is chosen
+Given #"date" for #"Julian calendar" is not chosen
+When I choose #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is chosen
 
 /*
 Scenario: Field-date-DoNotchoose
@@ -361,24 +361,24 @@ Then the date "<date>" for the field "<fieldname>" is not chosen
 */
 
 Scenario: N45 Field-date-DoNotchoose
-Given the date "Morning" for the field "Availability" is not chosen
-When I do not choose the date "Morning" for the field "Availability"
-Then the date "Morning" for the field "Availability" is not chosen
+Given the date "date" for the field "Julian calendar" is not chosen
+When I do not choose the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is not chosen
 
 Scenario: N46 date-DoNotchoose
-Given the date "Morning" for #"Availability" is not chosen
-When I do not choose the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is not chosen
+Given the date "date" for #"Julian calendar" is not chosen
+When I do not choose the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not chosen
 
 Scenario: N47 Field-DoNotchoose
-Given #"Morning" for the field "Availability" is not chosen
-When I do not choose #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is not chosen
+Given #"date" for the field "Julian calendar" is not chosen
+When I do not choose #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is not chosen
 
 Scenario: N48 DoNotchoose
-Given #"Morning" for #"Availability" is not chosen
-When I do not choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not chosen
+Given #"date" for #"Julian calendar" is not chosen
+When I do not choose #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not chosen
 
 /*
 Scenario: Field-date-pick
@@ -388,24 +388,24 @@ Then the date "<date>" for the field "<fieldname>" is picked
 */
 
 Scenario: N49 Field-date-pick
-Given the date "Morning" for the field "Availability" is not picked
-When I pick the date "Morning" for the field "Availability"
-Then the date "Morning" for the field "Availability" is picked
+Given the date "date" for the field "Julian calendar" is not picked
+When I pick the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is picked
 
 Scenario: N50 date-pick
-Given the date "Morning" for #"Availability" is not picked
-When I pick the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is picked
+Given the date "date" for #"Julian calendar" is not picked
+When I pick the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is picked
 
 Scenario: N51 Field-pick
-Given #"Morning" for the field "Availability" is not picked
-When I pick #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is picked
+Given #"date" for the field "Julian calendar" is not picked
+When I pick #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is picked
 
 Scenario: N52 pick
-Given #"Morning" for #"Availability" is not picked
-When I pick #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is picked
+Given #"date" for #"Julian calendar" is not picked
+When I pick #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is picked
 
 /*
 Scenario: Field-date-DoNotpick
@@ -415,24 +415,24 @@ Then the date "<date>" for the field "<fieldname>" is not picked
 */
 
 Scenario: N53 Field-date-DoNotpick
-Given the date "Morning" for the field "Availability" is not picked
-When I do not pick the date "Morning" for the field "Availability"
-Then the date "Morning" for the field "Availability" is not picked
+Given the date "date" for the field "Julian calendar" is not picked
+When I do not pick the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is not picked
 
 Scenario: N54 date-DoNotpick
-Given the date "Morning" for #"Availability" is not picked
-When I do not pick the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is not picked
+Given the date "date" for #"Julian calendar" is not picked
+When I do not pick the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not picked
 
 Scenario: N55 Field-DoNotpick
-Given #"Morning" for the field "Availability" is not picked
-When I do not pick #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is not picked
+Given #"date" for the field "Julian calendar" is not picked
+When I do not pick #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is not picked
 
 Scenario: N56 DoNotpick
-Given #"Morning" for #"Availability" is not picked
-When I do not pick #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not picked
+Given #"date" for #"Julian calendar" is not picked
+When I do not pick #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not picked
 
 /*
 Scenario: Field-date-set
@@ -442,24 +442,24 @@ Then the date "<date>" for the field "<fieldname>" is set
 */
 
 Scenario: N57 Field-date-set
-Given the date "Morning" for the field "Availability" is not set
-When I set the date "Morning" for the field "Availability"
-Then the date "Morning" for the field "Availability" is set
+Given the date "date" for the field "Julian calendar" is not set
+When I set the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is set
 
 Scenario: N58 date-set
-Given the date "Morning" for #"Availability" is not set
-When I set the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is set
+Given the date "date" for #"Julian calendar" is not set
+When I set the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is set
 
 Scenario: N59 Field-set
-Given #"Morning" for the field "Availability" is not set
-When I set #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is set
+Given #"date" for the field "Julian calendar" is not set
+When I set #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is set
 
 Scenario: N60 set
-Given #"Morning" for #"Availability" is not set
-When I set #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is set
+Given #"date" for #"Julian calendar" is not set
+When I set #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is set
 
 /*
 Scenario: Field-date-DoNotset
@@ -469,24 +469,24 @@ Then the date "<date>" for the field "<fieldname>" is not set
 */
 
 Scenario: N61 Field-date-DoNotset
-Given the date "Morning" for the field "Availability" is not set
-When I do not set the date "Morning" for the field "Availability"
-Then the date "Morning" for the field "Availability" is not set
+Given the date "date" for the field "Julian calendar" is not set
+When I do not set the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is not set
 
 Scenario: N62 date-DoNotset
-Given the date "Morning" for #"Availability" is not set
-When I do not set the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is not set
+Given the date "date" for #"Julian calendar" is not set
+When I do not set the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not set
 
 Scenario: N63 Field-DoNotset
-Given #"Morning" for the field "Availability" is not set
-When I do not set #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is not set
+Given #"date" for the field "Julian calendar" is not set
+When I do not set #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is not set
 
 Scenario: N64 DoNotset
-Given #"Morning" for #"Availability" is not set
-When I do not set #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not set
+Given #"date" for #"Julian calendar" is not set
+When I do not set #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not set
 
 /*
 Scenario: Calendar-date-select
@@ -496,24 +496,24 @@ Then the date "<date>" for the Calendar "<fieldname>" is selected
 */
 
 Scenario: N65 Calendar-date-select
-Given the date "Morning" for the Calendar "Availability" is not selected
-When I select the date "Morning" for the Calendar "Availability"
-Then the date "Morning" for the Calendar "Availability" is selected
+Given the date "date" for the Calendar "Julian calendar" is not selected
+When I select the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is selected
 
 Scenario: N66 date-select
-Given the date "Morning" for #"Availability" is not selected
-When I select the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is selected
+Given the date "date" for #"Julian calendar" is not selected
+When I select the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is selected
 
 Scenario: N67 Calendar-select
-Given #"Morning" for the Calendar "Availability" is not selected
-When I select #"Morning" for the Calendar "Availability"
-Then #"Morning" for the Calendar "Availability" is selected
+Given #"date" for the Calendar "Julian calendar" is not selected
+When I select #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is selected
 
 Scenario: N68 select
-Given #"Morning" for #"Availability" is not selected
-When I select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is selected
+Given #"date" for #"Julian calendar" is not selected
+When I select #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is selected
 
 /*
 Scenario: Calendar-date-DoNotselect
@@ -523,24 +523,24 @@ Then the date "<date>" for the Calendar "<fieldname>" is not selected
 */
 
 Scenario: N69 Calendar-date-DoNotselect
-Given the date "Morning" for the Calendar "Availability" is not selected
-When I do not select the date "Morning" for the Calendar "Availability"
-Then the date "Morning" for the Calendar "Availability" is not selected
+Given the date "date" for the Calendar "Julian calendar" is not selected
+When I do not select the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is not selected
 
 Scenario: N70 date-DoNotselect
-Given the date "Morning" for #"Availability" is not selected
-When I do not select the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is not selected
+Given the date "date" for #"Julian calendar" is not selected
+When I do not select the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not selected
 
 Scenario: N71 Calendar-DoNotselect
-Given #"Morning" for the Calendar "Availability" is not selected
-When I do not select #"Morning" for the Calendar "Availability"
-Then #"Morning" for the Calendar "Availability" is not selected
+Given #"date" for the Calendar "Julian calendar" is not selected
+When I do not select #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is not selected
 
 Scenario: N72 DoNotselect
-Given #"Morning" for #"Availability" is not selected
-When I do not select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not selected
+Given #"date" for #"Julian calendar" is not selected
+When I do not select #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not selected
 
 /*
 Scenario: Calendar-date-choose
@@ -550,24 +550,24 @@ Then the date "<date>" for the Calendar "<fieldname>" is chosen
 */
 
 Scenario: N73 Calendar-date-choose
-Given the date "Morning" for the Calendar "Availability" is not chosen
-When I choose the date "Morning" for the Calendar "Availability"
-Then the date "Morning" for the Calendar "Availability" is chosen
+Given the date "date" for the Calendar "Julian calendar" is not chosen
+When I choose the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is chosen
 
 Scenario: N74 date-choose
-Given the date "Morning" for #"Availability" is not chosen
-When I choose the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is chosen
+Given the date "date" for #"Julian calendar" is not chosen
+When I choose the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is chosen
 
 Scenario: N75 Calendar-choose
-Given #"Morning" for the Calendar "Availability" is not chosen
-When I choose #"Morning" for the Calendar "Availability"
-Then #"Morning" for the Calendar "Availability" is chosen
+Given #"date" for the Calendar "Julian calendar" is not chosen
+When I choose #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is chosen
 
 Scenario: N76 choose
-Given #"Morning" for #"Availability" is not chosen
-When I choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is chosen
+Given #"date" for #"Julian calendar" is not chosen
+When I choose #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is chosen
 
 /*
 Scenario: Calendar-date-DoNotchoose
@@ -577,24 +577,24 @@ Then the date "<date>" for the Calendar "<fieldname>" is not chosen
 */
 
 Scenario: N77 Calendar-date-DoNotchoose
-Given the date "Morning" for the Calendar "Availability" is not chosen
-When I do not choose the date "Morning" for the Calendar "Availability"
-Then the date "Morning" for the Calendar "Availability" is not chosen
+Given the date "date" for the Calendar "Julian calendar" is not chosen
+When I do not choose the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is not chosen
 
 Scenario: N78 date-DoNotchoose
-Given the date "Morning" for #"Availability" is not chosen
-When I do not choose the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is not chosen
+Given the date "date" for #"Julian calendar" is not chosen
+When I do not choose the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not chosen
 
 Scenario: N79 Calendar-DoNotchoose
-Given #"Morning" for the Calendar "Availability" is not chosen
-When I do not choose #"Morning" for the Calendar "Availability"
-Then #"Morning" for the Calendar "Availability" is not chosen
+Given #"date" for the Calendar "Julian calendar" is not chosen
+When I do not choose #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is not chosen
 
 Scenario: N80 DoNotchoose
-Given #"Morning" for #"Availability" is not chosen
-When I do not choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not chosen
+Given #"date" for #"Julian calendar" is not chosen
+When I do not choose #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not chosen
 
 /*
 Scenario: Calendar-date-pick
@@ -604,24 +604,24 @@ Then the date "<date>" for the Calendar "<fieldname>" is picked
 */
 
 Scenario: N81 Calendar-date-pick
-Given the date "Morning" for the Calendar "Availability" is not picked
-When I pick the date "Morning" for the Calendar "Availability"
-Then the date "Morning" for the Calendar "Availability" is picked
+Given the date "date" for the Calendar "Julian calendar" is not picked
+When I pick the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is picked
 
 Scenario: N82 date-pick
-Given the date "Morning" for #"Availability" is not picked
-When I pick the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is picked
+Given the date "date" for #"Julian calendar" is not picked
+When I pick the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is picked
 
 Scenario: N83 Calendar-pick
-Given #"Morning" for the Calendar "Availability" is not picked
-When I pick #"Morning" for the Calendar "Availability"
-Then #"Morning" for the Calendar "Availability" is picked
+Given #"date" for the Calendar "Julian calendar" is not picked
+When I pick #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is picked
 
 Scenario: N84 pick
-Given #"Morning" for #"Availability" is not picked
-When I pick #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is picked
+Given #"date" for #"Julian calendar" is not picked
+When I pick #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is picked
 
 /*
 Scenario: Calendar-date-DoNotpick
@@ -631,24 +631,24 @@ Then the date "<date>" for the Calendar "<fieldname>" is not picked
 */
 
 Scenario: N85 Calendar-date-DoNotpick
-Given the date "Morning" for the Calendar "Availability" is not picked
-When I do not pick the date "Morning" for the Calendar "Availability"
-Then the date "Morning" for the Calendar "Availability" is not picked
+Given the date "date" for the Calendar "Julian calendar" is not picked
+When I do not pick the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is not picked
 
 Scenario: N86 date-DoNotpick
-Given the date "Morning" for #"Availability" is not picked
-When I do not pick the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is not picked
+Given the date "date" for #"Julian calendar" is not picked
+When I do not pick the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not picked
 
 Scenario: N87 Calendar-DoNotpick
-Given #"Morning" for the Calendar "Availability" is not picked
-When I do not pick #"Morning" for the Calendar "Availability"
-Then #"Morning" for the Calendar "Availability" is not picked
+Given #"date" for the Calendar "Julian calendar" is not picked
+When I do not pick #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is not picked
 
 Scenario: N88 DoNotpick
-Given #"Morning" for #"Availability" is not picked
-When I do not pick #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not picked
+Given #"date" for #"Julian calendar" is not picked
+When I do not pick #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not picked
 
 /*
 Scenario: Calendar-date-set
@@ -658,24 +658,24 @@ Then the date "<date>" for the Calendar "<fieldname>" is set
 */
 
 Scenario: N89 Calendar-date-set
-Given the date "Morning" for the Calendar "Availability" is not set
-When I set the date "Morning" for the Calendar "Availability"
-Then the date "Morning" for the Calendar "Availability" is set
+Given the date "date" for the Calendar "Julian calendar" is not set
+When I set the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is set
 
 Scenario: N90 date-set
-Given the date "Morning" for #"Availability" is not set
-When I set the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is set
+Given the date "date" for #"Julian calendar" is not set
+When I set the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is set
 
 Scenario: N91 Calendar-set
-Given #"Morning" for the Calendar "Availability" is not set
-When I set #"Morning" for the Calendar "Availability"
-Then #"Morning" for the Calendar "Availability" is set
+Given #"date" for the Calendar "Julian calendar" is not set
+When I set #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is set
 
 Scenario: N92 set
-Given #"Morning" for #"Availability" is not set
-When I set #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is set
+Given #"date" for #"Julian calendar" is not set
+When I set #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is set
 
 /*
 Scenario: Calendar-date-DoNotset
@@ -685,21 +685,21 @@ Then the date "<date>" for the Calendar "<fieldname>" is not set
 */
 
 Scenario: N93 Calendar-date-DoNotset
-Given the date "Morning" for the Calendar "Availability" is not set
-When I do not set the date "Morning" for the Calendar "Availability"
-Then the date "Morning" for the Calendar "Availability" is not set
+Given the date "date" for the Calendar "Julian calendar" is not set
+When I do not set the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is not set
 
 Scenario: N94 date-DoNotset
-Given the date "Morning" for #"Availability" is not set
-When I do not set the date "Morning" for #"Availability"
-Then the date "Morning" for #"Availability" is not set
+Given the date "date" for #"Julian calendar" is not set
+When I do not set the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not set
 
 Scenario: N95 Calendar-DoNotset
-Given #"Morning" for the Calendar "Availability" is not set
-When I do not set #"Morning" for the Calendar "Availability"
-Then #"Morning" for the Calendar "Availability" is not set
+Given #"date" for the Calendar "Julian calendar" is not set
+When I do not set #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is not set
 
 Scenario: N96 DoNotset
-Given #"Morning" for #"Availability" is not set
-When I do not set #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not set
+Given #"date" for #"Julian calendar" is not set
+When I do not set #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not set
