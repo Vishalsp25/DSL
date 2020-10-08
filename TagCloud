@@ -1,707 +1,530 @@
-model TagCloud using widgets
-
+model TextArea using widgets
 /*
-Scenario: word-select
-Given the word "<word name>" is unselected
-When I select the word "<word name>"
-Then the word "<word name>" is selected
+Scenario: text-type
+Given the text "<any text>" is not typed
+When I type the text "<any text>"
+Then the text "<any text>" is typed
 */
 
-Scenario: N1 word-select
-Given the word "TagCloud" is unselected
-When I select the word "TagCloud"
-Then the word "TagCloud" is selected
+Scenario: N1 text-type
+Given the text "TextArea" is not typed
+When I type the text "TextArea"
+Then the text "TextArea" is typed
 
-Scenario: N2 select
-Given #"TagCloud" is unselected
-When I select #"TagCloud"
-Then #"TagCloud" is selected
-
-/*
-Scenario: word-DoNotselect
-Given the word "<word name>" is not selected
-When I do not select the word "<word name>"
-Then the word "<word name>" is unselected
-*/
-
-Scenario: N3 word-DoNotselect
-Given the word "TagCloud" is not selected
-When I do not select the word "TagCloud"
-Then the word "TagCloud" is unselected
-
-Scenario: N4 DoNotselect
-Given #"TagCloud" is not selected
-When I do not select #"TagCloud"
-Then #"TagCloud" is unselected
+Scenario: N2 type
+Given #"TextArea" is not typed
+When I type #"TextArea"
+Then #"TextArea" is typed
 
 /*
-Scenario: TagCloud-select
-Given the TagCloud "<word name>" is unselected
-When I select the TagCloud "<word name>"
-Then the TagCloud "<word name>" is selected
+Scenario: text-DoNottype
+Given the text "<any text>" is not typed
+When I do not type the text "<any text>"
+Then the text "<any text>" is not typed
 */
 
-Scenario: N5 TagCloud-select
-Given the TagCloud "TagCloud" is unselected
-When I select the TagCloud "TagCloud"
-Then the TagCloud "TagCloud" is selected
+Scenario: N3 text-DoNottype
+Given the text "TextArea" is not typed
+When I do not type the text "TextArea"
+Then the text "TextArea" is not typed
 
-Scenario: N6 select
-Given #"TagCloud" is unselected
-When I select #"TagCloud"
-Then #"TagCloud" is selected
+Scenario: N4 DoNottype
+Given #"TextArea" is not typed
+When I do not type #"TextArea"
+Then #"TextArea" is not typed
 
 /*
-Scenario: TagCloud-DoNotselect
-Given the TagCloud "<word name>" is not selected
-When I do not select the TagCloud "<word name>"
-Then the TagCloud "<word name>" is unselected
+Scenario: TextArea-type
+Given the TextArea "<any text>" is not typed
+When I type the TextArea "<any text>"
+Then the TextArea "<any text>" is typed
 */
 
-Scenario: N7 TagCloud-select
-Given the TagCloud "TagCloud" is not selected
-When I do not select the TagCloud "TagCloud"
-Then the TagCloud "TagCloud" is unselected
+Scenario: N5 TextArea-type
+Given the TextArea "TextArea" is not typed
+When I type the TextArea "TextArea"
+Then the TextArea "TextArea" is typed
 
-Scenario: N8 select
-Given #"TagCloud" is not selected
-When I do not select #"TagCloud"
-Then #"TagCloud" is unselected
+Scenario: N6 type
+Given #"TextArea" is not typed
+When I type #"TextArea"
+Then #"TextArea" is typed
 
 /*
-Scenario: word-choose
-Given the word "<word name>" is not chosen
-When I choose the word "<word name>"
-Then the word "<word name>" is chosen
+Scenario: TextArea-DoNottype
+Given the TextArea "<any text>" is not typed
+When I do not type the TextArea "<any text>"
+Then the TextArea "<any text>" is not typed
 */
 
-Scenario: N9 word-choose
-Given the word "TagCloud" is not chosen
-When I choose the word "TagCloud"
-Then the word "TagCloud" is chosen
+Scenario: N7 TextArea-type
+Given the TextArea "TextArea" is not typed
+When I do not type the TextArea "TextArea"
+Then the TextArea "TextArea" is not typed
 
-Scenario: N10 choose
-Given #"TagCloud" is not chosen
-When I choose #"TagCloud"
-Then #"TagCloud" is chosen
+Scenario: N8 type
+Given #"TextArea" is not typed
+When I do not type #"TextArea"
+Then #"TextArea" is not typed
 
 /*
-Scenario: word-DoNotchoose
-Given the word "<word name>" is not chosen
-When I do not choose the word "<word name>"
-Then the word "<word name>" is not chosen
+Scenario: text-set
+Given the text "<any text>" is not set
+When I set the text "<any text>"
+Then the text "<any text>" is set
 */
 
-Scenario: N11 word-DoNotchoose
-Given the word "TagCloud" is not chosen
-When I do not choose the word "TagCloud"
-Then the word "TagCloud" is not chosen
+Scenario: N9 text-set
+Given the text "TextArea" is not set
+When I set the text "TextArea"
+Then the text "TextArea" is set
 
-Scenario: N12 DoNotchoose
-Given #"TagCloud" is not chosen
-When I do not choose #"TagCloud"
-Then #"TagCloud" is not chosen
+Scenario: N10 set
+Given #"TextArea" is not set
+When I set #"TextArea"
+Then #"TextArea" is set
 
 /*
-Scenario: TagCloud-choose
-Given the TagCloud "<word name>" is not chosen
-When I choose the TagCloud "<word name>"
-Then the TagCloud "<word name>" is chosen
+Scenario: text-DoNotset
+Given the text "<any text>" is not set
+When I do not set the text "<any text>"
+Then the text "<any text>" is not set
 */
 
-Scenario: N13 TagCloud-choose
-Given the TagCloud "TagCloud" is not chosen
-When I choose the TagCloud "TagCloud"
-Then the TagCloud "TagCloud" is chosen
+Scenario: N11 text-DoNotset
+Given the text "TextArea" is not set
+When I do not set the text "TextArea"
+Then the text "TextArea" is not set
 
-Scenario: N14 choose
-Given #"TagCloud" is not chosen
-When I choose #"TagCloud"
-Then #"TagCloud" is chosen
+Scenario: N12 DoNotset
+Given #"TextArea" is not set
+When I do not set #"TextArea"
+Then #"TextArea" is not set
 
 /*
-Scenario: TagCloud-DoNotchoose
-Given the TagCloud "<word name>" is not chosen
-When I do not choose the TagCloud "<word name>"
-Then the TagCloud "<word name>" is not chosen
+Scenario: TextArea-set
+Given the TextArea "<any text>" is not set
+When I set the TextArea "<any text>"
+Then the TextArea "<any text>" is set
 */
 
-Scenario: N15 TagCloud-choose
-Given the TagCloud "TagCloud" is not chosen
-When I do not choose the TagCloud "TagCloud"
-Then the TagCloud "TagCloud" is not chosen
+Scenario: N13 TextArea-set
+Given the TextArea "TextArea" is not set
+When I set the TextArea "TextArea"
+Then the TextArea "TextArea" is set
 
-Scenario: N16 choose
-Given #"TagCloud" is not chosen
-When I do not choose #"TagCloud"
-Then #"TagCloud" is not chosen
+Scenario: N14 set
+Given #"TextArea" is not set
+When I set #"TextArea"
+Then #"TextArea" is set
 
 /*
-Scenario: word-pick
-Given the word "<word name>" is not picked
-When I pick the word "<word name>"
-Then the word "<word name>" is picked
+Scenario: TextArea-DoNotset
+Given the TextArea "<any text>" is not set
+When I do not set the TextArea "<any text>"
+Then the TextArea "<any text>" is not set
 */
 
-Scenario: N17 word-pick
-Given the word "TagCloud" is not picked
-When I pick the word "TagCloud"
-Then the word "TagCloud" is picked
+Scenario: N13 TextArea-set
+Given the TextArea "TextArea" is not set
+When I do not set the TextArea "TextArea"
+Then the TextArea "TextArea" is not set
 
-Scenario: N18 pick
-Given #"TagCloud" is not picked
-When I pick #"TagCloud"
-Then #"TagCloud" is picked
+Scenario: N14 set
+Given #"TextArea" is not set
+When I do not set #"TextArea"
+Then #"TextArea" is not set
 
 /*
-Scenario: word-DoNotpick
-Given the word "<word name>" is not picked
-When I do not picked the word "<word name>"
-Then the word "<word name>" is not picked
+Scenario: text-fill in with
+Given the text "<any text>" is not filled in
+When I fill in with the text "<any text>"
+Then the text "<any text>" is filled in
 */
 
-Scenario: N19 word-DoNotpick
-Given the word "TagCloud" is not picked
-When I do not pick the word "TagCloud"
-Then the word "TagCloud" is not picked
+Scenario: N15 text-fill in with
+Given the text "TextArea" is not filled in
+When I fill in with the text "TextArea"
+Then the text "TextArea" is filled in
 
-Scenario: N20 DoNotpick
-Given #"TagCloud" is not picked
-When I do not pick #"TagCloud"
-Then #"TagCloud" is not picked
+Scenario: N16 fill in with
+Given #"TextArea" is not filled in
+When I fill in with #"TextArea"
+Then #"TextArea" is filled in
 
 /*
-Scenario: TagCloud-pick
-Given the TagCloud "<word name>" is not picked
-When I pick the TagCloud "<word name>"
-Then the TagCloud "<word name>" is picked
+Scenario: text-DoNotfill in with
+Given the text "<any text>" is not filled in
+When I do not fill in the text "<any text>"
+Then the text "<any text>" is not filled in
 */
 
-Scenario: N21 TagCloud-pick
-Given the TagCloud "TagCloud" is not picked
-When I pick the TagCloud "TagCloud"
-Then the TagCloud "TagCloud" is picked
+Scenario: N17 text-DoNotfill in with
+Given the text "TextArea" is not filled in
+When I do not fill in the text "TextArea"
+Then the text "TextArea" is not filled in
 
-Scenario: N22 pick
-Given #"TagCloud" is not picked
-When I pick #"TagCloud"
-Then #"TagCloud" is picked
+Scenario: N18 DoNotfill in with
+Given #"TextArea" is not filled in
+When I do not fill in #"TextArea"
+Then #"TextArea" is not filled in
 
 /*
-Scenario: TagCloud-DoNotpick
-Given the TagCloud "<word name>" is not picked
-When I do not picked the TagCloud "<word name>"
-Then the TagCloud "<word name>" is not picked
+Scenario: TextArea-fill in with
+Given the TextArea "<any text>" is not filled in
+When I fill in with the TextArea "<any text>"
+Then the TextArea "<any text>" is filled in
 */
 
-Scenario: N23 TagCloud-pick
-Given the TagCloud "TagCloud" is not picked
-When I do not pick the TagCloud "TagCloud"
-Then the TagCloud "TagCloud" is not picked
+Scenario: N19 TextArea-fill in with
+Given the TextArea "TextArea" is not filled in
+When I fill in with the TextArea "TextArea"
+Then the TextArea "TextArea" is filled in
 
-Scenario: N24 pick
-Given #"TagCloud" is not picked
-When I do not pick #"TagCloud"
-Then #"TagCloud" is not picked
+Scenario: N20 fill in with
+Given #"TextArea" is not filled in
+When I fill in with #"TextArea"
+Then #"TextArea" is filled in
 
 /*
-Scenario: word-click
-Given the word "<word name>" is not clicked
-When I click the word "<word name>"
-Then the word "<word name>" is clicked
+Scenario: TextArea-DoNotfill in with
+Given the TextArea "<any text>" is not filled in
+When I do not fill in the TextArea "<any text>"
+Then the TextArea "<any text>" is not filled in
 */
 
-Scenario: N25 word-click
-Given the word "TagCloud" is not clicked
-When I click the word "TagCloud"
-Then the word "TagCloud" is clicked
+Scenario: N21 TextArea-fill in with
+Given the TextArea "TextArea" is not filled in
+When I do not fill in the TextArea "TextArea"
+Then the TextArea "TextArea" is not filled in
 
-Scenario: N26 click
-Given #"TagCloud" is not clicked
-When I click #"TagCloud"
-Then #"TagCloud" is clicked
-
-/*
-Scenario: word-DoNotclick
-Given the word "<word name>" is not clicked
-When I do not clicked the word "<word name>"
-Then the word "<word name>" is not clicked
-*/
-
-Scenario: N27 word-DoNotclick
-Given the word "TagCloud" is not clicked
-When I do not click the word "TagCloud"
-Then the word "TagCloud" is not clicked
-
-Scenario: N28 DoNotclick
-Given #"TagCloud" is not clicked
-When I do not click #"TagCloud"
-Then #"TagCloud" is not clicked
-
-/*
-Scenario: TagCloud-click
-Given the TagCloud "<word name>" is not clicked
-When I click the TagCloud "<word name>"
-Then the TagCloud "<word name>" is clicked
-*/
-
-Scenario: N29 TagCloud-click
-Given the TagCloud "TagCloud" is not clicked
-When I click the TagCloud "TagCloud"
-Then the TagCloud "TagCloud" is clicked
-
-Scenario: N30 click
-Given #"TagCloud" is not clicked
-When I click #"TagCloud"
-Then #"TagCloud" is clicked
-
-/*
-Scenario: TagCloud-DoNotclick
-Given the TagCloud "<word name>" is not clicked
-When I do not clicked the TagCloud "<word name>"
-Then the TagCloud "<word name>" is not clicked
-*/
-
-Scenario: N31 TagCloud-click
-Given the TagCloud "TagCloud" is not clicked
-When I do not click the TagCloud "TagCloud"
-Then the TagCloud "TagCloud" is not clicked
-
-Scenario: N32 click
-Given #"TagCloud" is not clicked
-When I do not click #"TagCloud"
-Then #"TagCloud" is not clicked
+Scenario: N22 fill in with
+Given #"TextArea" is not filled in
+When I do not fill in #"TextArea"
+Then #"TextArea" is not filled in
 
 
 /*
-Scenario: Field-word-select
-Given the word "<word>" for the field "<fieldname>" is not selected
-When I select the word "<word>" for the field "<fieldname>"
-Then the word "<word>" for the field "<fieldname>" is selected
+Scenario: Field-text-type
+Given the text "<text>" for the field "<fieldname>" is not typed
+When I type the text "<text>" for the field "<fieldname>"
+Then the text "<text>" for the field "<fieldname>" is typed
 */
 
-Scenario: N33 Field-word-select
-Given the word "Information" for the field "Text data" is not selected
-When I select the word "Information" for the field "Text data"
-Then the word "Information" for the field "Text data" is selected
+Scenario: N23 Field-text-type
+Given the text "Welcome" for the field "Text area" is not typed
+When I type the text "Welcome" for the field "Text area"
+Then the text "Welcome" for the field "Text area" is typed
 
-Scenario: N34 word-select
-Given the word "Information" for #"Text data" is not selected
-When I select the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is selected
+Scenario: N24 text-type
+Given the text "Welcome" for #"Text area" is not typed
+When I type the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is typed
 
-Scenario: N35 Field-select
-Given #"Information" for the field "Text data" is not selected
-When I select #"Information" for the field "Text data"
-Then #"Information" for the field "Text data" is selected
+Scenario: N25 Field-type
+Given #"Welcome" for the field "Text area" is not typed
+When I type #"Welcome" for the field "Text area"
+Then #"Welcome" for the field "Text area" is typed
 
-Scenario: N36 select
-Given #"Information" for #"Text data" is not selected
-When I select #"Information" for #"Text data"
-Then #"Information" for #"Text data" is selected
+Scenario: N26 type
+Given #"Welcome" for #"Text area" is not typed
+When I type #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is typed
 
 /*
-Scenario: Field-word-DoNotselect
-Given the word "<word>" for the field "<fieldname>" is not selected
-When I do not select the word "<word>" for the field "<fieldname>"
-Then the word "<word>" for the field "<fieldname>" is not selected
+Scenario: Field-text-DoNottype
+Given the text "<text>" for the field "<fieldname>" is not typed
+When I do not type the text "<text>" for the field "<fieldname>"
+Then the text "<text>" for the field "<fieldname>" is not typed
 */
 
-Scenario: N37 Field-word-DoNotselect
-Given the word "Information" for the field "Text data" is not selected
-When I do not select the word "Information" for the field "Text data"
-Then the word "Information" for the field "Text data" is not selected
+Scenario: N27 Field-text-DoNottype
+Given the text "Welcome" for the field "Text area" is not typed
+When I do not type the text "Welcome" for the field "Text area"
+Then the text "Welcome" for the field "Text area" is not typed
 
-Scenario: N38 word-DoNotselect
-Given the word "Information" for #"Text data" is not selected
-When I do not select the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is not selected
+Scenario: N28 text-DoNottype
+Given the text "Welcome" for #"Text area" is not typed
+When I do not type the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is not typed
 
-Scenario: N39 Field-DoNotselect
-Given #"Information" for the field "Text data" is not selected
-When I do not select #"Information" for the field "Text data"
-Then #"Information" for the field "Text data" is not selected
+Scenario: N29 Field-DoNottype
+Given #"Welcome" for the field "Text area" is not typed
+When I do not type #"Welcome" for the field "Text area"
+Then #"Welcome" for the field "Text area" is not typed
 
-Scenario: N40 DoNotselect
-Given #"Information" for #"Text data" is not selected
-When I do not select #"Information" for #"Text data"
-Then #"Information" for #"Text data" is not selected
+Scenario: N30 DoNottype
+Given #"Welcome" for #"Text area" is not typed
+When I do not type #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is not typed
 
 /*
-Scenario: Field-word-choose
-Given the word "<word>" for the field "<fieldname>" is not chosen
-When I choose the word "<word>" for the field "<fieldname>"
-Then the word "<word>" for the field "<fieldname>" is chosen
+Scenario: Field-text-set
+Given the text "<text>" for the field "<fieldname>" is not set
+When I set the text "<text>" for the field "<fieldname>"
+Then the text "<text>" for the field "<fieldname>" is set
 */
 
-Scenario: N41 Field-word-choose
-Given the word "Information" for the field "Text data" is not chosen
-When I choose the word "Information" for the field "Text data"
-Then the word "Information" for the field "Text data" is chosen
+Scenario: N31 Field-text-set
+Given the text "Welcome" for the field "Text area" is not set
+When I set the text "Welcome" for the field "Text area"
+Then the text "Welcome" for the field "Text area" is set
 
-Scenario: N42 word-choose
-Given the word "Information" for #"Text data" is not chosen
-When I choose the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is chosen
+Scenario: N32 text-set
+Given the text "Welcome" for #"Text area" is not set
+When I set the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is set
 
-Scenario: N43 Field-choose
-Given #"Information" for the field "Text data" is not chosen
-When I choose #"Information" for the field "Text data"
-Then #"Information" for the field "Text data" is chosen
+Scenario: N33 Field-set
+Given #"Welcome" for the field "Text area" is not set
+When I set #"Welcome" for the field "Text area"
+Then #"Welcome" for the field "Text area" is set
 
-Scenario: N44 choose
-Given #"Information" for #"Text data" is not chosen
-When I choose #"Information" for #"Text data"
-Then #"Information" for #"Text data" is chosen
+Scenario: N34 set
+Given #"Welcome" for #"Text area" is not set
+When I set #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is set
 
 /*
-Scenario: Field-word-DoNotchoose
-Given the word "<word>" for the field "<fieldname>" is not chosen
-When I do not choose the word "<word>" for the field "<fieldname>"
-Then the word "<word>" for the field "<fieldname>" is not chosen
+Scenario: Field-text-DoNotset
+Given the text "<text>" for the field "<fieldname>" is not set
+When I do not set the text "<text>" for the field "<fieldname>"
+Then the text "<text>" for the field "<fieldname>" is not set
 */
 
-Scenario: N45 Field-word-DoNotchoose
-Given the word "Information" for the field "Text data" is not chosen
-When I do not choose the word "Information" for the field "Text data"
-Then the word "Information" for the field "Text data" is not chosen
+Scenario: N35 Field-text-DoNotset
+Given the text "Welcome" for the field "Text area" is not set
+When I do not set the text "Welcome" for the field "Text area"
+Then the text "Welcome" for the field "Text area" is not set
 
-Scenario: N46 word-DoNotchoose
-Given the word "Information" for #"Text data" is not chosen
-When I do not choose the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is not chosen
+Scenario: N36 text-DoNotset
+Given the text "Welcome" for #"Text area" is not set
+When I do not set the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is not set
 
-Scenario: N47 Field-DoNotchoose
-Given #"Information" for the field "Text data" is not chosen
-When I do not choose #"Information" for the field "Text data"
-Then #"Information" for the field "Text data" is not chosen
+Scenario: N37 Field-DoNotset
+Given #"Welcome" for the field "Text area" is not set
+When I do not set #"Welcome" for the field "Text area"
+Then #"Welcome" for the field "Text area" is not set
 
-Scenario: N48 DoNotchoose
-Given #"Information" for #"Text data" is not chosen
-When I do not choose #"Information" for #"Text data"
-Then #"Information" for #"Text data" is not chosen
+Scenario: N38 DoNotset
+Given #"Welcome" for #"Text area" is not set
+When I do not set #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is not set
 
 /*
-Scenario: Field-word-pick
-Given the word "<word>" for the field "<fieldname>" is not picked
-When I pick the word "<word>" for the field "<fieldname>"
-Then the word "<word>" for the field "<fieldname>" is picked
+Scenario: Field-text-fill in with
+Given the text "<text>" for the field "<fieldname>" is not filled in
+When I fill in with the text "<text>" for the field "<fieldname>"
+Then the text "<text>" for the field "<fieldname>" is filled in
 */
 
-Scenario: N49 Field-word-pick
-Given the word "Information" for the field "Text data" is not picked
-When I pick the word "Information" for the field "Text data"
-Then the word "Information" for the field "Text data" is picked
+Scenario: N39 Field-text-fill in with
+Given the text "Welcome" for the field "Text area" is not filled in
+When I fill in with the text "Welcome" for the field "Text area"
+Then the text "Welcome" for the field "Text area" is filled in
 
-Scenario: N50 word-pick
-Given the word "Information" for #"Text data" is not picked
-When I pick the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is picked
+Scenario: N40 text-fill in with
+Given the text "Welcome" for #"Text area" is not filled in
+When I fill in with the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is filled in
 
-Scenario: N51 Field-pick
-Given #"Information" for the field "Text data" is not picked
-When I pick #"Information" for the field "Text data"
-Then #"Information" for the field "Text data" is picked
+Scenario: N41 Field-fill in with
+Given #"Welcome" for the field "Text area" is not filled in
+When I fill in with #"Welcome" for the field "Text area"
+Then #"Welcome" for the field "Text area" is filled in
 
-Scenario: N52 pick
-Given #"Information" for #"Text data" is not picked
-When I pick #"Information" for #"Text data"
-Then #"Information" for #"Text data" is picked
+Scenario: N42 fill in with
+Given #"Welcome" for #"Text area" is not filled in
+When I fill in with #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is filled in
 
 /*
-Scenario: Field-word-DoNotpick
-Given the word "<word>" for the field "<fieldname>" is not picked
-When I do not pick the word "<word>" for the field "<fieldname>"
-Then the word "<word>" for the field "<fieldname>" is not picked
+Scenario: Field-text-DoNotfill in with
+Given the text "<text>" for the field "<fieldname>" is not filled in
+When I do not fill in with the text "<text>" for the field "<fieldname>"
+Then the text "<text>" for the field "<fieldname>" is not filled in
 */
 
-Scenario: N53 Field-word-DoNotpick
-Given the word "Information" for the field "Text data" is not picked
-When I do not pick the word "Information" for the field "Text data"
-Then the word "Information" for the field "Text data" is not picked
+Scenario: N43 Field-text-DoNotfill in with
+Given the text "Welcome" for the field "Text area" is not filled in
+When I do not fill in with the text "Welcome" for the field "Text area"
+Then the text "Welcome" for the field "Text area" is not filled in
 
-Scenario: N54 word-DoNotpick
-Given the word "Information" for #"Text data" is not picked
-When I do not pick the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is not picked
+Scenario: N44 text-DoNotfill in with
+Given the text "Welcome" for #"Text area" is not filled in
+When I do not fill in with the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is not filled in
 
-Scenario: N55 Field-DoNotpick
-Given #"Information" for the field "Text data" is not picked
-When I do not pick #"Information" for the field "Text data"
-Then #"Information" for the field "Text data" is not picked
+Scenario: N45 Field-DoNotfill in with
+Given #"Welcome" for the field "Text area" is not filled in
+When I do not fill in with #"Welcome" for the field "Text area"
+Then #"Welcome" for the field "Text area" is not filled in
 
-Scenario: N56 DoNotpick
-Given #"Information" for #"Text data" is not picked
-When I do not pick #"Information" for #"Text data"
-Then #"Information" for #"Text data" is not picked
-
-/*
-Scenario: Field-word-click
-Given the word "<word>" for the field "<fieldname>" is not clicked
-When I click the word "<word>" for the field "<fieldname>"
-Then the word "<word>" for the field "<fieldname>" is clicked
-*/
-
-Scenario: N57 Field-word-click
-Given the word "Information" for the field "Text data" is not clicked
-When I click the word "Information" for the field "Text data"
-Then the word "Information" for the field "Text data" is clicked
-
-Scenario: N58 word-click
-Given the word "Information" for #"Text data" is not clicked
-When I click the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is clicked
-
-Scenario: N59 Field-click
-Given #"Information" for the field "Text data" is not clicked
-When I click #"Information" for the field "Text data"
-Then #"Information" for the field "Text data" is clicked
-
-Scenario: N60 click
-Given #"Information" for #"Text data" is not clicked
-When I click #"Information" for #"Text data"
-Then #"Information" for #"Text data" is clicked
-
-/*
-Scenario: Field-word-DoNotclick
-Given the word "<word>" for the field "<fieldname>" is not clicked
-When I do not click the word "<word>" for the field "<fieldname>"
-Then the word "<word>" for the field "<fieldname>" is not clicked
-*/
-
-Scenario: N61 Field-word-DoNotclick
-Given the word "Information" for the field "Text data" is not clicked
-When I do not click the word "Information" for the field "Text data"
-Then the word "Information" for the field "Text data" is not clicked
-
-Scenario: N62 word-DoNotclick
-Given the word "Information" for #"Text data" is not clicked
-When I do not click the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is not clicked
-
-Scenario: N63 Field-DoNotclick
-Given #"Information" for the field "Text data" is not clicked
-When I do not click #"Information" for the field "Text data"
-Then #"Information" for the field "Text data" is not clicked
-
-Scenario: N64 DoNotclick
-Given #"Information" for #"Text data" is not clicked
-When I do not click #"Information" for #"Text data"
-Then #"Information" for #"Text data" is not clicked
+Scenario: N46 DoNotfill in with
+Given #"Welcome" for #"Text area" is not filled in
+When I do not fill in with #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is not filled in
 
 
 /*
-Scenario: TagCloud-word-select
-Given the word "<word>" for the TagCloud "<fieldname>" is not selected
-When I select the word "<word>" for the TagCloud "<fieldname>"
-Then the word "<word>" for the TagCloud "<fieldname>" is selected
+Scenario: TextArea-text-type
+Given the text "<text>" for the TextArea "<fieldname>" is not typed
+When I type the text "<text>" for the TextArea "<fieldname>"
+Then the text "<text>" for the TextArea "<fieldname>" is typed
 */
 
-Scenario: N65 TagCloud-word-select
-Given the word "Information" for the TagCloud "Text data" is not selected
-When I select the word "Information" for the TagCloud "Text data"
-Then the word "Information" for the TagCloud "Text data" is selected
+Scenario: N47 TextArea-text-type
+Given the text "Welcome" for the TextArea "Text area" is not typed
+When I type the text "Welcome" for the TextArea "Text area"
+Then the text "Welcome" for the TextArea "Text area" is typed
 
-Scenario: N66 word-select
-Given the word "Information" for #"Text data" is not selected
-When I select the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is selected
+Scenario: N48 text-type
+Given the text "Welcome" for #"Text area" is not typed
+When I type the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is typed
 
-Scenario: N67 TagCloud-select
-Given #"Information" for the TagCloud "Text data" is not selected
-When I select #"Information" for the TagCloud "Text data"
-Then #"Information" for the TagCloud "Text data" is selected
+Scenario: N49 TextArea-type
+Given #"Welcome" for the TextArea "Text area" is not typed
+When I type #"Welcome" for the TextArea "Text area"
+Then #"Welcome" for the TextArea "Text area" is typed
 
-Scenario: N68 select
-Given #"Information" for #"Text data" is not selected
-When I select #"Information" for #"Text data"
-Then #"Information" for #"Text data" is selected
+Scenario: N50 type
+Given #"Welcome" for #"Text area" is not typed
+When I type #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is typed
 
 /*
-Scenario: TagCloud-word-DoNotselect
-Given the word "<word>" for the TagCloud "<fieldname>" is not selected
-When I do not select the word "<word>" for the TagCloud "<fieldname>"
-Then the word "<word>" for the TagCloud "<fieldname>" is not selected
+Scenario: TextArea-text-DoNottype
+Given the text "<text>" for the TextArea "<fieldname>" is not typed
+When I do not type the text "<text>" for the TextArea "<fieldname>"
+Then the text "<text>" for the TextArea "<fieldname>" is not typed
 */
 
-Scenario: N69 TagCloud-word-DoNotselect
-Given the word "Information" for the TagCloud "Text data" is not selected
-When I do not select the word "Information" for the TagCloud "Text data"
-Then the word "Information" for the TagCloud "Text data" is not selected
+Scenario: N51 TextArea-text-DoNottype
+Given the text "Welcome" for the TextArea "Text area" is not typed
+When I do not type the text "Welcome" for the TextArea "Text area"
+Then the text "Welcome" for the TextArea "Text area" is not typed
 
-Scenario: N70 word-DoNotselect
-Given the word "Information" for #"Text data" is not selected
-When I do not select the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is not selected
+Scenario: N52 text-DoNottype
+Given the text "Welcome" for #"Text area" is not typed
+When I do not type the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is not typed
 
-Scenario: N71 TagCloud-DoNotselect
-Given #"Information" for the TagCloud "Text data" is not selected
-When I do not select #"Information" for the TagCloud "Text data"
-Then #"Information" for the TagCloud "Text data" is not selected
+Scenario: N53 TextArea-DoNottype
+Given #"Welcome" for the TextArea "Text area" is not typed
+When I do not type #"Welcome" for the TextArea "Text area"
+Then #"Welcome" for the TextArea "Text area" is not typed
 
-Scenario: N72 DoNotselect
-Given #"Information" for #"Text data" is not selected
-When I do not select #"Information" for #"Text data"
-Then #"Information" for #"Text data" is not selected
+Scenario: N54 DoNottype
+Given #"Welcome" for #"Text area" is not typed
+When I do not type #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is not typed
 
 /*
-Scenario: TagCloud-word-choose
-Given the word "<word>" for the TagCloud "<fieldname>" is not chosen
-When I choose the word "<word>" for the TagCloud "<fieldname>"
-Then the word "<word>" for the TagCloud "<fieldname>" is chosen
+Scenario: TextArea-text-set
+Given the text "<text>" for the TextArea "<fieldname>" is not set
+When I set the text "<text>" for the TextArea "<fieldname>"
+Then the text "<text>" for the TextArea "<fieldname>" is set
 */
 
-Scenario: N73 TagCloud-word-choose
-Given the word "Information" for the TagCloud "Text data" is not chosen
-When I choose the word "Information" for the TagCloud "Text data"
-Then the word "Information" for the TagCloud "Text data" is chosen
+Scenario: N55 TextArea-text-set
+Given the text "Welcome" for the TextArea "Text area" is not set
+When I set the text "Welcome" for the TextArea "Text area"
+Then the text "Welcome" for the TextArea "Text area" is set
 
-Scenario: N74 word-choose
-Given the word "Information" for #"Text data" is not chosen
-When I choose the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is chosen
+Scenario: N56 text-set
+Given the text "Welcome" for #"Text area" is not set
+When I set the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is set
 
-Scenario: N75 TagCloud-choose
-Given #"Information" for the TagCloud "Text data" is not chosen
-When I choose #"Information" for the TagCloud "Text data"
-Then #"Information" for the TagCloud "Text data" is chosen
+Scenario: N57 TextArea-set
+Given #"Welcome" for the TextArea "Text area" is not set
+When I set #"Welcome" for the TextArea "Text area"
+Then #"Welcome" for the TextArea "Text area" is set
 
-Scenario: N76 choose
-Given #"Information" for #"Text data" is not chosen
-When I choose #"Information" for #"Text data"
-Then #"Information" for #"Text data" is chosen
+Scenario: N58 set
+Given #"Welcome" for #"Text area" is not set
+When I set #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is set
 
 /*
-Scenario: TagCloud-word-DoNotchoose
-Given the word "<word>" for the TagCloud "<fieldname>" is not chosen
-When I do not choose the word "<word>" for the TagCloud "<fieldname>"
-Then the word "<word>" for the TagCloud "<fieldname>" is not chosen
+Scenario: TextArea-text-DoNotset
+Given the text "<text>" for the TextArea "<fieldname>" is not set
+When I do not set the text "<text>" for the TextArea "<fieldname>"
+Then the text "<text>" for the TextArea "<fieldname>" is not set
 */
 
-Scenario: N77 TagCloud-word-DoNotchoose
-Given the word "Information" for the TagCloud "Text data" is not chosen
-When I do not choose the word "Information" for the TagCloud "Text data"
-Then the word "Information" for the TagCloud "Text data" is not chosen
+Scenario: N59 TextArea-text-DoNotset
+Given the text "Welcome" for the TextArea "Text area" is not set
+When I do not set the text "Welcome" for the TextArea "Text area"
+Then the text "Welcome" for the TextArea "Text area" is not set
 
-Scenario: N78 word-DoNotchoose
-Given the word "Information" for #"Text data" is not chosen
-When I do not choose the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is not chosen
+Scenario: N60 text-DoNotset
+Given the text "Welcome" for #"Text area" is not set
+When I do not set the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is not set
 
-Scenario: N79 TagCloud-DoNotchoose
-Given #"Information" for the TagCloud "Text data" is not chosen
-When I do not choose #"Information" for the TagCloud "Text data"
-Then #"Information" for the TagCloud "Text data" is not chosen
+Scenario: N61 TextArea-DoNotset
+Given #"Welcome" for the TextArea "Text area" is not set
+When I do not set #"Welcome" for the TextArea "Text area"
+Then #"Welcome" for the TextArea "Text area" is not set
 
-Scenario: N80 DoNotchoose
-Given #"Information" for #"Text data" is not chosen
-When I do not choose #"Information" for #"Text data"
-Then #"Information" for #"Text data" is not chosen
+Scenario: N62 DoNotset
+Given #"Welcome" for #"Text area" is not set
+When I do not set #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is not set
 
 /*
-Scenario: TagCloud-word-pick
-Given the word "<word>" for the TagCloud "<fieldname>" is not picked
-When I pick the word "<word>" for the TagCloud "<fieldname>"
-Then the word "<word>" for the TagCloud "<fieldname>" is picked
+Scenario: TextArea-text-fill in with
+Given the text "<text>" for the TextArea "<fieldname>" is not filled in
+When I fill in with the text "<text>" for the TextArea "<fieldname>"
+Then the text "<text>" for the TextArea "<fieldname>" is filled in
 */
 
-Scenario: N81 TagCloud-word-pick
-Given the word "Information" for the TagCloud "Text data" is not picked
-When I pick the word "Information" for the TagCloud "Text data"
-Then the word "Information" for the TagCloud "Text data" is picked
+Scenario: N63 TextArea-text-fill in with
+Given the text "Welcome" for the TextArea "Text area" is not filled in
+When I fill in with the text "Welcome" for the TextArea "Text area"
+Then the text "Welcome" for the TextArea "Text area" is filled in
 
-Scenario: N82 word-pick
-Given the word "Information" for #"Text data" is not picked
-When I pick the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is picked
+Scenario: N64 text-fill in with
+Given the text "Welcome" for #"Text area" is not filled in
+When I fill in with the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is filled in
 
-Scenario: N83 TagCloud-pick
-Given #"Information" for the TagCloud "Text data" is not picked
-When I pick #"Information" for the TagCloud "Text data"
-Then #"Information" for the TagCloud "Text data" is picked
+Scenario: N65 TextArea-fill in with
+Given #"Welcome" for the TextArea "Text area" is not filled in
+When I fill in with #"Welcome" for the TextArea "Text area"
+Then #"Welcome" for the TextArea "Text area" is filled in
 
-Scenario: N84 pick
-Given #"Information" for #"Text data" is not picked
-When I pick #"Information" for #"Text data"
-Then #"Information" for #"Text data" is picked
+Scenario: N66 fill in with
+Given #"Welcome" for #"Text area" is not filled in
+When I fill in with #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is filled in
 
 /*
-Scenario: TagCloud-word-DoNotpick
-Given the word "<word>" for the TagCloud "<fieldname>" is not picked
-When I do not pick the word "<word>" for the TagCloud "<fieldname>"
-Then the word "<word>" for the TagCloud "<fieldname>" is not picked
+Scenario: TextArea-text-DoNotfill in with
+Given the text "<text>" for the TextArea "<fieldname>" is not filled in
+When I do not fill in with the text "<text>" for the TextArea "<fieldname>"
+Then the text "<text>" for the TextArea "<fieldname>" is not filled in
 */
 
-Scenario: N85 TagCloud-word-DoNotpick
-Given the word "Information" for the TagCloud "Text data" is not picked
-When I do not pick the word "Information" for the TagCloud "Text data"
-Then the word "Information" for the TagCloud "Text data" is not picked
+Scenario: N67 TextArea-text-DoNotfill in with
+Given the text "Welcome" for the TextArea "Text area" is not filled in
+When I do not fill in with the text "Welcome" for the TextArea "Text area"
+Then the text "Welcome" for the TextArea "Text area" is not filled in
 
-Scenario: N86 word-DoNotpick
-Given the word "Information" for #"Text data" is not picked
-When I do not pick the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is not picked
+Scenario: N68 text-DoNotfill in with
+Given the text "Welcome" for #"Text area" is not filled in
+When I do not fill in with the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is not filled in
 
-Scenario: N87 TagCloud-DoNotpick
-Given #"Information" for the TagCloud "Text data" is not picked
-When I do not pick #"Information" for the TagCloud "Text data"
-Then #"Information" for the TagCloud "Text data" is not picked
+Scenario: N69 TextArea-DoNotfill in with
+Given #"Welcome" for the TextArea "Text area" is not filled in
+When I do not fill in with #"Welcome" for the TextArea "Text area"
+Then #"Welcome" for the TextArea "Text area" is not filled in
 
-Scenario: N88 DoNotpick
-Given #"Information" for #"Text data" is not picked
-When I do not pick #"Information" for #"Text data"
-Then #"Information" for #"Text data" is not picked
-
-/*
-Scenario: TagCloud-word-click
-Given the word "<word>" for the TagCloud "<fieldname>" is not clicked
-When I click the word "<word>" for the TagCloud "<fieldname>"
-Then the word "<word>" for the TagCloud "<fieldname>" is clicked
-*/
-
-Scenario: N89 TagCloud-word-click
-Given the word "Information" for the TagCloud "Text data" is not clicked
-When I click the word "Information" for the TagCloud "Text data"
-Then the word "Information" for the TagCloud "Text data" is clicked
-
-Scenario: N90 word-click
-Given the word "Information" for #"Text data" is not clicked
-When I click the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is clicked
-
-Scenario: N91 TagCloud-click
-Given #"Information" for the TagCloud "Text data" is not clicked
-When I click #"Information" for the TagCloud "Text data"
-Then #"Information" for the TagCloud "Text data" is clicked
-
-Scenario: N92 click
-Given #"Information" for #"Text data" is not clicked
-When I click #"Information" for #"Text data"
-Then #"Information" for #"Text data" is clicked
-
-/*
-Scenario: TagCloud-word-DoNotclick
-Given the word "<word>" for the TagCloud "<fieldname>" is not clicked
-When I do not click the word "<word>" for the TagCloud "<fieldname>"
-Then the word "<word>" for the TagCloud "<fieldname>" is not clicked
-*/
-
-Scenario: N93 TagCloud-word-DoNotclick
-Given the word "Information" for the TagCloud "Text data" is not clicked
-When I do not click the word "Information" for the TagCloud "Text data"
-Then the word "Information" for the TagCloud "Text data" is not clicked
-
-Scenario: N94 word-DoNotclick
-Given the word "Information" for #"Text data" is not clicked
-When I do not click the word "Information" for #"Text data"
-Then the word "Information" for #"Text data" is not clicked
-
-Scenario: N95 TagCloud-DoNotclick
-Given #"Information" for the TagCloud "Text data" is not clicked
-When I do not click #"Information" for the TagCloud "Text data"
-Then #"Information" for the TagCloud "Text data" is not clicked
-
-Scenario: N96 DoNotclick
-Given #"Information" for #"Text data" is not clicked
-When I do not click #"Information" for #"Text data"
-Then #"Information" for #"Text data" is not clicked
+Scenario: N70 DoNotfill in with
+Given #"Welcome" for #"Text area" is not filled in
+When I do not fill in with #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is not filled in
