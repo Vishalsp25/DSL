@@ -213,24 +213,24 @@ Then the image "<image>" for the field "<fieldname>" is selected
 */
 
 Scenario: N25 Field-image-select
-Given the image "Morning" for the field "Availability" is not selected
-When I select the image "Morning" for the field "Availability"
-Then the image "Morning" for the field "Availability" is selected
+Given the image "Sun" for the field "List of Images" is not selected
+When I select the image "Sun" for the field "List of Images"
+Then the image "Sun" for the field "List of Images" is selected
 
 Scenario: N26 image-select
-Given the image "Morning" for #"Availability" is not selected
-When I select the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is selected
+Given the image "Sun" for #"List of Images" is not selected
+When I select the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is selected
 
 Scenario: N27 Field-select
-Given #"Morning" for the field "Availability" is not selected
-When I select #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is selected
+Given #"Sun" for the field "List of Images" is not selected
+When I select #"Sun" for the field "List of Images"
+Then #"Sun" for the field "List of Images" is selected
 
 Scenario: N28 select
-Given #"Morning" for #"Availability" is not selected
-When I select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is selected
+Given #"Sun" for #"List of Images" is not selected
+When I select #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is selected
 
 /*
 Scenario: Field-image-DoNotselect
@@ -240,24 +240,24 @@ Then the image "<image>" for the field "<fieldname>" is not selected
 */
 
 Scenario: N29 Field-image-DoNotselect
-Given the image "Morning" for the field "Availability" is not selected
-When I do not select the image "Morning" for the field "Availability"
-Then the image "Morning" for the field "Availability" is not selected
+Given the image "Sun" for the field "List of Images" is not selected
+When I do not select the image "Sun" for the field "List of Images"
+Then the image "Sun" for the field "List of Images" is not selected
 
 Scenario: N30 image-DoNotselect
-Given the image "Morning" for #"Availability" is not selected
-When I do not select the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is not selected
+Given the image "Sun" for #"List of Images" is not selected
+When I do not select the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is not selected
 
 Scenario: N31 Field-DoNotselect
-Given #"Morning" for the field "Availability" is not selected
-When I do not select #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is not selected
+Given #"Sun" for the field "List of Images" is not selected
+When I do not select #"Sun" for the field "List of Images"
+Then #"Sun" for the field "List of Images" is not selected
 
 Scenario: N32 DoNotselect
-Given #"Morning" for #"Availability" is not selected
-When I do not select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not selected
+Given #"Sun" for #"List of Images" is not selected
+When I do not select #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is not selected
 
 /*
 Scenario: Field-image-choose
@@ -267,24 +267,24 @@ Then the image "<image>" for the field "<fieldname>" is chosen
 */
 
 Scenario: N33 Field-image-choose
-Given the image "Morning" for the field "Availability" is not chosen
-When I choose the image "Morning" for the field "Availability"
-Then the image "Morning" for the field "Availability" is chosen
+Given the image "Sun" for the field "List of Images" is not chosen
+When I choose the image "Sun" for the field "List of Images"
+Then the image "Sun" for the field "List of Images" is chosen
 
 Scenario: N34 image-choose
-Given the image "Morning" for #"Availability" is not chosen
-When I choose the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is chosen
+Given the image "Sun" for #"List of Images" is not chosen
+When I choose the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is chosen
 
 Scenario: N35 Field-choose
-Given #"Morning" for the field "Availability" is not chosen
-When I choose #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is chosen
+Given #"Sun" for the field "List of Images" is not chosen
+When I choose #"Sun" for the field "List of Images"
+Then #"Sun" for the field "List of Images" is chosen
 
 Scenario: N36 choose
-Given #"Morning" for #"Availability" is not chosen
-When I choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is chosen
+Given #"Sun" for #"List of Images" is not chosen
+When I choose #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is chosen
 
 /*
 Scenario: Field-image-DoNotchoose
@@ -294,24 +294,24 @@ Then the image "<image>" for the field "<fieldname>" is not chosen
 */
 
 Scenario: N37 Field-image-DoNotchoose
-Given the image "Morning" for the field "Availability" is not chosen
-When I do not choose the image "Morning" for the field "Availability"
-Then the image "Morning" for the field "Availability" is not chosen
+Given the image "Sun" for the field "List of Images" is not chosen
+When I do not choose the image "Sun" for the field "List of Images"
+Then the image "Sun" for the field "List of Images" is not chosen
 
 Scenario: N38 image-DoNotchoose
-Given the image "Morning" for #"Availability" is not chosen
-When I do not choose the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is not chosen
+Given the image "Sun" for #"List of Images" is not chosen
+When I do not choose the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is not chosen
 
 Scenario: N39 Field-DoNotchoose
-Given #"Morning" for the field "Availability" is not chosen
-When I do not choose #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is not chosen
+Given #"Sun" for the field "List of Images" is not chosen
+When I do not choose #"Sun" for the field "List of Images"
+Then #"Sun" for the field "List of Images" is not chosen
 
 Scenario: N40 DoNotchoose
-Given #"Morning" for #"Availability" is not chosen
-When I do not choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not chosen
+Given #"Sun" for #"List of Images" is not chosen
+When I do not choose #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is not chosen
 
 /*
 Scenario: Field-image-click
@@ -321,24 +321,24 @@ Then the image "<image>" for the field "<fieldname>" is clicked
 */
 
 Scenario: N41 Field-image-click
-Given the image "Morning" for the field "Availability" is not clicked
-When I click the image "Morning" for the field "Availability"
-Then the image "Morning" for the field "Availability" is clicked
+Given the image "Sun" for the field "List of Images" is not clicked
+When I click the image "Sun" for the field "List of Images"
+Then the image "Sun" for the field "List of Images" is clicked
 
 Scenario: N42 image-click
-Given the image "Morning" for #"Availability" is not clicked
-When I click the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is clicked
+Given the image "Sun" for #"List of Images" is not clicked
+When I click the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is clicked
 
 Scenario: N43 Field-click
-Given #"Morning" for the field "Availability" is not clicked
-When I click #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is clicked
+Given #"Sun" for the field "List of Images" is not clicked
+When I click #"Sun" for the field "List of Images"
+Then #"Sun" for the field "List of Images" is clicked
 
 Scenario: N44 click
-Given #"Morning" for #"Availability" is not clicked
-When I click #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is clicked
+Given #"Sun" for #"List of Images" is not clicked
+When I click #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is clicked
 
 /*
 Scenario: Field-image-DoNotclick
@@ -348,24 +348,24 @@ Then the image "<image>" for the field "<fieldname>" is not clicked
 */
 
 Scenario: N45 Field-image-DoNotclick
-Given the image "Morning" for the field "Availability" is not clicked
-When I do not click the image "Morning" for the field "Availability"
-Then the image "Morning" for the field "Availability" is not clicked
+Given the image "Sun" for the field "List of Images" is not clicked
+When I do not click the image "Sun" for the field "List of Images"
+Then the image "Sun" for the field "List of Images" is not clicked
 
 Scenario: N46 image-DoNotclick
-Given the image "Morning" for #"Availability" is not clicked
-When I do not click the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is not clicked
+Given the image "Sun" for #"List of Images" is not clicked
+When I do not click the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is not clicked
 
 Scenario: N47 Field-DoNotclick
-Given #"Morning" for the field "Availability" is not clicked
-When I do not click #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is not clicked
+Given #"Sun" for the field "List of Images" is not clicked
+When I do not click #"Sun" for the field "List of Images"
+Then #"Sun" for the field "List of Images" is not clicked
 
 Scenario: N48 DoNotclick
-Given #"Morning" for #"Availability" is not clicked
-When I do not click #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not clicked
+Given #"Sun" for #"List of Images" is not clicked
+When I do not click #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is not clicked
 
 
 /*
@@ -376,24 +376,24 @@ Then the image "<image>" for the ImageCarousel "<fieldname>" is selected
 */
 
 Scenario: N49 ImageCarousel-image-select
-Given the image "Morning" for the ImageCarousel "Availability" is not selected
-When I select the image "Morning" for the ImageCarousel "Availability"
-Then the image "Morning" for the ImageCarousel "Availability" is selected
+Given the image "Sun" for the ImageCarousel "List of Images" is not selected
+When I select the image "Sun" for the ImageCarousel "List of Images"
+Then the image "Sun" for the ImageCarousel "List of Images" is selected
 
 Scenario: N50 image-select
-Given the image "Morning" for #"Availability" is not selected
-When I select the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is selected
+Given the image "Sun" for #"List of Images" is not selected
+When I select the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is selected
 
 Scenario: N51 ImageCarousel-select
-Given #"Morning" for the ImageCarousel "Availability" is not selected
-When I select #"Morning" for the ImageCarousel "Availability"
-Then #"Morning" for the ImageCarousel "Availability" is selected
+Given #"Sun" for the ImageCarousel "List of Images" is not selected
+When I select #"Sun" for the ImageCarousel "List of Images"
+Then #"Sun" for the ImageCarousel "List of Images" is selected
 
 Scenario: N52 select
-Given #"Morning" for #"Availability" is not selected
-When I select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is selected
+Given #"Sun" for #"List of Images" is not selected
+When I select #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is selected
 
 /*
 Scenario: ImageCarousel-image-DoNotselect
@@ -403,24 +403,24 @@ Then the image "<image>" for the ImageCarousel "<fieldname>" is not selected
 */
 
 Scenario: N53 ImageCarousel-image-DoNotselect
-Given the image "Morning" for the ImageCarousel "Availability" is not selected
-When I do not select the image "Morning" for the ImageCarousel "Availability"
-Then the image "Morning" for the ImageCarousel "Availability" is not selected
+Given the image "Sun" for the ImageCarousel "List of Images" is not selected
+When I do not select the image "Sun" for the ImageCarousel "List of Images"
+Then the image "Sun" for the ImageCarousel "List of Images" is not selected
 
 Scenario: N54 image-DoNotselect
-Given the image "Morning" for #"Availability" is not selected
-When I do not select the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is not selected
+Given the image "Sun" for #"List of Images" is not selected
+When I do not select the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is not selected
 
 Scenario: N55 ImageCarousel-DoNotselect
-Given #"Morning" for the ImageCarousel "Availability" is not selected
-When I do not select #"Morning" for the ImageCarousel "Availability"
-Then #"Morning" for the ImageCarousel "Availability" is not selected
+Given #"Sun" for the ImageCarousel "List of Images" is not selected
+When I do not select #"Sun" for the ImageCarousel "List of Images"
+Then #"Sun" for the ImageCarousel "List of Images" is not selected
 
 Scenario: N56 DoNotselect
-Given #"Morning" for #"Availability" is not selected
-When I do not select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not selected
+Given #"Sun" for #"List of Images" is not selected
+When I do not select #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is not selected
 
 /*
 Scenario: ImageCarousel-image-choose
@@ -430,24 +430,24 @@ Then the image "<image>" for the ImageCarousel "<fieldname>" is chosen
 */
 
 Scenario: N57 ImageCarousel-image-choose
-Given the image "Morning" for the ImageCarousel "Availability" is not chosen
-When I choose the image "Morning" for the ImageCarousel "Availability"
-Then the image "Morning" for the ImageCarousel "Availability" is chosen
+Given the image "Sun" for the ImageCarousel "List of Images" is not chosen
+When I choose the image "Sun" for the ImageCarousel "List of Images"
+Then the image "Sun" for the ImageCarousel "List of Images" is chosen
 
 Scenario: N58 image-choose
-Given the image "Morning" for #"Availability" is not chosen
-When I choose the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is chosen
+Given the image "Sun" for #"List of Images" is not chosen
+When I choose the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is chosen
 
 Scenario: N59 ImageCarousel-choose
-Given #"Morning" for the ImageCarousel "Availability" is not chosen
-When I choose #"Morning" for the ImageCarousel "Availability"
-Then #"Morning" for the ImageCarousel "Availability" is chosen
+Given #"Sun" for the ImageCarousel "List of Images" is not chosen
+When I choose #"Sun" for the ImageCarousel "List of Images"
+Then #"Sun" for the ImageCarousel "List of Images" is chosen
 
 Scenario: N60 choose
-Given #"Morning" for #"Availability" is not chosen
-When I choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is chosen
+Given #"Sun" for #"List of Images" is not chosen
+When I choose #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is chosen
 
 /*
 Scenario: ImageCarousel-image-DoNotchoose
@@ -457,24 +457,24 @@ Then the image "<image>" for the ImageCarousel "<fieldname>" is not chosen
 */
 
 Scenario: N61 ImageCarousel-image-DoNotchoose
-Given the image "Morning" for the ImageCarousel "Availability" is not chosen
-When I do not choose the image "Morning" for the ImageCarousel "Availability"
-Then the image "Morning" for the ImageCarousel "Availability" is not chosen
+Given the image "Sun" for the ImageCarousel "List of Images" is not chosen
+When I do not choose the image "Sun" for the ImageCarousel "List of Images"
+Then the image "Sun" for the ImageCarousel "List of Images" is not chosen
 
 Scenario: N62 image-DoNotchoose
-Given the image "Morning" for #"Availability" is not chosen
-When I do not choose the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is not chosen
+Given the image "Sun" for #"List of Images" is not chosen
+When I do not choose the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is not chosen
 
 Scenario: N63 ImageCarousel-DoNotchoose
-Given #"Morning" for the ImageCarousel "Availability" is not chosen
-When I do not choose #"Morning" for the ImageCarousel "Availability"
-Then #"Morning" for the ImageCarousel "Availability" is not chosen
+Given #"Sun" for the ImageCarousel "List of Images" is not chosen
+When I do not choose #"Sun" for the ImageCarousel "List of Images"
+Then #"Sun" for the ImageCarousel "List of Images" is not chosen
 
 Scenario: N64 DoNotchoose
-Given #"Morning" for #"Availability" is not chosen
-When I do not choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not chosen
+Given #"Sun" for #"List of Images" is not chosen
+When I do not choose #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is not chosen
 
 /*
 Scenario: ImageCarousel-image-click
@@ -484,24 +484,24 @@ Then the image "<image>" for the ImageCarousel "<fieldname>" is clicked
 */
 
 Scenario: N65 ImageCarousel-image-click
-Given the image "Morning" for the ImageCarousel "Availability" is not clicked
-When I click the image "Morning" for the ImageCarousel "Availability"
-Then the image "Morning" for the ImageCarousel "Availability" is clicked
+Given the image "Sun" for the ImageCarousel "List of Images" is not clicked
+When I click the image "Sun" for the ImageCarousel "List of Images"
+Then the image "Sun" for the ImageCarousel "List of Images" is clicked
 
 Scenario: N66 image-click
-Given the image "Morning" for #"Availability" is not clicked
-When I click the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is clicked
+Given the image "Sun" for #"List of Images" is not clicked
+When I click the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is clicked
 
 Scenario: N67 ImageCarousel-click
-Given #"Morning" for the ImageCarousel "Availability" is not clicked
-When I click #"Morning" for the ImageCarousel "Availability"
-Then #"Morning" for the ImageCarousel "Availability" is clicked
+Given #"Sun" for the ImageCarousel "List of Images" is not clicked
+When I click #"Sun" for the ImageCarousel "List of Images"
+Then #"Sun" for the ImageCarousel "List of Images" is clicked
 
 Scenario: N68 click
-Given #"Morning" for #"Availability" is not clicked
-When I click #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is clicked
+Given #"Sun" for #"List of Images" is not clicked
+When I click #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is clicked
 
 /*
 Scenario: ImageCarousel-image-DoNotclick
@@ -511,24 +511,24 @@ Then the image "<image>" for the ImageCarousel "<fieldname>" is not clicked
 */
 
 Scenario: N69 ImageCarousel-image-DoNotclick
-Given the image "Morning" for the ImageCarousel "Availability" is not clicked
-When I do not click the image "Morning" for the ImageCarousel "Availability"
-Then the image "Morning" for the ImageCarousel "Availability" is not clicked
+Given the image "Sun" for the ImageCarousel "List of Images" is not clicked
+When I do not click the image "Sun" for the ImageCarousel "List of Images"
+Then the image "Sun" for the ImageCarousel "List of Images" is not clicked
 
 Scenario: N70 image-DoNotclick
-Given the image "Morning" for #"Availability" is not clicked
-When I do not click the image "Morning" for #"Availability"
-Then the image "Morning" for #"Availability" is not clicked
+Given the image "Sun" for #"List of Images" is not clicked
+When I do not click the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is not clicked
 
 Scenario: N71 ImageCarousel-DoNotclick
-Given #"Morning" for the ImageCarousel "Availability" is not clicked
-When I do not click #"Morning" for the ImageCarousel "Availability"
-Then #"Morning" for the ImageCarousel "Availability" is not clicked
+Given #"Sun" for the ImageCarousel "List of Images" is not clicked
+When I do not click #"Sun" for the ImageCarousel "List of Images"
+Then #"Sun" for the ImageCarousel "List of Images" is not clicked
 
 Scenario: N72 DoNotclick
-Given #"Morning" for #"Availability" is not clicked
-When I do not click #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not clicked
+Given #"Sun" for #"List of Images" is not clicked
+When I do not click #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is not clicked
 
 /*
 Scenario: scroll to the right
