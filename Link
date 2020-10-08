@@ -212,24 +212,24 @@ Then the option "<option>" for the field "<fieldname>" is selected
 */
 
 Scenario: N25 Field-option-select
-Given the option "Morning" for the field "Availability" is not selected
-When I select the option "Morning" for the field "Availability"
-Then the option "Morning" for the field "Availability" is selected
+Given the option "Accept" for the field "Cookies" is not selected
+When I select the option "Accept" for the field "Cookies"
+Then the option "Accept" for the field "Cookies" is selected
 
 Scenario: N26 option-select
-Given the option "Morning" for #"Availability" is not selected
-When I select the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is selected
+Given the option "Accept" for #"Cookies" is not selected
+When I select the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is selected
 
 Scenario: N27 Field-select
-Given #"Morning" for the field "Availability" is not selected
-When I select #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is selected
+Given #"Accept" for the field "Cookies" is not selected
+When I select #"Accept" for the field "Cookies"
+Then #"Accept" for the field "Cookies" is selected
 
 Scenario: N28 select
-Given #"Morning" for #"Availability" is not selected
-When I select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is selected
+Given #"Accept" for #"Cookies" is not selected
+When I select #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is selected
 
 /*
 Scenario: Field-option-DoNotselect
@@ -239,24 +239,24 @@ Then the option "<option>" for the field "<fieldname>" is not selected
 */
 
 Scenario: N29 Field-option-DoNotselect
-Given the option "Morning" for the field "Availability" is not selected
-When I do not select the option "Morning" for the field "Availability"
-Then the option "Morning" for the field "Availability" is not selected
+Given the option "Accept" for the field "Cookies" is not selected
+When I do not select the option "Accept" for the field "Cookies"
+Then the option "Accept" for the field "Cookies" is not selected
 
 Scenario: N30 option-DoNotselect
-Given the option "Morning" for #"Availability" is not selected
-When I do not select the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is not selected
+Given the option "Accept" for #"Cookies" is not selected
+When I do not select the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is not selected
 
 Scenario: N31 Field-DoNotselect
-Given #"Morning" for the field "Availability" is not selected
-When I do not select #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is not selected
+Given #"Accept" for the field "Cookies" is not selected
+When I do not select #"Accept" for the field "Cookies"
+Then #"Accept" for the field "Cookies" is not selected
 
 Scenario: N32 DoNotselect
-Given #"Morning" for #"Availability" is not selected
-When I do not select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not selected
+Given #"Accept" for #"Cookies" is not selected
+When I do not select #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is not selected
 
 /*
 Scenario: Field-option-choose
@@ -266,24 +266,24 @@ Then the option "<option>" for the field "<fieldname>" is chosen
 */
 
 Scenario: N33 Field-option-choose
-Given the option "Morning" for the field "Availability" is not chosen
-When I choose the option "Morning" for the field "Availability"
-Then the option "Morning" for the field "Availability" is chosen
+Given the option "Accept" for the field "Cookies" is not chosen
+When I choose the option "Accept" for the field "Cookies"
+Then the option "Accept" for the field "Cookies" is chosen
 
 Scenario: N34 option-choose
-Given the option "Morning" for #"Availability" is not chosen
-When I choose the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is chosen
+Given the option "Accept" for #"Cookies" is not chosen
+When I choose the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is chosen
 
 Scenario: N35 Field-choose
-Given #"Morning" for the field "Availability" is not chosen
-When I choose #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is chosen
+Given #"Accept" for the field "Cookies" is not chosen
+When I choose #"Accept" for the field "Cookies"
+Then #"Accept" for the field "Cookies" is chosen
 
 Scenario: N36 choose
-Given #"Morning" for #"Availability" is not chosen
-When I choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is chosen
+Given #"Accept" for #"Cookies" is not chosen
+When I choose #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is chosen
 
 /*
 Scenario: Field-option-DoNotchoose
@@ -293,24 +293,24 @@ Then the option "<option>" for the field "<fieldname>" is not chosen
 */
 
 Scenario: N37 Field-option-DoNotchoose
-Given the option "Morning" for the field "Availability" is not chosen
-When I do not choose the option "Morning" for the field "Availability"
-Then the option "Morning" for the field "Availability" is not chosen
+Given the option "Accept" for the field "Cookies" is not chosen
+When I do not choose the option "Accept" for the field "Cookies"
+Then the option "Accept" for the field "Cookies" is not chosen
 
 Scenario: N38 option-DoNotchoose
-Given the option "Morning" for #"Availability" is not chosen
-When I do not choose the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is not chosen
+Given the option "Accept" for #"Cookies" is not chosen
+When I do not choose the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is not chosen
 
 Scenario: N39 Field-DoNotchoose
-Given #"Morning" for the field "Availability" is not chosen
-When I do not choose #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is not chosen
+Given #"Accept" for the field "Cookies" is not chosen
+When I do not choose #"Accept" for the field "Cookies"
+Then #"Accept" for the field "Cookies" is not chosen
 
 Scenario: N40 DoNotchoose
-Given #"Morning" for #"Availability" is not chosen
-When I do not choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not chosen
+Given #"Accept" for #"Cookies" is not chosen
+When I do not choose #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is not chosen
 
 /*
 Scenario: Field-option-click
@@ -320,24 +320,24 @@ Then the option "<option>" for the field "<fieldname>" is clicked
 */
 
 Scenario: N41 Field-option-click
-Given the option "Morning" for the field "Availability" is not clicked
-When I click the option "Morning" for the field "Availability"
-Then the option "Morning" for the field "Availability" is clicked
+Given the option "Accept" for the field "Cookies" is not clicked
+When I click the option "Accept" for the field "Cookies"
+Then the option "Accept" for the field "Cookies" is clicked
 
 Scenario: N42 option-click
-Given the option "Morning" for #"Availability" is not clicked
-When I click the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is clicked
+Given the option "Accept" for #"Cookies" is not clicked
+When I click the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is clicked
 
 Scenario: N43 Field-click
-Given #"Morning" for the field "Availability" is not clicked
-When I click #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is clicked
+Given #"Accept" for the field "Cookies" is not clicked
+When I click #"Accept" for the field "Cookies"
+Then #"Accept" for the field "Cookies" is clicked
 
 Scenario: N44 click
-Given #"Morning" for #"Availability" is not clicked
-When I click #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is clicked
+Given #"Accept" for #"Cookies" is not clicked
+When I click #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is clicked
 
 /*
 Scenario: Field-option-DoNotclick
@@ -347,24 +347,24 @@ Then the option "<option>" for the field "<fieldname>" is not clicked
 */
 
 Scenario: N45 Field-option-DoNotclick
-Given the option "Morning" for the field "Availability" is not clicked
-When I do not click the option "Morning" for the field "Availability"
-Then the option "Morning" for the field "Availability" is not clicked
+Given the option "Accept" for the field "Cookies" is not clicked
+When I do not click the option "Accept" for the field "Cookies"
+Then the option "Accept" for the field "Cookies" is not clicked
 
 Scenario: N46 option-DoNotclick
-Given the option "Morning" for #"Availability" is not clicked
-When I do not click the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is not clicked
+Given the option "Accept" for #"Cookies" is not clicked
+When I do not click the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is not clicked
 
 Scenario: N47 Field-DoNotclick
-Given #"Morning" for the field "Availability" is not clicked
-When I do not click #"Morning" for the field "Availability"
-Then #"Morning" for the field "Availability" is not clicked
+Given #"Accept" for the field "Cookies" is not clicked
+When I do not click #"Accept" for the field "Cookies"
+Then #"Accept" for the field "Cookies" is not clicked
 
 Scenario: N48 DoNotclick
-Given #"Morning" for #"Availability" is not clicked
-When I do not click #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not clicked
+Given #"Accept" for #"Cookies" is not clicked
+When I do not click #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is not clicked
 
 
 /*
@@ -375,24 +375,24 @@ Then the option "<option>" for the Link "<fieldname>" is selected
 */
 
 Scenario: N49 Link-option-select
-Given the option "Morning" for the Link "Availability" is not selected
-When I select the option "Morning" for the Link "Availability"
-Then the option "Morning" for the Link "Availability" is selected
+Given the option "Accept" for the Link "Cookies" is not selected
+When I select the option "Accept" for the Link "Cookies"
+Then the option "Accept" for the Link "Cookies" is selected
 
 Scenario: N50 option-select
-Given the option "Morning" for #"Availability" is not selected
-When I select the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is selected
+Given the option "Accept" for #"Cookies" is not selected
+When I select the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is selected
 
 Scenario: N51 Link-select
-Given #"Morning" for the Link "Availability" is not selected
-When I select #"Morning" for the Link "Availability"
-Then #"Morning" for the Link "Availability" is selected
+Given #"Accept" for the Link "Cookies" is not selected
+When I select #"Accept" for the Link "Cookies"
+Then #"Accept" for the Link "Cookies" is selected
 
 Scenario: N52 select
-Given #"Morning" for #"Availability" is not selected
-When I select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is selected
+Given #"Accept" for #"Cookies" is not selected
+When I select #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is selected
 
 /*
 Scenario: Link-option-DoNotselect
@@ -402,24 +402,24 @@ Then the option "<option>" for the Link "<fieldname>" is not selected
 */
 
 Scenario: N53 Link-option-DoNotselect
-Given the option "Morning" for the Link "Availability" is not selected
-When I do not select the option "Morning" for the Link "Availability"
-Then the option "Morning" for the Link "Availability" is not selected
+Given the option "Accept" for the Link "Cookies" is not selected
+When I do not select the option "Accept" for the Link "Cookies"
+Then the option "Accept" for the Link "Cookies" is not selected
 
 Scenario: N54 option-DoNotselect
-Given the option "Morning" for #"Availability" is not selected
-When I do not select the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is not selected
+Given the option "Accept" for #"Cookies" is not selected
+When I do not select the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is not selected
 
 Scenario: N55 Link-DoNotselect
-Given #"Morning" for the Link "Availability" is not selected
-When I do not select #"Morning" for the Link "Availability"
-Then #"Morning" for the Link "Availability" is not selected
+Given #"Accept" for the Link "Cookies" is not selected
+When I do not select #"Accept" for the Link "Cookies"
+Then #"Accept" for the Link "Cookies" is not selected
 
 Scenario: N56 DoNotselect
-Given #"Morning" for #"Availability" is not selected
-When I do not select #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not selected
+Given #"Accept" for #"Cookies" is not selected
+When I do not select #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is not selected
 
 /*
 Scenario: Link-option-choose
@@ -429,24 +429,24 @@ Then the option "<option>" for the Link "<fieldname>" is chosen
 */
 
 Scenario: N57 Link-option-choose
-Given the option "Morning" for the Link "Availability" is not chosen
-When I choose the option "Morning" for the Link "Availability"
-Then the option "Morning" for the Link "Availability" is chosen
+Given the option "Accept" for the Link "Cookies" is not chosen
+When I choose the option "Accept" for the Link "Cookies"
+Then the option "Accept" for the Link "Cookies" is chosen
 
 Scenario: N58 option-choose
-Given the option "Morning" for #"Availability" is not chosen
-When I choose the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is chosen
+Given the option "Accept" for #"Cookies" is not chosen
+When I choose the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is chosen
 
 Scenario: N59 Link-choose
-Given #"Morning" for the Link "Availability" is not chosen
-When I choose #"Morning" for the Link "Availability"
-Then #"Morning" for the Link "Availability" is chosen
+Given #"Accept" for the Link "Cookies" is not chosen
+When I choose #"Accept" for the Link "Cookies"
+Then #"Accept" for the Link "Cookies" is chosen
 
 Scenario: N60 choose
-Given #"Morning" for #"Availability" is not chosen
-When I choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is chosen
+Given #"Accept" for #"Cookies" is not chosen
+When I choose #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is chosen
 
 /*
 Scenario: Link-option-DoNotchoose
@@ -456,24 +456,24 @@ Then the option "<option>" for the Link "<fieldname>" is not chosen
 */
 
 Scenario: N61 Link-option-DoNotchoose
-Given the option "Morning" for the Link "Availability" is not chosen
-When I do not choose the option "Morning" for the Link "Availability"
-Then the option "Morning" for the Link "Availability" is not chosen
+Given the option "Accept" for the Link "Cookies" is not chosen
+When I do not choose the option "Accept" for the Link "Cookies"
+Then the option "Accept" for the Link "Cookies" is not chosen
 
 Scenario: N62 option-DoNotchoose
-Given the option "Morning" for #"Availability" is not chosen
-When I do not choose the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is not chosen
+Given the option "Accept" for #"Cookies" is not chosen
+When I do not choose the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is not chosen
 
 Scenario: N63 Link-DoNotchoose
-Given #"Morning" for the Link "Availability" is not chosen
-When I do not choose #"Morning" for the Link "Availability"
-Then #"Morning" for the Link "Availability" is not chosen
+Given #"Accept" for the Link "Cookies" is not chosen
+When I do not choose #"Accept" for the Link "Cookies"
+Then #"Accept" for the Link "Cookies" is not chosen
 
 Scenario: N64 DoNotchoose
-Given #"Morning" for #"Availability" is not chosen
-When I do not choose #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not chosen
+Given #"Accept" for #"Cookies" is not chosen
+When I do not choose #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is not chosen
 
 /*
 Scenario: Link-option-click
@@ -483,24 +483,24 @@ Then the option "<option>" for the Link "<fieldname>" is clicked
 */
 
 Scenario: N65 Link-option-click
-Given the option "Morning" for the Link "Availability" is not clicked
-When I click the option "Morning" for the Link "Availability"
-Then the option "Morning" for the Link "Availability" is clicked
+Given the option "Accept" for the Link "Cookies" is not clicked
+When I click the option "Accept" for the Link "Cookies"
+Then the option "Accept" for the Link "Cookies" is clicked
 
 Scenario: N66 option-click
-Given the option "Morning" for #"Availability" is not clicked
-When I click the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is clicked
+Given the option "Accept" for #"Cookies" is not clicked
+When I click the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is clicked
 
 Scenario: N67 Link-click
-Given #"Morning" for the Link "Availability" is not clicked
-When I click #"Morning" for the Link "Availability"
-Then #"Morning" for the Link "Availability" is clicked
+Given #"Accept" for the Link "Cookies" is not clicked
+When I click #"Accept" for the Link "Cookies"
+Then #"Accept" for the Link "Cookies" is clicked
 
 Scenario: N68 click
-Given #"Morning" for #"Availability" is not clicked
-When I click #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is clicked
+Given #"Accept" for #"Cookies" is not clicked
+When I click #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is clicked
 
 /*
 Scenario: Link-option-DoNotclick
@@ -510,21 +510,21 @@ Then the option "<option>" for the Link "<fieldname>" is not clicked
 */
 
 Scenario: N69 Link-option-DoNotclick
-Given the option "Morning" for the Link "Availability" is not clicked
-When I do not click the option "Morning" for the Link "Availability"
-Then the option "Morning" for the Link "Availability" is not clicked
+Given the option "Accept" for the Link "Cookies" is not clicked
+When I do not click the option "Accept" for the Link "Cookies"
+Then the option "Accept" for the Link "Cookies" is not clicked
 
 Scenario: N70 option-DoNotclick
-Given the option "Morning" for #"Availability" is not clicked
-When I do not click the option "Morning" for #"Availability"
-Then the option "Morning" for #"Availability" is not clicked
+Given the option "Accept" for #"Cookies" is not clicked
+When I do not click the option "Accept" for #"Cookies"
+Then the option "Accept" for #"Cookies" is not clicked
 
 Scenario: N71 Link-DoNotclick
-Given #"Morning" for the Link "Availability" is not clicked
-When I do not click #"Morning" for the Link "Availability"
-Then #"Morning" for the Link "Availability" is not clicked
+Given #"Accept" for the Link "Cookies" is not clicked
+When I do not click #"Accept" for the Link "Cookies"
+Then #"Accept" for the Link "Cookies" is not clicked
 
 Scenario: N72 DoNotclick
-Given #"Morning" for #"Availability" is not clicked
-When I do not click #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not clicked
+Given #"Accept" for #"Cookies" is not clicked
+When I do not click #"Accept" for #"Cookies"
+Then #"Accept" for #"Cookies" is not clicked
