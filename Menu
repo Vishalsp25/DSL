@@ -7,14 +7,14 @@ Then the option "<option name>" is selected
 */
 
 Scenario: N1 option-select
-Given the option "Menu" is unselected
-When I select the option "Menu"
-Then the option "Menu" is selected
+Given the option "List of items" is unselected
+When I select the option "List of items"
+Then the option "List of items" is selected
 
 Scenario: N2 select
-Given #"Menu" is unselected
-When I select #"Menu"
-Then #"Menu" is selected
+Given #"List of items" is unselected
+When I select #"List of items"
+Then #"List of items" is selected
 
 /*
 Scenario: option-DoNotselect
@@ -24,14 +24,14 @@ Then the option "<option name>" is unselected
 */
 
 Scenario: N3 option-DoNotselect
-Given the option "Menu" is not selected
-When I do not select the option "Menu"
-Then the option "Menu" is unselected
+Given the option "List of items" is not selected
+When I do not select the option "List of items"
+Then the option "List of items" is unselected
 
 Scenario: N4 DoNotselect
-Given #"Menu" is not selected
-When I do not select #"Menu"
-Then #"Menu" is unselected
+Given #"List of items" is not selected
+When I do not select #"List of items"
+Then #"List of items" is unselected
 
 /*
 Scenario: Menu-select
@@ -41,14 +41,14 @@ Then the Menu "<option name>" is selected
 */
 
 Scenario: N5 Menu-select
-Given the Menu "Menu" is unselected
-When I select the Menu "Menu"
-Then the Menu "Menu" is selected
+Given the Menu "List of items" is unselected
+When I select the Menu "List of items"
+Then the Menu "List of items" is selected
 
 Scenario: N6 select
-Given #"Menu" is unselected
-When I select #"Menu"
-Then #"Menu" is selected
+Given #"List of items" is unselected
+When I select #"List of items"
+Then #"List of items" is selected
 
 /*
 Scenario: Menu-DoNotselect
@@ -58,14 +58,14 @@ Then the Menu "<option name>" is unselected
 */
 
 Scenario: N7 Menu-select
-Given the Menu "Menu" is not selected
-When I do not select the Menu "Menu"
-Then the Menu "Menu" is unselected
+Given the Menu "List of items" is not selected
+When I do not select the Menu "List of items"
+Then the Menu "List of items" is unselected
 
 Scenario: N8 select
-Given #"Menu" is not selected
-When I do not select #"Menu"
-Then #"Menu" is unselected
+Given #"List of items" is not selected
+When I do not select #"List of items"
+Then #"List of items" is unselected
 
 
 /*
@@ -76,14 +76,14 @@ Then the option "<option name>" is clicked
 */
 
 Scenario: N9 option-click
-Given the option "Menu" is not clicked
-When I click the option "Menu"
-Then the option "Menu" is clicked
+Given the option "List of items" is not clicked
+When I click the option "List of items"
+Then the option "List of items" is clicked
 
 Scenario: N10 click
-Given #"Menu" is not clicked
-When I click #"Menu"
-Then #"Menu" is clicked
+Given #"List of items" is not clicked
+When I click #"List of items"
+Then #"List of items" is clicked
 
 /*
 Scenario: option-DoNotclick
@@ -93,14 +93,14 @@ Then the option "<option name>" is not clicked
 */
 
 Scenario: N11 option-DoNotclick
-Given the option "Menu" is not clicked
-When I do not click the option "Menu"
-Then the option "Menu" is not clicked
+Given the option "List of items" is not clicked
+When I do not click the option "List of items"
+Then the option "List of items" is not clicked
 
 Scenario: N12 DoNotclick
-Given #"Menu" is not clicked
-When I do not click #"Menu"
-Then #"Menu" is not clicked
+Given #"List of items" is not clicked
+When I do not click #"List of items"
+Then #"List of items" is not clicked
 
 /*
 Scenario: Menu-click
@@ -110,14 +110,14 @@ Then the Menu "<option name>" is clicked
 */
 
 Scenario: N13 Menu-click
-Given the Menu "Menu" is not clicked
-When I click the Menu "Menu"
-Then the Menu "Menu" is clicked
+Given the Menu "List of items" is not clicked
+When I click the Menu "List of items"
+Then the Menu "List of items" is clicked
 
 Scenario: N14 click
-Given #"Menu" is not clicked
-When I click #"Menu"
-Then #"Menu" is clicked
+Given #"List of items" is not clicked
+When I click #"List of items"
+Then #"List of items" is clicked
 
 /*
 Scenario: Menu-DoNotclick
@@ -127,14 +127,14 @@ Then the Menu "<option name>" is not clicked
 */
 
 Scenario: N15 Menu-click
-Given the Menu "Menu" is not clicked
-When I do not click the Menu "Menu"
-Then the Menu "Menu" is not clicked
+Given the Menu "List of items" is not clicked
+When I do not click the Menu "List of items"
+Then the Menu "List of items" is not clicked
 
 Scenario: N16 click
-Given #"Menu" is not clicked
-When I do not click #"Menu"
-Then #"Menu" is not clicked
+Given #"List of items" is not clicked
+When I do not click #"List of items"
+Then #"List of items" is not clicked
 
 
 /*
