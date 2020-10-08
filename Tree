@@ -1,136 +1,714 @@
-model ToggleButton using widgets
+model Tree using widgets
 /*
-Scenario: switch ['on']
-Given "Toggle button" is switched on
-When I switch ['on'] "Toggle button"
-Then "Toggle button" is switched on
+Scenario: row-select
+Given the row "<row name>" is unselected
+When I select the row "<row name>"
+Then the row "<row name>" is selected
 */
 
-Scenario: N1 switch on
-Given "Toggle button" is switched on
-When I switch ['on']  "Toggle button"
-Then #"Toggle button" is switched on
+Scenario: N1 row-select
+Given the row "Tree" is unselected
+When I select the row "Tree"
+Then the row "Tree" is selected
 
-Scenario: N2 switch on
-Given #"ToggleButton" is switched on
-When I switch ['on'] #"ToggleButton"
-Then #"Toggle Button" is switched on
-
-/*
-Scenario: DoNotswitch ['on']
-Given "Toggle button" is not switched on
-When I do not switch ['on'] "Toggle button"
-Then "Toggle button" is switched on
-*/
-
-Scenario: N3 DoNotswitch on
-Given "Toggle button" is not switched on
-When I do not switch ['on'] "Toggle button"
-Then #"Toggle button" is not switched on
-
-Scenario: N4 DoNotswitch on
-Given #"ToggleButton" is not switched on
-When I do not switch ['on'] #"ToggleButton"
-Then #"ToggleButton" is not switched on
+Scenario: N2 select
+Given #"Tree" is unselected
+When I select #"Tree"
+Then #"Tree" is selected
 
 /*
-Scenario: ToggleButton-switch ['on']
-Given the ToggleButton "<tab name>" is switched on
-When I switch ['on'] the ToggleButton "<tab name>"
-Then the ToggleButton "<tab name>" is switched on
+Scenario: row-DoNotselect
+Given the row "<row name>" is not selected
+When I do not select the row "<row name>"
+Then the row "<row name>" is unselected
 */
 
-Scenario: N5 ToggleButton-switch on
-Given the ToggleButton "ToggleButton" is switched on
-When I switch ['on'] the ToggleButton "ToggleButton"
-Then the ToggleButton "ToggleButton" is switched on
+Scenario: N3 row-DoNotselect
+Given the row "Tree" is not selected
+When I do not select the row "Tree"
+Then the row "Tree" is unselected
 
-Scenario: N6 switch on
-Given #"ToggleButton" is switched on
-When I switch ['on'] #"ToggleButton"
-Then #"ToggleButton" is switched on
+Scenario: N4 DoNotselect
+Given #"Tree" is not selected
+When I do not select #"Tree"
+Then #"Tree" is unselected
 
 /*
-Scenario: ToggleButton-DoNotswitch ['on']
-Given the ToggleButton "<tab name>" is not switched on
-When I do not switch ['on'] the ToggleButton "<tab name>"
-Then the ToggleButton "<tab name>" is switched on
+Scenario: Tree-select
+Given the Tree "<row name>" is unselected
+When I select the Tree "<row name>"
+Then the Tree "<row name>" is selected
 */
 
-Scenario: N7 ToggleButton-switch on
-Given the ToggleButton "ToggleButton" is not switched on
-When I do not switch ['on'] the ToggleButton "ToggleButton"
-Then the ToggleButton "ToggleButton" is switched on
+Scenario: N5 Tree-select
+Given the Tree "Tree" is unselected
+When I select the Tree "Tree"
+Then the Tree "Tree" is selected
 
-Scenario: N8 switch on
-Given #"ToggleButton" is not switched on
-When I do not switch ['on'] #"ToggleButton"
-Then #"ToggleButton" is switched on
+Scenario: N6 select
+Given #"Tree" is unselected
+When I select #"Tree"
+Then #"Tree" is selected
 
 /*
-Scenario: switch off
-Given "Toggle button" is switched off
-When I switch off "Toggle button"
-Then "Toggle button" is switched off
+Scenario: Tree-DoNotselect
+Given the Tree "<row name>" is not selected
+When I do not select the Tree "<row name>"
+Then the Tree "<row name>" is unselected
 */
 
-Scenario: N9 switch off
-Given "Toggle button" is switched off
-When I switch ['off'] "Toggle button"
-Then #"Toggle button" is switched off
+Scenario: N7 Tree-select
+Given the Tree "Tree" is not selected
+When I do not select the Tree "Tree"
+Then the Tree "Tree" is unselected
 
-Scenario: N10 switch off
-Given #"Togglebutton" is switched off
-When I switch ['off'] #"Togglebutton"
-Then #"Togglebutton" is switched off
+Scenario: N8 select
+Given #"Tree" is not selected
+When I do not select #"Tree"
+Then #"Tree" is unselected
+
 
 /*
-Scenario: DoNot switch off
-Given "Toggle button" is not switched off
-When I do not switch off "Toggle button"
-Then "Toggle button" is switched off
+Scenario: row-click
+Given the row "<row name>" is not clicked
+When I click the row "<row name>"
+Then the row "<row name>" is clicked
 */
 
-Scenario: N11 DoNot switch off
-Given "Toggle button" is not switched off
-When I do not switch ['off'] "Toggle button"
-Then #"Toggle button" is switched off
+Scenario: N9 row-click
+Given the row "Tree" is not clicked
+When I click the row "Tree"
+Then the row "Tree" is clicked
 
-Scenario: N12 DDoNot switch off
-Given #"Togglebutton" is not switched off
-When I do not switch ['off'] #"Togglebutton"
-Then #"Togglebutton" is switched off
+Scenario: N10 click
+Given #"Tree" is not clicked
+When I click #"Tree"
+Then #"Tree" is clicked
 
 /*
-Scenario: ToggleButton-switch off
-Given the Togglebutton "<tab name>" is switched off
-When I switch off the Togglebutton "<tab name>"
-Then the Togglebutton "<tab name>" is switched off
+Scenario: row-DoNotclick
+Given the row "<row name>" is not clicked
+When I do not clicked the row "<row name>"
+Then the row "<row name>" is not clicked
 */
 
-Scenario: N13 ToggleButton-switch off
-Given the ToggleButton "Togglebutton" is switched off
-When I switch ['off'] the ToggleButton "Togglebutton"
-Then the ToggleButton "Togglebutton" is switched off
+Scenario: N11 row-DoNotclick
+Given the row "Tree" is not clicked
+When I do not click the row "Tree"
+Then the row "Tree" is not clicked
 
-Scenario: N14 switch off
-Given #"Togglebutton" is switched off
-When I switch ['off'] #"Togglebutton"
-Then #"Togglebutton" is switched off
+Scenario: N12 DoNotclick
+Given #"Tree" is not clicked
+When I do not click #"Tree"
+Then #"Tree" is not clicked
 
 /*
-Scenario: ToggleButton-DoNotswitch off
-Given the Togglebutton "<tab name>" is not switched off
-When I do not switch off the Togglebutton "<tab name>"
-Then the Togglebutton "<tab name>" is switched off
+Scenario: Tree-click
+Given the Tree "<row name>" is not clicked
+When I click the Tree "<row name>"
+Then the Tree "<row name>" is clicked
 */
 
-Scenario: N15 ToggleButton-switch off
-Given the ToggleButton "Togglebutton" is not switched off
-When I do not switch ['off'] the ToggleButton "Togglebutton"
-Then the ToggleButton "Togglebutton" is switched off
+Scenario: N13 Tree-click
+Given the Tree "Tree" is not clicked
+When I click the Tree "Tree"
+Then the Tree "Tree" is clicked
 
-Scenario: N16 switch off
-Given #"Togglebutton" is not switched off
-When I do not switch ['off'] #"Togglebutton"
-Then #"Togglebutton" is switched off
+Scenario: N14 click
+Given #"Tree" is not clicked
+When I click #"Tree"
+Then #"Tree" is clicked
+
+/*
+Scenario: Tree-DoNotclick
+Given the Tree "<row name>" is not clicked
+When I do not clicked the Tree "<row name>"
+Then the Tree "<row name>" is not clicked
+*/
+
+Scenario: N15 Tree-click
+Given the Tree "Tree" is not clicked
+When I do not click the Tree "Tree"
+Then the Tree "Tree" is not clicked
+
+Scenario: N16 click
+Given #"Tree" is not clicked
+When I do not click #"Tree"
+Then #"Tree" is not clicked
+
+
+/*
+Scenario: Field-row-select
+Given the row "<row>" for the field "<fieldname>" is not selected
+When I select the row "<row>" for the field "<fieldname>"
+Then the row "<row>" for the field "<fieldname>" is selected
+*/
+
+Scenario: N17 Field-row-select
+Given the row "Chrome" for the field "Applications" is not selected
+When I select the row "Chrome" for the field "Applications"
+Then the row "Chrome" for the field "Applications" is selected
+
+Scenario: N18 row-select
+Given the row "Chrome" for #"Applications" is not selected
+When I select the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is selected
+
+Scenario: N19 Field-select
+Given #"Chrome" for the field "Applications" is not selected
+When I select #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is selected
+
+Scenario: N20 select
+Given #"Chrome" for #"Applications" is not selected
+When I select #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is selected
+
+/*
+Scenario: Field-row-DoNotselect
+Given the row "<row>" for the field "<fieldname>" is not selected
+When I do not select the row "<row>" for the field "<fieldname>"
+Then the row "<row>" for the field "<fieldname>" is not selected
+*/
+
+Scenario: N21 Field-row-DoNotselect
+Given the row "Chrome" for the field "Applications" is not selected
+When I do not select the row "Chrome" for the field "Applications"
+Then the row "Chrome" for the field "Applications" is not selected
+
+Scenario: N22 row-DoNotselect
+Given the row "Chrome" for #"Applications" is not selected
+When I do not select the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is not selected
+
+Scenario: N23 Field-DoNotselect
+Given #"Chrome" for the field "Applications" is not selected
+When I do not select #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is not selected
+
+Scenario: N24 DoNotselect
+Given #"Chrome" for #"Applications" is not selected
+When I do not select #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not selected
+
+
+/*
+Scenario: Field-row-click
+Given the row "<row>" for the field "<fieldname>" is not clicked
+When I click the row "<row>" for the field "<fieldname>"
+Then the row "<row>" for the field "<fieldname>" is clicked
+*/
+
+Scenario: N25 Field-row-click
+Given the row "Chrome" for the field "Applications" is not clicked
+When I click the row "Chrome" for the field "Applications"
+Then the row "Chrome" for the field "Applications" is clicked
+
+Scenario: N26 row-click
+Given the row "Chrome" for #"Applications" is not clicked
+When I click the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is clicked
+
+Scenario: N27 Field-click
+Given #"Chrome" for the field "Applications" is not clicked
+When I click #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is clicked
+
+Scenario: N28 click
+Given #"Chrome" for #"Applications" is not clicked
+When I click #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is clicked
+
+/*
+Scenario: Field-row-DoNotclick
+Given the row "<row>" for the field "<fieldname>" is not clicked
+When I do not click the row "<row>" for the field "<fieldname>"
+Then the row "<row>" for the field "<fieldname>" is not clicked
+*/
+
+Scenario: N29 Field-row-DoNotclick
+Given the row "Chrome" for the field "Applications" is not clicked
+When I do not click the row "Chrome" for the field "Applications"
+Then the row "Chrome" for the field "Applications" is not clicked
+
+Scenario: N30 row-DoNotclick
+Given the row "Chrome" for #"Applications" is not clicked
+When I do not click the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is not clicked
+
+Scenario: N31 Field-DoNotclick
+Given #"Chrome" for the field "Applications" is not clicked
+When I do not click #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is not clicked
+
+Scenario: N32 DoNotclick
+Given #"Chrome" for #"Applications" is not clicked
+When I do not click #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not clicked
+
+
+/*
+Scenario: Tree-row-select
+Given the row "<row>" for the Tree "<fieldname>" is not selected
+When I select the row "<row>" for the Tree "<fieldname>"
+Then the row "<row>" for the Tree "<fieldname>" is selected
+*/
+
+Scenario: N33 Tree-row-select
+Given the row "Chrome" for the Tree "Applications" is not selected
+When I select the row "Chrome" for the Tree "Applications"
+Then the row "Chrome" for the Tree "Applications" is selected
+
+Scenario: N34 row-select
+Given the row "Chrome" for #"Applications" is not selected
+When I select the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is selected
+
+Scenario: N35 Tree-select
+Given #"Chrome" for the Tree "Applications" is not selected
+When I select #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is selected
+
+Scenario: N36 select
+Given #"Chrome" for #"Applications" is not selected
+When I select #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is selected
+
+/*
+Scenario: Tree-row-DoNotselect
+Given the row "<row>" for the Tree "<fieldname>" is not selected
+When I do not select the row "<row>" for the Tree "<fieldname>"
+Then the row "<row>" for the Tree "<fieldname>" is not selected
+*/
+
+Scenario: N37 Tree-row-DoNotselect
+Given the row "Chrome" for the Tree "Applications" is not selected
+When I do not select the row "Chrome" for the Tree "Applications"
+Then the row "Chrome" for the Tree "Applications" is not selected
+
+Scenario: N38 row-DoNotselect
+Given the row "Chrome" for #"Applications" is not selected
+When I do not select the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is not selected
+
+Scenario: N38 Tree-DoNotselect
+Given #"Chrome" for the Tree "Applications" is not selected
+When I do not select #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is not selected
+
+Scenario: N40 DoNotselect
+Given #"Chrome" for #"Applications" is not selected
+When I do not select #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not selected
+
+
+/*
+Scenario: Tree-row-click
+Given the row "<row>" for the Tree "<fieldname>" is not clicked
+When I click the row "<row>" for the Tree "<fieldname>"
+Then the row "<row>" for the Tree "<fieldname>" is clicked
+*/
+
+Scenario: N41 Tree-row-click
+Given the row "Chrome" for the Tree "Applications" is not clicked
+When I click the row "Chrome" for the Tree "Applications"
+Then the row "Chrome" for the Tree "Applications" is clicked
+
+Scenario: N42 row-click
+Given the row "Chrome" for #"Applications" is not clicked
+When I click the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is clicked
+
+Scenario: N43 Tree-click
+Given #"Chrome" for the Tree "Applications" is not clicked
+When I click #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is clicked
+
+Scenario: N44 click
+Given #"Chrome" for #"Applications" is not clicked
+When I click #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is clicked
+
+/*
+Scenario: Tree-row-DoNotclick
+Given the row "<row>" for the Tree "<fieldname>" is not clicked
+When I do not click the row "<row>" for the Tree "<fieldname>"
+Then the row "<row>" for the Tree "<fieldname>" is not clicked
+*/
+
+Scenario: N45 Tree-row-DoNotclick
+Given the row "Chrome" for the Tree "Applications" is not clicked
+When I do not click the row "Chrome" for the Tree "Applications"
+Then the row "Chrome" for the Tree "Applications" is not clicked
+
+Scenario: N46 row-DoNotclick
+Given the row "Chrome" for #"Applications" is not clicked
+When I do not click the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is not clicked
+
+Scenario: N47 Tree-DoNotclick
+Given #"Chrome" for the Tree "Applications" is not clicked
+When I do not click #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is not clicked
+
+Scenario: N48 DoNotclick
+Given #"Chrome" for #"Applications" is not clicked
+When I do not click #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not clicked
+
+/*
+Scenario: tree-select
+Given the tree "<tree name>" is unselected
+When I select the tree "<tree name>"
+Then the tree "<tree name>" is selected
+*/
+
+Scenario: N49 tree-select
+Given the tree "Tree" is unselected
+When I select the tree "Tree"
+Then the tree "Tree" is selected
+
+Scenario: N50 select
+Given #"Tree" is unselected
+When I select #"Tree"
+Then #"Tree" is selected
+
+/*
+Scenario: tree-DoNotselect
+Given the tree "<tree name>" is not selected
+When I do not select the tree "<tree name>"
+Then the tree "<tree name>" is unselected
+*/
+
+Scenario: N51 tree-DoNotselect
+Given the tree "Tree" is not selected
+When I do not select the tree "Tree"
+Then the tree "Tree" is unselected
+
+Scenario: N52 DoNotselect
+Given #"Tree" is not selected
+When I do not select #"Tree"
+Then #"Tree" is unselected
+
+/*
+Scenario: Tree-select
+Given the Tree "<tree name>" is unselected
+When I select the Tree "<tree name>"
+Then the Tree "<tree name>" is selected
+*/
+
+Scenario: N53 Tree-select
+Given the Tree "Tree" is unselected
+When I select the Tree "Tree"
+Then the Tree "Tree" is selected
+
+Scenario: N54 select
+Given #"Tree" is unselected
+When I select #"Tree"
+Then #"Tree" is selected
+
+/*
+Scenario: Tree-DoNotselect
+Given the Tree "<tree name>" is not selected
+When I do not select the Tree "<tree name>"
+Then the Tree "<tree name>" is unselected
+*/
+
+Scenario: N55 Tree-select
+Given the Tree "Tree" is not selected
+When I do not select the Tree "Tree"
+Then the Tree "Tree" is unselected
+
+Scenario: N56 select
+Given #"Tree" is not selected
+When I do not select #"Tree"
+Then #"Tree" is unselected
+
+
+/*
+Scenario: tree-click
+Given the tree "<tree name>" is not clicked
+When I click the tree "<tree name>"
+Then the tree "<tree name>" is clicked
+*/
+
+Scenario: N57 tree-click
+Given the tree "Tree" is not clicked
+When I click the tree "Tree"
+Then the tree "Tree" is clicked
+
+Scenario: N58 click
+Given #"Tree" is not clicked
+When I click #"Tree"
+Then #"Tree" is clicked
+
+/*
+Scenario: tree-DoNotclick
+Given the tree "<tree name>" is not clicked
+When I do not clicked the tree "<tree name>"
+Then the tree "<tree name>" is not clicked
+*/
+
+Scenario: N59 tree-DoNotclick
+Given the tree "Tree" is not clicked
+When I do not click the tree "Tree"
+Then the tree "Tree" is not clicked
+
+Scenario: N60 DoNotclick
+Given #"Tree" is not clicked
+When I do not click #"Tree"
+Then #"Tree" is not clicked
+
+/*
+Scenario: Tree-click
+Given the Tree "<tree name>" is not clicked
+When I click the Tree "<tree name>"
+Then the Tree "<tree name>" is clicked
+*/
+
+Scenario: N61 Tree-click
+Given the Tree "Tree" is not clicked
+When I click the Tree "Tree"
+Then the Tree "Tree" is clicked
+
+Scenario: N62 click
+Given #"Tree" is not clicked
+When I click #"Tree"
+Then #"Tree" is clicked
+
+/*
+Scenario: Tree-DoNotclick
+Given the Tree "<tree name>" is not clicked
+When I do not clicked the Tree "<tree name>"
+Then the Tree "<tree name>" is not clicked
+*/
+
+Scenario: N63 Tree-click
+Given the Tree "Tree" is not clicked
+When I do not click the Tree "Tree"
+Then the Tree "Tree" is not clicked
+
+Scenario: N64 click
+Given #"Tree" is not clicked
+When I do not click #"Tree"
+Then #"Tree" is not clicked
+
+
+/*
+Scenario: Field-tree-select
+Given the tree "<tree>" for the field "<fieldname>" is not selected
+When I select the tree "<tree>" for the field "<fieldname>"
+Then the tree "<tree>" for the field "<fieldname>" is selected
+*/
+
+Scenario: N65 Field-tree-select
+Given the tree "Chrome" for the field "Applications" is not selected
+When I select the tree "Chrome" for the field "Applications"
+Then the tree "Chrome" for the field "Applications" is selected
+
+Scenario: N66 tree-select
+Given the tree "Chrome" for #"Applications" is not selected
+When I select the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is selected
+
+Scenario: N67 Field-select
+Given #"Chrome" for the field "Applications" is not selected
+When I select #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is selected
+
+Scenario: N68 select
+Given #"Chrome" for #"Applications" is not selected
+When I select #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is selected
+
+/*
+Scenario: Field-tree-DoNotselect
+Given the tree "<tree>" for the field "<fieldname>" is not selected
+When I do not select the tree "<tree>" for the field "<fieldname>"
+Then the tree "<tree>" for the field "<fieldname>" is not selected
+*/
+
+Scenario: N69 Field-tree-DoNotselect
+Given the tree "Chrome" for the field "Applications" is not selected
+When I do not select the tree "Chrome" for the field "Applications"
+Then the tree "Chrome" for the field "Applications" is not selected
+
+Scenario: N70 tree-DoNotselect
+Given the tree "Chrome" for #"Applications" is not selected
+When I do not select the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is not selected
+
+Scenario: N71 Field-DoNotselect
+Given #"Chrome" for the field "Applications" is not selected
+When I do not select #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is not selected
+
+Scenario: N72 DoNotselect
+Given #"Chrome" for #"Applications" is not selected
+When I do not select #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not selected
+
+
+/*
+Scenario: Field-tree-click
+Given the tree "<tree>" for the field "<fieldname>" is not clicked
+When I click the tree "<tree>" for the field "<fieldname>"
+Then the tree "<tree>" for the field "<fieldname>" is clicked
+*/
+
+Scenario: N73 Field-tree-click
+Given the tree "Chrome" for the field "Applications" is not clicked
+When I click the tree "Chrome" for the field "Applications"
+Then the tree "Chrome" for the field "Applications" is clicked
+
+Scenario: N74 tree-click
+Given the tree "Chrome" for #"Applications" is not clicked
+When I click the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is clicked
+
+Scenario: N75 Field-click
+Given #"Chrome" for the field "Applications" is not clicked
+When I click #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is clicked
+
+Scenario: N76 click
+Given #"Chrome" for #"Applications" is not clicked
+When I click #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is clicked
+
+/*
+Scenario: Field-tree-DoNotclick
+Given the tree "<tree>" for the field "<fieldname>" is not clicked
+When I do not click the tree "<tree>" for the field "<fieldname>"
+Then the tree "<tree>" for the field "<fieldname>" is not clicked
+*/
+
+Scenario: N77 Field-tree-DoNotclick
+Given the tree "Chrome" for the field "Applications" is not clicked
+When I do not click the tree "Chrome" for the field "Applications"
+Then the tree "Chrome" for the field "Applications" is not clicked
+
+Scenario: N78 tree-DoNotclick
+Given the tree "Chrome" for #"Applications" is not clicked
+When I do not click the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is not clicked
+
+Scenario: N79 Field-DoNotclick
+Given #"Chrome" for the field "Applications" is not clicked
+When I do not click #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is not clicked
+
+Scenario: N80 DoNotclick
+Given #"Chrome" for #"Applications" is not clicked
+When I do not click #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not clicked
+
+
+/*
+Scenario: Tree-tree-select
+Given the tree "<tree>" for the Tree "<fieldname>" is not selected
+When I select the tree "<tree>" for the Tree "<fieldname>"
+Then the tree "<tree>" for the Tree "<fieldname>" is selected
+*/
+
+Scenario: N81 Tree-tree-select
+Given the tree "Chrome" for the Tree "Applications" is not selected
+When I select the tree "Chrome" for the Tree "Applications"
+Then the tree "Chrome" for the Tree "Applications" is selected
+
+Scenario: N82 tree-select
+Given the tree "Chrome" for #"Applications" is not selected
+When I select the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is selected
+
+Scenario: N83 Tree-select
+Given #"Chrome" for the Tree "Applications" is not selected
+When I select #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is selected
+
+Scenario: N84 select
+Given #"Chrome" for #"Applications" is not selected
+When I select #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is selected
+
+/*
+Scenario: Tree-tree-DoNotselect
+Given the tree "<tree>" for the Tree "<fieldname>" is not selected
+When I do not select the tree "<tree>" for the Tree "<fieldname>"
+Then the tree "<tree>" for the Tree "<fieldname>" is not selected
+*/
+
+Scenario: N85 Tree-tree-DoNotselect
+Given the tree "Chrome" for the Tree "Applications" is not selected
+When I do not select the tree "Chrome" for the Tree "Applications"
+Then the tree "Chrome" for the Tree "Applications" is not selected
+
+Scenario: N86 tree-DoNotselect
+Given the tree "Chrome" for #"Applications" is not selected
+When I do not select the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is not selected
+
+Scenario: N87 Tree-DoNotselect
+Given #"Chrome" for the Tree "Applications" is not selected
+When I do not select #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is not selected
+
+Scenario: N88 DoNotselect
+Given #"Chrome" for #"Applications" is not selected
+When I do not select #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not selected
+
+
+/*
+Scenario: Tree-tree-click
+Given the tree "<tree>" for the Tree "<fieldname>" is not clicked
+When I click the tree "<tree>" for the Tree "<fieldname>"
+Then the tree "<tree>" for the Tree "<fieldname>" is clicked
+*/
+
+Scenario: N89 Tree-tree-click
+Given the tree "Chrome" for the Tree "Applications" is not clicked
+When I click the tree "Chrome" for the Tree "Applications"
+Then the tree "Chrome" for the Tree "Applications" is clicked
+
+Scenario: N90 tree-click
+Given the tree "Chrome" for #"Applications" is not clicked
+When I click the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is clicked
+
+Scenario: N91 Tree-click
+Given #"Chrome" for the Tree "Applications" is not clicked
+When I click #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is clicked
+
+Scenario: N92 click
+Given #"Chrome" for #"Applications" is not clicked
+When I click #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is clicked
+
+/*
+Scenario: Tree-tree-DoNotclick
+Given the tree "<tree>" for the Tree "<fieldname>" is not clicked
+When I do not click the tree "<tree>" for the Tree "<fieldname>"
+Then the tree "<tree>" for the Tree "<fieldname>" is not clicked
+*/
+
+Scenario: N93 Tree-tree-DoNotclick
+Given the tree "Chrome" for the Tree "Applications" is not clicked
+When I do not click the tree "Chrome" for the Tree "Applications"
+Then the tree "Chrome" for the Tree "Applications" is not clicked
+
+Scenario: N94 tree-DoNotclick
+Given the tree "Chrome" for #"Applications" is not clicked
+When I do not click the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is not clicked
+
+Scenario: N95 Tree-DoNotclick
+Given #"Chrome" for the Tree "Applications" is not clicked
+When I do not click #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is not clicked
+
+Scenario: N96 DoNotclick
+Given #"Chrome" for #"Applications" is not clicked
+When I do not click #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not clicked
