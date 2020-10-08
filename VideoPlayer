@@ -8,14 +8,14 @@ Then the field "<fieldname>" is played
 */
 
 Scenario: N1 
-Given the field "I agree to the terms and conditions" is not played
-When I play the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is played
+Given the field "Travel world" is not played
+When I play the field "Travel world"
+Then the field "Travel world" is played
 
 Scenario: N2
-Given #"I agree to the terms and conditions" is not played
-When I play #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is played
+Given #"Travel world" is not played
+When I play #"Travel world"
+Then #"Travel world" is played
 
 /*
 Scenario: Field-DoNotplay
@@ -25,14 +25,14 @@ Then the field "<fieldname>" is not played
 */
 
 Scenario: N3
-Given the field "I agree to the terms and conditions" is not played
-When I do not play the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is not played
+Given the field "Travel world" is not played
+When I do not play the field "Travel world"
+Then the field "Travel world" is not played
 
 Scenario: N4 
-Given #"I agree to the terms and conditions" is not played
-When I do not play #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is not played
+Given #"Travel world" is not played
+When I do not play #"Travel world"
+Then #"Travel world" is not played
 
 /*
 Scenario: VideoPlayer-play
@@ -42,14 +42,14 @@ Then the VideoPlayer "<fieldname>" is played
 */
 
 Scenario: N5 
-Given the VideoPlayer "I agree to the terms and conditions" is not played
-When I play the VideoPlayer "I agree to the terms and conditions"
-Then the VideoPlayer "I agree to the terms and conditions" is played
+Given the VideoPlayer "Travel world" is not played
+When I play the VideoPlayer "Travel world"
+Then the VideoPlayer "Travel world" is played
 
 Scenario: N6 
-Given #"I agree to the terms and conditions" is not played
-When I play #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is played
+Given #"Travel world" is not played
+When I play #"Travel world"
+Then #"Travel world" is played
 
 /*
 Scenario: VideoPlayer-DoNotplay
@@ -59,14 +59,14 @@ Then the VideoPlayer "<fieldname>" is not played
 */
 
 Scenario: N7 
-Given the VideoPlayer "I agree to the terms and conditions" is not played
-When I do not play the VideoPlayer "I agree to the terms and conditions"
-Then the VideoPlayer "I agree to the terms and conditions" is not played
+Given the VideoPlayer "Travel world" is not played
+When I do not play the VideoPlayer "Travel world"
+Then the VideoPlayer "Travel world" is not played
 
 Scenario: N8
-Given #"I agree to the terms and conditions" is not played
-When I do not play #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is not played
+Given #"Travel world" is not played
+When I do not play #"Travel world"
+Then #"Travel world" is not played
 
 /*
 Scenario: Field-pause
@@ -76,14 +76,14 @@ Then the field "<fieldname>" is paused
 */
 
 Scenario: N9 
-Given the field "I agree to the terms and conditions" is not played
-When I pause the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is paused
+Given the field "Travel world" is not played
+When I pause the field "Travel world"
+Then the field "Travel world" is paused
 
 Scenario: N10 
-Given #"I agree to the terms and conditions" is not played
-When I pause #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is paused
+Given #"Travel world" is not played
+When I pause #"Travel world"
+Then #"Travel world" is paused
 
 /*
 Scenario: Field-DoNotpause
@@ -93,14 +93,14 @@ Then the field "<fieldname>" is not played
 */
 
 Scenario: N11 
-Given the field "I agree to the terms and conditions" is not paused
-When I do not pause the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is played
+Given the field "Travel world" is not paused
+When I do not pause the field "Travel world"
+Then the field "Travel world" is played
 
 Scenario: N12 
-Given #"I agree to the terms and conditions" is not paused
-When I do not pause #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is played
+Given #"Travel world" is not paused
+When I do not pause #"Travel world"
+Then #"Travel world" is played
 
 /*
 Scenario: VideoPlayer-pause
@@ -110,14 +110,14 @@ Then the VideoPlayer "<fieldname>" is paused
 */
 
 Scenario: N13 
-Given the VideoPlayer "I agree to the terms and conditions" is not played
-When I pause the VideoPlayer "I agree to the terms and conditions"
-Then the VideoPlayer "I agree to the terms and conditions" is paused
+Given the VideoPlayer "Travel world" is not played
+When I pause the VideoPlayer "Travel world"
+Then the VideoPlayer "Travel world" is paused
 
 Scenario: N14 
-Given #"I agree to the terms and conditions" is not played
-When I pause #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is paused
+Given #"Travel world" is not played
+When I pause #"Travel world"
+Then #"Travel world" is paused
 
 /*
 Scenario: VideoPlayer-DoNotpause
@@ -127,14 +127,14 @@ Then the VideoPlayer "<fieldname>" is  played
 */
 
 Scenario: N15 
-Given the VideoPlayer "I agree to the terms and conditions" is not paused
-When I do not pause the VideoPlayer "I agree to the terms and conditions"
-Then the VideoPlayer "I agree to the terms and conditions" is  played
+Given the VideoPlayer "Travel world" is not paused
+When I do not pause the VideoPlayer "Travel world"
+Then the VideoPlayer "Travel world" is  played
 
 Scenario: N16 
-Given #"I agree to the terms and conditions" is not paused
-When I do not pause #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is  played
+Given #"Travel world" is not paused
+When I do not pause #"Travel world"
+Then #"Travel world" is  played
 
 /*
 Scenario: Field-fast forward
@@ -144,14 +144,14 @@ Then the field "<fieldname>" is fast forwarded
 */
 
 Scenario: N17
-Given the field "I agree to the terms and conditions" is played
-When I fast forward the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is fast forwarded
+Given the field "Travel world" is played
+When I fast forward the field "Travel world"
+Then the field "Travel world" is fast forwarded
 
 Scenario: N18
-Given #"I agree to the terms and conditions" is played
-When I fast forward #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is fast forwarded
+Given #"Travel world" is played
+When I fast forward #"Travel world"
+Then #"Travel world" is fast forwarded
 
 /*
 Scenario: Field-DoNotfast forward
@@ -161,14 +161,14 @@ Then the field "<fieldname>" is played
 */
 
 Scenario: N19
-Given the field "I agree to the terms and conditions" is not fast forwarded
-When I do not fast forward the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is played
+Given the field "Travel world" is not fast forwarded
+When I do not fast forward the field "Travel world"
+Then the field "Travel world" is played
 
 Scenario: N20 
-Given #"I agree to the terms and conditions" is not fast forwarded
-When I do not fast forward #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is played
+Given #"Travel world" is not fast forwarded
+When I do not fast forward #"Travel world"
+Then #"Travel world" is played
 
 /*
 Scenario: VideoPlayer-fast forward
@@ -178,14 +178,14 @@ Then the VideoPlayer "<fieldname>" is fast forwarded
 */
 
 Scenario: N21
-Given the VideoPlayer "I agree to the terms and conditions" is played
-When I fast forward the VideoPlayer "I agree to the terms and conditions"
-Then the VideoPlayer "I agree to the terms and conditions" is fast forwarded
+Given the VideoPlayer "Travel world" is played
+When I fast forward the VideoPlayer "Travel world"
+Then the VideoPlayer "Travel world" is fast forwarded
 
 Scenario: N22 
-Given #"I agree to the terms and conditions" is played
-When I fast forward #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is fast forwarded
+Given #"Travel world" is played
+When I fast forward #"Travel world"
+Then #"Travel world" is fast forwarded
 
 /*
 Scenario: VideoPlayer-DoNotfast forward
@@ -195,14 +195,14 @@ Then the VideoPlayer "<fieldname>" is played
 */
 
 Scenario: N23 
-Given the VideoPlayer "I agree to the terms and conditions" is not fast forwarded
-When I do not fast forward the VideoPlayer "I agree to the terms and conditions"
-Then the VideoPlayer "I agree to the terms and conditions" is played
+Given the VideoPlayer "Travel world" is not fast forwarded
+When I do not fast forward the VideoPlayer "Travel world"
+Then the VideoPlayer "Travel world" is played
 
 Scenario: N24 
-Given #"I agree to the terms and conditions" is not fast forwarded
-When I do not fast forward #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is played
+Given #"Travel world" is not fast forwarded
+When I do not fast forward #"Travel world"
+Then #"Travel world" is played
 
 /*
 Scenario: Field-rewind
@@ -212,14 +212,14 @@ Then the field "<fieldname>" is rewound
 */
 
 Scenario: N25
-Given the field "I agree to the terms and conditions" is played
-When I rewind the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is rewound
+Given the field "Travel world" is played
+When I rewind the field "Travel world"
+Then the field "Travel world" is rewound
 
 Scenario: N26 
-Given #"I agree to the terms and conditions" is played
-When I rewind #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is rewound
+Given #"Travel world" is played
+When I rewind #"Travel world"
+Then #"Travel world" is rewound
 
 /*
 Scenario: Field-DoNotrewind
@@ -229,14 +229,14 @@ Then the field "<fieldname>" is played
 */
 
 Scenario: N27 
-Given the field "I agree to the terms and conditions" is not rewound
-When I do not rewind the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is played
+Given the field "Travel world" is not rewound
+When I do not rewind the field "Travel world"
+Then the field "Travel world" is played
 
 Scenario: N28 
-Given #"I agree to the terms and conditions" is not rewound
-When I do not rewind #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is played
+Given #"Travel world" is not rewound
+When I do not rewind #"Travel world"
+Then #"Travel world" is played
 
 /*
 Scenario: VideoPlayer-rewind
@@ -246,14 +246,14 @@ Then the VideoPlayer "<fieldname>" is rewound
 */
 
 Scenario: N29 
-Given the VideoPlayer "I agree to the terms and conditions" is played
-When I rewind the VideoPlayer "I agree to the terms and conditions"
-Then the VideoPlayer "I agree to the terms and conditions" is rewound
+Given the VideoPlayer "Travel world" is played
+When I rewind the VideoPlayer "Travel world"
+Then the VideoPlayer "Travel world" is rewound
 
 Scenario: N30 rewind
-Given #"I agree to the terms and conditions" is played
-When I rewind #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is rewound
+Given #"Travel world" is played
+When I rewind #"Travel world"
+Then #"Travel world" is rewound
 
 /*
 Scenario: VideoPlayer-DoNotrewind
@@ -263,14 +263,14 @@ Then the VideoPlayer "<fieldname>" is played
 */
 
 Scenario: N31 VideoPlayer-DoNotrewind
-Given the VideoPlayer "I agree to the terms and conditions" is not rewound
-When I do not rewind the VideoPlayer "I agree to the terms and conditions"
-Then the VideoPlayer "I agree to the terms and conditions" is played
+Given the VideoPlayer "Travel world" is not rewound
+When I do not rewind the VideoPlayer "Travel world"
+Then the VideoPlayer "Travel world" is played
 
 Scenario: N32 DoNotrewind
-Given #"I agree to the terms and conditions" is not rewound
-When I do not rewind #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is played
+Given #"Travel world" is not rewound
+When I do not rewind #"Travel world"
+Then #"Travel world" is played
 
 /*
 Scenario: VideoPlayer-video-play
@@ -280,24 +280,24 @@ Then the video "<video>" for the VideoPlayer "<fieldname>" is played
 */
 
 Scenario: N33 VideoPlayer-video-play
-Given the video "Morning" for the VideoPlayer "Availability" is not played
-When I play the video "Morning" for the VideoPlayer "Availability"
-Then the video "Morning" for the VideoPlayer "Availability" is played
+Given the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not played
+When I play the video "Bat Man" for the VideoPlayer "Bat Man Videos"
+Then the video "Bat Man" for the VideoPlayer "Bat Man Videos" is played
 
 Scenario: N34 video-play
-Given the video "Morning" for #"Availability" is not played
-When I play the video "Morning" for #"Availability"
-Then the video "Morning" for #"Availability" is played
+Given the video "Bat Man" for #"Bat Man Videos" is not played
+When I play the video "Bat Man" for #"Bat Man Videos"
+Then the video "Bat Man" for #"Bat Man Videos" is played
 
 Scenario: N35 VideoPlayer-play
-Given #"Morning" for the VideoPlayer "Availability" is not played
-When I play #"Morning" for the VideoPlayer "Availability"
-Then #"Morning" for the VideoPlayer "Availability" is played
+Given #"Bat Man" for the VideoPlayer "Bat Man Videos" is not played
+When I play #"Bat Man" for the VideoPlayer "Bat Man Videos"
+Then #"Bat Man" for the VideoPlayer "Bat Man Videos" is played
 
 Scenario: N36 play
-Given #"Morning" for #"Availability" is not played
-When I play #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is played
+Given #"Bat Man" for #"Bat Man Videos" is not played
+When I play #"Bat Man" for #"Bat Man Videos"
+Then #"Bat Man" for #"Bat Man Videos" is played
 
 /*
 Scenario: VideoPlayer-video-DoNotplay
@@ -307,24 +307,24 @@ Then the video "<video>" for the VideoPlayer "<fieldname>" is not played
 */
 
 Scenario: N37 VideoPlayer-video-DoNotplay
-Given the video "Morning" for the VideoPlayer "Availability" is not played
-When I do not play the video "Morning" for the VideoPlayer "Availability"
-Then the video "Morning" for the VideoPlayer "Availability" is not played
+Given the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not played
+When I do not play the video "Bat Man" for the VideoPlayer "Bat Man Videos"
+Then the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not played
 
 Scenario: N38 video-DoNotplay
-Given the video "Morning" for #"Availability" is not played
-When I do not play the video "Morning" for #"Availability"
-Then the video "Morning" for #"Availability" is not played
+Given the video "Bat Man" for #"Bat Man Videos" is not played
+When I do not play the video "Bat Man" for #"Bat Man Videos"
+Then the video "Bat Man" for #"Bat Man Videos" is not played
 
 Scenario: N39 VideoPlayer-DoNotplay
-Given #"Morning" for the VideoPlayer "Availability" is not played
-When I do not play #"Morning" for the VideoPlayer "Availability"
-Then #"Morning" for the VideoPlayer "Availability" is not played
+Given #"Bat Man" for the VideoPlayer "Bat Man Videos" is not played
+When I do not play #"Bat Man" for the VideoPlayer "Bat Man Videos"
+Then #"Bat Man" for the VideoPlayer "Bat Man Videos" is not played
 
 Scenario: N40 DoNotplay
-Given #"Morning" for #"Availability" is not played
-When I do not play #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not played
+Given #"Bat Man" for #"Bat Man Videos" is not played
+When I do not play #"Bat Man" for #"Bat Man Videos"
+Then #"Bat Man" for #"Bat Man Videos" is not played
 
 /*
 Scenario: VideoPlayer-video-pause
@@ -334,24 +334,24 @@ Then the video "<video>" for the VideoPlayer "<fieldname>" is paused
 */
 
 Scenario: N41 VideoPlayer-video-pause
-Given the video "Morning" for the VideoPlayer "Availability" is not paused
-When I pause the video "Morning" for the VideoPlayer "Availability"
-Then the video "Morning" for the VideoPlayer "Availability" is paused
+Given the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not paused
+When I pause the video "Bat Man" for the VideoPlayer "Bat Man Videos"
+Then the video "Bat Man" for the VideoPlayer "Bat Man Videos" is paused
 
 Scenario: N42 video-pause
-Given the video "Morning" for #"Availability" is not paused
-When I pause the video "Morning" for #"Availability"
-Then the video "Morning" for #"Availability" is paused
+Given the video "Bat Man" for #"Bat Man Videos" is not paused
+When I pause the video "Bat Man" for #"Bat Man Videos"
+Then the video "Bat Man" for #"Bat Man Videos" is paused
 
 Scenario: N43 VideoPlayer-pause
-Given #"Morning" for the VideoPlayer "Availability" is not paused
-When I pause #"Morning" for the VideoPlayer "Availability"
-Then #"Morning" for the VideoPlayer "Availability" is paused
+Given #"Bat Man" for the VideoPlayer "Bat Man Videos" is not paused
+When I pause #"Bat Man" for the VideoPlayer "Bat Man Videos"
+Then #"Bat Man" for the VideoPlayer "Bat Man Videos" is paused
 
 Scenario: N44 pause
-Given #"Morning" for #"Availability" is not paused
-When I pause #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is paused
+Given #"Bat Man" for #"Bat Man Videos" is not paused
+When I pause #"Bat Man" for #"Bat Man Videos"
+Then #"Bat Man" for #"Bat Man Videos" is paused
 
 /*
 Scenario: VideoPlayer-video-DoNotpause
@@ -361,24 +361,24 @@ Then the video "<video>" for the VideoPlayer "<fieldname>" is not paused
 */
 
 Scenario: N45 VideoPlayer-video-DoNotpause
-Given the video "Morning" for the VideoPlayer "Availability" is not paused
-When I do not pause the video "Morning" for the VideoPlayer "Availability"
-Then the video "Morning" for the VideoPlayer "Availability" is not paused
+Given the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not paused
+When I do not pause the video "Bat Man" for the VideoPlayer "Bat Man Videos"
+Then the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not paused
 
 Scenario: N46 video-DoNotpause
-Given the video "Morning" for #"Availability" is not paused
-When I do not pause the video "Morning" for #"Availability"
-Then the video "Morning" for #"Availability" is not paused
+Given the video "Bat Man" for #"Bat Man Videos" is not paused
+When I do not pause the video "Bat Man" for #"Bat Man Videos"
+Then the video "Bat Man" for #"Bat Man Videos" is not paused
 
 Scenario: N47 VideoPlayer-DoNotpause
-Given #"Morning" for the VideoPlayer "Availability" is not paused
-When I do not pause #"Morning" for the VideoPlayer "Availability"
-Then #"Morning" for the VideoPlayer "Availability" is not paused
+Given #"Bat Man" for the VideoPlayer "Bat Man Videos" is not paused
+When I do not pause #"Bat Man" for the VideoPlayer "Bat Man Videos"
+Then #"Bat Man" for the VideoPlayer "Bat Man Videos" is not paused
 
 Scenario: N48 DoNotpause
-Given #"Morning" for #"Availability" is not paused
-When I do not pause #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not paused
+Given #"Bat Man" for #"Bat Man Videos" is not paused
+When I do not pause #"Bat Man" for #"Bat Man Videos"
+Then #"Bat Man" for #"Bat Man Videos" is not paused
 
 /*
 Scenario: VideoPlayer-video-fast forward
@@ -388,24 +388,24 @@ Then the video "<video>" for the VideoPlayer "<fieldname>" is fast forwarded
 */
 
 Scenario: N49 VideoPlayer-video-fast forward
-Given the video "Morning" for the VideoPlayer "Availability" is not fast forwarded
-When I fast forward the video "Morning" for the VideoPlayer "Availability"
-Then the video "Morning" for the VideoPlayer "Availability" is fast forwarded
+Given the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not fast forwarded
+When I fast forward the video "Bat Man" for the VideoPlayer "Bat Man Videos"
+Then the video "Bat Man" for the VideoPlayer "Bat Man Videos" is fast forwarded
 
 Scenario: N50 video-fast forward
-Given the video "Morning" for #"Availability" is not fast forwarded
-When I fast forward the video "Morning" for #"Availability"
-Then the video "Morning" for #"Availability" is fast forwarded
+Given the video "Bat Man" for #"Bat Man Videos" is not fast forwarded
+When I fast forward the video "Bat Man" for #"Bat Man Videos"
+Then the video "Bat Man" for #"Bat Man Videos" is fast forwarded
 
 Scenario: N51 VideoPlayer-fast forward
-Given #"Morning" for the VideoPlayer "Availability" is not fast forwarded
-When I fast forward #"Morning" for the VideoPlayer "Availability"
-Then #"Morning" for the VideoPlayer "Availability" is fast forwarded
+Given #"Bat Man" for the VideoPlayer "Bat Man Videos" is not fast forwarded
+When I fast forward #"Bat Man" for the VideoPlayer "Bat Man Videos"
+Then #"Bat Man" for the VideoPlayer "Bat Man Videos" is fast forwarded
 
 Scenario: N52 fast forward
-Given #"Morning" for #"Availability" is not fast forwarded
-When I fast forward #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is fast forwarded
+Given #"Bat Man" for #"Bat Man Videos" is not fast forwarded
+When I fast forward #"Bat Man" for #"Bat Man Videos"
+Then #"Bat Man" for #"Bat Man Videos" is fast forwarded
 
 /*
 Scenario: VideoPlayer-video-DoNotfast forward
@@ -415,24 +415,24 @@ Then the video "<video>" for the VideoPlayer "<fieldname>" is not fast forwarded
 */
 
 Scenario: N53 VideoPlayer-video-DoNotfast forward
-Given the video "Morning" for the VideoPlayer "Availability" is not fast forwarded
-When I do not fast forward the video "Morning" for the VideoPlayer "Availability"
-Then the video "Morning" for the VideoPlayer "Availability" is not fast forwarded
+Given the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not fast forwarded
+When I do not fast forward the video "Bat Man" for the VideoPlayer "Bat Man Videos"
+Then the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not fast forwarded
 
 Scenario: N54 video-DoNotfast forward
-Given the video "Morning" for #"Availability" is not fast forwarded
-When I do not fast forward the video "Morning" for #"Availability"
-Then the video "Morning" for #"Availability" is not fast forwarded
+Given the video "Bat Man" for #"Bat Man Videos" is not fast forwarded
+When I do not fast forward the video "Bat Man" for #"Bat Man Videos"
+Then the video "Bat Man" for #"Bat Man Videos" is not fast forwarded
 
 Scenario: N55 VideoPlayer-DoNotfast forward
-Given #"Morning" for the VideoPlayer "Availability" is not fast forwarded
-When I do not fast forward #"Morning" for the VideoPlayer "Availability"
-Then #"Morning" for the VideoPlayer "Availability" is not fast forwarded
+Given #"Bat Man" for the VideoPlayer "Bat Man Videos" is not fast forwarded
+When I do not fast forward #"Bat Man" for the VideoPlayer "Bat Man Videos"
+Then #"Bat Man" for the VideoPlayer "Bat Man Videos" is not fast forwarded
 
 Scenario: N56 DoNotfast forward
-Given #"Morning" for #"Availability" is not fast forwarded
-When I do not fast forward #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not fast forwarded
+Given #"Bat Man" for #"Bat Man Videos" is not fast forwarded
+When I do not fast forward #"Bat Man" for #"Bat Man Videos"
+Then #"Bat Man" for #"Bat Man Videos" is not fast forwarded
 
 /*
 Scenario: VideoPlayer-video-rewind
@@ -442,24 +442,24 @@ Then the video "<video>" for the VideoPlayer "<fieldname>" is rewound
 */
 
 Scenario: N57 VideoPlayer-video-rewind
-Given the video "Morning" for the VideoPlayer "Availability" is not rewound
-When I rewind the video "Morning" for the VideoPlayer "Availability"
-Then the video "Morning" for the VideoPlayer "Availability" is rewound
+Given the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not rewound
+When I rewind the video "Bat Man" for the VideoPlayer "Bat Man Videos"
+Then the video "Bat Man" for the VideoPlayer "Bat Man Videos" is rewound
 
 Scenario: N58 video-rewind
-Given the video "Morning" for #"Availability" is not rewound
-When I rewind the video "Morning" for #"Availability"
-Then the video "Morning" for #"Availability" is rewound
+Given the video "Bat Man" for #"Bat Man Videos" is not rewound
+When I rewind the video "Bat Man" for #"Bat Man Videos"
+Then the video "Bat Man" for #"Bat Man Videos" is rewound
 
 Scenario: N59 VideoPlayer-rewind
-Given #"Morning" for the VideoPlayer "Availability" is not rewound
-When I rewind #"Morning" for the VideoPlayer "Availability"
-Then #"Morning" for the VideoPlayer "Availability" is rewound
+Given #"Bat Man" for the VideoPlayer "Bat Man Videos" is not rewound
+When I rewind #"Bat Man" for the VideoPlayer "Bat Man Videos"
+Then #"Bat Man" for the VideoPlayer "Bat Man Videos" is rewound
 
 Scenario: N60 rewind
-Given #"Morning" for #"Availability" is not rewound
-When I rewind #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is rewound
+Given #"Bat Man" for #"Bat Man Videos" is not rewound
+When I rewind #"Bat Man" for #"Bat Man Videos"
+Then #"Bat Man" for #"Bat Man Videos" is rewound
 
 /*
 Scenario: VideoPlayer-video-DoNotrewind
@@ -469,24 +469,24 @@ Then the video "<video>" for the VideoPlayer "<fieldname>" is not rewound
 */
 
 Scenario: N61 VideoPlayer-video-DoNotrewind
-Given the video "Morning" for the VideoPlayer "Availability" is not rewound
-When I do not rewind the video "Morning" for the VideoPlayer "Availability"
-Then the video "Morning" for the VideoPlayer "Availability" is not rewound
+Given the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not rewound
+When I do not rewind the video "Bat Man" for the VideoPlayer "Bat Man Videos"
+Then the video "Bat Man" for the VideoPlayer "Bat Man Videos" is not rewound
 
 Scenario: N62 video-DoNotrewind
-Given the video "Morning" for #"Availability" is not rewound
-When I do not rewind the video "Morning" for #"Availability"
-Then the video "Morning" for #"Availability" is not rewound
+Given the video "Bat Man" for #"Bat Man Videos" is not rewound
+When I do not rewind the video "Bat Man" for #"Bat Man Videos"
+Then the video "Bat Man" for #"Bat Man Videos" is not rewound
 
 Scenario: N63 VideoPlayer-DoNotrewind
-Given #"Morning" for the VideoPlayer "Availability" is not rewound
-When I do not rewind #"Morning" for the VideoPlayer "Availability"
-Then #"Morning" for the VideoPlayer "Availability" is not rewound
+Given #"Bat Man" for the VideoPlayer "Bat Man Videos" is not rewound
+When I do not rewind #"Bat Man" for the VideoPlayer "Bat Man Videos"
+Then #"Bat Man" for the VideoPlayer "Bat Man Videos" is not rewound
 
 Scenario: N64 DoNotrewind
-Given #"Morning" for #"Availability" is not rewound
-When I do not rewind #"Morning" for #"Availability"
-Then #"Morning" for #"Availability" is not rewound
+Given #"Bat Man" for #"Bat Man Videos" is not rewound
+When I do not rewind #"Bat Man" for #"Bat Man Videos"
+Then #"Bat Man" for #"Bat Man Videos" is not rewound
 
 /*
 Scenario: Field-toggle full-screen
@@ -496,14 +496,14 @@ Then the field "<fieldname>" is toggled full-screen
 */
 
 Scenario: N65 Field-toggle full-screen
-Given the field "I agree to the terms and conditions" is not toggled full-screen
-When I toggle full-screen the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is toggled full-screen
+Given the field "Travel world" is not toggled full-screen
+When I toggle full-screen the field "Travel world"
+Then the field "Travel world" is toggled full-screen
 
 Scenario: N66 toggle full-screen
-Given #"I agree to the terms and conditions" is not toggled full-screen
-When I toggle full-screen #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is toggled full-screen
+Given #"Travel world" is not toggled full-screen
+When I toggle full-screen #"Travel world"
+Then #"Travel world" is toggled full-screen
 
 /*
 Scenario: Field-DoNottoggle full-screen
@@ -513,14 +513,14 @@ Then the field "<fieldname>" is not toggled full-screen
 */
 
 Scenario: N67 Field-DoNottoggle full-screen
-Given the field "I agree to the terms and conditions" is not toggled full-screen
-When I do not toggle full-screen the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is not toggled full-screen
+Given the field "Travel world" is not toggled full-screen
+When I do not toggle full-screen the field "Travel world"
+Then the field "Travel world" is not toggled full-screen
 
 Scenario: N68 DoNottoggle full-screen
-Given #"I agree to the terms and conditions" is not toggled full-screen
-When I do not toggle full-screen #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is not toggled full-screen
+Given #"Travel world" is not toggled full-screen
+When I do not toggle full-screen #"Travel world"
+Then #"Travel world" is not toggled full-screen
 
 /*
 Scenario: VideoPlayer video-toggle full-screen
@@ -530,14 +530,14 @@ Then the VideoPlayer video "<fieldname>" is toggle full-screen
 */
 
 Scenario: N69 VideoPlayer video-toggle fullscreen
-Given the video "I agree to the terms and conditions" is not toggled full-screen
-When I toggle full-screen the  video "I agree to the terms and conditions"
-Then the video for the VideoPlayer "I agree to the terms and conditions" is toggled full-screen
+Given the video "Travel world" is not toggled full-screen
+When I toggle full-screen the  video "Travel world"
+Then the video for the VideoPlayer "Travel world" is toggled full-screen
 
 Scenario: N70 toggle full-screen
-Given #"I agree to the terms and conditions" is not toggled full-screen
-When I toggle full-screen #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is toggled full-screen
+Given #"Travel world" is not toggled full-screen
+When I toggle full-screen #"Travel world"
+Then #"Travel world" is toggled full-screen
 
 /*
 Scenario: VideoPlayer video-DoNottoggle full-screen
@@ -547,14 +547,14 @@ Then the VideoPlayer video "<fieldname>" is not toggled full-screen
 */
 
 Scenario: N71 VideoPlayer video-toggle fullscreen
-Given the  video "I agree to the terms and conditions" is not toggled full-screen
-When I do not toggle full-screen the VideoPlayer "I agree to the terms and conditions"
-Then the video for the VideoPlayer  "I agree to the terms and conditions" is not toggled full-screen
+Given the  video "Travel world" is not toggled full-screen
+When I do not toggle full-screen the VideoPlayer "Travel world"
+Then the video for the VideoPlayer  "Travel world" is not toggled full-screen
 
 Scenario: N72 toggle full-screen
-Given #"I agree to the terms and conditions" is not toggled full-screen
-When I do not toggle full-screen #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is not toggled full-screen
+Given #"Travel world" is not toggled full-screen
+When I do not toggle full-screen #"Travel world"
+Then #"Travel world" is not toggled full-screen
 
 /*
 Scenario: Field-exit full-screen
@@ -564,14 +564,14 @@ Then the field "<fieldname>" is exited full-screen
 */
 
 Scenario: N73 Field-exit full-screen
-Given the field "I agree to the terms and conditions" is not exited full-screen
-When I exit full-screen the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is exited full-screen
+Given the field "Travel world" is not exited full-screen
+When I exit full-screen the field "Travel world"
+Then the field "Travel world" is exited full-screen
 
 Scenario: N74 exit full-screen
-Given #"I agree to the terms and conditions" is not exited full-screen
-When I exit full-screen #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is exited full-screen
+Given #"Travel world" is not exited full-screen
+When I exit full-screen #"Travel world"
+Then #"Travel world" is exited full-screen
 
 /*
 Scenario: Field-DoNotexit full-screen
@@ -581,14 +581,14 @@ Then the field "<fieldname>" is not exited full-screen
 */
 
 Scenario: N75 Field-DoNotexit full-screen
-Given the field "I agree to the terms and conditions" is not exited full-screen
-When I do not exit full-screen the field "I agree to the terms and conditions"
-Then the field "I agree to the terms and conditions" is not exited full-screen
+Given the field "Travel world" is not exited full-screen
+When I do not exit full-screen the field "Travel world"
+Then the field "Travel world" is not exited full-screen
 
 Scenario: N76 DoNotexit full-screen
-Given #"I agree to the terms and conditions" is not exited full-screen
-When I do not exit full-screen #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is not exited full-screen
+Given #"Travel world" is not exited full-screen
+When I do not exit full-screen #"Travel world"
+Then #"Travel world" is not exited full-screen
 
 /*
 Scenario: Videoexit video-exit full-screen
@@ -598,14 +598,14 @@ Then the Videoexit video "<fieldname>" is exit full-screen
 */
 
 Scenario: N77 Videoexit video-exit fullscreen
-Given the video "I agree to the terms and conditions" is not exited full-screen
-When I exit full-screen the  video "I agree to the terms and conditions"
-Then the  video "I agree to the terms and conditions" is exited full-screen
+Given the video "Travel world" is not exited full-screen
+When I exit full-screen the  video "Travel world"
+Then the  video "Travel world" is exited full-screen
 
 Scenario: N78 exit full-screen
-Given #"I agree to the terms and conditions" is not exited full-screen
-When I exit full-screen #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is exited full-screen
+Given #"Travel world" is not exited full-screen
+When I exit full-screen #"Travel world"
+Then #"Travel world" is exited full-screen
 
 /*
 Scenario: Videoexit video-DoNotexit full-screen
@@ -615,14 +615,14 @@ Then the Videoexit video "<fieldname>" is not exited full-screen
 */
 
 Scenario: N79 Videoexit video-exit fullscreen
-Given the  video "I agree to the terms and conditions" is not exited full-screen
-When I do not exit full-screen the  video "I agree to the terms and conditions"
-Then the  video "I agree to the terms and conditions" is not exited full-screen
+Given the  video "Travel world" is not exited full-screen
+When I do not exit full-screen the  video "Travel world"
+Then the  video "Travel world" is not exited full-screen
 
 Scenario: N80 exit full-screen
-Given #"I agree to the terms and conditions" is not exited full-screen
-When I do not exit full-screen #"I agree to the terms and conditions"
-Then #"I agree to the terms and conditions" is not exited full-screen
+Given #"Travel world" is not exited full-screen
+When I do not exit full-screen #"Travel world"
+Then #"Travel world" is not exited full-screen
 
 /*
 Scenario: Field-turn the volume up
