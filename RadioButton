@@ -325,3 +325,223 @@ Scenario: N48
 Given #"Morning" for #"Availability" is not chosen 
 When I do not choose #"Morning" for #"Availability"
 Then #"Morning" for #"Availability" is not chosen 
+
+// Negative Test cases
+
+/*
+Scenario: Field-Option-Pick
+Given the option "<option>" is not extended for the field "<fieldname>"
+When I pick the option "<option>" for the field "<fieldname>"
+Then the option "<option>" is extended for the field "<fieldname>"
+*/
+
+Scenario: N1 
+Given the option "Morning" for the field "Availability" is not extended 
+When I pick the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is extended 
+
+Scenario: N2 
+Given the option "Morning" for #"Availability" is not extended 
+When I pick the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is extended 
+
+Scenario: N3 
+Given #"Morning" for the field "Availability" is not extended 
+When I pick #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is extended 
+
+Scenario: N4 
+Given #"Morning" for #"Availability" is not extended 
+When I pick #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is extended 
+
+/*
+Scenario: Field-Option-DoNotPick
+Given the option "<option>" is not extended for the field "<fieldname>"
+When I do not pick the option "<option>" for the field "<fieldname>"
+Then the option "<option>" is not extended for the field "<fieldname>"
+*/
+
+Scenario: N5 
+Given the option "Morning" for the field "Availability" is not extended 
+When I do not pick the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is not extended 
+
+Scenario: N6 
+Given the option "Morning" for #"Availability" is not extended 
+When I do not pick the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not extended 
+
+Scenario: N7 
+Given #"Morning" for the field "Availability" is not extended 
+When I do not pick #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not extended 
+
+Scenario: N8 
+Given #"Morning" for #"Availability" is not extended 
+When I do not pick #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not extended 
+
+
+/*
+Scenario: RadioButton-Option-Pick
+Given the option "<option>" is not extended for the RadioButton "<fieldname>"
+When I pick the option "<option>" for the RadioButton "<fieldname>"
+Then the option "<option>" is extended for the RadioButton "<fieldname>"
+*/
+
+Scenario: N9 
+Given the option "Morning" for the RadioButton "Availability" is not extended 
+When I pick the option "Morning" for the RadioButton "Availability"
+Then the option "Morning" for the RadioButton "Availability" is extended 
+
+Scenario: N10
+Given the option "Morning" for #"Availability" is not extended 
+When I pick the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is extended 
+
+Scenario: N11 
+Given #"Morning" for the RadioButton "Availability" is not extended 
+When I pick #"Morning" for the RadioButton "Availability"
+Then #"Morning" for the RadioButton "Availability" is extended 
+
+Scenario: N12
+Given #"Morning" for #"Availability" is not extended 
+When I pick #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is extended 
+
+/*
+Scenario: RadioButton-Option-DoNotPick
+Given the option "<option>" is not extended for the RadioButton "<fieldname>"
+When I do not pick the option "<option>" for the RadioButton "<fieldname>"
+Then the option "<option>" is not extended for the RadioButton "<fieldname>"
+*/
+
+Scenario: N13
+Given the option "Morning" for the RadioButton "Availability" is not extended 
+When I do not pick the option "Morning" for the RadioButton "Availability"
+Then the option "Morning" for the RadioButton "Availability" is not extended 
+
+Scenario: N14
+Given the option "Morning" for #"Availability" is not extended 
+When I do not pick the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not extended 
+
+Scenario: N15 
+Given #"Morning" for the RadioButton "Availability" is not extended 
+When I do not pick #"Morning" for the RadioButton "Availability"
+Then #"Morning" for the RadioButton "Availability" is not extended 
+
+Scenario: N16 
+Given #"Morning" for #"Availability" is not extended 
+When I do not pick #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not extended 
+
+/*
+Scenario: Field-Option-extend
+Given the option "<option>" is not picked for the field "<fieldname>"
+When I extend the option "<option>" for the field "<fieldname>"
+Then the option "<option>" is picked for the field "<fieldname>"
+*/
+
+Scenario: N1 
+Given the option "Morning" for the field "Availability" is not picked 
+When I extend the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is picked 
+
+Scenario: N2 
+Given the option "Morning" for #"Availability" is not picked 
+When I extend the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is picked 
+
+Scenario: N3 
+Given #"Morning" for the field "Availability" is not picked 
+When I extend #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is picked 
+
+Scenario: N4 
+Given #"Morning" for #"Availability" is not picked 
+When I extend #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is picked 
+
+/*
+Scenario: Field-Option-DoNotextend
+Given the option "<option>" is not picked for the field "<fieldname>"
+When I do not extend the option "<option>" for the field "<fieldname>"
+Then the option "<option>" is not picked for the field "<fieldname>"
+*/
+
+Scenario: N5 
+Given the option "Morning" for the field "Availability" is not picked 
+When I do not extend the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is not picked 
+
+Scenario: N6 
+Given the option "Morning" for #"Availability" is not picked 
+When I do not extend the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not picked 
+
+Scenario: N7 
+Given #"Morning" for the field "Availability" is not picked 
+When I do not extend #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not picked 
+
+Scenario: N8 
+Given #"Morning" for #"Availability" is not picked 
+When I do not extend #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not picked 
+
+
+/*
+Scenario: RadioButton-Option-extend
+Given the option "<option>" is not picked for the RadioButton "<fieldname>"
+When I extend the option "<option>" for the RadioButton "<fieldname>"
+Then the option "<option>" is picked for the RadioButton "<fieldname>"
+*/
+
+Scenario: N9 
+Given the option "Morning" for the RadioButton "Availability" is not picked 
+When I extend the option "Morning" for the RadioButton "Availability"
+Then the option "Morning" for the RadioButton "Availability" is picked 
+
+Scenario: N10
+Given the option "Morning" for #"Availability" is not picked 
+When I extend the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is picked 
+
+Scenario: N11 
+Given #"Morning" for the RadioButton "Availability" is not picked 
+When I extend #"Morning" for the RadioButton "Availability"
+Then #"Morning" for the RadioButton "Availability" is picked 
+
+Scenario: N12
+Given #"Morning" for #"Availability" is not picked 
+When I extend #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is picked 
+
+/*
+Scenario: RadioButton-Option-DoNotextend
+Given the option "<option>" is not picked for the RadioButton "<fieldname>"
+When I do not extend the option "<option>" for the RadioButton "<fieldname>"
+Then the option "<option>" is not picked for the RadioButton "<fieldname>"
+*/
+
+Scenario: N13
+Given the option "Morning" for the RadioButton "Availability" is not picked 
+When I do not extend the option "Morning" for the RadioButton "Availability"
+Then the option "Morning" for the RadioButton "Availability" is not picked 
+
+Scenario: N14
+Given the option "Morning" for #"Availability" is not picked 
+When I do not extend the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not picked 
+
+Scenario: N15 
+Given #"Morning" for the RadioButton "Availability" is not picked 
+When I do not extend #"Morning" for the RadioButton "Availability"
+Then #"Morning" for the RadioButton "Availability" is not picked 
+
+Scenario: N16 
+Given #"Morning" for #"Availability" is not picked 
+When I do not extend #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not picked 
