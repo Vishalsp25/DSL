@@ -529,3 +529,357 @@ Scenario: N72 DoNotclick
 Given #"Home" of #"breadcrumb navigation" is not clicked
 When I do not click #"Home" of #"breadcrumb navigation"
 Then #"Home" of #"breadcrumb navigation" is not clicked
+
+// Negative test cases
+
+/*
+Scenario: option-match
+Given the option "<option name>" is unmatched
+When I match the option "<option name>"
+Then the option "<option name>" is matched
+*/
+
+Scenario: N1 option-match
+Given the option "Home" is unmatched
+When I match the option "Home"
+Then the option "Home" is matched
+
+Scenario: N2 match
+Given #"Home" is unmatched
+When I match #"Home"
+Then #"Home" is matched
+
+/*
+Scenario: option-DoNotmatch
+Given the option "<option name>" is not matched
+When I do not match the option "<option name>"
+Then the option "<option name>" is unmatched
+*/
+
+Scenario: N3 option-DoNotmatch
+Given the option "Home" is not matched
+When I do not match the option "Home"
+Then the option "Home" is unmatched
+
+Scenario: N4 DoNotmatch
+Given #"Home" is not matched
+When I do not match #"Home"
+Then #"Home" is unmatched
+
+/*
+Scenario: Breadcrumbs-match
+Given the Breadcrumbs "<option name>" is unmatched
+When I match the Breadcrumbs "<option name>"
+Then the Breadcrumbs "<option name>" is matched
+*/
+
+Scenario: N5 Breadcrumbs-match
+Given the Breadcrumbs "Home" is unmatched
+When I match the Breadcrumbs "Home"
+Then the Breadcrumbs "Home" is matched
+
+Scenario: N6 match
+Given #"Home" is unmatched
+When I match #"Home"
+Then #"Home" is matched
+
+/*
+Scenario: Breadcrumbs-DoNotmatch
+Given the Breadcrumbs "<option name>" is not matched
+When I do not match the Breadcrumbs "<option name>"
+Then the Breadcrumbs "<option name>" is unmatched
+*/
+
+Scenario: N7 Breadcrumbs-match
+Given the Breadcrumbs "Home" is not matched
+When I do not match the Breadcrumbs "Home"
+Then the Breadcrumbs "Home" is unmatched
+
+Scenario: N8 match
+Given #"Home" is not matched
+When I do not match #"Home"
+Then #"Home" is unmatched
+
+/*
+Scenario: Field-option-match
+Given the option "<option>" of the field "<fieldname>" is not matched
+When I match the option "<option>" of the field "<fieldname>"
+Then the option "<option>" of the field "<fieldname>" is matched
+*/
+
+Scenario: N9 Field-option-match
+Given the option "Home" of the field "breadcrumb navigation" is not matched
+When I match the option "Home" of the field "breadcrumb navigation"
+Then the option "Home" of the field "breadcrumb navigation" is matched
+
+Scenario: N10 option-match
+Given the option "Home" of #"breadcrumb navigation" is not matched
+When I match the option "Home" of #"breadcrumb navigation"
+Then the option "Home" of #"breadcrumb navigation" is matched
+
+Scenario: N11 Field-match
+Given #"Home" of the field "breadcrumb navigation" is not matched
+When I match #"Home" of the field "breadcrumb navigation"
+Then #"Home" of the field "breadcrumb navigation" is matched
+
+Scenario: N12 match
+Given #"Home" of #"breadcrumb navigation" is not matched
+When I match #"Home" of #"breadcrumb navigation"
+Then #"Home" of #"breadcrumb navigation" is matched
+
+/*
+Scenario: Field-option-DoNotmatch
+Given the option "<option>" of the field "<fieldname>" is not matched
+When I do not match the option "<option>" of the field "<fieldname>"
+Then the option "<option>" of the field "<fieldname>" is not matched
+*/
+
+Scenario: N13 Field-option-DoNotmatch
+Given the option "Home" of the field "breadcrumb navigation" is not matched
+When I do not match the option "Home" of the field "breadcrumb navigation"
+Then the option "Home" of the field "breadcrumb navigation" is not matched
+
+Scenario: N14 option-DoNotmatch
+Given the option "Home" of #"breadcrumb navigation" is not matched
+When I do not match the option "Home" of #"breadcrumb navigation"
+Then the option "Home" of #"breadcrumb navigation" is not matched
+
+Scenario: N15 Field-DoNotmatch
+Given #"Home" of the field "breadcrumb navigation" is not matched
+When I do not match #"Home" of the field "breadcrumb navigation"
+Then #"Home" of the field "breadcrumb navigation" is not matched
+
+Scenario: N16 DoNotmatch
+Given #"Home" of #"breadcrumb navigation" is not matched
+When I do not match #"Home" of #"breadcrumb navigation"
+Then #"Home" of #"breadcrumb navigation" is not matched
+
+/*
+Scenario: Breadcrumbs-option-match
+Given the option "<option>" of the Breadcrumbs "<fieldname>" is not matched
+When I match the option "<option>" of the Breadcrumbs "<fieldname>"
+Then the option "<option>" of the Breadcrumbs "<fieldname>" is matched
+*/
+
+Scenario: N17 Breadcrumbs-option-match
+Given the option "Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+When I match the option "Home" of the Breadcrumbs "breadcrumb navigation"
+Then the option "Home" of the Breadcrumbs "breadcrumb navigation" is matched
+
+Scenario: N18 option-match
+Given the option "Home" of #"breadcrumb navigation" is not matched
+When I match the option "Home" of #"breadcrumb navigation"
+Then the option "Home" of #"breadcrumb navigation" is matched
+
+Scenario: N19 Breadcrumbs-match
+Given #"Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+When I match #"Home" of the Breadcrumbs "breadcrumb navigation"
+Then #"Home" of the Breadcrumbs "breadcrumb navigation" is matched
+
+Scenario: N20 match
+Given #"Home" of #"breadcrumb navigation" is not matched
+When I match #"Home" of #"breadcrumb navigation"
+Then #"Home" of #"breadcrumb navigation" is matched
+
+/*
+Scenario: Breadcrumbs-option-DoNotmatch
+Given the option "<option>" of the Breadcrumbs "<fieldname>" is not matched
+When I do not match the option "<option>" of the Breadcrumbs "<fieldname>"
+Then the option "<option>" of the Breadcrumbs "<fieldname>" is not matched
+*/
+
+Scenario: N21 Breadcrumbs-option-DoNotmatch
+Given the option "Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+When I do not match the option "Home" of the Breadcrumbs "breadcrumb navigation"
+Then the option "Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+
+Scenario: N22 option-DoNotmatch
+Given the option "Home" of #"breadcrumb navigation" is not matched
+When I do not match the option "Home" of #"breadcrumb navigation"
+Then the option "Home" of #"breadcrumb navigation" is not matched
+
+Scenario: N23 Breadcrumbs-DoNotmatch
+Given #"Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+When I do not match #"Home" of the Breadcrumbs "breadcrumb navigation"
+Then #"Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+
+Scenario: N24 DoNotmatch
+Given #"Home" of #"breadcrumb navigation" is not matched
+When I do not match #"Home" of #"breadcrumb navigation"
+Then #"Home" of #"breadcrumb navigation" is not matched
+
+/*
+Scenario: option-select
+Given the option "<option name>" is matched
+When I select the option "<option name>"
+Then the option "<option name>" is not matched
+*/
+
+Scenario: N1 option-select
+Given the option "Home" is matched
+When I select the option "Home"
+Then the option "Home" is not matched
+
+Scenario: N2 select
+Given #"Home" is matched
+When I select #"Home"
+Then #"Home" is not matched
+
+/*
+Scenario: option-DoNotselect
+Given the option "<option name>" is not matched
+When I do not select the option "<option name>"
+Then the option "<option name>" is matched
+*/
+
+Scenario: N3 option-DoNotselect
+Given the option "Home" is not matched
+When I do not select the option "Home"
+Then the option "Home" is matched
+
+Scenario: N4 DoNotselect
+Given #"Home" is not matched
+When I do not select #"Home"
+Then #"Home" is matched
+
+/*
+Scenario: Breadcrumbs-select
+Given the Breadcrumbs "<option name>" is matched
+When I select the Breadcrumbs "<option name>"
+Then the Breadcrumbs "<option name>" is not matched
+*/
+
+Scenario: N5 Breadcrumbs-select
+Given the Breadcrumbs "Home" is matched
+When I select the Breadcrumbs "Home"
+Then the Breadcrumbs "Home" is not matched
+
+Scenario: N6 select
+Given #"Home" is matched
+When I select #"Home"
+Then #"Home" is not matched
+
+/*
+Scenario: Breadcrumbs-DoNotselect
+Given the Breadcrumbs "<option name>" is not matched
+When I do not select the Breadcrumbs "<option name>"
+Then the Breadcrumbs "<option name>" is matched
+*/
+
+Scenario: N7 Breadcrumbs-select
+Given the Breadcrumbs "Home" is not matched
+When I do not select the Breadcrumbs "Home"
+Then the Breadcrumbs "Home" is matched
+
+Scenario: N8 select
+Given #"Home" is not matched
+When I do not select #"Home"
+Then #"Home" is matched
+
+/*
+Scenario: Field-option-select
+Given the option "<option>" of the field "<fieldname>" is not matched
+When I select the option "<option>" of the field "<fieldname>"
+Then the option "<option>" of the field "<fieldname>" is not matched
+*/
+
+Scenario: N9 Field-option-select
+Given the option "Home" of the field "breadcrumb navigation" is not matched
+When I select the option "Home" of the field "breadcrumb navigation"
+Then the option "Home" of the field "breadcrumb navigation" is not matched
+
+Scenario: N10 option-select
+Given the option "Home" of #"breadcrumb navigation" is not matched
+When I select the option "Home" of #"breadcrumb navigation"
+Then the option "Home" of #"breadcrumb navigation" is not matched
+
+Scenario: N11 Field-select
+Given #"Home" of the field "breadcrumb navigation" is not matched
+When I select #"Home" of the field "breadcrumb navigation"
+Then #"Home" of the field "breadcrumb navigation" is not matched
+
+Scenario: N12 select
+Given #"Home" of #"breadcrumb navigation" is not matched
+When I select #"Home" of #"breadcrumb navigation"
+Then #"Home" of #"breadcrumb navigation" is not matched
+
+/*
+Scenario: Field-option-DoNotselect
+Given the option "<option>" of the field "<fieldname>" is not matched
+When I do not select the option "<option>" of the field "<fieldname>"
+Then the option "<option>" of the field "<fieldname>" is not matched
+*/
+
+Scenario: N13 Field-option-DoNotselect
+Given the option "Home" of the field "breadcrumb navigation" is not matched
+When I do not select the option "Home" of the field "breadcrumb navigation"
+Then the option "Home" of the field "breadcrumb navigation" is not matched
+
+Scenario: N14 option-DoNotselect
+Given the option "Home" of #"breadcrumb navigation" is not matched
+When I do not select the option "Home" of #"breadcrumb navigation"
+Then the option "Home" of #"breadcrumb navigation" is not matched
+
+Scenario: N15 Field-DoNotselect
+Given #"Home" of the field "breadcrumb navigation" is not matched
+When I do not select #"Home" of the field "breadcrumb navigation"
+Then #"Home" of the field "breadcrumb navigation" is not matched
+
+Scenario: N16 DoNotselect
+Given #"Home" of #"breadcrumb navigation" is not matched
+When I do not select #"Home" of #"breadcrumb navigation"
+Then #"Home" of #"breadcrumb navigation" is not matched
+
+/*
+Scenario: Breadcrumbs-option-select
+Given the option "<option>" of the Breadcrumbs "<fieldname>" is not matched
+When I select the option "<option>" of the Breadcrumbs "<fieldname>"
+Then the option "<option>" of the Breadcrumbs "<fieldname>" is not matched
+*/
+
+Scenario: N17 Breadcrumbs-option-select
+Given the option "Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+When I select the option "Home" of the Breadcrumbs "breadcrumb navigation"
+Then the option "Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+
+Scenario: N18 option-select
+Given the option "Home" of #"breadcrumb navigation" is not matched
+When I select the option "Home" of #"breadcrumb navigation"
+Then the option "Home" of #"breadcrumb navigation" is not matched
+
+Scenario: N19 Breadcrumbs-select
+Given #"Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+When I select #"Home" of the Breadcrumbs "breadcrumb navigation"
+Then #"Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+
+Scenario: N20 select
+Given #"Home" of #"breadcrumb navigation" is not matched
+When I select #"Home" of #"breadcrumb navigation"
+Then #"Home" of #"breadcrumb navigation" is not matched
+
+/*
+Scenario: Breadcrumbs-option-DoNotselect
+Given the option "<option>" of the Breadcrumbs "<fieldname>" is not matched
+When I do not select the option "<option>" of the Breadcrumbs "<fieldname>"
+Then the option "<option>" of the Breadcrumbs "<fieldname>" is not matched
+*/
+
+Scenario: N21 Breadcrumbs-option-DoNotselect
+Given the option "Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+When I do not select the option "Home" of the Breadcrumbs "breadcrumb navigation"
+Then the option "Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+
+Scenario: N22 option-DoNotselect
+Given the option "Home" of #"breadcrumb navigation" is not matched
+When I do not select the option "Home" of #"breadcrumb navigation"
+Then the option "Home" of #"breadcrumb navigation" is not matched
+
+Scenario: N23 Breadcrumbs-DoNotselect
+Given #"Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+When I do not select #"Home" of the Breadcrumbs "breadcrumb navigation"
+Then #"Home" of the Breadcrumbs "breadcrumb navigation" is not matched
+
+Scenario: N24 DoNotselect
+Given #"Home" of #"breadcrumb navigation" is not matched
+When I do not select #"Home" of #"breadcrumb navigation"
+Then #"Home" of #"breadcrumb navigation" is not matched
