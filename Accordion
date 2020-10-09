@@ -708,3 +708,178 @@ Scenario: N24 DoNotshow
 Given #"Topics" for #"Frequently asked question" is not popped up
 When I do not show #"Topics" for #"Frequently asked question"
 Then #"Topics" for #"Frequently asked question" is not popped up
+
+/*
+Scenario: item-pop
+Given the item "<item name>" is not clicked
+When I pop the item "<item name>"
+Then the item "<item name>" is clicked
+*/
+
+Scenario: N1 item-pop
+Given the item "Frequently asked question" is not clicked
+When I pop the item "Frequently asked question"
+Then the item "Frequently asked question" is clicked
+
+Scenario: N2 pop
+Given #"Frequently asked question" is not clicked
+When I pop #"Frequently asked question"
+Then #"Frequently asked question" is clicked
+
+/*
+Scenario: item-DoNotpop
+Given the item "<item name>" is not clicked
+When I do not pop the item "<item name>"
+Then the item "<item name>" is not clicked
+*/
+
+Scenario: N3 item-DoNotpop
+Given the item "Frequently asked question" is not clicked
+When I do not pop the item "Frequently asked question"
+Then the item "Frequently asked question" is not clicked
+
+Scenario: N4 DoNotpop
+Given #"Frequently asked question" is not clicked
+When I do not pop #"Frequently asked question"
+Then #"Frequently asked question" is not clicked
+
+/*
+Scenario: Accordion-pop
+Given the Accordion "<item name>" is not clicked
+When I pop the Accordion "<item name>"
+Then the Accordion "<item name>" is clicked
+*/
+
+Scenario: N5 Accordion-pop
+Given the Accordion "Frequently asked question" is not clicked
+When I pop the Accordion "Frequently asked question"
+Then the Accordion "Frequently asked question" is clicked
+
+Scenario: N6 pop
+Given #"Frequently asked question" is not clicked
+When I pop #"Frequently asked question"
+Then #"Frequently asked question" is clicked
+
+/*
+Scenario: Accordion-DoNotpop
+Given the Accordion "<item name>" is not clicked
+When I do not pop the Accordion "<item name>"
+Then the Accordion "<item name>" is not clicked
+*/
+
+Scenario: N7 Accordion-pop
+Given the Accordion "Frequently asked question" is not clicked
+When I do not pop the Accordion "Frequently asked question"
+Then the Accordion "Frequently asked question" is not clicked
+
+Scenario: N8 pop
+Given #"Frequently asked question" is not clicked
+When I do not pop #"Frequently asked question"
+Then #"Frequently asked question" is not clicked
+
+/*
+Scenario: Field-item-pop
+Given the item "<item>" for the field "<fieldname>" is not clicked
+When I pop the item "<item>" for the field "<fieldname>"
+Then the item "<item>" for the field "<fieldname>" is clicked
+*/
+
+Scenario: N09 Field-item-pop
+Given the item "Topics" for the field "Frequently asked question" is not clicked
+When I pop the item "Topics" for the field "Frequently asked question"
+Then the item "Topics" for the field "Frequently asked question" is clicked
+
+Scenario: N10 item-pop
+Given the item "Topics" for #"Frequently asked question" is not clicked
+When I pop the item "Topics" for #"Frequently asked question"
+Then the item "Topics" for #"Frequently asked question" is clicked
+
+Scenario: N11 Field-pop
+Given #"Topics" for the field "Frequently asked question" is not clicked
+When I pop #"Topics" for the field "Frequently asked question"
+Then #"Topics" for the field "Frequently asked question" is clicked
+
+Scenario: N12 pop
+Given #"Topics" for #"Frequently asked question" is not clicked
+When I pop #"Topics" for #"Frequently asked question"
+Then #"Topics" for #"Frequently asked question" is clicked
+
+/*
+Scenario: Field-item-DoNotpop
+Given the item "<item>" for the field "<fieldname>" is not clicked
+When I do not pop the item "<item>" for the field "<fieldname>"
+Then the item "<item>" for the field "<fieldname>" is not clicked
+*/
+
+Scenario: N13 Field-item-DoNotpop
+Given the item "Topics" for the field "Frequently asked question" is not clicked
+When I do not pop the item "Topics" for the field "Frequently asked question"
+Then the item "Topics" for the field "Frequently asked question" is not clicked
+
+Scenario: N14 item-DoNotpop
+Given the item "Topics" for #"Frequently asked question" is not clicked
+When I do not pop the item "Topics" for #"Frequently asked question"
+Then the item "Topics" for #"Frequently asked question" is not clicked
+
+Scenario: N15 Field-DoNotpop
+Given #"Topics" for the field "Frequently asked question" is not clicked
+When I do not pop #"Topics" for the field "Frequently asked question"
+Then #"Topics" for the field "Frequently asked question" is not clicked
+
+Scenario: N16 DoNotpop
+Given #"Topics" for #"Frequently asked question" is not clicked
+When I do not pop #"Topics" for #"Frequently asked question"
+Then #"Topics" for #"Frequently asked question" is not clicked
+/*
+Scenario: Accordion-item-pop
+Given the item "<item>" for the Accordion "<fieldname>" is not clicked
+When I pop the item "<item>" for the Accordion "<fieldname>"
+Then the item "<item>" for the Accordion "<fieldname>" is clicked
+*/
+
+Scenario: N17 Accordion-item-pop
+Given the item "Topics" for the Accordion "Frequently asked question" is not clicked
+When I pop the item "Topics" for the Accordion "Frequently asked question"
+Then the item "Topics" for the Accordion "Frequently asked question" is clicked
+
+Scenario: N18 item-pop
+Given the item "Topics" for #"Frequently asked question" is not clicked
+When I pop the item "Topics" for #"Frequently asked question"
+Then the item "Topics" for #"Frequently asked question" is clicked
+
+Scenario: N19 Accordion-pop
+Given #"Topics" for the Accordion "Frequently asked question" is not clicked
+When I pop #"Topics" for the Accordion "Frequently asked question"
+Then #"Topics" for the Accordion "Frequently asked question" is clicked
+
+Scenario: N20 pop
+Given #"Topics" for #"Frequently asked question" is not clicked
+When I pop #"Topics" for #"Frequently asked question"
+Then #"Topics" for #"Frequently asked question" is clicked
+
+/*
+Scenario: Accordion-item-DoNotpop
+Given the item "<item>" for the Accordion "<fieldname>" is not clicked
+When I do not pop the item "<item>" for the Accordion "<fieldname>"
+Then the item "<item>" for the Accordion "<fieldname>" is not clicked
+*/
+
+Scenario: N21 Accordion-item-DoNotpop
+Given the item "Topics" for the Accordion "Frequently asked question" is not clicked
+When I do not pop the item "Topics" for the Accordion "Frequently asked question"
+Then the item "Topics" for the Accordion "Frequently asked question" is not clicked
+
+Scenario: N22 item-DoNotpop
+Given the item "Topics" for #"Frequently asked question" is not clicked
+When I do not pop the item "Topics" for #"Frequently asked question"
+Then the item "Topics" for #"Frequently asked question" is not clicked
+
+Scenario: N23 Accordion-DoNotpop
+Given #"Topics" for the Accordion "Frequently asked question" is not clicked
+When I do not pop #"Topics" for the Accordion "Frequently asked question"
+Then #"Topics" for the Accordion "Frequently asked question" is not clicked
+
+Scenario: N24 DoNotpop
+Given #"Topics" for #"Frequently asked question" is not clicked
+When I do not pop #"Topics" for #"Frequently asked question"
+Then #"Topics" for #"Frequently asked question" is not clicked
