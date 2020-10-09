@@ -218,4 +218,106 @@ Given #"Morning" for #"Availability" is not submitted
 When I do not submit #"Morning" for #"Availability"
 Then #"Morning" for #"Availability" is not submitted 
 
+//Negative test case
 
+/*
+Scenario: Field-value-click
+Given the value "<value>" is not hit for the field "<fieldname>"
+When I click the value "<value>" for the field "<fieldname>"
+Then the value "<value>" is hit for the field "<fieldname>"
+*/
+
+Scenario: N1 
+Given the value "Morning" for the field "Availability" is not hit 
+When I click the value "Morning" for the field "Availability"
+Then the index "Morning" for the field "Availability" is hit 
+
+Scenario: N2 
+Given the value "Morning" for #"Availability" is not hit 
+When I click the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is hit 
+
+Scenario: N3 
+Given #"Morning" for the field "Availability" is not hit 
+When I click #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is hit 
+
+Scenario: N4 
+Given #"Morning" for #"Availability" is not hit 
+When I click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is hit 
+
+/*
+Scenario: Field-value-DoNotclick
+Given the value "<value>" is not hit for the field "<fieldname>"
+When I do not click the value "<value>" for the field "<fieldname>"
+Then the value "<value>" is not hit for the field "<fieldname>"
+*/
+
+Scenario: N5 
+Given the value "Morning" for the field "Availability" is not hit 
+When I do not click the value "Morning" for the field "Availability"
+Then the value "Morning" for the field "Availability" is not hit 
+
+Scenario: N6 
+Given the value "Morning" for #"Availability" is not hit 
+When I do not click the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not hit 
+
+Scenario: N7 
+Given #"Morning" for the field "Availability" is not hit 
+When I do not click #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not hit 
+
+Scenario: N8 
+Given #"Morning" for #"Availability" is not hit 
+When I do not click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not hit 
+
+
+/*
+Scenario: Button-value-click
+Given the value "<value>" is not hit for the Button "<fieldname>"
+When I click the value "<value>" for the Button "<fieldname>"
+Then the value "<value>" is hit for the Button "<fieldname>"
+*/
+
+Scenario: N09
+Given the value "Morning" for the Button "Availability" is not hit 
+When I click the value "Morning" for the Button "Availability"
+Then the value "Morning" for the Button "Availability" is hit 
+
+Scenario: N10
+Given the value "Morning" for #"Availability" is not hit 
+When I click the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is hit 
+
+Scenario: N11
+Given #"Morning" for the Button "Availability" is not hit 
+When I click #"Morning" for the Button "Availability"
+Then #"Morning" for the Button "Availability" is hit 
+
+Scenario: N12
+Given #"Morning" for #"Availability" is not hit 
+When I click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is hit 
+
+Scenario: N13
+Given the value "Morning" for the Button "Availability" is not hit 
+When I do not click the value "Morning" for the Button "Availability"
+Then the value "Morning" for the Button "Availability" is not hit 
+
+Scenario: N14
+Given the value "Morning" for #"Availability" is not hit 
+When I do not click the value "Morning" for #"Availability"
+Then the value "Morning" for #"Availability" is not hit 
+
+Scenario: N15 
+Given #"Morning" for the Button "Availability" is not hit 
+When I do not click #"Morning" for the Button "Availability"
+Then #"Morning" for the Button "Availability" is not hit 
+
+Scenario: N16
+Given #"Morning" for #"Availability" is not hit 
+When I do not click #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not hit 
