@@ -531,3 +531,180 @@ Scenario: N72 DoNotclick
 Given #"Topics" for #"Frequently asked question" is not clicked
 When I do not click #"Topics" for #"Frequently asked question"
 Then #"Topics" for #"Frequently asked question" is not clicked
+
+//Negative test cases
+
+/*
+Scenario: item-show
+Given the item "<item name>" is not popped up
+When I show the item "<item name>"
+Then the item "<item name>" is popped up
+*/
+
+Scenario: N1 item-show
+Given the item "Frequently asked question" is not popped up
+When I show the item "Frequently asked question"
+Then the item "Frequently asked question" is popped up
+
+Scenario: N2 show
+Given #"Frequently asked question" is not popped up
+When I show #"Frequently asked question"
+Then #"Frequently asked question" is popped up
+
+/*
+Scenario: item-DoNotshow
+Given the item "<item name>" is not popped up
+When I do not show the item "<item name>"
+Then the item "<item name>" is not popped up
+*/
+
+Scenario: N3 item-DoNotshow
+Given the item "Frequently asked question" is not popped up
+When I do not show the item "Frequently asked question"
+Then the item "Frequently asked question" is not popped up
+
+Scenario: N4 DoNotshow
+Given #"Frequently asked question" is not popped up
+When I do not show #"Frequently asked question"
+Then #"Frequently asked question" is not popped up
+
+/*
+Scenario: Accordion-show
+Given the Accordion "<item name>" is not popped up
+When I show the Accordion "<item name>"
+Then the Accordion "<item name>" is popped up
+*/
+
+Scenario: N5 Accordion-show
+Given the Accordion "Frequently asked question" is not popped up
+When I show the Accordion "Frequently asked question"
+Then the Accordion "Frequently asked question" is popped up
+
+Scenario: N6 show
+Given #"Frequently asked question" is not popped up
+When I show #"Frequently asked question"
+Then #"Frequently asked question" is popped up
+
+/*
+Scenario: Accordion-DoNotshow
+Given the Accordion "<item name>" is not popped up
+When I do not show the Accordion "<item name>"
+Then the Accordion "<item name>" is not popped up
+*/
+
+Scenario: N7 Accordion-show
+Given the Accordion "Frequently asked question" is not popped up
+When I do not show the Accordion "Frequently asked question"
+Then the Accordion "Frequently asked question" is not popped up
+
+Scenario: N8 show
+Given #"Frequently asked question" is not popped up
+When I do not show #"Frequently asked question"
+Then #"Frequently asked question" is not popped up
+
+/*
+Scenario: Field-item-show
+Given the item "<item>" for the field "<fieldname>" is not popped up
+When I show the item "<item>" for the field "<fieldname>"
+Then the item "<item>" for the field "<fieldname>" is popped up
+*/
+
+Scenario: N09 Field-item-show
+Given the item "Topics" for the field "Frequently asked question" is not popped up
+When I show the item "Topics" for the field "Frequently asked question"
+Then the item "Topics" for the field "Frequently asked question" is popped up
+
+Scenario: N10 item-show
+Given the item "Topics" for #"Frequently asked question" is not popped up
+When I show the item "Topics" for #"Frequently asked question"
+Then the item "Topics" for #"Frequently asked question" is popped up
+
+Scenario: N11 Field-show
+Given #"Topics" for the field "Frequently asked question" is not popped up
+When I show #"Topics" for the field "Frequently asked question"
+Then #"Topics" for the field "Frequently asked question" is popped up
+
+Scenario: N12 show
+Given #"Topics" for #"Frequently asked question" is not popped up
+When I show #"Topics" for #"Frequently asked question"
+Then #"Topics" for #"Frequently asked question" is popped up
+
+/*
+Scenario: Field-item-DoNotshow
+Given the item "<item>" for the field "<fieldname>" is not popped up
+When I do not show the item "<item>" for the field "<fieldname>"
+Then the item "<item>" for the field "<fieldname>" is not popped up
+*/
+
+Scenario: N13 Field-item-DoNotshow
+Given the item "Topics" for the field "Frequently asked question" is not popped up
+When I do not show the item "Topics" for the field "Frequently asked question"
+Then the item "Topics" for the field "Frequently asked question" is not popped up
+
+Scenario: N14 item-DoNotshow
+Given the item "Topics" for #"Frequently asked question" is not popped up
+When I do not show the item "Topics" for #"Frequently asked question"
+Then the item "Topics" for #"Frequently asked question" is not popped up
+
+Scenario: N15 Field-DoNotshow
+Given #"Topics" for the field "Frequently asked question" is not popped up
+When I do not show #"Topics" for the field "Frequently asked question"
+Then #"Topics" for the field "Frequently asked question" is not popped up
+
+Scenario: N16 DoNotshow
+Given #"Topics" for #"Frequently asked question" is not popped up
+When I do not show #"Topics" for #"Frequently asked question"
+Then #"Topics" for #"Frequently asked question" is not popped up
+/*
+Scenario: Accordion-item-show
+Given the item "<item>" for the Accordion "<fieldname>" is not popped up
+When I show the item "<item>" for the Accordion "<fieldname>"
+Then the item "<item>" for the Accordion "<fieldname>" is popped up
+*/
+
+Scenario: N17 Accordion-item-show
+Given the item "Topics" for the Accordion "Frequently asked question" is not popped up
+When I show the item "Topics" for the Accordion "Frequently asked question"
+Then the item "Topics" for the Accordion "Frequently asked question" is popped up
+
+Scenario: N18 item-show
+Given the item "Topics" for #"Frequently asked question" is not popped up
+When I show the item "Topics" for #"Frequently asked question"
+Then the item "Topics" for #"Frequently asked question" is popped up
+
+Scenario: N19 Accordion-show
+Given #"Topics" for the Accordion "Frequently asked question" is not popped up
+When I show #"Topics" for the Accordion "Frequently asked question"
+Then #"Topics" for the Accordion "Frequently asked question" is popped up
+
+Scenario: N20 show
+Given #"Topics" for #"Frequently asked question" is not popped up
+When I show #"Topics" for #"Frequently asked question"
+Then #"Topics" for #"Frequently asked question" is popped up
+
+/*
+Scenario: Accordion-item-DoNotshow
+Given the item "<item>" for the Accordion "<fieldname>" is not popped up
+When I do not show the item "<item>" for the Accordion "<fieldname>"
+Then the item "<item>" for the Accordion "<fieldname>" is not popped up
+*/
+
+Scenario: N21 Accordion-item-DoNotshow
+Given the item "Topics" for the Accordion "Frequently asked question" is not popped up
+When I do not show the item "Topics" for the Accordion "Frequently asked question"
+Then the item "Topics" for the Accordion "Frequently asked question" is not popped up
+
+Scenario: N22 item-DoNotshow
+Given the item "Topics" for #"Frequently asked question" is not popped up
+When I do not show the item "Topics" for #"Frequently asked question"
+Then the item "Topics" for #"Frequently asked question" is not popped up
+
+Scenario: N23 Accordion-DoNotshow
+Given #"Topics" for the Accordion "Frequently asked question" is not popped up
+When I do not show #"Topics" for the Accordion "Frequently asked question"
+Then #"Topics" for the Accordion "Frequently asked question" is not popped up
+
+Scenario: N24 DoNotshow
+Given #"Topics" for #"Frequently asked question" is not popped up
+When I do not show #"Topics" for #"Frequently asked question"
+Then #"Topics" for #"Frequently asked question" is not popped up
