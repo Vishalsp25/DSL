@@ -703,3 +703,343 @@ Scenario: N96 DoNotset
 Given #"date" for #"Julian calendar" is not set
 When I do not set #"date" for #"Julian calendar"
 Then #"date" for #"Julian calendar" is not set
+
+//Negative Test cases
+
+/*
+Scenario: date-select
+Given the date "<datename>" is added
+When I select the date "<datename>"
+Then the date "<datename>" is not added
+*/
+
+Scenario: N1 date-select
+Given the date "date of Calendar" is added
+When I select the date "date of Calendar"
+Then the date "date of Calendar" is not added
+
+Scenario: N2 select
+Given #"date of Calendar" is added
+When I select #"date of Calendar"
+Then #"date of Calendar" is not added
+
+/*
+Scenario: date-DoNotselect
+Given the date "<datename>" is not added
+When I do not select the date "<datename>"
+Then the date "<datename>" is added
+*/
+
+Scenario: N3 date-DoNotselect
+Given the date "date of Calendar" is not added
+When I do not select the date "date of Calendar"
+Then the date "date of Calendar" is added
+
+Scenario: N4 DoNotselect
+Given #"date of Calendar" is not added
+When I do not select #"date of Calendar"
+Then #"date of Calendar" is added
+
+/*
+Scenario: Calendar-select
+Given the Calendar "<datename>" is added
+When I select the Calendar "<datename>"
+Then the Calendar "<datename>" is not added
+*/
+
+Scenario: N5 Calendar-select
+Given the Calendar "date of Calendar" is added
+When I select the Calendar "date of Calendar"
+Then the Calendar "date of Calendar" is not added
+
+Scenario: N6 select
+Given #"date of Calendar" is added
+When I select #"date of Calendar"
+Then #"date of Calendar" is not added
+
+/*
+Scenario: Calendar-DoNotselect
+Given the Calendar "<datename>" is not added
+When I do not select the Calendar "<datename>"
+Then the Calendar "<datename>" is added
+*/
+
+Scenario: N7 Calendar-select
+Given the Calendar "date of Calendar" is not added
+When I do not select the Calendar "date of Calendar"
+Then the Calendar "date of Calendar" is added
+
+Scenario: N8 select
+Given #"date of Calendar" is not added
+When I do not select #"date of Calendar"
+Then #"date of Calendar" is added
+
+Scenario: N9 Field-date-select
+Given the date "date" for the field "Julian calendar" is not added
+When I select the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is added
+
+Scenario: N10 date-select
+Given the date "date" for #"Julian calendar" is not added
+When I select the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is added
+
+Scenario: N11 Field-select
+Given #"date" for the field "Julian calendar" is not added
+When I select #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is added
+
+Scenario: N12 select
+Given #"date" for #"Julian calendar" is not added
+When I select #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is added
+
+/*
+Scenario: Field-date-DoNotselect
+Given the date "<date>" for the field "<fieldname>" is not added
+When I do not select the date "<date>" for the field "<fieldname>"
+Then the date "<date>" for the field "<fieldname>" is not added
+*/
+
+Scenario: N13 Field-date-DoNotselect
+Given the date "date" for the field "Julian calendar" is not added
+When I do not select the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is not added
+
+Scenario: N14 date-DoNotselect
+Given the date "date" for #"Julian calendar" is not added
+When I do not select the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not added
+
+Scenario: N15 Field-DoNotselect
+Given #"date" for the field "Julian calendar" is not added
+When I do not select #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is not added
+
+Scenario: N16 DoNotselect
+Given #"date" for #"Julian calendar" is not added
+When I do not select #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not added
+
+/*
+Scenario: Calendar-date-select
+Given the date "<date>" for the Calendar "<fieldname>" is not added
+When I select the date "<date>" for the Calendar "<fieldname>"
+Then the date "<date>" for the Calendar "<fieldname>" is added
+*/
+
+Scenario: N17 Calendar-date-select
+Given the date "date" for the Calendar "Julian calendar" is not added
+When I select the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is added
+
+Scenario: N18 date-select
+Given the date "date" for #"Julian calendar" is not added
+When I select the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is added
+
+Scenario: N19 Calendar-select
+Given #"date" for the Calendar "Julian calendar" is not added
+When I select #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is added
+
+Scenario: N20 select
+Given #"date" for #"Julian calendar" is not added
+When I select #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is added
+
+/*
+Scenario: Calendar-date-DoNotselect
+Given the date "<date>" for the Calendar "<fieldname>" is not added
+When I do not select the date "<date>" for the Calendar "<fieldname>"
+Then the date "<date>" for the Calendar "<fieldname>" is not added
+*/
+
+Scenario: N21 Calendar-date-DoNotselect
+Given the date "date" for the Calendar "Julian calendar" is not added
+When I do not select the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is not added
+
+Scenario: N22 date-DoNotselect
+Given the date "date" for #"Julian calendar" is not added
+When I do not select the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not added
+
+Scenario: N23 Calendar-DoNotselect
+Given #"date" for the Calendar "Julian calendar" is not added
+When I do not select #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is not added
+
+Scenario: N24 DoNotselect
+Given #"date" for #"Julian calendar" is not added
+When I do not select #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not added
+
+/*
+Scenario: date-add
+Given the date "<datename>" is selected
+When I add the date "<datename>"
+Then the date "<datename>" is not selected
+*/
+
+Scenario: N1 date-add
+Given the date "date of Calendar" is selected
+When I add the date "date of Calendar"
+Then the date "date of Calendar" is not selected
+
+Scenario: N2 add
+Given #"date of Calendar" is selected
+When I add #"date of Calendar"
+Then #"date of Calendar" is not selected
+
+/*
+Scenario: date-DoNotadd
+Given the date "<datename>" is not selected
+When I do not add the date "<datename>"
+Then the date "<datename>" is selected
+*/
+
+Scenario: N3 date-DoNotadd
+Given the date "date of Calendar" is not selected
+When I do not add the date "date of Calendar"
+Then the date "date of Calendar" is selected
+
+Scenario: N4 DoNotadd
+Given #"date of Calendar" is not selected
+When I do not add #"date of Calendar"
+Then #"date of Calendar" is selected
+
+/*
+Scenario: Calendar-add
+Given the Calendar "<datename>" is selected
+When I add the Calendar "<datename>"
+Then the Calendar "<datename>" is not selected
+*/
+
+Scenario: N5 Calendar-add
+Given the Calendar "date of Calendar" is selected
+When I add the Calendar "date of Calendar"
+Then the Calendar "date of Calendar" is not selected
+
+Scenario: N6 add
+Given #"date of Calendar" is selected
+When I add #"date of Calendar"
+Then #"date of Calendar" is not selected
+
+/*
+Scenario: Calendar-DoNotadd
+Given the Calendar "<datename>" is not selected
+When I do not add the Calendar "<datename>"
+Then the Calendar "<datename>" is selected
+*/
+
+Scenario: N7 Calendar-add
+Given the Calendar "date of Calendar" is not selected
+When I do not add the Calendar "date of Calendar"
+Then the Calendar "date of Calendar" is selected
+
+Scenario: N8 add
+Given #"date of Calendar" is not selected
+When I do not add #"date of Calendar"
+Then #"date of Calendar" is selected
+
+Scenario: N9 Field-date-add
+Given the date "date" for the field "Julian calendar" is not selected
+When I add the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is selected
+
+Scenario: N10 date-add
+Given the date "date" for #"Julian calendar" is not selected
+When I add the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is selected
+
+Scenario: N11 Field-add
+Given #"date" for the field "Julian calendar" is not selected
+When I add #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is selected
+
+Scenario: N12 add
+Given #"date" for #"Julian calendar" is not selected
+When I add #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is selected
+
+/*
+Scenario: Field-date-DoNotadd
+Given the date "<date>" for the field "<fieldname>" is not selected
+When I do not add the date "<date>" for the field "<fieldname>"
+Then the date "<date>" for the field "<fieldname>" is not selected
+*/
+
+Scenario: N13 Field-date-DoNotadd
+Given the date "date" for the field "Julian calendar" is not selected
+When I do not add the date "date" for the field "Julian calendar"
+Then the date "date" for the field "Julian calendar" is not selected
+
+Scenario: N14 date-DoNotadd
+Given the date "date" for #"Julian calendar" is not selected
+When I do not add the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not selected
+
+Scenario: N15 Field-DoNotadd
+Given #"date" for the field "Julian calendar" is not selected
+When I do not add #"date" for the field "Julian calendar"
+Then #"date" for the field "Julian calendar" is not selected
+
+Scenario: N16 DoNotadd
+Given #"date" for #"Julian calendar" is not selected
+When I do not add #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not selected
+
+/*
+Scenario: Calendar-date-add
+Given the date "<date>" for the Calendar "<fieldname>" is not selected
+When I add the date "<date>" for the Calendar "<fieldname>"
+Then the date "<date>" for the Calendar "<fieldname>" is selected
+*/
+
+Scenario: N17 Calendar-date-add
+Given the date "date" for the Calendar "Julian calendar" is not selected
+When I add the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is selected
+
+Scenario: N18 date-add
+Given the date "date" for #"Julian calendar" is not selected
+When I add the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is selected
+
+Scenario: N19 Calendar-add
+Given #"date" for the Calendar "Julian calendar" is not selected
+When I add #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is selected
+
+Scenario: N20 add
+Given #"date" for #"Julian calendar" is not selected
+When I add #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is selected
+
+/*
+Scenario: Calendar-date-DoNotadd
+Given the date "<date>" for the Calendar "<fieldname>" is not selected
+When I do not add the date "<date>" for the Calendar "<fieldname>"
+Then the date "<date>" for the Calendar "<fieldname>" is not selected
+*/
+
+Scenario: N21 Calendar-date-DoNotadd
+Given the date "date" for the Calendar "Julian calendar" is not selected
+When I do not add the date "date" for the Calendar "Julian calendar"
+Then the date "date" for the Calendar "Julian calendar" is not selected
+
+Scenario: N22 date-DoNotadd
+Given the date "date" for #"Julian calendar" is not selected
+When I do not add the date "date" for #"Julian calendar"
+Then the date "date" for #"Julian calendar" is not selected
+
+Scenario: N23 Calendar-DoNotadd
+Given #"date" for the Calendar "Julian calendar" is not selected
+When I do not add #"date" for the Calendar "Julian calendar"
+Then #"date" for the Calendar "Julian calendar" is not selected
+
+Scenario: N24 DoNotadd
+Given #"date" for #"Julian calendar" is not selected
+When I do not add #"date" for #"Julian calendar"
+Then #"date" for #"Julian calendar" is not selected
