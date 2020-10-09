@@ -665,3 +665,357 @@ Scenario: N88 scroll to the left
 Given #"Image" is not  scrolled to the left
 When I do not scroll to the left #"Image"
 Then #"Image" is not  scrolled to the left
+
+//Negative Test cases
+
+/*
+Scenario: image-select
+Given the image "<image name>" is not added
+When I select the image "<image name>"
+Then the image "<image name>" is added
+*/
+
+Scenario: N1 image-select
+Given the image "ImageCarousel" is not added
+When I select the image "ImageCarousel"
+Then the image "ImageCarousel" is added
+
+Scenario: N2 select
+Given #"ImageCarousel" is not added
+When I select #"ImageCarousel"
+Then #"ImageCarousel" is added
+
+/*
+Scenario: image-DoNotselect
+Given the image "<image name>" is not added
+When I do not select the image "<image name>"
+Then the image "<image name>" is not added
+*/
+
+Scenario: N3 image-DoNotselect
+Given the image "ImageCarousel" is not added
+When I do not select the image "ImageCarousel"
+Then the image "ImageCarousel" is not added
+
+Scenario: N4 DoNotselect
+Given #"ImageCarousel" is not added
+When I do not select #"ImageCarousel"
+Then #"ImageCarousel" is not added
+
+/*
+Scenario: ImageCarousel-select
+Given the ImageCarousel "<image name>" is not added
+When I select the ImageCarousel "<image name>"
+Then the ImageCarousel "<image name>" is added
+*/
+
+Scenario: N5 ImageCarousel-select
+Given the ImageCarousel "ImageCarousel" is not added
+When I select the ImageCarousel "ImageCarousel"
+Then the ImageCarousel "ImageCarousel" is added
+
+Scenario: N6 select
+Given #"ImageCarousel" is not added
+When I select #"ImageCarousel"
+Then #"ImageCarousel" is added
+
+/*
+Scenario: ImageCarousel-DoNotselect
+Given the ImageCarousel "<image name>" is not added
+When I do not select the ImageCarousel "<image name>"
+Then the ImageCarousel "<image name>" is not added
+*/
+
+Scenario: N7 ImageCarousel-select
+Given the ImageCarousel "ImageCarousel" is not added
+When I do not select the ImageCarousel "ImageCarousel"
+Then the ImageCarousel "ImageCarousel" is not added
+
+Scenario: N8 select
+Given #"ImageCarousel" is not added
+When I do not select #"ImageCarousel"
+Then #"ImageCarousel" is not added
+
+/*
+Scenario: Field-image-select
+Given the image "<image>" for the field "<fieldname>" is not added
+When I select the image "<image>" for the field "<fieldname>"
+Then the image "<image>" for the field "<fieldname>" is added
+*/
+
+Scenario: N9 Field-image-select
+Given the image "Sun" for the field "List of Images" is not added
+When I select the image "Sun" for the field "List of Images"
+Then the image "Sun" for the field "List of Images" is added
+
+Scenario: N10 image-select
+Given the image "Sun" for #"List of Images" is not added
+When I select the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is added
+
+Scenario: N11 Field-select
+Given #"Sun" for the field "List of Images" is not added
+When I select #"Sun" for the field "List of Images"
+Then #"Sun" for the field "List of Images" is added
+
+Scenario: N12 select
+Given #"Sun" for #"List of Images" is not added
+When I select #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is added
+
+/*
+Scenario: Field-image-DoNotselect
+Given the image "<image>" for the field "<fieldname>" is not added
+When I do not select the image "<image>" for the field "<fieldname>"
+Then the image "<image>" for the field "<fieldname>" is not added
+*/
+
+Scenario: N13 Field-image-DoNotselect
+Given the image "Sun" for the field "List of Images" is not added
+When I do not select the image "Sun" for the field "List of Images"
+Then the image "Sun" for the field "List of Images" is not added
+
+Scenario: N14 image-DoNotselect
+Given the image "Sun" for #"List of Images" is not added
+When I do not select the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is not added
+
+Scenario: N15 Field-DoNotselect
+Given #"Sun" for the field "List of Images" is not added
+When I do not select #"Sun" for the field "List of Images"
+Then #"Sun" for the field "List of Images" is not added
+
+Scenario: N16 DoNotselect
+Given #"Sun" for #"List of Images" is not added
+When I do not select #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is not added
+
+/*
+Scenario: ImageCarousel-image-select
+Given the image "<image>" for the ImageCarousel "<fieldname>" is not added
+When I select the image "<image>" for the ImageCarousel "<fieldname>"
+Then the image "<image>" for the ImageCarousel "<fieldname>" is added
+*/
+
+Scenario: N17 ImageCarousel-image-select
+Given the image "Sun" for the ImageCarousel "List of Images" is not added
+When I select the image "Sun" for the ImageCarousel "List of Images"
+Then the image "Sun" for the ImageCarousel "List of Images" is added
+
+Scenario: N18 image-select
+Given the image "Sun" for #"List of Images" is not added
+When I select the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is added
+
+Scenario: N19 ImageCarousel-select
+Given #"Sun" for the ImageCarousel "List of Images" is not added
+When I select #"Sun" for the ImageCarousel "List of Images"
+Then #"Sun" for the ImageCarousel "List of Images" is added
+
+Scenario: N20 select
+Given #"Sun" for #"List of Images" is not added
+When I select #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is added
+
+/*
+Scenario: ImageCarousel-image-DoNotselect
+Given the image "<image>" for the ImageCarousel "<fieldname>" is not added
+When I do not select the image "<image>" for the ImageCarousel "<fieldname>"
+Then the image "<image>" for the ImageCarousel "<fieldname>" is not added
+*/
+
+Scenario: N21 ImageCarousel-image-DoNotselect
+Given the image "Sun" for the ImageCarousel "List of Images" is not added
+When I do not select the image "Sun" for the ImageCarousel "List of Images"
+Then the image "Sun" for the ImageCarousel "List of Images" is not added
+
+Scenario: N22 image-DoNotselect
+Given the image "Sun" for #"List of Images" is not added
+When I do not select the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is not added
+
+Scenario: N23 ImageCarousel-DoNotselect
+Given #"Sun" for the ImageCarousel "List of Images" is not added
+When I do not select #"Sun" for the ImageCarousel "List of Images"
+Then #"Sun" for the ImageCarousel "List of Images" is not added
+
+Scenario: N24 DoNotselect
+Given #"Sun" for #"List of Images" is not added
+When I do not select #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is not added
+
+/*
+Scenario: image-add
+Given the image "<image name>" is not selected
+When I add the image "<image name>"
+Then the image "<image name>" is selected
+*/
+
+Scenario: N1 image-add
+Given the image "ImageCarousel" is not selected
+When I add the image "ImageCarousel"
+Then the image "ImageCarousel" is selected
+
+Scenario: N2 add
+Given #"ImageCarousel" is not selected
+When I add #"ImageCarousel"
+Then #"ImageCarousel" is selected
+
+/*
+Scenario: image-DoNotadd
+Given the image "<image name>" is not selected
+When I do not add the image "<image name>"
+Then the image "<image name>" is not selected
+*/
+
+Scenario: N3 image-DoNotadd
+Given the image "ImageCarousel" is not selected
+When I do not add the image "ImageCarousel"
+Then the image "ImageCarousel" is not selected
+
+Scenario: N4 DoNotadd
+Given #"ImageCarousel" is not selected
+When I do not add #"ImageCarousel"
+Then #"ImageCarousel" is not selected
+
+/*
+Scenario: ImageCarousel-add
+Given the ImageCarousel "<image name>" is not selected
+When I add the ImageCarousel "<image name>"
+Then the ImageCarousel "<image name>" is selected
+*/
+
+Scenario: N5 ImageCarousel-add
+Given the ImageCarousel "ImageCarousel" is not selected
+When I add the ImageCarousel "ImageCarousel"
+Then the ImageCarousel "ImageCarousel" is selected
+
+Scenario: N6 add
+Given #"ImageCarousel" is not selected
+When I add #"ImageCarousel"
+Then #"ImageCarousel" is selected
+
+/*
+Scenario: ImageCarousel-DoNotadd
+Given the ImageCarousel "<image name>" is not selected
+When I do not add the ImageCarousel "<image name>"
+Then the ImageCarousel "<image name>" is not selected
+*/
+
+Scenario: N7 ImageCarousel-add
+Given the ImageCarousel "ImageCarousel" is not selected
+When I do not add the ImageCarousel "ImageCarousel"
+Then the ImageCarousel "ImageCarousel" is not selected
+
+Scenario: N8 add
+Given #"ImageCarousel" is not selected
+When I do not add #"ImageCarousel"
+Then #"ImageCarousel" is not selected
+
+/*
+Scenario: Field-image-add
+Given the image "<image>" for the field "<fieldname>" is not selected
+When I add the image "<image>" for the field "<fieldname>"
+Then the image "<image>" for the field "<fieldname>" is selected
+*/
+
+Scenario: N9 Field-image-add
+Given the image "Sun" for the field "List of Images" is not selected
+When I add the image "Sun" for the field "List of Images"
+Then the image "Sun" for the field "List of Images" is selected
+
+Scenario: N10 image-add
+Given the image "Sun" for #"List of Images" is not selected
+When I add the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is selected
+
+Scenario: N11 Field-add
+Given #"Sun" for the field "List of Images" is not selected
+When I add #"Sun" for the field "List of Images"
+Then #"Sun" for the field "List of Images" is selected
+
+Scenario: N12 add
+Given #"Sun" for #"List of Images" is not selected
+When I add #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is selected
+
+/*
+Scenario: Field-image-DoNotadd
+Given the image "<image>" for the field "<fieldname>" is not selected
+When I do not add the image "<image>" for the field "<fieldname>"
+Then the image "<image>" for the field "<fieldname>" is not selected
+*/
+
+Scenario: N13 Field-image-DoNotadd
+Given the image "Sun" for the field "List of Images" is not selected
+When I do not add the image "Sun" for the field "List of Images"
+Then the image "Sun" for the field "List of Images" is not selected
+
+Scenario: N14 image-DoNotadd
+Given the image "Sun" for #"List of Images" is not selected
+When I do not add the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is not selected
+
+Scenario: N15 Field-DoNotadd
+Given #"Sun" for the field "List of Images" is not selected
+When I do not add #"Sun" for the field "List of Images"
+Then #"Sun" for the field "List of Images" is not selected
+
+Scenario: N16 DoNotadd
+Given #"Sun" for #"List of Images" is not selected
+When I do not add #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is not selected
+
+/*
+Scenario: ImageCarousel-image-add
+Given the image "<image>" for the ImageCarousel "<fieldname>" is not selected
+When I add the image "<image>" for the ImageCarousel "<fieldname>"
+Then the image "<image>" for the ImageCarousel "<fieldname>" is selected
+*/
+
+Scenario: N17 ImageCarousel-image-add
+Given the image "Sun" for the ImageCarousel "List of Images" is not selected
+When I add the image "Sun" for the ImageCarousel "List of Images"
+Then the image "Sun" for the ImageCarousel "List of Images" is selected
+
+Scenario: N18 image-add
+Given the image "Sun" for #"List of Images" is not selected
+When I add the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is selected
+
+Scenario: N19 ImageCarousel-add
+Given #"Sun" for the ImageCarousel "List of Images" is not selected
+When I add #"Sun" for the ImageCarousel "List of Images"
+Then #"Sun" for the ImageCarousel "List of Images" is selected
+
+Scenario: N20 add
+Given #"Sun" for #"List of Images" is not selected
+When I add #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is selected
+
+/*
+Scenario: ImageCarousel-image-DoNotadd
+Given the image "<image>" for the ImageCarousel "<fieldname>" is not selected
+When I do not add the image "<image>" for the ImageCarousel "<fieldname>"
+Then the image "<image>" for the ImageCarousel "<fieldname>" is not selected
+*/
+
+Scenario: N21 ImageCarousel-image-DoNotadd
+Given the image "Sun" for the ImageCarousel "List of Images" is not selected
+When I do not add the image "Sun" for the ImageCarousel "List of Images"
+Then the image "Sun" for the ImageCarousel "List of Images" is not selected
+
+Scenario: N22 image-DoNotadd
+Given the image "Sun" for #"List of Images" is not selected
+When I do not add the image "Sun" for #"List of Images"
+Then the image "Sun" for #"List of Images" is not selected
+
+Scenario: N23 ImageCarousel-DoNotadd
+Given #"Sun" for the ImageCarousel "List of Images" is not selected
+When I do not add #"Sun" for the ImageCarousel "List of Images"
+Then #"Sun" for the ImageCarousel "List of Images" is not selected
+
+Scenario: N24 DoNotadd
+Given #"Sun" for #"List of Images" is not selected
+When I do not add #"Sun" for #"List of Images"
+Then #"Sun" for #"List of Images" is not selected
