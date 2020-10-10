@@ -355,3 +355,181 @@ Scenario: N48 DoNotclick
 Given #"Morning" for #"Availability" is not clicked
 When I do not click #"Morning" for #"Availability"
 Then #"Morning" for #"Availability" is not clicked
+
+// Negative Test cases
+
+/*
+Scenario: option-open
+Given the option "<option name>" is not opened
+When I open the option "<option name>"
+Then the option "<option name>" is opened
+*/
+
+Scenario: N1 option-open
+Given the option "List of items" is not opened
+When I open the option "List of items"
+Then the option "List of items" is opened
+
+Scenario: N2 open
+Given #"List of items" is not opened
+When I open #"List of items"
+Then #"List of items" is opened
+
+/*
+Scenario: option-DoNotopen
+Given the option "<option name>" is not opened
+When I do not open the option "<option name>"
+Then the option "<option name>" is not opened
+*/
+
+Scenario: N3 option-DoNotopen
+Given the option "List of items" is not opened
+When I do not open the option "List of items"
+Then the option "List of items" is not opened
+
+Scenario: N4 DoNotopen
+Given #"List of items" is not opened
+When I do not open #"List of items"
+Then #"List of items" is not opened
+
+/*
+Scenario: Menu-open
+Given the Menu "<option name>" is not opened
+When I open the Menu "<option name>"
+Then the Menu "<option name>" is opened
+*/
+
+Scenario: N5 Menu-open
+Given the Menu "List of items" is not opened
+When I open the Menu "List of items"
+Then the Menu "List of items" is opened
+
+Scenario: N6 open
+Given #"List of items" is not opened
+When I open #"List of items"
+Then #"List of items" is opened
+
+/*
+Scenario: Menu-DoNotopen
+Given the Menu "<option name>" is not opened
+When I do not open the Menu "<option name>"
+Then the Menu "<option name>" is not opened
+*/
+
+Scenario: N7 Menu-open
+Given the Menu "List of items" is not opened
+When I do not open the Menu "List of items"
+Then the Menu "List of items" is not opened
+
+Scenario: N8 open
+Given #"List of items" is not opened
+When I do not open #"List of items"
+Then #"List of items" is not opened
+
+/*
+Scenario: Field-option-open
+Given the option "<option>" for the field "<fieldname>" is not opened
+When I open the option "<option>" for the field "<fieldname>"
+Then the option "<option>" for the field "<fieldname>" is opened
+*/
+
+Scenario: N9 Field-option-open
+Given the option "Morning" for the field "Availability" is not opened
+When I open the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is opened
+
+Scenario: N10 option-open
+Given the option "Morning" for #"Availability" is not opened
+When I open the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is opened
+
+Scenario: N11 Field-open
+Given #"Morning" for the field "Availability" is not opened
+When I open #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is opened
+
+Scenario: N12 open
+Given #"Morning" for #"Availability" is not opened
+When I open #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is opened
+
+/*
+Scenario: Field-option-DoNotopen
+Given the option "<option>" for the field "<fieldname>" is not opened
+When I do not open the option "<option>" for the field "<fieldname>"
+Then the option "<option>" for the field "<fieldname>" is not opened
+*/
+
+Scenario: N13 Field-option-DoNotopen
+Given the option "Morning" for the field "Availability" is not opened
+When I do not open the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is not opened
+
+Scenario: N14 option-DoNotopen
+Given the option "Morning" for #"Availability" is not opened
+When I do not open the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not opened
+
+Scenario: N15 Field-DoNotopen
+Given #"Morning" for the field "Availability" is not opened
+When I do not open #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not opened
+
+Scenario: N16 DoNotopen
+Given #"Morning" for #"Availability" is not opened
+When I do not open #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not opened
+
+/*
+Scenario: Menu-option-open
+Given the option "<option>" for the Menu "<fieldname>" is not opened
+When I open the option "<option>" for the Menu "<fieldname>"
+Then the option "<option>" for the Menu "<fieldname>" is opened
+*/
+
+Scenario: N17 Menu-option-open
+Given the option "Morning" for the Menu "Availability" is not opened
+When I open the option "Morning" for the Menu "Availability"
+Then the option "Morning" for the Menu "Availability" is opened
+
+Scenario: N18 option-open
+Given the option "Morning" for #"Availability" is not opened
+When I open the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is opened
+
+Scenario: N19 Menu-open
+Given #"Morning" for the Menu "Availability" is not opened
+When I open #"Morning" for the Menu "Availability"
+Then #"Morning" for the Menu "Availability" is opened
+
+Scenario: N20 open
+Given #"Morning" for #"Availability" is not opened
+When I open #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is opened
+
+/*
+Scenario: Menu-option-DoNotopen
+Given the option "<option>" for the Menu "<fieldname>" is not opened
+When I do not open the option "<option>" for the Menu "<fieldname>"
+Then the option "<option>" for the Menu "<fieldname>" is not opened
+*/
+
+Scenario: N21 Menu-option-DoNotopen
+Given the option "Morning" for the Menu "Availability" is not opened
+When I do not open the option "Morning" for the Menu "Availability"
+Then the option "Morning" for the Menu "Availability" is not opened
+
+Scenario: N22 option-DoNotopen
+Given the option "Morning" for #"Availability" is not opened
+When I do not open the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not opened
+
+Scenario: N23 Menu-DoNotopen
+Given #"Morning" for the Menu "Availability" is not opened
+When I do not open #"Morning" for the Menu "Availability"
+Then #"Morning" for the Menu "Availability" is not opened
+
+Scenario: N24 DoNotopen
+Given #"Morning" for #"Availability" is not opened
+When I do not open #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not opened
