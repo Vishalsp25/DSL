@@ -174,3 +174,113 @@ Scenario: N24 DoNotadjust
 Given #"Number" for #"Handle" is not adjusted
 When I do not adjust #"Number" for #"Handle"
 Then #"Number" for #"Handle" is not adjusted
+
+// Negative Test cases 
+
+/*
+Scenario: Field-value-remove 
+Given the value "<value>" for the field "<fieldname>" is not removed
+When I remove  the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is removed
+*/
+
+Scenario: N1 Field-value-remove 
+Given the value "Number" for the field "Handle" is not removed
+When I remove  the value "Number" for the field "Handle"
+Then the value "Number" for the field "Handle" is removed
+
+Scenario: N02 value-remove 
+Given the value "Number" for #"Handle" is not removed
+When I remove  the value "Number" for #"Handle"
+Then the value "Number" for #"Handle" is removed
+
+Scenario: N03 Field-remove 
+Given #"Number" for the field "Handle" is not removed
+When I remove  #"Number" for the field "Handle"
+Then #"Number" for the field "Handle" is removed
+
+Scenario: N04 remove 
+Given #"Number" for #"Handle" is not removed
+When I remove  #"Number" for #"Handle"
+Then #"Number" for #"Handle" is removed
+
+/*
+Scenario: Field-value-DoNotremove 
+Given the value "<value>" for the field "<fieldname>" is not removed
+When I do not remove  the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is not removed
+*/
+
+Scenario: N05 Field-value-DoNotremove 
+Given the value "Number" for the field "Handle" is not removed
+When I do not remove  the value "Number" for the field "Handle"
+Then the value "Number" for the field "Handle" is not removed
+
+Scenario: N06 value-DoNotremove 
+Given the value "Number" for #"Handle" is not removed
+When I do not remove  the value "Number" for #"Handle"
+Then the value "Number" for #"Handle" is not removed
+
+Scenario: N07 Field-DoNotremove 
+Given #"Number" for the field "Handle" is not removed
+When I do not remove  #"Number" for the field "Handle"
+Then #"Number" for the field "Handle" is not removed
+
+Scenario: N08 DoNotremove 
+Given #"Number" for #"Handle" is not removed
+When I do not remove  #"Number" for #"Handle"
+Then #"Number" for #"Handle" is not removed
+
+/*
+Scenario: Slider-value-remove
+Given the value "<value>" for the Slider "<fieldname>" is not removed
+When I remove the value "<value>" for the Slider "<fieldname>"
+Then the value "<value>" for the Slider "<fieldname>" is removed
+*/
+
+Scenario: N09 Slider-value-remove
+Given the value "Number" for the Slider "Handle" is not removed
+When I remove the value "Number" for the Slider "Handle"
+Then the value "Number" for the Slider "Handle" is removed
+
+Scenario: N10 value-remove
+Given the value "Number" for #"Handle" is not removed
+When I remove the value "Number" for #"Handle"
+Then the value "Number" for #"Handle" is removed
+
+Scenario: N11 Slider-remove
+Given #"Number" for the Slider "Handle" is not removed
+When I remove #"Number" for the Slider "Handle"
+Then #"Number" for the Slider "Handle" is removed
+
+Scenario: N12 remove
+Given #"Number" for #"Handle" is not removed
+When I remove #"Number" for #"Handle"
+Then #"Number" for #"Handle" is removed
+
+/*
+Scenario: Slider-value-DoNotremove
+Given the value "<value>" for the Slider "<fieldname>" is not removed
+When I do not remove the value "<value>" for the Slider "<fieldname>"
+Then the value "<value>" for the Slider "<fieldname>" is not removed
+*/
+
+Scenario: N13 Slider-value-DoNotremove
+Given the value "Number" for the Slider "Handle" is not removed
+When I do not remove the value "Number" for the Slider "Handle"
+Then the value "Number" for the Slider "Handle" is not removed
+
+Scenario: N14 value-DoNotremove
+Given the value "Number" for #"Handle" is not removed
+When I do not remove the value "Number" for #"Handle"
+Then the value "Number" for #"Handle" is not removed
+
+Scenario: N15 Slider-DoNotremove
+Given #"Number" for the Slider "Handle" is not removed
+When I do not remove #"Number" for the Slider "Handle"
+Then #"Number" for the Slider "Handle" is not removed
+
+Scenario: N16 DoNotremove
+Given #"Number" for #"Handle" is not removed
+When I do not remove #"Number" for #"Handle"
+Then #"Number" for #"Handle" is not removed
