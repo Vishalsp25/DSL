@@ -407,3 +407,73 @@ Scenario: N48 confirm
 Given #"content" is displayed
 When I do not confirm #"content"
 Then #"content" is not displayed
+
+//Negative Test cases 
+
+/*
+Scenario: extract
+Given "WindowDialog" is extracted
+When I extract "WindowDialog"
+Then "WindowDialog" is extracted
+*/
+
+Scenario: N1 extract
+Given "WindowDialog" is extracted
+When I extract "WindowDialog"
+Then #"WindowDialog" is extracted
+
+Scenario: N2 extract
+Given #"WindowDialog" is extracted
+When I extract #"WindowDialog"
+Then #"WindowDialog" is extracted
+
+/*
+Scenario: DoNotextract
+Given "WindowDialog" is not extracted
+When I do not extract "WindowDialog"
+Then "WindowDialog" is not extracted
+*/
+
+Scenario: N3 DoNotextract
+Given "WindowDialog" is not extracted
+When I do not extract "WindowDialog"
+Then #"WindowDialog" is not extracted
+
+Scenario: N4 DoNotextract
+Given #"WindowDialog" is not extracted
+When I do not extract #"WindowDialog"
+Then #"WindowDialog" is not extracted
+
+/*
+Scenario: WindowDialog-extract
+Given the WindowDialog "<tab name>" is extracted
+When I extract the WindowDialog "<tab name>"
+Then the WindowDialog "<tab name>" is extracted
+*/
+
+Scenario: N5 WindowDialog-extract
+Given the WindowDialog "WindowDialog" is extracted
+When I extract the WindowDialog "WindowDialog"
+Then the WindowDialog "WindowDialog" is extracted
+
+Scenario: N6 extract
+Given #"WindowDialog" is extracted
+When I extract #"WindowDialog"
+Then #"WindowDialog" is extracted
+
+/*
+Scenario: WindowDialog-DoNotextract
+Given the WindowDialog "<tab name>" is not extracted
+When I do not extract the WindowDialog "<tab name>"
+Then the WindowDialog "<tab name>" is extracted
+*/
+
+Scenario: N7 WindowDialog-extract
+Given the WindowDialog "WindowDialog" is not extracted
+When I do not extract the WindowDialog "WindowDialog"
+Then the WindowDialog "WindowDialog" is not extracted
+
+Scenario: N8 extract
+Given #"WindowDialog" is not extracted
+When I do not extract #"WindowDialog"
+Then #"WindowDialog" is not extracted
