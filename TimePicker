@@ -702,3 +702,181 @@ Scenario: N96 DoNotset
 Given #"Time" for #"Time Picker" is not set
 When I do not set #"Time" for #"Time Picker"
 Then #"Time" for #"Time Picker" is not set
+
+//Negative Test cases
+
+/*
+Scenario: time-remove
+Given the time "<timename>" is not removed
+When I remove the time "<timename>"
+Then the time "<timename>" is removed
+*/
+
+Scenario: N1 time-remove
+Given the time "time of TimePicker" is not removed
+When I remove the time "time of TimePicker"
+Then the time "time of TimePicker" is removed
+
+Scenario: N2 remove
+Given #"time of TimePicker" is not removed
+When I remove #"time of TimePicker"
+Then #"time of TimePicker" is removed
+
+/*
+Scenario: time-DoNotremove
+Given the time "<timename>" is not removed
+When I do not removed the time "<timename>"
+Then the time "<timename>" is not removed
+*/
+
+Scenario: N3 time-DoNotremove
+Given the time "time of TimePicker" is not removed
+When I do not removed the time "time of TimePicker"
+Then the time "time of TimePicker" is not removed
+
+Scenario: N4 DoNotremove
+Given #"time of TimePicker" is not removed
+When I do not removed #"time of TimePicker"
+Then #"time of TimePicker" is not removed
+
+/*
+Scenario: TimePicker-remove
+Given the TimePicker "<timename>" is not removed
+When I remove the TimePicker "<timename>"
+Then the TimePicker "<timename>" is removed
+*/
+
+Scenario: N5 TimePicker-remove
+Given the TimePicker "time of TimePicker" is not removed
+When I remove the TimePicker "time of TimePicker"
+Then the TimePicker "time of TimePicker" is removed
+
+Scenario: N6 remove
+Given #"time of TimePicker" is not removed
+When I remove #"time of TimePicker"
+Then #"time of TimePicker" is removed
+
+/*
+Scenario: TimePicker-DoNotremove
+Given the TimePicker "<timename>" is not removed
+When I do not removed the TimePicker "<timename>"
+Then the TimePicker "<timename>" is not removed
+*/
+
+Scenario: N7 TimePicker-remove
+Given the TimePicker "time of TimePicker" is not removed
+When I do not removed the TimePicker "time of TimePicker"
+Then the TimePicker "time of TimePicker" is not removed
+
+Scenario: N8 remove
+Given #"time of TimePicker" is not removed
+When I do not removed #"time of TimePicker"
+Then #"time of TimePicker" is not removed
+
+/*
+Scenario: Field-time-remove
+Given the time "<time>" for the field "<fieldname>" is not removed
+When I remove the time "<time>" for the field "<fieldname>"
+Then the time "<time>" for the field "<fieldname>" is removed
+*/
+
+Scenario: N9 Field-time-remove
+Given the time "Time" for the field "Time Picker" is not removed
+When I remove the time "Time" for the field "Time Picker"
+Then the time "Time" for the field "Time Picker" is removed
+
+Scenario: N10 time-remove
+Given the time "Time" for #"Time Picker" is not removed
+When I remove the time "Time" for #"Time Picker"
+Then the time "Time" for #"Time Picker" is removed
+
+Scenario: N11 Field-remove
+Given #"Time" for the field "Time Picker" is not removed
+When I remove #"Time" for the field "Time Picker"
+Then #"Time" for the field "Time Picker" is removed
+
+Scenario: N12 remove
+Given #"Time" for #"Time Picker" is not removed
+When I remove #"Time" for #"Time Picker"
+Then #"Time" for #"Time Picker" is removed
+
+/*
+Scenario: Field-time-DoNotremove
+Given the time "<time>" for the field "<fieldname>" is not removed
+When I do not removed the time "<time>" for the field "<fieldname>"
+Then the time "<time>" for the field "<fieldname>" is not removed
+*/
+
+Scenario: N13 Field-time-DoNotremove
+Given the time "Time" for the field "Time Picker" is not removed
+When I do not removed the time "Time" for the field "Time Picker"
+Then the time "Time" for the field "Time Picker" is not removed
+
+Scenario: N14 time-DoNotremove
+Given the time "Time" for #"Time Picker" is not removed
+When I do not removed the time "Time" for #"Time Picker"
+Then the time "Time" for #"Time Picker" is not removed
+
+Scenario: N15 Field-DoNotremove
+Given #"Time" for the field "Time Picker" is not removed
+When I do not removed #"Time" for the field "Time Picker"
+Then #"Time" for the field "Time Picker" is not removed
+
+Scenario: N16 DoNotremove
+Given #"Time" for #"Time Picker" is not removed
+When I do not removed #"Time" for #"Time Picker"
+Then #"Time" for #"Time Picker" is not removed
+
+/*
+Scenario: TimePicker-time-remove
+Given the time "<time>" for the TimePicker "<fieldname>" is not removed
+When I remove the time "<time>" for the TimePicker "<fieldname>"
+Then the time "<time>" for the TimePicker "<fieldname>" is removed
+*/
+
+Scenario: N17 TimePicker-time-remove
+Given the time "Time" for the TimePicker "Time Picker" is not removed
+When I remove the time "Time" for the TimePicker "Time Picker"
+Then the time "Time" for the TimePicker "Time Picker" is removed
+
+Scenario: N18 time-remove
+Given the time "Time" for #"Time Picker" is not removed
+When I remove the time "Time" for #"Time Picker"
+Then the time "Time" for #"Time Picker" is removed
+
+Scenario: N19 TimePicker-remove
+Given #"Time" for the TimePicker "Time Picker" is not removed
+When I remove #"Time" for the TimePicker "Time Picker"
+Then #"Time" for the TimePicker "Time Picker" is removed
+
+Scenario: N20 remove
+Given #"Time" for #"Time Picker" is not removed
+When I remove #"Time" for #"Time Picker"
+Then #"Time" for #"Time Picker" is removed
+
+/*
+Scenario: TimePicker-time-DoNotremove
+Given the time "<time>" for the TimePicker "<fieldname>" is not removed
+When I do not removed the time "<time>" for the TimePicker "<fieldname>"
+Then the time "<time>" for the TimePicker "<fieldname>" is not removed
+*/
+
+Scenario: N21 TimePicker-time-DoNotremove
+Given the time "Time" for the TimePicker "Time Picker" is not removed
+When I do not removed the time "Time" for the TimePicker "Time Picker"
+Then the time "Time" for the TimePicker "Time Picker" is not removed
+
+Scenario: N22 time-DoNotremove
+Given the time "Time" for #"Time Picker" is not removed
+When I do not removed the time "Time" for #"Time Picker"
+Then the time "Time" for #"Time Picker" is not removed
+
+Scenario: N23 TimePicker-DoNotremove
+Given #"Time" for the TimePicker "Time Picker" is not removed
+When I do not removed #"Time" for the TimePicker "Time Picker"
+Then #"Time" for the TimePicker "Time Picker" is not removed
+
+Scenario: N24 DoNotremove
+Given #"Time" for #"Time Picker" is not removed
+When I do not removed #"Time" for #"Time Picker"
+Then #"Time" for #"Time Picker" is not removed
