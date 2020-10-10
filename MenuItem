@@ -355,3 +355,181 @@ Scenario: N48 DoNotclick
 Given #"Morning" for #"Availability" is not clicked
 When I do not click #"Morning" for #"Availability"
 Then #"Morning" for #"Availability" is not clicked
+
+// Negative Test cases
+
+/*
+Scenario: option-remove
+Given the option "<option name>" is not removed
+When I remove the option "<option name>"
+Then the option "<option name>" is removed
+*/
+
+Scenario: N1 option-remove
+Given the option "MenuItem" is not removed
+When I remove the option "MenuItem"
+Then the option "MenuItem" is removed
+
+Scenario: N2 remove
+Given #"MenuItem" is not removed
+When I remove #"MenuItem"
+Then #"MenuItem" is removed
+
+/*
+Scenario: option-DoNotremove
+Given the option "<option name>" is not removed
+When I do not remove the option "<option name>"
+Then the option "<option name>" is not removed
+*/
+
+Scenario: N3 option-DoNotremove
+Given the option "MenuItem" is not removed
+When I do not remove the option "MenuItem"
+Then the option "MenuItem" is not removed
+
+Scenario: N4 DoNotremove
+Given #"MenuItem" is not removed
+When I do not remove #"MenuItem"
+Then #"MenuItem" is not removed
+
+/*
+Scenario: MenuItem-remove
+Given the MenuItem "<option name>" is not removed
+When I remove the MenuItem "<option name>"
+Then the MenuItem "<option name>" is removed
+*/
+
+Scenario: N5 MenuItem-remove
+Given the MenuItem "MenuItem" is not removed
+When I remove the MenuItem "MenuItem"
+Then the MenuItem "MenuItem" is removed
+
+Scenario: N6 remove
+Given #"MenuItem" is not removed
+When I remove #"MenuItem"
+Then #"MenuItem" is removed
+
+/*
+Scenario: MenuItem-DoNotremove
+Given the MenuItem "<option name>" is not removed
+When I do not remove the MenuItem "<option name>"
+Then the MenuItem "<option name>" is not removed
+*/
+
+Scenario: N7 MenuItem-remove
+Given the MenuItem "MenuItem" is not removed
+When I do not remove the MenuItem "MenuItem"
+Then the MenuItem "MenuItem" is not removed
+
+Scenario: N8 remove
+Given #"MenuItem" is not removed
+When I do not remove #"MenuItem"
+Then #"MenuItem" is not removed
+
+/*
+Scenario: Field-option-remove
+Given the option "<option>" for the field "<fieldname>" is not removed
+When I remove the option "<option>" for the field "<fieldname>"
+Then the option "<option>" for the field "<fieldname>" is removed
+*/
+
+Scenario: N9 Field-option-remove
+Given the option "Morning" for the field "Availability" is not removed
+When I remove the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is removed
+
+Scenario: N10 option-remove
+Given the option "Morning" for #"Availability" is not removed
+When I remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is removed
+
+Scenario: N11 Field-remove
+Given #"Morning" for the field "Availability" is not removed
+When I remove #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is removed
+
+Scenario: N12 remove
+Given #"Morning" for #"Availability" is not removed
+When I remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is removed
+
+/*
+Scenario: Field-option-DoNotremove
+Given the option "<option>" for the field "<fieldname>" is not removed
+When I do not remove the option "<option>" for the field "<fieldname>"
+Then the option "<option>" for the field "<fieldname>" is not removed
+*/
+
+Scenario: N13 Field-option-DoNotremove
+Given the option "Morning" for the field "Availability" is not removed
+When I do not remove the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is not removed
+
+Scenario: N14 option-DoNotremove
+Given the option "Morning" for #"Availability" is not removed
+When I do not remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not removed
+
+Scenario: N15 Field-DoNotremove
+Given #"Morning" for the field "Availability" is not removed
+When I do not remove #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not removed
+
+Scenario: N16 DoNotremove
+Given #"Morning" for #"Availability" is not removed
+When I do not remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not removed
+
+/*
+Scenario: MenuItem-option-remove
+Given the option "<option>" for the MenuItem "<fieldname>" is not removed
+When I remove the option "<option>" for the MenuItem "<fieldname>"
+Then the option "<option>" for the MenuItem "<fieldname>" is removed
+*/
+
+Scenario: N17 MenuItem-option-remove
+Given the option "Morning" for the MenuItem "Availability" is not removed
+When I remove the option "Morning" for the MenuItem "Availability"
+Then the option "Morning" for the MenuItem "Availability" is removed
+
+Scenario: N18 option-remove
+Given the option "Morning" for #"Availability" is not removed
+When I remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is removed
+
+Scenario: N19 MenuItem-remove
+Given #"Morning" for the MenuItem "Availability" is not removed
+When I remove #"Morning" for the MenuItem "Availability"
+Then #"Morning" for the MenuItem "Availability" is removed
+
+Scenario: N20 remove
+Given #"Morning" for #"Availability" is not removed
+When I remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is removed
+
+/*
+Scenario: MenuItem-option-DoNotremove
+Given the option "<option>" for the MenuItem "<fieldname>" is not removed
+When I do not remove the option "<option>" for the MenuItem "<fieldname>"
+Then the option "<option>" for the MenuItem "<fieldname>" is not removed
+*/
+
+Scenario: N21 MenuItem-option-DoNotremove
+Given the option "Morning" for the MenuItem "Availability" is not removed
+When I do not remove the option "Morning" for the MenuItem "Availability"
+Then the option "Morning" for the MenuItem "Availability" is not removed
+
+Scenario: N22 option-DoNotremove
+Given the option "Morning" for #"Availability" is not removed
+When I do not remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not removed
+
+Scenario: N23 MenuItem-DoNotremove
+Given #"Morning" for the MenuItem "Availability" is not removed
+When I do not remove #"Morning" for the MenuItem "Availability"
+Then #"Morning" for the MenuItem "Availability" is not removed
+
+Scenario: N24 DoNotremove
+Given #"Morning" for #"Availability" is not removed
+When I do not remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not removed
