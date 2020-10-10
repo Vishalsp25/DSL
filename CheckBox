@@ -1511,3 +1511,338 @@ Scenario: N250
 Given all the options for #"Availability" are unchecked 
 When I check #"Morning" for #"Availability"
 Then #"Morning" for #"Availability" is checked 
+
+//Negative Test cases
+
+/*
+Scenario: Field-AllOptions-remove
+Given all the options are not removed for the field "<fieldname>"
+When I remove the option "<option>" for the field "<fieldname>"
+Then the option "<option>" is removed for the field "<fieldname>"
+*/
+
+Scenario: N01
+Given all the options for the field "Availability" are not removed 
+When I remove the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is removed 
+
+Scenario: N02
+Given all the options for #"Availability" are not removed 
+When I remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is removed 
+
+Scenario: N03
+Given all the options for the field "Availability" are not removed 
+When I remove #"Morning" for the field "Availability"
+Then #"Morning"  for the field "Availability" is removed 
+
+Scenario: N04 
+Given all the options for #"Availability" are not removed 
+When I remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is removed 
+
+/*
+Scenario: Field-AllOptions-DoNotremove
+Given all the options are not removed for the field "<fieldname>"
+When I do not remove the option "<option>" for the field "<fieldname>"
+Then the option "<option>" is not removed for the field "<fieldname>"
+*/
+
+Scenario: N05 
+Given all the options for the field "Availability" are not removed 
+When I do not remove the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is not removed 
+
+Scenario: N06 
+Given all the options for #"Availability" are not removed 
+When I do not remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not removed 
+
+Scenario: N07 
+Given all the options for the field "Availability" are not removed 
+When I do not remove #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not removed 
+
+Scenario: N08 
+Given all the options for #"Availability" are not removed 
+When I do not remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not removed 
+
+/*
+Scenario: Field-Option-remove
+Given the option "<option>" is not removed for the field "<fieldname>"
+When I remove the option "<option>" for the field "<fieldname>"
+Then the option "<option>" is removed for the field "<fieldname>"
+*/
+
+Scenario: N09 
+Given the option "Morning" for the field "Availability" is not removed 
+When I remove the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is removed 
+
+Scenario: N10 
+Given the option "Morning" for #"Availability" is not removed 
+When I remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is removed 
+
+Scenario: N11 
+Given #"Morning" for the field "Availability" is not removed 
+When I remove #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is removed 
+
+Scenario: N12
+Given #"Morning" for #"Availability" is not removed 
+When I remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is removed 
+
+/*
+Scenario: Field-Option-DoNotremove
+Given the option "<option>" is not removed for the field "<fieldname>"
+When I do not remove the option "<option>" for the field "<fieldname>"
+Then the option "<option>" is not removed for the field "<fieldname>"
+*/
+
+Scenario: N13
+Given the option "Morning" for the field "Availability" is not removed 
+When I do not remove the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is not removed 
+
+Scenario: N14 
+Given the option "Morning" for #"Availability" is not removed 
+When I do not remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not removed 
+
+Scenario: N15
+Given #"Morning" for the field "Availability" is not removed 
+When I do not remove #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not removed 
+
+Scenario: N16 
+Given #"Morning" for #"Availability" is not removed 
+When I do not remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not removed 
+
+/*
+Scenario: CheckBox-AllOptions-remove
+Given all the options are not removed for the CheckBox "<fieldname>"
+When I remove the option "<option>" for the CheckBox "<fieldname>"
+Then the option "<option>" is removed for the CheckBox "<fieldname>"
+*/
+
+Scenario: N17 
+Given all the options for the CheckBox "Availability" are not removed 
+When I remove the option "Morning" for the CheckBox "Availability"
+Then the option "Morning" for the CheckBox "Availability" is removed 
+
+Scenario: N18 
+Given all the options for #"Availability" are not removed 
+When I remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is removed 
+
+Scenario: N19
+Given all the options for the CheckBox "Availability" are not removed 
+When I remove #"Morning" for the CheckBox "Availability"
+Then #"Morning" for the CheckBox "Availability" is removed 
+
+Scenario: N20 
+Given all the options for #"Availability" are not removed 
+When I remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is removed 
+
+/*
+Scenario: CheckBox-AllOptions-DoNotremove
+Given all the options are not removed for the CheckBox "<fieldname>"
+When I do not remove the option "<option>" for the CheckBox "<fieldname>"
+Then the option "<option>" is not removed for the CheckBox "<fieldname>"
+*/
+
+Scenario: N21 
+Given all the options for the CheckBox "Availability" are not removed 
+When I do not remove the option "Morning" for the CheckBox "Availability"
+Then the option "Morning" for the CheckBox "Availability" is not removed 
+
+Scenario: N22
+Given all the options for #"Availability" are not removed 
+When I do not remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not removed 
+
+Scenario: N23
+Given all the options for the CheckBox "Availability" are not removed 
+When I do not remove #"Morning" for the CheckBox "Availability"
+Then #"Morning" for the CheckBox "Availability" is not removed 
+
+Scenario: N24
+Given all the options for #"Availability" are not removed 
+When I do not remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not removed 
+
+/*
+Scenario: CheckBox-Option-remove
+Given the option "<option>" is not removed for the CheckBox "<fieldname>"
+When I remove the option "<option>" for the CheckBox "<fieldname>"
+Then the option "<option>" is removed for the CheckBox "<fieldname>"
+*/
+
+Scenario: N25 
+Given the option "Morning" for the CheckBox "Availability" is not removed 
+When I remove the option "Morning" for the CheckBox "Availability"
+Then the option "Morning" for the CheckBox "Availability" is removed 
+
+Scenario: N26 
+Given the option "Morning" for #"Availability" is not removed 
+When I remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is removed 
+
+Scenario: N27 
+Given #"Morning" for the CheckBox "Availability" is not removed 
+When I remove #"Morning" for the CheckBox "Availability"
+Then #"Morning" for the CheckBox "Availability" is removed 
+
+Scenario: N29 
+Given #"Morning" for #"Availability" is not removed 
+When I remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is removed 
+
+/*
+Scenario: CheckBox-Option-DoNotremove
+Given the option "<option>" is not removed for the CheckBox "<fieldname>"
+When I do not remove the option "<option>" for the CheckBox "<fieldname>"
+Then the option "<option>" is not removed for the CheckBox "<fieldname>"
+*/
+
+Scenario: N30 
+Given the option "Morning" for the CheckBox "Availability" is not removed 
+When I do not remove the option "Morning" for the CheckBox "Availability"
+Then the option "Morning" for the CheckBox "Availability" is not removed 
+
+Scenario: N31 
+Given the option "Morning" for #"Availability" is not removed 
+When I do not remove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not removed 
+
+Scenario: N32 
+Given #"Morning" for the CheckBox "Availability" is not removed 
+When I do not remove #"Morning" for the CheckBox "Availability"
+Then #"Morning" for the CheckBox "Availability" is not removed 
+
+Scenario: N33
+Given #"Morning" for #"Availability" is not removed 
+When I do not remove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not removed 
+
+Scenario: N34 
+Given all the options for the field "Availability" are removed 
+When I unremove the option "Morning" for the field "Availability"
+Then the option "Morning" for the field "Availability" is not removed 
+
+Scenario: N35 
+Given all the options for #"Availability" are removed 
+When I unremove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not removed 
+
+Scenario: N36 
+Given all the options for the field "Availability" are removed 
+When I unremove #"Morning" for the field "Availability"
+Then #"Morning" for the field "Availability" is not removed 
+
+Scenario: N37 
+Given all the options for #"Availability" are removed 
+When I unremove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not removed 
+
+/*
+Scenario: CheckBox-AllOptions-Unremove
+Given all the options are removed for the CheckBox "<fieldname>"
+When I unremove the option "<option>" for the CheckBox "<fieldname>"
+Then the option "<option>" is not removed for the CheckBox "<fieldname>"
+*/
+
+Scenario: N38
+Given all the options for the CheckBox "Availability" are removed 
+When I unremove the option "Morning" for the CheckBox "Availability"
+Then the option "Morning" for the CheckBox "Availability" is not removed 
+
+Scenario: N39 
+Given all the options for #"Availability" are removed 
+When I unremove the option "Morning" for #"Availability"
+Then the option "Morning" for #"Availability" is not removed 
+
+Scenario: N40 
+Given all the options for the CheckBox "Availability" are removed 
+When I unremove #"Morning" for the CheckBox "Availability"
+Then #"Morning" for the CheckBox "Availability" is not removed 
+
+Scenario: N41
+Given all the options for #"Availability" are removed 
+When I unremove #"Morning" for #"Availability"
+Then #"Morning" for #"Availability" is not removed 
+
+Scenario: N42
+Given the field #"I agree to the terms and conditions" is not removed
+When I remove the field #"I agree to the terms and conditions"
+Then the field #"I agree to the terms and conditions" is removed
+
+Scenario: N43
+Given #"I agree to the terms and conditions" is not removed
+When I remove #"I agree to the terms and conditions"
+Then #"I agree to the terms and conditions" is removed
+
+Scenario: N44
+Given the field #"I agree to the terms and conditions" is not removed
+When I do not remove the field #"I agree to the terms and conditions"
+Then the field #"I agree to the terms and conditions" is not removed
+
+Scenario: N45 
+Given #"I agree to the terms and conditions" is not removed
+When I do not remove #"I agree to the terms and conditions"
+Then #"I agree to the terms and conditions" is not removed
+
+Scenario: N46
+Given the CheckBox #"I agree to the terms and conditions" is not removed
+When I remove the CheckBox #"I agree to the terms and conditions"
+Then the CheckBox #"I agree to the terms and conditions" is removed
+
+Scenario: N47
+Given #"I agree to the terms and conditions" is not removed
+When I remove #"I agree to the terms and conditions"
+Then #"I agree to the terms and conditions" is removed
+
+Scenario: N48
+Given the CheckBox #"I agree to the terms and conditions" is not removed
+When I do not remove the CheckBox #"I agree to the terms and conditions"
+Then the CheckBox #"I agree to the terms and conditions" is not removed
+
+Scenario: N49
+Given #"I agree to the terms and conditions" is not removed
+When I do not remove #"I agree to the terms and conditions"
+Then #"I agree to the terms and conditions" is not removed
+
+Scenario: N50
+Given the field #"I agree to the terms and conditions" is not removed
+When I remove the field #"I agree to the terms and conditions"
+Then the field #"I agree to the terms and conditions" is removed
+
+Scenario: N51
+Given #"I agree to the terms and conditions" is not removed
+When I remove #"I agree to the terms and conditions"
+Then #"I agree to the terms and conditions" is removed
+
+Scenario: N52 
+Given the field #"I agree to the terms and conditions" is not removed
+When I do not remove the field #"I agree to the terms and conditions"
+Then the field #"I agree to the terms and conditions" is not removed
+
+Scenario: N53 
+Given #"I agree to the terms and conditions" is not removed
+When I do not remove #"I agree to the terms and conditions"
+Then #"I agree to the terms and conditions" is not removed
+
+Scenario: N54
+Given the CheckBox #"I agree to the terms and conditions" is not removed
+When I remove the CheckBox #"I agree to the terms and conditions"
+Then the CheckBox #"I agree to the terms and conditions" is removed
+
+Scenario: N55 
+Given #"I agree to the terms and conditions" is not removed
+When I remove #"I agree to the terms and conditions"
+Then #"I agree to the terms and conditions" is removed
