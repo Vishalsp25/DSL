@@ -760,4 +760,126 @@ Given #"volume down" is not turned down
 When I do not turn down the volume #"volume down"
 Then #"volume down" is not turned down
 
+//Negative Test cases
 
+/*
+Scenario: Field-design
+Given the field "<fieldname>" is not designed
+When I design the field "<fieldname>"
+Then the field "<fieldname>" is designed
+*/
+
+Scenario: N1 
+Given the field "Travel world" is not designed
+When I design the field "Travel world"
+Then the field "Travel world" is designed
+
+Scenario: N2
+Given #"Travel world" is not designed
+When I design #"Travel world"
+Then #"Travel world" is designed
+
+/*
+Scenario: Field-DoNotdesign
+Given the field "<fieldname>" is not designed
+When I do not design the field "<fieldname>"
+Then the field "<fieldname>" is not designed
+*/
+
+Scenario: N3
+Given the field "Travel world" is not designed
+When I do not design the field "Travel world"
+Then the field "Travel world" is not designed
+
+Scenario: N4 
+Given #"Travel world" is not designed
+When I do not design #"Travel world"
+Then #"Travel world" is not designed
+
+/*
+Scenario: VidoePlayer-design
+Given the VidoePlayer "<fieldname>" is not designed
+When I design the VidoePlayer "<fieldname>"
+Then the VidoePlayer "<fieldname>" is designed
+*/
+
+Scenario: N5 
+Given the VidoePlayer "Travel world" is not designed
+When I design the VidoePlayer "Travel world"
+Then the VidoePlayer "Travel world" is designed
+
+Scenario: N6 
+Given #"Travel world" is not designed
+When I design #"Travel world"
+Then #"Travel world" is designed
+
+/*
+Scenario: VidoePlayer-DoNotdesign
+Given the VidoePlayer "<fieldname>" is not designed
+When I do not design the VidoePlayer "<fieldname>"
+Then the VidoePlayer "<fieldname>" is not designed
+*/
+
+Scenario: N7 
+Given the VidoePlayer "Travel world" is not designed
+When I do not design the VidoePlayer "Travel world"
+Then the VidoePlayer "Travel world" is not designed
+
+Scenario: N8
+Given #"Travel world" is not designed
+When I do not design #"Travel world"
+Then #"Travel world" is not designed
+
+/*
+Scenario: VidoePlayer-video-design
+Given the video "<video>" for the VidoePlayer "<fieldname>" is not designed
+When I design the video "<video>" for the VidoePlayer "<fieldname>"
+Then the video "<video>" for the VidoePlayer "<fieldname>" is designed
+*/
+
+Scenario: N09 VidoePlayer-video-design
+Given the video "Bat Man" for the VidoePlayer "Bat Man Videos" is not designed
+When I design the video "Bat Man" for the VidoePlayer "Bat Man Videos"
+Then the video "Bat Man" for the VidoePlayer "Bat Man Videos" is designed
+
+Scenario: N10 video-design
+Given the video "Bat Man" for #"Bat Man Videos" is not designed
+When I design the video "Bat Man" for #"Bat Man Videos"
+Then the video "Bat Man" for #"Bat Man Videos" is designed
+
+Scenario: N11 VidoePlayer-design
+Given #"Bat Man" for the VidoePlayer "Bat Man Videos" is not designed
+When I design #"Bat Man" for the VidoePlayer "Bat Man Videos"
+Then #"Bat Man" for the VidoePlayer "Bat Man Videos" is designed
+
+Scenario: N12 design
+Given #"Bat Man" for #"Bat Man Videos" is not designed
+When I design #"Bat Man" for #"Bat Man Videos"
+Then #"Bat Man" for #"Bat Man Videos" is designed
+
+/*
+Scenario: VidoePlayer-video-DoNotdesign
+Given the video "<video>" for the VidoePlayer "<fieldname>" is not designed
+When I do not design the video "<video>" for the VidoePlayer "<fieldname>"
+Then the video "<video>" for the VidoePlayer "<fieldname>" is not designed
+*/
+
+Scenario: N13 VidoePlayer-video-DoNotdesign
+Given the video "Bat Man" for the VidoePlayer "Bat Man Videos" is not designed
+When I do not design the video "Bat Man" for the VidoePlayer "Bat Man Videos"
+Then the video "Bat Man" for the VidoePlayer "Bat Man Videos" is not designed
+
+Scenario: N14 video-DoNotdesign
+Given the video "Bat Man" for #"Bat Man Videos" is not designed
+When I do not design the video "Bat Man" for #"Bat Man Videos"
+Then the video "Bat Man" for #"Bat Man Videos" is not designed
+
+Scenario: N15 VidoePlayer-DoNotdesign
+Given #"Bat Man" for the VidoePlayer "Bat Man Videos" is not designed
+When I do not design #"Bat Man" for the VidoePlayer "Bat Man Videos"
+Then #"Bat Man" for the VidoePlayer "Bat Man Videos" is not designed
+
+Scenario: N16 DoNotdesign
+Given #"Bat Man" for #"Bat Man Videos" is not designed
+When I do not design #"Bat Man" for #"Bat Man Videos"
+Then #"Bat Man" for #"Bat Man Videos" is not designed
