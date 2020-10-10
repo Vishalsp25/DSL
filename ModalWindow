@@ -407,3 +407,141 @@ Scenario: N48 confirm
 Given #"content" is displayed
 When I do not confirm #"content"
 Then #"content" is not displayed
+
+//Negative Test cases
+
+/*
+Scenario: hit
+Given "ModalWindow" is hit
+When I hit "ModalWindow"
+Then "ModalWindow" is hit
+*/
+
+Scenario: N1 hit
+Given "ModalWindow" is hit
+When I hit "ModalWindow"
+Then #"ModalWindow" is hit
+
+Scenario: N2 hit
+Given #"ModalWindow" is hit
+When I hit #"ModalWindow"
+Then #"ModalWindow" is hit
+
+/*
+Scenario: DoNothit
+Given "ModalWindow" is not hit
+When I do not hit "ModalWindow"
+Then "ModalWindow" is not hit
+*/
+
+Scenario: N3 DoNothit
+Given "ModalWindow" is not hit
+When I do not hit "ModalWindow"
+Then #"ModalWindow" is not hit
+
+Scenario: N4 DoNothit
+Given #"ModalWindow" is not hit
+When I do not hit #"ModalWindow"
+Then #"ModalWindow" is not hit
+
+/*
+Scenario: ModalWindow-hit
+Given the ModalWindow "<tab name>" is hit
+When I hit the ModalWindow "<tab name>"
+Then the ModalWindow "<tab name>" is hit
+*/
+
+Scenario: N5 ModalWindow-hit
+Given the ModalWindow "ModalWindow" is hit
+When I hit the ModalWindow "ModalWindow"
+Then the ModalWindow "ModalWindow" is hit
+
+Scenario: N6 hit
+Given #"ModalWindow" is hit
+When I hit #"ModalWindow"
+Then #"ModalWindow" is hit
+
+/*
+Scenario: ModalWindow-DoNothit
+Given the ModalWindow "<tab name>" is not hit
+When I do not hit the ModalWindow "<tab name>"
+Then the ModalWindow "<tab name>" is hit
+*/
+
+Scenario: N7 ModalWindow-hit
+Given the ModalWindow "ModalWindow" is not hit
+When I do not hit the ModalWindow "ModalWindow"
+Then the ModalWindow "ModalWindow" is not hit
+
+Scenario: N8 hit
+Given #"ModalWindow" is not hit
+When I do not hit #"ModalWindow"
+Then #"ModalWindow" is not hit
+
+/*
+Scenario: display
+Given "content" is displayed
+When I hit "content"
+Then "content" is  displayed
+*/
+
+Scenario: N9 display
+Given "content" is displayed
+When I hit "content"
+Then #"content" is  displayed
+
+Scenario: N10 hit
+Given #"content" is displayed
+When I hit #"content"
+Then #"content" is  displayed
+
+/*
+Scenario: DoNothit
+Given "content" is not displayed
+When I do not hit "content"
+Then "content" is not displayed
+*/
+
+Scenario: N11 DoNothit
+Given "content" is not displayed
+When I do not hit "content"
+Then #"content" is not displayed
+
+Scenario: N12 DoNothit
+Given #"content" is not displayed
+When I do not hit #"content"
+Then #"content" is not displayed
+
+/*
+Scenario: content-hit
+Given the content "<tab name>" is displayed
+When I hit the content "<tab name>"
+Then the content "<tab name>" is  displayed
+*/
+
+Scenario: N13 content-hit
+Given the content "content" is displayed
+When I hit the content "content"
+Then the content "content" is  displayed
+
+Scenario: N14 hit
+Given #"content" is displayed
+When I hit #"content"
+Then #"content" is  displayed
+
+/*
+Scenario: content-DoNothit
+Given the content "<tab name>" is  displayed
+When I do not hit the content "<tab name>"
+Then the content "<tab name>" is not displayed
+*/
+
+Scenario: N15 content-hit
+Given the content "content" is  displayed
+When I do not hit the content "content"
+Then the content "content" is not displayed
+
+Scenario: N16 hit
+Given #"content" is displayed
+When I do not hit #"content"
+Then #"content" is not displayed
