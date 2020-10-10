@@ -529,3 +529,181 @@ Scenario: N82 DoNotfill in with
 Given #"Password" for #"Text Field" is not filled in
 When I do not fill in with #"Password" for #"Text Field"
 Then #"Password" for #"Text Field" is not filled in
+
+//Negative Test cases
+
+/*
+Scenario: value-read
+Given the value "<value name>" is not read
+When I read the value "<value name>"
+Then the value "<value name>" is read
+*/
+
+Scenario: N1 value-read
+Given the value "TextField" is not read
+When I read the value "TextField"
+Then the value "TextField" is read
+
+Scenario: N2 read
+Given #"TextField" is not read
+When I read #"TextField"
+Then #"TextField" is read
+
+/*
+Scenario: value-DoNotread
+Given the value "<value name>" is not read
+When I do not read the value "<value name>"
+Then the value "<value name>" is not read
+*/
+
+Scenario: N3 value-DoNotread
+Given the value "TextField" is not read
+When I do not read the value "TextField"
+Then the value "TextField" is not read
+
+Scenario: N4 DoNotread
+Given #"TextField" is not read
+When I do not read #"TextField"
+Then #"TextField" is not read
+
+/*
+Scenario: TextField-read
+Given the TextField "<value name>" is not read
+When I read the TextField "<value name>"
+Then the TextField "<value name>" is read
+*/
+
+Scenario: N5 TextField-read
+Given the TextField "TextField" is not read
+When I read the TextField "TextField"
+Then the TextField "TextField" is read
+
+Scenario: N6 read
+Given #"TextField" is not read
+When I read #"TextField"
+Then #"TextField" is read
+
+/*
+Scenario: TextField-DoNotread
+Given the TextField "<value name>" is not read
+When I do not read the TextField "<value name>"
+Then the TextField "<value name>" is not read
+*/
+
+Scenario: N7 TextField-read
+Given the TextField "TextField" is not read
+When I do not read the TextField "TextField"
+Then the TextField "TextField" is not read
+
+Scenario: N8 read
+Given #"TextField" is not read
+When I do not read #"TextField"
+Then #"TextField" is not read
+
+/*
+Scenario: Field-value-read
+Given the value "<value>" for the field "<fieldname>" is not read
+When I read the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is read
+*/
+
+Scenario: N9 Field-value-read
+Given the value "Password" for the field "Text Field" is not read
+When I read the value "Password" for the field "Text Field"
+Then the value "Password" for the field "Text Field" is read
+
+Scenario: N10 value-read
+Given the value "Password" for #"Text Field" is not read
+When I read the value "Password" for #"Text Field"
+Then the value "Password" for #"Text Field" is read
+
+Scenario: N11 Field-read
+Given #"Password" for the field "Text Field" is not read
+When I read #"Password" for the field "Text Field"
+Then #"Password" for the field "Text Field" is read
+
+Scenario: N12 read
+Given #"Password" for #"Text Field" is not read
+When I read #"Password" for #"Text Field"
+Then #"Password" for #"Text Field" is read
+
+/*
+Scenario: Field-value-DoNotread
+Given the value "<value>" for the field "<fieldname>" is not read
+When I do not read the value "<value>" for the field "<fieldname>"
+Then the value "<value>" for the field "<fieldname>" is not read
+*/
+
+Scenario: N13 Field-value-DoNotread
+Given the value "Password" for the field "Text Field" is not read
+When I do not read the value "Password" for the field "Text Field"
+Then the value "Password" for the field "Text Field" is not read
+
+Scenario: N14 value-DoNotread
+Given the value "Password" for #"Text Field" is not read
+When I do not read the value "Password" for #"Text Field"
+Then the value "Password" for #"Text Field" is not read
+
+Scenario: N15 Field-DoNotread
+Given #"Password" for the field "Text Field" is not read
+When I do not read #"Password" for the field "Text Field"
+Then #"Password" for the field "Text Field" is not read
+
+Scenario: N16 DoNotread
+Given #"Password" for #"Text Field" is not read
+When I do not read #"Password" for #"Text Field"
+Then #"Password" for #"Text Field" is not read
+
+/*
+Scenario: TextField-value-read
+Given the value "<value>" for the TextField "<fieldname>" is not read
+When I read the value "<value>" for the TextField "<fieldname>"
+Then the value "<value>" for the TextField "<fieldname>" is read
+*/
+
+Scenario: N17 TextField-value-read
+Given the value "Password" for the TextField "Text Field" is not read
+When I read the value "Password" for the TextField "Text Field"
+Then the value "Password" for the TextField "Text Field" is read
+
+Scenario: N18 value-read
+Given the value "Password" for #"Text Field" is not read
+When I read the value "Password" for #"Text Field"
+Then the value "Password" for #"Text Field" is read
+
+Scenario: N19 TextField-read
+Given #"Password" for the TextField "Text Field" is not read
+When I read #"Password" for the TextField "Text Field"
+Then #"Password" for the TextField "Text Field" is read
+
+Scenario: N20 read
+Given #"Password" for #"Text Field" is not read
+When I read #"Password" for #"Text Field"
+Then #"Password" for #"Text Field" is read
+
+/*
+Scenario: TextField-value-DoNotread
+Given the value "<value>" for the TextField "<fieldname>" is not read
+When I do not read the value "<value>" for the TextField "<fieldname>"
+Then the value "<value>" for the TextField "<fieldname>" is not read
+*/
+
+Scenario: N21 TextField-value-DoNotread
+Given the value "Password" for the TextField "Text Field" is not read
+When I do not read the value "Password" for the TextField "Text Field"
+Then the value "Password" for the TextField "Text Field" is not read
+
+Scenario: N22 value-DoNotread
+Given the value "Password" for #"Text Field" is not read
+When I do not read the value "Password" for #"Text Field"
+Then the value "Password" for #"Text Field" is not read
+
+Scenario: N23 TextField-DoNotread
+Given #"Password" for the TextField "Text Field" is not read
+When I do not read #"Password" for the TextField "Text Field"
+Then #"Password" for the TextField "Text Field" is not read
+
+Scenario: N24 DoNotread
+Given #"Password" for #"Text Field" is not read
+When I do not read #"Password" for #"Text Field"
+Then #"Password" for #"Text Field" is not read
