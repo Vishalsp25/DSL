@@ -407,3 +407,141 @@ Scenario: N49 click
 Given #"message" is not displayed
 When I do not click #"message"
 Then #"message" is not displayed
+
+//Negative Test cases
+
+/*
+Scenario: open
+Given "Notification" is opened 
+When I open "Notification"
+Then "Notification" is opened 
+*/
+
+Scenario: N1 open
+Given "Notification" is opened 
+When I open #"Notification"
+Then #"Notification" is opened 
+
+Scenario: N2 open
+Given #"Notification" is opened 
+When I open #"Notification"
+Then #"Notification" is opened 
+
+/*
+Scenario: DoNotopen
+Given "Notification" is not opened 
+When I do not open "Notification"
+Then "Notification" is not opened 
+*/
+
+Scenario: N3 DoNotopen
+Given "Notification" is not opened 
+When I do not open "Notification"
+Then #"Notification" is not opened 
+
+Scenario: N4 DoNotopen
+Given #"Notification" is not opened 
+When I do not open #"Notification"
+Then #"Notification" is not opened 
+
+/*
+Scenario: Notification-open
+Given the Notification "<tab name>" is opened 
+When I open the Notification "<tab name>"
+Then the Notification "<tab name>" is opened 
+*/
+
+Scenario: N5 Notification-open
+Given the Notification "Notification" is opened 
+When I open the Notification "Notification"
+Then the Notification "Notification" is opened 
+
+Scenario: N6 open
+Given #"Notification" is opened 
+When I open #"Notification"
+Then #"Notification" is opened 
+
+/*
+Scenario: Notification-DoNotopen
+Given the Notification "<tab name>" is not opened 
+When I do not open the Notification "<tab name>"
+Then the Notification "<tab name>" is opened 
+*/
+
+Scenario: N7 Notification-open
+Given the Notification "Notification" is not opened 
+When I do not open the Notification "Notification"
+Then the Notification "Notification" is not opened 
+
+Scenario: N8 open
+Given #"Notification" is not opened 
+When I do not open #"Notification"
+Then #"Notification" is not opened 
+
+/*
+Scenario: display
+Given "message" is not displayed
+When I open "message"
+Then "message" is displayed
+*/
+
+Scenario: N9 display
+Given "message" is not displayed
+When I open "message"
+Then #"message" is displayed
+
+Scenario: N10 open
+Given #"message" is not displayed
+When I open #"message"
+Then #"message" is displayed
+
+/*
+Scenario: DoNotopen
+Given "message" is displayed
+When I do not open "message"
+Then "message" is displayed
+*/
+
+Scenario: N11 DoNotopen
+Given "message" is displayed
+When I do not open "message"
+Then #"message" is displayed
+
+Scenario: N12 DoNotopen
+Given #"message" is displayed
+When I do not open #"message"
+Then #"message" is not displayed
+
+/*
+Scenario: message-open
+Given the message "<tab name>" is not displayed
+When I open the message "<tab name>"
+Then the message "<tab name>" is displayed
+*/
+
+Scenario: N13 message-open
+Given the message "message" is not displayed
+When I open the message "message"
+Then the message "message" is displayed
+
+Scenario: N14 open
+Given #"message" is not displayed
+When I open #"message"
+Then #"message" is displayed
+
+/*
+Scenario: message-DoNotopen
+Given the message "<tab name>" is  not displayed
+When I do not open the message "<tab name>"
+Then the message "<tab name>" is  not displayed
+*/
+
+Scenario: N15 message-open
+Given the message "message" is  not displayed
+When I do not open the message "message"
+Then the message "message" is  not displayed
+
+Scenario: N16 open
+Given #"message" is not displayed
+When I do not open #"message"
+Then #"message" is not displayed
