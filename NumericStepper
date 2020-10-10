@@ -636,3 +636,181 @@ Scenario: N86 DoNotdecrease
 Given #"Number" for #"Number Range" is not decreased
 When I do not decrease #"Number" for #"Number Range"
 Then #"Number" for #"Number Range" is not decreased
+
+//Negative Test cases
+
+/*
+Scenario: value-write
+Given the value "<any value>" is not written
+When I write the value "<any value>"
+Then the value "<any value>" is written
+*/
+
+Scenario: N1 value-write
+Given the value "NumericStepper" is not written
+When I write the value "NumericStepper"
+Then the value "NumericStepper" is written
+
+Scenario: N2 write
+Given #"NumericStepper" is not written
+When I write #"NumericStepper"
+Then #"NumericStepper" is written
+
+/*
+Scenario: value-DoNotwrite
+Given the value "<any value>" is not written
+When I do not write the value "<any value>"
+Then the value "<any value>" is not written
+*/
+
+Scenario: N3 value-DoNotwrite
+Given the value "NumericStepper" is not written
+When I do not write the value "NumericStepper"
+Then the value "NumericStepper" is not written
+
+Scenario: N4 DoNotwrite
+Given #"NumericStepper" is not written
+When I do not write #"NumericStepper"
+Then #"NumericStepper" is not written
+
+/*
+Scenario: NumericStepper-write
+Given the NumericStepper "<any value>" is not written
+When I write the NumericStepper "<any value>"
+Then the NumericStepper "<any value>" is written
+*/
+
+Scenario: N5 NumericStepper-write
+Given the NumericStepper "NumericStepper" is not written
+When I write the NumericStepper "NumericStepper"
+Then the NumericStepper "NumericStepper" is written
+
+Scenario: N6 write
+Given #"NumericStepper" is not written
+When I write #"NumericStepper"
+Then #"NumericStepper" is written
+
+/*
+Scenario: NumericStepper-DoNotwrite
+Given the NumericStepper "<any value>" is not written
+When I do not write the NumericStepper "<any value>"
+Then the NumericStepper "<any value>" is not written
+*/
+
+Scenario: N7 NumericStepper-write
+Given the NumericStepper "NumericStepper" is not written
+When I do not write the NumericStepper "NumericStepper"
+Then the NumericStepper "NumericStepper" is not written
+
+Scenario: N8 write
+Given #"NumericStepper" is not written
+When I do not write #"NumericStepper"
+Then #"NumericStepper" is not written
+
+/*
+Scenario: value-value-write
+Given the value "<value>" for the value "<valuename>" is not written
+When I write the value "<value>" for the value "<valuename>"
+Then the value "<value>" for the value "<valuename>" is written
+*/
+
+Scenario: N9 value-value-write
+Given the value "Number" for the value "Number Range" is not written
+When I write the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is written
+
+Scenario: N10 value-write
+Given the value "Number" for #"Number Range" is not written
+When I write the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is written
+
+Scenario: N11 value-write
+Given #"Number" for the value "Number Range" is not written
+When I write #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is written
+
+Scenario: N12 write
+Given #"Number" for #"Number Range" is not written
+When I write #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is written
+
+/*
+Scenario: value-value-DoNotwrite
+Given the value "<value>" for the value "<valuename>" is not written
+When I do not write the value "<value>" for the value "<valuename>"
+Then the value "<value>" for the value "<valuename>" is not written
+*/
+
+Scenario: N13 value-value-DoNotwrite
+Given the value "Number" for the value "Number Range" is not written
+When I do not write the value "Number" for the value "Number Range"
+Then the value "Number" for the value "Number Range" is not written
+
+Scenario: N14 value-DoNotwrite
+Given the value "Number" for #"Number Range" is not written
+When I do not write the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is not written
+
+Scenario: N15 value-DoNotwrite
+Given #"Number" for the value "Number Range" is not written
+When I do not write #"Number" for the value "Number Range"
+Then #"Number" for the value "Number Range" is not written
+
+Scenario: N16 DoNotwrite
+Given #"Number" for #"Number Range" is not written
+When I do not write #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is not written
+
+/*
+Scenario: NumericStepper-value-write
+Given the value "<value>" for the NumericStepper "<valuename>" is not written
+When I write the value "<value>" for the NumericStepper "<valuename>"
+Then the value "<value>" for the NumericStepper "<valuename>" is written
+*/
+
+Scenario: N18 NumericStepper-value-write
+Given the value "Number" for the NumericStepper "Number Range" is not written
+When I write the value "Number" for the NumericStepper "Number Range"
+Then the value "Number" for the NumericStepper "Number Range" is written
+
+Scenario: N19 value-write
+Given the value "Number" for #"Number Range" is not written
+When I write the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is written
+
+Scenario: N20 NumericStepper-write
+Given #"Number" for the NumericStepper "Number Range" is not written
+When I write #"Number" for the NumericStepper "Number Range"
+Then #"Number" for the NumericStepper "Number Range" is written
+
+Scenario: N21 write
+Given #"Number" for #"Number Range" is not written
+When I write #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is written
+
+/*
+Scenario: NumericStepper-value-DoNotwrite
+Given the value "<value>" for the NumericStepper "<valuename>" is not written
+When I do not write the value "<value>" for the NumericStepper "<valuename>"
+Then the value "<value>" for the NumericStepper "<valuename>" is not written
+*/
+
+Scenario: N22 NumericStepper-value-DoNotwrite
+Given the value "Number" for the NumericStepper "Number Range" is not written
+When I do not write the value "Number" for the NumericStepper "Number Range"
+Then the value "Number" for the NumericStepper "Number Range" is not written
+
+Scenario: N23 value-DoNotwrite
+Given the value "Number" for #"Number Range" is not written
+When I do not write the value "Number" for #"Number Range"
+Then the value "Number" for #"Number Range" is not written
+
+Scenario: N24 NumericStepper-DoNotwrite
+Given #"Number" for the NumericStepper "Number Range" is not written
+When I do not write #"Number" for the NumericStepper "Number Range"
+Then #"Number" for the NumericStepper "Number Range" is not written
+
+Scenario: N25 DoNotwrite
+Given #"Number" for #"Number Range" is not written
+When I do not write #"Number" for #"Number Range"
+Then #"Number" for #"Number Range" is not written
