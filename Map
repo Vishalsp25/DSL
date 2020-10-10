@@ -270,3 +270,142 @@ Scenario: N8 DoNotswitch to street map
 Given #"Map" is not switched to street map
 When I do not switch "to street map"
 Then #"Map" is switched to street map
+
+//Negative Test cases
+
+/*
+Scenario: drag ['in']
+Given "World Map" is dragged in
+When I drag ['in'] "World Map"
+Then "World Map" is dragged in
+*/
+
+Scenario: N1 drag in
+Given "World Map" is dragged in
+When I drag ['in']  "World Map"
+Then #"World Map" is dragged in
+
+Scenario: N2 drag in
+Given #"Map" is dragged in
+When I drag ['in'] #"Map"
+Then #"World Map" is dragged in
+
+/*
+Scenario: Donotdrag ['in']
+Given "World Map" is not dragged in
+When I do not drag ['in'] "World Map"
+Then "World Map" is dragged in
+*/
+
+Scenario: N3 Donotdrag in
+Given "World Map" is not dragged in
+When I do not drag ['in'] "World Map"
+Then #"World Map" is not dragged in
+
+Scenario: N4 Donotdrag in
+Given #"Map" is not dragged in
+When I do not drag ['in'] #"Map"
+Then #"Map" is not dragged in
+
+/*
+Scenario: Map-drag ['in']
+Given the Map "<World Map>" is dragged in
+When I drag ['in'] the Map "<World Map>"
+Then the Map "<World Map>" is dragged in
+*/
+
+Scenario: N5 Map-drag in
+Given the Map "Map" is dragged in
+When I drag ['in'] the Map "Map"
+Then the Map "Map" is dragged in
+
+Scenario: N6 drag in
+Given #"Map" is dragged in
+When I drag ['in'] #"Map"
+Then #"Map" is dragged in
+
+/*
+Scenario: Map-Donotdrag ['in']
+Given the Map "<World Map>" is not dragged in
+When I do not drag ['in'] the Map "<World Map>"
+Then the Map "<World Map>" is dragged in
+*/
+
+Scenario: N7 Map-drag in
+Given the Map "Map" is not dragged in
+When I do not drag ['in'] the Map "Map"
+Then the Map "Map" is dragged in
+
+Scenario: N8 drag in
+Given #"Map" is not dragged in
+When I do not drag ['in'] #"Map"
+Then #"Map" is dragged in
+
+/*
+Scenario: drag out
+Given "World Map" is dragged out
+When I drag out "World Map"
+Then "World Map" is dragged out
+*/
+
+Scenario: N9 drag Out
+Given "World Map" is dragged out
+When I drag ['out'] "World Map"
+Then #"World Map" is dragged out
+
+Scenario: N10 drag Out
+Given #"Map" is dragged out
+When I drag ['out'] #"Map"
+Then #"Map" is dragged out
+
+/*
+Scenario: Dinot drag out
+Given "World Map" is not dragged out
+When I do not drag out "World Map"
+Then "World Map" is dragged out
+*/
+
+Scenario: N11 Dinot drag Out
+Given "World Map" is not dragged out
+When I do not drag ['out'] "World Map"
+Then #"World Map" is dragged out
+
+Scenario: N12 DDinot drag Out
+Given #"Map" is not dragged out
+When I do not drag ['out'] #"Map"
+Then #"Map" is dragged out
+
+/*
+Scenario: Map-drag out
+Given the Map "<World Map>" is dragged out
+When I drag out the Map "<World Map>"
+Then the Map "<World Map>" is dragged out
+*/
+
+Scenario: N13 Map-drag Out
+Given the Map "Map" is dragged out
+When I drag ['out'] the Map "Map"
+Then the Map "Map" is dragged out
+
+Scenario: N14 drag Out
+Given #"Map" is dragged out
+When I drag ['out'] #"Map"
+Then #"Map" is dragged out
+
+/*
+Scenario: Map-Donotdrag out
+Given the Map "<World Map>" is not dragged out
+When I do not drag out the Map "<World Map>"
+Then the Map "<World Map>" is dragged out
+*/
+
+Scenario: N15 Map-drag Out
+Given the Map "Map" is not dragged out
+When I do not drag ['out'] the Map "Map"
+Then the Map "Map" is dragged out
+
+Scenario: N16 drag Out
+Given #"Map" is not dragged out
+When I do not drag ['out'] #"Map"
+Then #"Map" is dragged out
+
