@@ -1169,3 +1169,392 @@ Scenario: N221
 Given #"Header" of #"Page layout" is not compared 
 When I do not compare #"Header" of #"Page layout"
 Then #"Header" of #"Page layout" is not compared 
+
+//Negative Test cases
+
+Scenario: N1
+Given the row #"Article" is pressed
+When I do not press the row #"Article"
+Then the row #"Article" is not pressed
+
+Scenario: N2
+Given #"Article" is pressed
+When I do not press #"Article"
+Then #"Article" is not pressed
+
+Scenario: N3
+Given the row #"Article" is not pressed
+When I do not press the row #"Article"
+Then the row #"Article" is pressed
+
+Scenario: N4
+Given #"Article" is not pressed
+When I do not press #"Article"
+Then #"Article" is pressed
+
+Scenario: N5
+Given the row #"Article" is pressed
+When I do not press the row #"Article"
+Then the row #"Article" is not pressed
+
+Scenario: N6
+Given #"Article" is pressed
+When I do not press #"Article"
+Then #"Article" is not pressed
+
+Scenario: N7
+Given the row #"Article" is not pressed
+When I do not press the row #"Article"
+Then the row #"Article" is pressed
+
+Scenario: N8
+Given #"Article" is not pressed
+When I do not press #"Article"
+Then #"Article" is pressed
+
+Scenario: N9 
+Given the row "Header" of the table #"Page layout" is not pressed
+When I press the row "Header" of the table #"Page layout"
+Then the row #"Header" is pressed 
+
+Scenario: N10
+Given the row "Header" of #"Page layout" is not pressed
+When I press the row "Header" of #"Page layout"
+Then the row #"Header" is pressed
+
+Scenario: N11
+Given "Header" of the table #"Page layout" is not pressed 
+When I press #"Header" of the table #"Page layout"
+Then #"Header" is pressed 
+
+Scenario: N12
+Given #"Header" of #"Page layout" is not pressed 
+When I press "Header" of #"Page layout"
+Then #"Header" is pressed 
+
+Scenario: N13 
+Given the row "Header" of the table #"Page layout" is not pressed 
+When I do not press the row "Header" of the table #"Page layout"
+Then the row #"Header" is not pressed 
+
+Scenario: N14 
+Given the row "Header" of #"Page layout" is not pressed 
+When I do not press the row #"Header" 
+Then the row #"Header" is not pressed 
+
+Scenario: N15 
+Given #"Header" of the table "Page layout" is not pressed 
+When I do not press "Header" of the table #"Page layout"
+Then #"Header" is not pressed 
+
+Scenario: N16 
+Given #"Header" of #"Page layout" is not pressed 
+When I do not press #"Header" of #"Page layout"
+Then the row #"Header" is not pressed 
+
+
+Scenario: N17 
+Given the row "Header" for the  #"Page layout" is not pressed 
+When I press the row "Header" of the table #"Page layout"
+Then the row #"Header" is pressed 
+
+Scenario: N18
+Given the row "Header" of #"Page layout" is not pressed 
+When I press the row "Header" of #"Page layout"
+Then the row "Header" of #"Page layout" is pressed 
+
+
+Scenario: N19 
+Given #"Header" of the table "Page layout" is not pressed 
+When I press #"Header" of the table "Page layout"
+Then #"Header" of the table "Page layout" is pressed 
+
+Scenario: N20
+Given #"Header" of #"Page layout" is not pressed 
+When I press #"Header" of #"Page layout"
+Then #"Header" of #"Page layout" is pressed
+
+/*
+Scenario: row-row-DoNotpress
+Given the row "<row>" is not pressed of the table "<rowname>"
+When I do not press the row "<row>" of the table "<rowname>"
+Then the row "<row>" is not pressed of the table "<rowname>"
+*/
+
+Scenario: N21 
+Given the row "Header" of the table "Page layout" is not pressed 
+When I do not press the row "Header" of the table "Page layout"
+Then the row "Header" of the table "Page layout" is not pressed 
+
+Scenario: N22
+Given the row "Header" of #"Page layout" is not pressed 
+When I do not press the row "Header" of #"Page layout"
+Then the row "Header" of #"Page layout" is not pressed 
+
+Scenario: N23 
+Given #"Header"  of the table "Page layout" is not pressed 
+When I do not press #"Header" of the table "Page layout"
+Then #"Header" of the table "Page layout" is not pressed 
+
+Scenario: N24 
+Given #"Header" of #"Page layout" is not pressed 
+When I do not press #"Header" of #"Page layout"
+Then #"Header" of #"Page layout" is not pressed 
+
+Scenario: N25
+Given the column #"Article" is pressed
+When I do not press the column #"Article"
+Then the column #"Article" is not pressed
+
+Scenario: N26
+Given #"Article" is pressed
+When I do not press #"Article"
+Then #"Article" is not pressed
+
+Scenario: N27
+Given the column #"Article" is not pressed
+When I do not press the column #"Article"
+Then the column #"Article" is pressed
+
+Scenario: N28
+Given #"Article" is not pressed
+When I do not  press #"Article"
+Then #"Article" is pressed
+
+Scenario: N29
+Given the column #"Article" is pressed
+When I do not press the column #"Article"
+Then the column #"Article" is not pressed
+
+Scenario: N30
+Given #"Article" is pressed
+When I do not press #"Article"
+Then #"Article" is not pressed
+
+Scenario: N31
+Given the column #"Article" is not pressed
+When I do not press the column #"Article"
+Then the column #"Article" is pressed
+
+Scenario: N32
+Given #"Article" is not pressed
+When I do not press #"Article"
+Then #"Article" is pressed
+
+Scenario: N33
+Given the column "Header" of the table #"Page layout" is not pressed
+When I press the column "Header" of the table #"Page layout"
+Then the column #"Header" is pressed 
+
+Scenario: N34
+Given the column "Header" of #"Page layout" is not pressed
+When I press the column "Header" of #"Page layout"
+Then the column #"Header" is pressed
+
+Scenario: N35
+Given "Header" of the table #"Page layout" is not pressed 
+When I press #"Header" of the table #"Page layout"
+Then #"Header" is pressed 
+
+Scenario: N36 
+Given #"Header" of #"Page layout" is not pressed 
+When I press "Header" of #"Page layout"
+Then #"Header" is pressed 
+
+Scenario: N37
+Given the column "Header" of the table #"Page layout" is not pressed 
+When I do not press the column "Header" of the table #"Page layout"
+Then the column #"Header" is not pressed 
+
+Scenario: N38 
+Given the column "Header" of #"Page layout" is not pressed 
+When I do not press the column #"Header" 
+Then the column #"Header" is not pressed 
+
+Scenario: N39
+Given #"Header" of the table "Page layout" is not pressed 
+When I do not press "Header" of the table #"Page layout"
+Then #"Header" is not pressed 
+
+Scenario: N40
+Given #"Header" of #"Page layout" is not pressed 
+When I do not press #"Header" of #"Page layout"
+Then the column #"Header" is not pressed 
+
+
+Scenario: N41
+Given the column "Header" for the  #"Page layout" is not pressed 
+When I press the column "Header" of the table #"Page layout"
+Then the column #"Header" is pressed 
+
+Scenario: N42
+Given the column "Header" of #"Page layout" is not pressed 
+When I press the column "Header" of #"Page layout"
+Then the column "Header" of #"Page layout" is pressed 
+
+
+Scenario: N43 
+Given #"Header" of the table "Page layout" is not pressed 
+When I press #"Header" of the table "Page layout"
+Then #"Header" of the table "Page layout" is pressed 
+
+Scenario: N44 
+Given #"Header" of #"Page layout" is not pressed 
+When I press #"Header" of #"Page layout"
+Then #"Header" of #"Page layout" is pressed
+
+/*
+Scenario: column-column-DoNotpress
+Given the column "<column>" is not pressed of the table "<columnname>"
+When I do not press the column "<column>" of the table "<columnname>"
+Then the column "<column>" is not pressed of the table "<columnname>"
+*/
+
+Scenario: N45 
+Given the column "Header" of the table "Page layout" is not pressed 
+When I do not press the column "Header" of the table "Page layout"
+Then the column "Header" of the table "Page layout" is not pressed 
+
+Scenario: N46
+Given the column "Header" of #"Page layout" is not pressed 
+When I do not press the column "Header" of #"Page layout"
+Then the column "Header" of #"Page layout" is not pressed 
+
+Scenario: N47 
+Given #"Header"  of the table "Page layout" is not pressed 
+When I do not press #"Header" of the table "Page layout"
+Then #"Header" of the table "Page layout" is not pressed 
+
+Scenario: N48 
+Given #"Header" of #"Page layout" is not pressed 
+When I do not press #"Header" of #"Page layout"
+Then #"Header" of #"Page layout" is not pressed 
+
+Scenario: N49
+Given the cell #"Article" is pressed
+When I do not press the cell #"Article"
+Then the cell #"Article" is not pressed
+
+Scenario: N50
+Given #"Article" is pressed
+When I do not press #"Article"
+Then #"Article" is not pressed
+
+Scenario: N51
+Given the cell #"Article" is not pressed
+When I do not press the cell #"Article"
+Then the cell #"Article" is pressed
+
+Scenario: N52
+Given #"Article" is not pressed
+When I do not press #"Article"
+Then #"Article" is pressed
+
+Scenario: N53
+Given the cell #"Article" is pressed
+When I do not press the cell #"Article"
+Then the cell #"Article" is not pressed
+
+Scenario: N54
+Given #"Article" is pressed
+When I do not press #"Article"
+Then #"Article" is not pressed
+
+Scenario: N55 
+Given the cell #"Article" is not pressed
+When I do not press the cell #"Article"
+Then the cell #"Article" is pressed
+
+Scenario: N56 
+Given #"Article" is not pressed
+When I do not press #"Article"
+Then #"Article" is pressed
+
+Scenario: N57
+Given the cell "Header" of the table #"Page layout" is not pressed
+When I press the cell "Header" of the table #"Page layout"
+Then the cell #"Header" is pressed 
+
+Scenario: N58
+Given the cell "Header" of #"Page layout" is not pressed
+When I press the cell "Header" of #"Page layout"
+Then the cell #"Header" is pressed
+
+Scenario: N59
+Given "Header" of the table #"Page layout" is not pressed 
+When I press #"Header" of the table #"Page layout"
+Then #"Header" is pressed 
+
+Scenario: N60 
+Given #"Header" of #"Page layout" is not pressed 
+When I press "Header" of #"Page layout"
+Then #"Header" is pressed 
+
+Scenario: N61 
+Given the cell "Header" of the table #"Page layout" is not pressed 
+When I do not press the cell "Header" of the table #"Page layout"
+Then the cell #"Header" is not pressed 
+
+Scenario: N62
+Given the cell "Header" of #"Page layout" is not pressed 
+When I do not press the cell #"Header" 
+Then the cell #"Header" is not pressed 
+
+Scenario: N63
+Given #"Header" of the table "Page layout" is not pressed 
+When I do not press "Header" of the table #"Page layout"
+Then #"Header" is not pressed 
+
+Scenario: N64 
+Given #"Header" of #"Page layout" is not pressed 
+When I do not press #"Header" of #"Page layout"
+Then the cell #"Header" is not pressed 
+
+
+Scenario: N65 
+Given the cell "Header" for the  #"Page layout" is not pressed 
+When I press the cell "Header" of the table #"Page layout"
+Then the cell #"Header" is pressed 
+
+Scenario: N66
+Given the cell "Header" of #"Page layout" is not pressed 
+When I press the cell "Header" of #"Page layout"
+Then the cell "Header" of #"Page layout" is pressed 
+
+
+Scenario: N67
+Given #"Header" of the table "Page layout" is not pressed 
+When I press #"Header" of the table "Page layout"
+Then #"Header" of the table "Page layout" is pressed 
+
+Scenario: N68
+Given #"Header" of #"Page layout" is not pressed 
+When I press #"Header" of #"Page layout"
+Then #"Header" of #"Page layout" is pressed
+
+/*
+Scenario: cell-cell-DoNotpress
+Given the cell "<cell>" is not pressed of the table "<cellname>"
+When I do not press the cell "<cell>" of the table "<cellname>"
+Then the cell "<cell>" is not pressed of the table "<cellname>"
+*/
+
+Scenario: N69 
+Given the cell "Header" of the table "Page layout" is not pressed 
+When I do not press the cell "Header" of the table "Page layout"
+Then the cell "Header" of the table "Page layout" is not pressed 
+
+Scenario: N70 
+Given the cell "Header" of #"Page layout" is not pressed 
+When I do not press the cell "Header" of #"Page layout"
+Then the cell "Header" of #"Page layout" is not pressed 
+
+Scenario: N71 
+Given #"Header"  of the table "Page layout" is not pressed 
+When I do not press #"Header" of the table "Page layout"
+Then #"Header" of the table "Page layout" is not pressed 
+
+Scenario: N72
+Given #"Header" of #"Page layout" is not pressed 
+When I do not press #"Header" of #"Page layout"
+Then #"Header" of #"Page layout" is not pressed 
