@@ -134,3 +134,73 @@ Scenario: N16 switch off
 Given #"Togglebutton" is not switched off
 When I do not switch ['off'] #"Togglebutton"
 Then #"Togglebutton" is switched off
+
+// Negative Test cases
+
+/*
+Scenario: press ['on']
+Given "Toggle button" is pressed on
+When I press ['on'] "Toggle button"
+Then "Toggle button" is pressed on
+*/
+
+Scenario: N1 press on
+Given "Toggle button" is pressed on
+When I press ['on']  "Toggle button"
+Then #"Toggle button" is pressed on
+
+Scenario: N2 press on
+Given #"ToggleButton" is pressed on
+When I press ['on'] #"ToggleButton"
+Then #"Toggle Button" is pressed on
+
+/*
+Scenario: DoNotpress ['on']
+Given "Toggle button" is not pressed on
+When I do not press ['on'] "Toggle button"
+Then "Toggle button" is pressed on
+*/
+
+Scenario: N3 DoNotpress on
+Given "Toggle button" is not pressed on
+When I do not press ['on'] "Toggle button"
+Then #"Toggle button" is not pressed on
+
+Scenario: N4 DoNotpress on
+Given #"ToggleButton" is not pressed on
+When I do not press ['on'] #"ToggleButton"
+Then #"ToggleButton" is not pressed on
+
+/*
+Scenario: ToggleButton-press ['on']
+Given the ToggleButton "<tab name>" is pressed on
+When I press ['on'] the ToggleButton "<tab name>"
+Then the ToggleButton "<tab name>" is pressed on
+*/
+
+Scenario: N5 ToggleButton-press on
+Given the ToggleButton "ToggleButton" is pressed on
+When I press ['on'] the ToggleButton "ToggleButton"
+Then the ToggleButton "ToggleButton" is pressed on
+
+Scenario: N6 press on
+Given #"ToggleButton" is pressed on
+When I press ['on'] #"ToggleButton"
+Then #"ToggleButton" is pressed on
+
+/*
+Scenario: ToggleButton-DoNotpress ['on']
+Given the ToggleButton "<tab name>" is not pressed on
+When I do not press ['on'] the ToggleButton "<tab name>"
+Then the ToggleButton "<tab name>" is pressed on
+*/
+
+Scenario: N7 ToggleButton-press on
+Given the ToggleButton "ToggleButton" is not pressed on
+When I do not press ['on'] the ToggleButton "ToggleButton"
+Then the ToggleButton "ToggleButton" is pressed on
+
+Scenario: N8 press on
+Given #"ToggleButton" is not pressed on
+When I do not press ['on'] #"ToggleButton"
+Then #"ToggleButton" is pressed on
