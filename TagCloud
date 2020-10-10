@@ -705,3 +705,181 @@ Scenario: N96 DoNotclick
 Given #"Information" for #"Text data" is not clicked
 When I do not click #"Information" for #"Text data"
 Then #"Information" for #"Text data" is not clicked
+
+//Negative Test cases
+
+/*
+Scenario: word-read
+Given the word "<word>" is not read
+When I read the word "<word>"
+Then the word "<word>" is read
+*/
+
+Scenario: N1 word-read
+Given the word "TagCloud" is not read
+When I read the word "TagCloud"
+Then the word "TagCloud" is read
+
+Scenario: N2 read
+Given #"TagCloud" is not read
+When I read #"TagCloud"
+Then #"TagCloud" is read
+
+/*
+Scenario: word-DoNotread
+Given the word "<word>" is not read
+When I do not read the word "<word>"
+Then the word "<word>" is not read
+*/
+
+Scenario: N3 word-DoNotread
+Given the word "TagCloud" is not read
+When I do not read the word "TagCloud"
+Then the word "TagCloud" is not read
+
+Scenario: N4 DoNotread
+Given #"TagCloud" is not read
+When I do not read #"TagCloud"
+Then #"TagCloud" is not read
+
+/*
+Scenario: TagCloud-read
+Given the TagCloud "<word>" is not read
+When I read the TagCloud "<word>"
+Then the TagCloud "<word>" is read
+*/
+
+Scenario: N5 TagCloud-read
+Given the TagCloud "TagCloud" is not read
+When I read the TagCloud "TagCloud"
+Then the TagCloud "TagCloud" is read
+
+Scenario: N6 read
+Given #"TagCloud" is not read
+When I read #"TagCloud"
+Then #"TagCloud" is read
+
+/*
+Scenario: TagCloud-DoNotread
+Given the TagCloud "<word>" is not read
+When I do not read the TagCloud "<word>"
+Then the TagCloud "<word>" is not read
+*/
+
+Scenario: N7 TagCloud-read
+Given the TagCloud "TagCloud" is not read
+When I do not read the TagCloud "TagCloud"
+Then the TagCloud "TagCloud" is not read
+
+Scenario: N8 read
+Given #"TagCloud" is not read
+When I do not read #"TagCloud"
+Then #"TagCloud" is not read
+
+/*
+Scenario: Field-word-read
+Given the word "<word>" for the field "<fieldname>" is not read
+When I read the word "<word>" for the field "<fieldname>"
+Then the word "<word>" for the field "<fieldname>" is read
+*/
+
+Scenario: N9 Field-word-read
+Given the word "Information" for the field "Text data" is not read
+When I read the word "Information" for the field "Text data"
+Then the word "Information" for the field "Text data" is read
+
+Scenario: N10 word-read
+Given the word "Information" for #"Text data" is not read
+When I read the word "Information" for #"Text data"
+Then the word "Information" for #"Text data" is read
+
+Scenario: N11 Field-read
+Given #"Information" for the field "Text data" is not read
+When I read #"Information" for the field "Text data"
+Then #"Information" for the field "Text data" is read
+
+Scenario: N12 read
+Given #"Information" for #"Text data" is not read
+When I read #"Information" for #"Text data"
+Then #"Information" for #"Text data" is read
+
+/*
+Scenario: Field-word-DoNotread
+Given the word "<word>" for the field "<fieldname>" is not read
+When I do not read the word "<word>" for the field "<fieldname>"
+Then the word "<word>" for the field "<fieldname>" is not read
+*/
+
+Scenario: N13 Field-word-DoNotread
+Given the word "Information" for the field "Text data" is not read
+When I do not read the word "Information" for the field "Text data"
+Then the word "Information" for the field "Text data" is not read
+
+Scenario: N14 word-DoNotread
+Given the word "Information" for #"Text data" is not read
+When I do not read the word "Information" for #"Text data"
+Then the word "Information" for #"Text data" is not read
+
+Scenario: N15 Field-DoNotread
+Given #"Information" for the field "Text data" is not read
+When I do not read #"Information" for the field "Text data"
+Then #"Information" for the field "Text data" is not read
+
+Scenario: N16 DoNotread
+Given #"Information" for #"Text data" is not read
+When I do not read #"Information" for #"Text data"
+Then #"Information" for #"Text data" is not read
+
+/*
+Scenario: TagCloud-word-read
+Given the word "<word>" for the TagCloud "<fieldname>" is not read
+When I read the word "<word>" for the TagCloud "<fieldname>"
+Then the word "<word>" for the TagCloud "<fieldname>" is read
+*/
+
+Scenario: N17 TagCloud-word-read
+Given the word "Information" for the TagCloud "Text data" is not read
+When I read the word "Information" for the TagCloud "Text data"
+Then the word "Information" for the TagCloud "Text data" is read
+
+Scenario: N18 word-read
+Given the word "Information" for #"Text data" is not read
+When I read the word "Information" for #"Text data"
+Then the word "Information" for #"Text data" is read
+
+Scenario: N19 TagCloud-read
+Given #"Information" for the TagCloud "Text data" is not read
+When I read #"Information" for the TagCloud "Text data"
+Then #"Information" for the TagCloud "Text data" is read
+
+Scenario: N20 read
+Given #"Information" for #"Text data" is not read
+When I read #"Information" for #"Text data"
+Then #"Information" for #"Text data" is read
+
+/*
+Scenario: TagCloud-word-DoNotread
+Given the word "<word>" for the TagCloud "<fieldname>" is not read
+When I do not read the word "<word>" for the TagCloud "<fieldname>"
+Then the word "<word>" for the TagCloud "<fieldname>" is not read
+*/
+
+Scenario: N21 TagCloud-word-DoNotread
+Given the word "Information" for the TagCloud "Text data" is not read
+When I do not read the word "Information" for the TagCloud "Text data"
+Then the word "Information" for the TagCloud "Text data" is not read
+
+Scenario: N22 word-DoNotread
+Given the word "Information" for #"Text data" is not read
+When I do not read the word "Information" for #"Text data"
+Then the word "Information" for #"Text data" is not read
+
+Scenario: N23 TagCloud-DoNotread
+Given #"Information" for the TagCloud "Text data" is not read
+When I do not read #"Information" for the TagCloud "Text data"
+Then #"Information" for the TagCloud "Text data" is not read
+
+Scenario: N24 DoNotread
+Given #"Information" for #"Text data" is not read
+When I do not read #"Information" for #"Text data"
+Then #"Information" for #"Text data" is not read
