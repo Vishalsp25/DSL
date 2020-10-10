@@ -528,3 +528,181 @@ Scenario: N70 DoNotfill in with
 Given #"Welcome" for #"Text area" is not filled in
 When I do not fill in with #"Welcome" for #"Text area"
 Then #"Welcome" for #"Text area" is not filled in
+
+//Negative Test cases
+
+/*
+Scenario: text-write
+Given the text "<any text>" is not written
+When I write the text "<any text>"
+Then the text "<any text>" is written
+*/
+
+Scenario: N1 text-write
+Given the text "TextArea" is not written
+When I write the text "TextArea"
+Then the text "TextArea" is written
+
+Scenario: N2 write
+Given #"TextArea" is not written
+When I write #"TextArea"
+Then #"TextArea" is written
+
+/*
+Scenario: text-DoNotwrite
+Given the text "<any text>" is not written
+When I do not write the text "<any text>"
+Then the text "<any text>" is not written
+*/
+
+Scenario: N3 text-DoNotwrite
+Given the text "TextArea" is not written
+When I do not write the text "TextArea"
+Then the text "TextArea" is not written
+
+Scenario: N4 DoNotwrite
+Given #"TextArea" is not written
+When I do not write #"TextArea"
+Then #"TextArea" is not written
+
+/*
+Scenario: TextArea-write
+Given the TextArea "<any text>" is not written
+When I write the TextArea "<any text>"
+Then the TextArea "<any text>" is written
+*/
+
+Scenario: N5 TextArea-write
+Given the TextArea "TextArea" is not written
+When I write the TextArea "TextArea"
+Then the TextArea "TextArea" is written
+
+Scenario: N6 write
+Given #"TextArea" is not written
+When I write #"TextArea"
+Then #"TextArea" is written
+
+/*
+Scenario: TextArea-DoNotwrite
+Given the TextArea "<any text>" is not written
+When I do not write the TextArea "<any text>"
+Then the TextArea "<any text>" is not written
+*/
+
+Scenario: N7 TextArea-write
+Given the TextArea "TextArea" is not written
+When I do not write the TextArea "TextArea"
+Then the TextArea "TextArea" is not written
+
+Scenario: N8 write
+Given #"TextArea" is not written
+When I do not write #"TextArea"
+Then #"TextArea" is not written
+
+/*
+Scenario: Field-text-write
+Given the text "<text>" for the field "<fieldname>" is not written
+When I write the text "<text>" for the field "<fieldname>"
+Then the text "<text>" for the field "<fieldname>" is written
+*/
+
+Scenario: N9 Field-text-write
+Given the text "Welcome" for the field "Text area" is not written
+When I write the text "Welcome" for the field "Text area"
+Then the text "Welcome" for the field "Text area" is written
+
+Scenario: N10 text-write
+Given the text "Welcome" for #"Text area" is not written
+When I write the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is written
+
+Scenario: N11 Field-write
+Given #"Welcome" for the field "Text area" is not written
+When I write #"Welcome" for the field "Text area"
+Then #"Welcome" for the field "Text area" is written
+
+Scenario: N12 write
+Given #"Welcome" for #"Text area" is not written
+When I write #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is written
+
+/*
+Scenario: Field-text-DoNotwrite
+Given the text "<text>" for the field "<fieldname>" is not written
+When I do not write the text "<text>" for the field "<fieldname>"
+Then the text "<text>" for the field "<fieldname>" is not written
+*/
+
+Scenario: N13 Field-text-DoNotwrite
+Given the text "Welcome" for the field "Text area" is not written
+When I do not write the text "Welcome" for the field "Text area"
+Then the text "Welcome" for the field "Text area" is not written
+
+Scenario: N14 text-DoNotwrite
+Given the text "Welcome" for #"Text area" is not written
+When I do not write the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is not written
+
+Scenario: N15 Field-DoNotwrite
+Given #"Welcome" for the field "Text area" is not written
+When I do not write #"Welcome" for the field "Text area"
+Then #"Welcome" for the field "Text area" is not written
+
+Scenario: N16 DoNotwrite
+Given #"Welcome" for #"Text area" is not written
+When I do not write #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is not written
+
+/*
+Scenario: TextArea-text-write
+Given the text "<text>" for the TextArea "<fieldname>" is not written
+When I write the text "<text>" for the TextArea "<fieldname>"
+Then the text "<text>" for the TextArea "<fieldname>" is written
+*/
+
+Scenario: N17 TextArea-text-write
+Given the text "Welcome" for the TextArea "Text area" is not written
+When I write the text "Welcome" for the TextArea "Text area"
+Then the text "Welcome" for the TextArea "Text area" is written
+
+Scenario: N18 text-write
+Given the text "Welcome" for #"Text area" is not written
+When I write the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is written
+
+Scenario: N19 TextArea-write
+Given #"Welcome" for the TextArea "Text area" is not written
+When I write #"Welcome" for the TextArea "Text area"
+Then #"Welcome" for the TextArea "Text area" is written
+
+Scenario: N20 write
+Given #"Welcome" for #"Text area" is not written
+When I write #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is written
+
+/*
+Scenario: TextArea-text-DoNotwrite
+Given the text "<text>" for the TextArea "<fieldname>" is not written
+When I do not write the text "<text>" for the TextArea "<fieldname>"
+Then the text "<text>" for the TextArea "<fieldname>" is not written
+*/
+
+Scenario: N21 TextArea-text-DoNotwrite
+Given the text "Welcome" for the TextArea "Text area" is not written
+When I do not write the text "Welcome" for the TextArea "Text area"
+Then the text "Welcome" for the TextArea "Text area" is not written
+
+Scenario: N22 text-DoNotwrite
+Given the text "Welcome" for #"Text area" is not written
+When I do not write the text "Welcome" for #"Text area"
+Then the text "Welcome" for #"Text area" is not written
+
+Scenario: N23 TextArea-DoNotwrite
+Given #"Welcome" for the TextArea "Text area" is not written
+When I do not write #"Welcome" for the TextArea "Text area"
+Then #"Welcome" for the TextArea "Text area" is not written
+
+Scenario: N24 DoNotwrite
+Given #"Welcome" for #"Text area" is not written
+When I do not write #"Welcome" for #"Text area"
+Then #"Welcome" for #"Text area" is not written
