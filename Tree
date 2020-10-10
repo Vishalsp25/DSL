@@ -712,3 +712,357 @@ Scenario: N96 DoNotclick
 Given #"Chrome" for #"Applications" is not clicked
 When I do not click #"Chrome" for #"Applications"
 Then #"Chrome" for #"Applications" is not clicked
+
+//Negative Test cases
+
+/*
+Scenario: row-change
+Given the row "<row name>" is changed
+When I change the row "<row name>"
+Then the row "<row name>" is changeed
+*/
+
+Scenario: N1 row-change
+Given the row "Tree" is changed
+When I change the row "Tree"
+Then the row "Tree" is changeed
+
+Scenario: N2 change
+Given #"Tree" is changed
+When I change #"Tree"
+Then #"Tree" is changeed
+
+/*
+Scenario: row-DoNotchange
+Given the row "<row name>" is not changeed
+When I do not change the row "<row name>"
+Then the row "<row name>" is changed
+*/
+
+Scenario: N3 row-DoNotchange
+Given the row "Tree" is not changeed
+When I do not change the row "Tree"
+Then the row "Tree" is changed
+
+Scenario: N4 DoNotchange
+Given #"Tree" is not changeed
+When I do not change #"Tree"
+Then #"Tree" is changed
+
+/*
+Scenario: Tree-change
+Given the Tree "<row name>" is changed
+When I change the Tree "<row name>"
+Then the Tree "<row name>" is changeed
+*/
+
+Scenario: N5 Tree-change
+Given the Tree "Tree" is changed
+When I change the Tree "Tree"
+Then the Tree "Tree" is changeed
+
+Scenario: N6 change
+Given #"Tree" is changed
+When I change #"Tree"
+Then #"Tree" is changeed
+
+/*
+Scenario: Tree-DoNotchange
+Given the Tree "<row name>" is not changeed
+When I do not change the Tree "<row name>"
+Then the Tree "<row name>" is changed
+*/
+
+Scenario: N7 Tree-change
+Given the Tree "Tree" is not changeed
+When I do not change the Tree "Tree"
+Then the Tree "Tree" is changed
+
+Scenario: N8 change
+Given #"Tree" is not changeed
+When I do not change #"Tree"
+Then #"Tree" is changed
+
+/*
+Scenario: Field-row-change
+Given the row "<row>" for the field "<fieldname>" is not changeed
+When I change the row "<row>" for the field "<fieldname>"
+Then the row "<row>" for the field "<fieldname>" is changeed
+*/
+
+Scenario: N9 Field-row-change
+Given the row "Chrome" for the field "Applications" is not changeed
+When I change the row "Chrome" for the field "Applications"
+Then the row "Chrome" for the field "Applications" is changeed
+
+Scenario: N10 row-change
+Given the row "Chrome" for #"Applications" is not changeed
+When I change the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is changeed
+
+Scenario: N11 Field-change
+Given #"Chrome" for the field "Applications" is not changeed
+When I change #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is changeed
+
+Scenario: N12 change
+Given #"Chrome" for #"Applications" is not changeed
+When I change #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is changeed
+
+/*
+Scenario: Field-row-DoNotchange
+Given the row "<row>" for the field "<fieldname>" is not changeed
+When I do not change the row "<row>" for the field "<fieldname>"
+Then the row "<row>" for the field "<fieldname>" is not changeed
+*/
+
+Scenario: N13 Field-row-DoNotchange
+Given the row "Chrome" for the field "Applications" is not changeed
+When I do not change the row "Chrome" for the field "Applications"
+Then the row "Chrome" for the field "Applications" is not changeed
+
+Scenario: N14 row-DoNotchange
+Given the row "Chrome" for #"Applications" is not changeed
+When I do not change the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is not changeed
+
+Scenario: N15 Field-DoNotchange
+Given #"Chrome" for the field "Applications" is not changeed
+When I do not change #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is not changeed
+
+Scenario: N16 DoNotchange
+Given #"Chrome" for #"Applications" is not changeed
+When I do not change #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not changeed 
+
+/*
+Scenario: Tree-row-change
+Given the row "<row>" for the Tree "<fieldname>" is not changeed
+When I change the row "<row>" for the Tree "<fieldname>"
+Then the row "<row>" for the Tree "<fieldname>" is changeed
+*/
+
+Scenario: N17 Tree-row-change
+Given the row "Chrome" for the Tree "Applications" is not changeed
+When I change the row "Chrome" for the Tree "Applications"
+Then the row "Chrome" for the Tree "Applications" is changeed
+
+Scenario: N18 row-change
+Given the row "Chrome" for #"Applications" is not changeed
+When I change the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is changeed
+
+Scenario: N19 Tree-change
+Given #"Chrome" for the Tree "Applications" is not changeed
+When I change #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is changeed
+
+Scenario: N20 change
+Given #"Chrome" for #"Applications" is not changeed
+When I change #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is changeed
+
+/*
+Scenario: Tree-row-DoNotchange
+Given the row "<row>" for the Tree "<fieldname>" is not changeed
+When I do not change the row "<row>" for the Tree "<fieldname>"
+Then the row "<row>" for the Tree "<fieldname>" is not changeed
+*/
+
+Scenario: N21 Tree-row-DoNotchange
+Given the row "Chrome" for the Tree "Applications" is not changeed
+When I do not change the row "Chrome" for the Tree "Applications"
+Then the row "Chrome" for the Tree "Applications" is not changeed
+
+Scenario: N22 row-DoNotchange
+Given the row "Chrome" for #"Applications" is not changeed
+When I do not change the row "Chrome" for #"Applications"
+Then the row "Chrome" for #"Applications" is not changeed
+
+Scenario: N23 Tree-DoNotchange
+Given #"Chrome" for the Tree "Applications" is not changeed
+When I do not change #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is not changeed
+
+Scenario: N24 DoNotchange
+Given #"Chrome" for #"Applications" is not changeed
+When I do not change #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not changeed
+
+/*
+Scenario: tree-change
+Given the tree "<tree name>" is changed
+When I change the tree "<tree name>"
+Then the tree "<tree name>" is changeed
+*/
+
+Scenario: N25 tree-change
+Given the tree "Tree" is changed
+When I change the tree "Tree"
+Then the tree "Tree" is changeed
+
+Scenario: N26 change
+Given #"Tree" is changed
+When I change #"Tree"
+Then #"Tree" is changeed
+
+/*
+Scenario: tree-DoNotchange
+Given the tree "<tree name>" is not changeed
+When I do not change the tree "<tree name>"
+Then the tree "<tree name>" is changed
+*/
+
+Scenario: N27 tree-DoNotchange
+Given the tree "Tree" is not changeed
+When I do not change the tree "Tree"
+Then the tree "Tree" is changed
+
+Scenario: N28 DoNotchange
+Given #"Tree" is not changeed
+When I do not change #"Tree"
+Then #"Tree" is changed
+
+/*
+Scenario: Tree-change
+Given the Tree "<tree name>" is changed
+When I change the Tree "<tree name>"
+Then the Tree "<tree name>" is changeed
+*/
+
+Scenario: N29 Tree-change
+Given the Tree "Tree" is changed
+When I change the Tree "Tree"
+Then the Tree "Tree" is changeed
+
+Scenario: N30 change
+Given #"Tree" is changed
+When I change #"Tree"
+Then #"Tree" is changeed
+
+/*
+Scenario: Tree-DoNotchange
+Given the Tree "<tree name>" is not changeed
+When I do not change the Tree "<tree name>"
+Then the Tree "<tree name>" is changed
+*/
+
+Scenario: N31 Tree-change
+Given the Tree "Tree" is not changeed
+When I do not change the Tree "Tree"
+Then the Tree "Tree" is changed
+
+Scenario: N32 change
+Given #"Tree" is not changeed
+When I do not change #"Tree"
+Then #"Tree" is changed
+
+/*
+Scenario: Field-tree-change
+Given the tree "<tree>" for the field "<fieldname>" is not changeed
+When I change the tree "<tree>" for the field "<fieldname>"
+Then the tree "<tree>" for the field "<fieldname>" is changeed
+*/
+
+Scenario: N33 Field-tree-change
+Given the tree "Chrome" for the field "Applications" is not changeed
+When I change the tree "Chrome" for the field "Applications"
+Then the tree "Chrome" for the field "Applications" is changeed
+
+Scenario: N32 tree-change
+Given the tree "Chrome" for #"Applications" is not changeed
+When I change the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is changeed
+
+Scenario: N33 Field-change
+Given #"Chrome" for the field "Applications" is not changeed
+When I change #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is changeed
+
+Scenario: N34 change
+Given #"Chrome" for #"Applications" is not changeed
+When I change #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is changeed
+
+/*
+Scenario: Field-tree-DoNotchange
+Given the tree "<tree>" for the field "<fieldname>" is not changeed
+When I do not change the tree "<tree>" for the field "<fieldname>"
+Then the tree "<tree>" for the field "<fieldname>" is not changeed
+*/
+
+Scenario: N35 Field-tree-DoNotchange
+Given the tree "Chrome" for the field "Applications" is not changeed
+When I do not change the tree "Chrome" for the field "Applications"
+Then the tree "Chrome" for the field "Applications" is not changeed
+
+Scenario: N36 tree-DoNotchange
+Given the tree "Chrome" for #"Applications" is not changeed
+When I do not change the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is not changeed
+
+Scenario: N37 Field-DoNotchange
+Given #"Chrome" for the field "Applications" is not changeed
+When I do not change #"Chrome" for the field "Applications"
+Then #"Chrome" for the field "Applications" is not changeed
+
+Scenario: N38 DoNotchange
+Given #"Chrome" for #"Applications" is not changeed
+When I do not change #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not changeed
+
+/*
+Scenario: Tree-tree-change
+Given the tree "<tree>" for the Tree "<fieldname>" is not changeed
+When I change the tree "<tree>" for the Tree "<fieldname>"
+Then the tree "<tree>" for the Tree "<fieldname>" is changeed
+*/
+
+Scenario: N39 Tree-tree-change
+Given the tree "Chrome" for the Tree "Applications" is not changeed
+When I change the tree "Chrome" for the Tree "Applications"
+Then the tree "Chrome" for the Tree "Applications" is changeed
+
+Scenario: N40 tree-change
+Given the tree "Chrome" for #"Applications" is not changeed
+When I change the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is changeed
+
+Scenario: N41 Tree-change
+Given #"Chrome" for the Tree "Applications" is not changeed
+When I change #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is changeed
+
+Scenario: N42 change
+Given #"Chrome" for #"Applications" is not changeed
+When I change #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is changeed
+
+/*
+Scenario: Tree-tree-DoNotchange
+Given the tree "<tree>" for the Tree "<fieldname>" is not changeed
+When I do not change the tree "<tree>" for the Tree "<fieldname>"
+Then the tree "<tree>" for the Tree "<fieldname>" is not changeed
+*/
+
+Scenario: N43 Tree-tree-DoNotchange
+Given the tree "Chrome" for the Tree "Applications" is not changeed
+When I do not change the tree "Chrome" for the Tree "Applications"
+Then the tree "Chrome" for the Tree "Applications" is not changeed
+
+Scenario: N44 tree-DoNotchange
+Given the tree "Chrome" for #"Applications" is not changeed
+When I do not change the tree "Chrome" for #"Applications"
+Then the tree "Chrome" for #"Applications" is not changeed
+
+Scenario: N45 Tree-DoNotchange
+Given #"Chrome" for the Tree "Applications" is not changeed
+When I do not change #"Chrome" for the Tree "Applications"
+Then #"Chrome" for the Tree "Applications" is not changeed
+
+Scenario: N46 DoNotchange
+Given #"Chrome" for #"Applications" is not changeed
+When I do not change #"Chrome" for #"Applications"
+Then #"Chrome" for #"Applications" is not changeed
