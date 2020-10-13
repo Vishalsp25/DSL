@@ -27,25 +27,25 @@ entity Tooltip is widget{
 
 
 entity Button is widget {
-	actions: click [on], select,submit
-	states: clicked/unclicked, submitted,pressed
+	actions: click [on],submit
+	states: clicked/unclicked, submitted
 }
 
 entity checkbox is widget {
-	actions: check,uncheck,pick,choose
-	states: checked/unchecked, selected/unselected, picked,chosen
+	actions: check,uncheck,pick,choose,select
+	states: checked/unchecked, selected, picked,chosen
 	
 }
 
 entity RadioButton is widget {
 	actions: pick,choose,select
-	states: checked/unchecked, selected/unselected, picked,chosen
+	states: checked/unchecked, selected, picked,chosen
 	
 }
 
 entity Calendar is widget {
 	actions: pick,choose,select,set
-	states: set, selected/unselected, picked,chosen
+	states: set, selected, picked,chosen
 	
 }
 
@@ -57,25 +57,25 @@ entity ListBox is widget {
 
 entity Link is widget {
 	actions: choose,click,select
-	states: set, selected/unselected, picked,clicked,chosen
+	states: selected,clicked,chosen
 	
 }
 
 entity DropdownList is widget {
 	actions: choose,select,pick
-	states: set, selected/unselected, picked,chosen
+	states: selected, picked,chosen
 	
 }
 
 entity Menu is widget {
-	actions: choose,click,select 
-	states: selected/unselected, picked,clicked
+	actions: click,select 
+	states: selected,clicked
 	
 }
 
 entity MenuItem is widget {
-	actions: choose,click,select
-	states: set/notset, selected/unselected,picked,clicked
+	actions:click,select
+	states: selected,clicked
 	
 }
 
@@ -99,19 +99,19 @@ entity Map is widget {
 
 entity TagCloud is widget {
 	actions: pick,choose,select,click
-	states: checked/unchecked, selected,picked,chosen,clicked
+	states:  selected,picked,chosen,clicked
 	
 }
 
 entity Splitter is widget {
 	actions: drag, drag down,drag up,drag to the right,drag to the left
-	states: dragged,dragged up ,dragged down
+	states: dragged,dragged up ,dragged down,dragged to the right,dragged to the right
 	
 }
 
 entity ScrollBar is widget {
 	actions: scroll,scroll to the right,scroll to the left,scroll up,scroll down
-	states: scrolled
+	states: scrolled,scrolled to the right,scrolled to the left,scrolled up,scroll down
 	
 }
 
@@ -128,14 +128,14 @@ entity SearchBox is widget {
 }
 
 entity Pagination is widget {
-	actions: go
-	states: go
+	actions: go to
+	states: displayed
 	
 }
 
 entity ImageCarousel is widget {
-	actions: pick,choose,select,click,scroll
-	states: scrolled, selected,picked,chosen,clicked
+	actions: choose,select,click,scroll to the right,scroll to the left
+	states: scrolled to the right,scrolled to the right, selected,chosen,clicked
 	
 }
 
@@ -159,7 +159,7 @@ entity Breadcrumbs is widget {
 
 entity ToggleButton is widget {
 	actions: switch [on], switch [off]
-	states: switched
+	states: switched [on],switched [off]
 }
 
 entity NumericStepper is widget {
@@ -182,7 +182,7 @@ entity TabBar is widget {
 
 entity Accordion is widget {
 	actions: show,hide,click [on]
-	states: shown,hidden,clicked
+	states: shown,hidden,clicked [on]
 	
 }
 
@@ -200,7 +200,7 @@ entity WindowDialog is widget {
 
 entity Tree is widget {
 	actions: select,click [on]
-	states: selected,clicked
+	states: selected,clicked [on]
 	
 }
 
@@ -212,13 +212,13 @@ entity Autocomplete is widget {
 
 entity BrowserWindow is widget {
 	actions: go
-	states: go
+	states: displayed
 	
 }
 
 entity TextArea is widget {
 	actions: type,set, fill [in]
-	states: typed,set,filled
+	states: typed,set,filled [in]
 	
 }
 
@@ -239,7 +239,7 @@ entity selectable {
 }
 
 entity textfield is widget {
-	actions: type // $text into
+	actions: type 
 	properties: text
 }
 
@@ -351,10 +351,6 @@ entity items {
 
 entity webpage {
 	states: shown,displayed
-}
-
-entity server {
-	states: shown,displayed,text
 }
 
 entity content {
