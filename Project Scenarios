@@ -123,11 +123,28 @@ Scenario: The closest taxi rank should appear first
 		Given the location "London Bridge Station" is displayed
 		when I search "taxi rank within 500 meters" for "Taxi available"
 		then the "taxi rank within 500 meters" for "Taxi available" is searched
-    Then the first taxi rank should be "details"
+    Then the first taxi rank should be "Tooley Street (Duke Street Hill) "
 		which means 
 		Given the location "London Bridge Station" is displayed
 		when I search "taxi rank within 500 meters" for "Taxi available"
-		then the "taxi details" for "Taxi available" is displayed
+		then the "Tooley Street (Duke Street Hill) " for "Taxi available" is displayed
+		
+Scenario: All the taxi ranks within a given distance should be shown
+    Given Joe is at London Bridge Station
+		which means 
+		Given the location "My location" is not displayed
+		when I click "My location"
+		then the location "London Bridge Station" is displayed
+    When he looks for the closest taxi rank within 500 meters
+		which means 
+		Given the location "London Bridge Station" is displayed
+		when I search "taxi rank within 500 meters" for "Taxi available"
+		then the "3" for "Taxi available" is searched
+    Then the first taxi rank should be "Canary Wharf "
+		which means 
+		Given the location "London Bridge Station" is displayed
+		when I search "taxi rank within 500 meters" for "Taxi available"
+		then the "Canary Wharf " for "Taxi available" is displayed
 	
 Scenario: Where there are no taxi stands nearby none should be found
     Given Joe is at London Bridge Station
@@ -144,7 +161,7 @@ Scenario: Where there are no taxi stands nearby none should be found
 		which means 
 		Given the location "London Bridge Station" is displayed
 		when I search "taxi rank within 50 meters" for "Taxi available"
-		then the "no taxi available" for "Taxi available" is displayed  //6
+		then the "no taxi available" for "Taxi available" is displayed  
 		
 PROJECT 2
 
@@ -296,3 +313,57 @@ Scenario Outline: Search books by author
 		Given "Name of 2 books" of the "books published by author" is displayed
 		When I click "titles" of the "Name of 2 books"
 		Then "My life as an awesome girl" for "Book 2" is displayed
+		
+Scenario Outline: Search books by title
+	When the customer searches for books by titles <Title>
+		which means 
+		Given "books available" for the "books published by titles" is not displayed
+		When I search "books available" for the "books published by titles"
+		Then "books available" for the "books published by titles" is displayed
+	Then 2 books should be found
+		which means
+		Given "books available" for the "books published by titles" is displayed
+		When I search "books available" for the "books published by titles"
+		Then "Name of 2 books" of the "books published by titles" is displayed
+	  And Book 1 should have the title "How to be awesome"
+		which means
+		Given "Name of 2 books" for the "books published by titles" is displayed
+		When I click "Awesome" of the "Name of 2 books"
+		Then "How to be awesome" for "Book 1" is displayed
+	  And Book 2 should have the title "My life as an awesome girl"
+		which means
+		Given "Name of 2 books" of the "books published by titles" is displayed
+		When I click "Awesome" of the "Name of 2 books"
+		Then "My life as an awesome girl" for "Book 2" is displayed
+		
+	When the customer searches for books by titles <Title>
+		which means 
+		Given "books available" for the "books published by titles" is not displayed
+		When I search "books available" for the "books published by titles"
+		Then "books available" for the "books published by titles" is displayed
+	Then 1 books should be found
+		which means
+		Given "books available" for the "books published by titles" is displayed
+		When I search "books available" for the "books published by titles"
+		Then "Name of 1 books" of the "books published by titles" is displayed
+	  And Book 1 should have the title "I think my teacher is cool"
+		which means
+		Given "Name of 2 books" for the "books published by titles" is displayed
+		When I click "cool" of the "Name of 2 books"
+		Then "I think my teacher is cool" for "Book 1" is displayed
+		
+	When the customer searches for books by titles <Title>
+		which means 
+		Given "books available" for the "books published by titles" is not displayed
+		When I search "books available" for the "books published by titles"
+		Then "books available" for the "books published by titles" is displayed
+	Then 1 books should be found
+		which means
+		Given "books available" for the "books published by titles" is displayed
+		When I search "books available" for the "books published by titles"
+		Then "Name of 1 books" of the "books published by titles" is displayed
+	  And Book 1 should have the title "How to be awesome"
+		which means
+		Given "Name of 2 books" for the "books published by titles" is displayed
+		When I click "How to be" of the "Name of 2 books"
+		Then "How to be awesome" for "Book 1" is displayed
