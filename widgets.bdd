@@ -238,21 +238,21 @@ entity selectable {
 	actions: select,choose
 }
 
-entity textfield is widget {
+entity textfield {
 	actions: type 
 	properties: text
 }
 
-entity field is widget, selectable {
-	states: checked/unchecked, selected/unselected , picked/not picked, chosen/not chosen, check/uncheck,clicked/not clicked
+entity field  {
+	properties: text
 }
 
-entity option is widget, selectable {
-	states: checked/unchecked, selected/unselected , picked/notpicked, chosen/notChosen, check/uncheck,clicked/notclicked
+entity option {
+	properties: text
 }
 
-entity options is widget, selectable {
-	states: checked/unchecked, selected/unselected , picked/notpicked, chosen/notChosen, check/uncheck,clicked/notclicked
+entity options {
+	properties: text
 }
 
 
