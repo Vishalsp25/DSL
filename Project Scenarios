@@ -69,10 +69,29 @@ Scenario: Query a Product
 		which means 
 		Given "Search button" is clicked
 		when I click "Search"
-		then "Pants" is not displayed //total 13 scenarios
+		then "Pants" is not displayed 
 		
 
 PROJECT 4
+
+Background:
+    Given a valid user named "Alice"
+		which means 
+		Given the name "Alice" is valid
+		when I click "Log in Page"
+		and when I enter "user name and password"
+		then the page "logged in as Alice" is displayed
+    And some regulations
+		which means 
+		Given "Home page" is displayed
+		when I search  "regulation" 
+		then "regulation" is searched
+    And regulation C2000000
+		which means 
+		Given "Home page" is displayed
+		when I search  "regulation" 
+		then "C2000000" for "regulation" is displayed
+
 
 Scenario: Searching by Regulation Number
     Given I am logged in as Alice
@@ -108,7 +127,7 @@ Scenario: View regulation core data
 		which means 
 		Given "regulation" using "C2000000" is searched
 		when I search  "regulation" using "C2000000"
-		then "regulation summary" for "C2000000" is displayed //6
+		then "regulation summary" for "C2000000" is displayed 
 		
 PROJECT 3
 
@@ -163,6 +182,24 @@ Scenario: Where there are no taxi stands nearby none should be found
 		when I search "taxi rank within 50 meters" for "Taxi available"
 		then the "no taxi available" for "Taxi available" is displayed  
 		
+Scenario Outline: Provide useful practical information about each taxi rank at <Location>
+    Given Joe is planning a getaway from <Location>
+		which means 
+		Given the location "My location" is not displayed
+		when I click "My location"
+		then the location "Canary Wharf " is displayed
+    When he looks for the closest taxi rank within <Distance> meters
+		which means 
+		Given the location "Canary Wharf" is displayed
+		when I search "taxi rank within 500 meters" for "Taxi available"
+		then the "4" for "Taxi available" is searched
+    Then he should find the taxi ranks with the details
+		which means 
+		Given the location "London Bridge Station" is displayed
+		when I search "taxi rank within 500 meters" for "Taxi available"
+		then the "40 Bank Street " for "Taxi available within 500 meters" is displayed
+
+		
 PROJECT 2
 
 Scenario: Buying shares
@@ -187,7 +224,7 @@ Scenario: Buying shares
 Scenario: Buying and selling shares
 	Given Tom Smith is a registered trader
 		which means
-		Given the status "registered status" is not registered
+		Given the status "registered status" for "trading" is not registered
 		When I register for "trading"
 		Then the status "registered status" is registered
 	When he purchases 5 AAPL shares at $100 each
@@ -205,6 +242,44 @@ Scenario: Buying and selling shares
 		Given the "3 AAPL shares" for "$150 each" is not sold
 		When I sell "3 AAPL shares" for "$150 each"
 		Then the postions "positions" is displayed
+		
+Scenario Outline: New clients need to provide their full name and email address
+    Given a trader with the following details:
+      | firstName   | lastName   | email   |
+      | <firstName> | <lastName> | <email> |
+		which means
+		Given the status "registered status" for "trading" is not registered
+		When I enter "firstname"
+		Then the field "firstname" is filled
+    When the trader attempts to register with BDD Trader
+		 which means 
+		 Given the  name for the field "first name" is filled
+		 When I register for "trading"
+		 Then the message "status of registration" is displayed
+    Then the registration should be rejected with the message '<message>'
+		which means 
+		 Given the  name for the field "first name" is filled
+		 When I register for "trading"
+		 Then the message "Missing mandatory fields for client: lastName" is displayed
+
+Scenario: New clients are given a portfolio with $1000 to start with
+    Given a trader with the following details:
+      | firstName | lastName | email          |
+      | Jake      | Smith    | jack@smith.com |
+		which means
+		Given the status "registered status" for "trading" is not registered
+		When I enter "my details"
+		Then the field "Person Details" are filled
+    When the trader registers with BDD Trader
+		which means 
+		 Given the  details for the field "my details" are filled
+		 When I register for "trading"
+		 Then the message "status of registration" is displayed
+    Then the trader should have a portfolio with $1000 in cash
+		Given the status "registered status" for "trading" is registered
+		When I click "my portfolio"
+		Then the "portfolio with $1000 in cash" is displayed
+
 	
 Scenario: Viewing news about a particular share
     Given Tim is interested in Apple
