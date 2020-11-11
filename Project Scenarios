@@ -1,71 +1,71 @@
 PROJECT 5
 Scenario: The server is running
-    When I visit the "Home Page"
+    When I visit the Home Page
 		which means 
 		Given the page "Web Page" is displayed
 		when I click "Home Page"
 		then the page "Home Page" is displayed
-    Then I should see "Products" in the title
+    Then I should see Products in the title
 		which means 
 		Given "Home page" is displayed
 		when I click "products"
 		then the title "products" is displayed
-    And  I should not see "404 Not Found"
+    And  I should not see ERROR
 		which means 
 		Given "Home page" is displayed
 		when I click  "products"
 		then the title "404 Not Found" is not displayed
 		
 Scenario: List All Products
-    When I visit the "Home Page"
+    When I visit the Home Page
 		which means 
 		Given the page "Web Page" is displayed
 		when I click "Home Page"
 		then the page "Home Page" is displayed
-    And I press the "Search" button
+    And I press the Search button
 		which means 
 		Given "Home page" is displayed
 		when I click "Search"
-		then "Search button" is clicked
-    Then I should see "Nike" in the results
+		then #"Search button" is clicked
+    Then I should see Nike in the results
 		which means 
 		Given "Search button" is clicked
 		when I click "Search"
-		then "Nike" is displayed
-    And I should not see "Scott" in the results
+		then #"Nike" is displayed
+    And I should not see Scott in the results
 		which means 
 		Given "Search button" is clicked
 		when I click "Search"
-		then "Scott" is not displayed
+		then #"Scott" is not displayed
 
 
 Scenario: Query a Product
-    When I visit the "Home Page"
+    When I visit the Home Page
 		which means 
 		Given the page "Web Page" is displayed
 		when I click "Home Page"
 		then the page "Home Page" is displayed
-    And I set the "Category" to "Shirts"
+    And I set the Category to Shirts
 		which means 
 		Given the field "shirt" for the "category" is set
 		when I set "shirt" for the "category"
-		then "shirt" for the "category" is set
-    And I press the "Search" button
+		then #"shirt" for the "category" is set
+    And I press the Search button
 		which means 
 		Given the field "shirt" for the "category" is set
 		when I click "search"
-		then "search" is clicked
-    Then I should see "Nike sweatshirt" in the results
+		then #"search" is clicked
+    Then I should see Nike sweatshirt in the results
 		which means 
 		Given "Search button" is clicked
 		when I click "Search"
 		then "Nike sweatshirt" is displayed
-    And I should see "Black t-shirt" in the results
+    And I should see Black t-shirt in the results
 		which means 
 		Given "Search button" is clicked
 		when I click "Search"
 		then "Black t-shirt" is displayed
-    And I should not see "Pants" in the results
+    And I should not see Pants in the results
 		which means 
 		Given "Search button" is clicked
 		when I click "Search"
@@ -75,74 +75,74 @@ Scenario: Query a Product
 PROJECT 4
 
 Background:
-    Given a valid user named "Alice"
+    Given a valid user named Alice
 		which means 
-		Given the name "Alice" is valid
-		when I click "Log in Page"
-		and when I enter "user name and password"
-		then the page "logged in as Alice" is displayed
+		Given the name "Alice" is displayed
+		When I click "Log in Page"
+		and When I type "user name and password"
+		Then the page "logged in as Alice" is displayed
     And some regulations
 		which means 
 		Given "Home page" is displayed
-		when I search  "regulation" 
-		then "regulation" is searched
+		When I select  "regulation" 
+		Then "regulation" is displayed
     And regulation C2000000
 		which means 
 		Given "Home page" is displayed
-		when I search  "regulation" 
-		then "C2000000" for "regulation" is displayed
+		When I select  "regulation" 
+		Then "C2000000" for "regulation" is displayed
 
 
 Scenario: Searching by Regulation Number
     Given I am logged in as Alice
 		which means 
 		Given the page "Web Page" is displayed
-		when I click "Log in Page"
-		and when I enter "user name and password"
-		then the page "logged in as Alice" is displayed
+		When I click "Log in Page"
+		and When I type "user name and password"
+		Then the page "logged in as Alice" is displayed
     When I search for a regulation using a valid Regulation Number
 		which means 
 		Given "Home page" is displayed
-		when I search  "regulation" using "valid Regulation Number"
-		then "regulation" using "valid Regulation Number" is searched
+		when I select  "regulation" using "valid Regulation Number"
+		then "regulation" using "valid Regulation Number" is displayed
     Then the search result should contain the regulation searched for
 		which means 
-		Given "regulation" using "valid Regulation Number" is searched
-		when I search  "regulation" using "valid Regulation Number"
-		then "regulation" for "valid Regulation Number" is displayed
+		Given "regulation" using "valid Regulation Number" is selected
+		When I select  "regulation" using "valid Regulation Number"
+		Then "regulation" for "valid Regulation Number" is displayed
 		
 Scenario: View regulation core data
     Given I am logged in as Alice
 		which means 
 		Given the page "Web Page" is displayed
-		when I click "Log in Page"
-		and when I enter "user name and password"
+		When I click "Log in Page"
+		and When I type "user name and password"
 		then the page "logged in as Alice" is displayed
     When I select regulation C2000000
 		which means 
 		Given "Home page" is displayed
-		when I search  "regulation" using "C2000000"
-		then "regulation" using "C2000000" is searched
+		When I search  "regulation" using "C2000000"
+		Then "regulation" using "C2000000" is searched
     Then a summary of the core information should be presented
 		which means 
 		Given "regulation" using "C2000000" is searched
-		when I search  "regulation" using "C2000000"
-		then "regulation summary" for "C2000000" is displayed 
+		When I search  "regulation" using "C2000000"
+		Then "regulation summary" for "C2000000" is displayed 
 		
 PROJECT 3
 
-Scenario: The closest taxi rank should appear first
+Scenario: The closest taxi rank 
     Given Joe is at London Bridge Station
 		which means 
 		Given the location "My location" is not displayed
 		when I click "My location"
 		then the location "London Bridge Station" is displayed
-    When he looks for the closest taxi rank within 500 meters
+    When he looks for the closest taxi rank within some distance
 		which means 
 		Given the location "London Bridge Station" is displayed
 		when I search "taxi rank within 500 meters" for "Taxi available"
 		then the "taxi rank within 500 meters" for "Taxi available" is searched
-    Then the first taxi rank should be "Tooley Street (Duke Street Hill) "
+    Then the first taxi rank should be Tooley Street
 		which means 
 		Given the location "London Bridge Station" is displayed
 		when I search "taxi rank within 500 meters" for "Taxi available"
@@ -154,12 +154,12 @@ Scenario: All the taxi ranks within a given distance should be shown
 		Given the location "My location" is not displayed
 		when I click "My location"
 		then the location "London Bridge Station" is displayed
-    When he looks for the closest taxi rank within 500 meters
+    When he looks for the closest taxi rank within some distance
 		which means 
 		Given the location "London Bridge Station" is displayed
 		when I search "taxi rank within 500 meters" for "Taxi available"
 		then the "3" for "Taxi available" is searched
-    Then the first taxi rank should be "Canary Wharf "
+    Then the first taxi rank should be Canary Wharf
 		which means 
 		Given the location "London Bridge Station" is displayed
 		when I search "taxi rank within 500 meters" for "Taxi available"
@@ -171,12 +171,12 @@ Scenario: Where there are no taxi stands nearby none should be found
 		Given the location "My location" is not displayed
 		when I click "My location"
 		then the location "London Bridge Station" is displayed
-    When he looks for the closest taxi rank within 50 meters
+    When he looks for the closest taxi rank within some distance
 		which means 
 		Given the location "London Bridge Station" is displayed
 		when I search "taxi rank within 50 meters" for "Taxi available"
 		then the "taxi rank within 50 meters" for "Taxi available" is searched
-    Then no taxi racks should be returned
+    Then taxi racks should be null
 		which means 
 		Given the location "London Bridge Station" is displayed
 		when I search "taxi rank within 50 meters" for "Taxi available"
